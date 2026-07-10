@@ -41,6 +41,21 @@ The most useful contributions, in order:
 
 Every PR is validated against `schemas/offer.schema.json` by CI, so you'll get immediate feedback if a field is missing. Details in [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Matcher (experimental)
+
+`scripts/match.py` reads a repository and reports which offers fit it and why —
+it detects what the project uses (CI matrices, Storybook, locale files, benchmarks,
+an OpenAPI spec…) via `matching/rules.yaml` and checks the structured eligibility
+fields against the repo:
+
+```sh
+pip install pyyaml
+python scripts/match.py /path/to/your/repo --github owner/name
+```
+
+`--github` is optional; it adds project-age and activity checks via the `gh` CLI.
+Detector rules are data, not code — PRs improving them are welcome, same as offers.
+
 ## Licensing
 
 - Offers data (`data/offers/`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it anywhere, credit "foropensource".

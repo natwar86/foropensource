@@ -2,6 +2,7 @@
 """Build the static site (a single index.html) from data/offers/ into _site/."""
 
 import html
+import json
 import sys
 from pathlib import Path
 
@@ -229,6 +230,9 @@ def main() -> int:
     OUT_DIR.mkdir(exist_ok=True)
     (OUT_DIR / "index.html").write_text(page)
     (OUT_DIR / "CNAME").write_text("foropensource.com\n")
+    # Machine-readable export of the full dataset (includes discontinued offers).
+    all_docs = [yaml.safe_load(p.read_text()) for p in sorted(OFFERS_DIR.glob("*.yaml"))]
+    (OUT_DIR / "offers.json").write_text(json.dumps(all_docs, indent=1))
     (OUT_DIR / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n"
     )

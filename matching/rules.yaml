@@ -1,0 +1,189 @@
+# Detector rules: signals found in a repository -> offers that fit it.
+#
+# Each signal has:
+#   kind:      dep | file | dir | workflow | readme | lang
+#   any:       list of dependency names / file globs / dir names / languages
+#   regex:     pattern (for kind: workflow and kind: readme)
+#   reason:    shown to the maintainer; {match} is replaced with what matched
+#   category:  offers in this category match (from schemas/offer.schema.json), and/or
+#   companies: offer file slugs that match (narrower than category — preferred
+#              when the category is broad, e.g. translation tools live in "other")
+#
+# `covered` rules detect tools a project ALREADY uses, so we recommend gaps
+# instead of churn.
+
+signals:
+  # ---- testing -------------------------------------------------------------
+  - kind: dep
+    any: [playwright, "@playwright/test", cypress, selenium-webdriver, puppeteer,
+          webdriverio, nightwatch, testcafe]
+    companies: [browserstack, sauce-labs, lambdatest, testingbot]
+    reason: "runs browser-automation tests ({match}) — real browser/device grids apply"
+  - kind: dep
+    any: [storybook, "@storybook/react", "@storybook/vue3", "@storybook/svelte",
+          "@storybook/web-components", "@storybook/angular"]
+    companies: [chromatic, argos, lost-pixel, screenshotbot, applitools, browserstack]
+    reason: "has Storybook ({match}) — visual regression testing fits"
+  - kind: workflow
+    regex: "(playwright|cypress|selenium|puppeteer)"
+    companies: [browserstack, sauce-labs, lambdatest, testingbot]
+    reason: "CI runs browser tests ({match})"
+  - kind: workflow
+    regex: "(coverage|codecov|coveralls|lcov|cobertura)"
+    companies: [codecov, coveralls]
+    reason: "CI produces coverage data ({match}) — free coverage reporting applies"
+
+  # ---- ci-cd ---------------------------------------------------------------
+  # Generic signals point at generic-runner offers only; ecosystem-specific
+  # CI offers (Tuist, Nx, Bitrise, Cachix, ...) need ecosystem evidence.
+  - kind: workflow
+    regex: "runs-on:\\s*.*macos"
+    companies: [macstadium, cirrus-labs, blacksmith, buildkite]
+    reason: "CI needs macOS runners — free/discounted macOS CI capacity applies"
+  - kind: workflow
+    regex: "(aarch64|arm64)"
+    companies: [cirrus-labs, blacksmith, equinix-metal]
+    reason: "CI targets ARM ({match}) — native ARM runners apply"
+  - kind: workflow
+    regex: "matrix:"
+    companies: [blacksmith, buildkite, github]
+    reason: "CI uses build matrices — faster runners cut feedback time"
+  - kind: workflow
+    regex: "(riscv|risc-v)"
+    companies: [rise-project]
+    reason: "CI involves RISC-V ({match}) — free RISC-V runners apply"
+  - kind: file
+    any: ["nx.json", "turbo.json", "lerna.json"]
+    companies: [nx-cloud]
+    reason: "is a JS monorepo ({match}) — remote caching for CI applies"
+  - kind: file
+    any: ["Package.swift", "*.xcodeproj/project.pbxproj", "Podfile"]
+    companies: [tuist, macstadium, cirrus-labs]
+    reason: "is an Apple-platform project ({match})"
+  - kind: file
+    any: ["fastlane/Fastfile", "bitrise.yml"]
+    companies: [bitrise]
+    reason: "is a mobile app with build automation ({match})"
+  - kind: file
+    any: ["flake.nix", "default.nix"]
+    companies: [cachix]
+    reason: "builds with Nix ({match}) — free binary cache applies"
+  - kind: file
+    any: ["build.gradle", "build.gradle.kts", "settings.gradle", "settings.gradle.kts"]
+    companies: [gradle-inc]
+    reason: "builds with Gradle ({match}) — sponsored Develocity instances apply"
+  - kind: dir
+    any: [benches, benchmarks, benchsuite, bench]
+    companies: [codspeed]
+    reason: "maintains benchmarks ({match}/) — continuous benchmarking in CI applies"
+
+  # ---- desktop / code signing ------------------------------------------------
+  - kind: dep
+    any: [electron, electron-builder, "@tauri-apps/cli", tauri]
+    companies: [signpath, certum, sentry, bugsnag, macstadium]
+    reason: "ships a desktop app ({match}) — code signing and crash reporting apply"
+
+  # ---- error-tracking / monitoring -------------------------------------------
+  - kind: dep
+    any: [electron, tauri, react-native]
+    category: error-tracking
+    reason: "ships a user-facing app ({match}) — crash/error reporting fits"
+  - kind: file
+    any: ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+    category: monitoring
+    reason: "ships a deployable service ({match}) — uptime/APM monitoring fits"
+
+  # ---- security ------------------------------------------------------------
+  - kind: file
+    any: ["SECURITY.md", ".github/SECURITY.md"]
+    category: security
+    reason: "has a security policy — scanning and vulnerability programs fit"
+  - kind: dep
+    any: [express, django, flask, rails, laravel, fastapi, spring-boot]
+    category: security
+    reason: "is a web-facing codebase ({match}) — dependency/code scanning fits"
+
+  # ---- documentation ---------------------------------------------------------
+  - kind: file
+    any: ["mkdocs.yml", "mkdocs.yaml", "docs/conf.py", "docusaurus.config.js",
+          "docusaurus.config.ts", "book.toml", "antora.yml"]
+    companies: [read-the-docs, gitbook, mintlify]
+    reason: "maintains a docs site ({match}) — free docs hosting applies"
+  - kind: file
+    any: ["openapi.yaml", "openapi.yml", "openapi.json", "swagger.yaml", "swagger.json"]
+    companies: [bump-sh, stainless]
+    reason: "publishes an OpenAPI spec ({match}) — API docs/SDK generation applies"
+
+  # ---- localization ----------------------------------------------------------
+  - kind: file
+    any: ["crowdin.yml", "crowdin.yaml", ".tx/config", "weblate.yml", "l10n.toml"]
+    companies: [weblate, crowdin, transifex, tolgee, poeditor, localizely]
+    reason: "has translation tooling config ({match})"
+  - kind: dir
+    any: [locales, locale, i18n, translations, po]
+    companies: [weblate, crowdin, transifex, tolgee, poeditor, localizely]
+    reason: "has localization files ({match}/) — free translation management applies"
+  # (no README-text signal for translations: too many false positives —
+  #  e.g. "globs are translated to regexes")
+
+  # ---- cdn / hosting ---------------------------------------------------------
+  - kind: flag
+    any: [npm_published]
+    companies: [jsdelivr, statically]
+    reason: "publishes an npm library — served free via open source CDNs"
+  - kind: file
+    any: ["Dockerfile", "docker-compose.yml", "helm/Chart.yaml", "fly.toml"]
+    category: hosting
+    reason: "is self-hostable ({match}) — cloud credits / free infra applies"
+
+  # ---- ai-ml -----------------------------------------------------------------
+  - kind: dep
+    any: [openai, anthropic, langchain, transformers, llama-index, ollama]
+    category: ai-ml
+    reason: "integrates LLMs ({match}) — API credit programs apply"
+
+covered:
+  - category: testing
+    companies: [codecov, coveralls]
+    tool: Codecov
+    kind: file
+    any: ["codecov.yml", ".codecov.yml"]
+  - category: testing
+    companies: [codecov, coveralls]
+    tool: Coveralls
+    kind: file
+    any: [".coveralls.yml"]
+  - category: error-tracking
+    tool: Sentry
+    kind: dep
+    any: ["@sentry/node", "@sentry/browser", "@sentry/electron", sentry-sdk, sentry]
+  - category: other
+    companies: [weblate, crowdin, transifex, tolgee, poeditor, localizely]
+    tool: Crowdin
+    kind: file
+    any: ["crowdin.yml", "crowdin.yaml"]
+  - category: other
+    companies: [weblate, crowdin, transifex, tolgee, poeditor, localizely]
+    tool: Weblate
+    kind: file
+    any: ["weblate.yml"]
+  - category: documentation
+    tool: Read the Docs
+    kind: file
+    any: [".readthedocs.yml", ".readthedocs.yaml", "readthedocs.yml"]
+  - category: security
+    tool: Snyk
+    kind: workflow
+    regex: "snyk"
+  - companies: [appveyor]
+    tool: AppVeyor
+    kind: file
+    any: ["appveyor.yml", ".appveyor.yml"]
+  - companies: [circleci]
+    tool: CircleCI
+    kind: file
+    any: [".circleci/config.yml"]
+  - companies: [cirrus-labs]
+    tool: Cirrus CI
+    kind: file
+    any: [".cirrus.yml"]
