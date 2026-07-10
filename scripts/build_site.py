@@ -12,6 +12,7 @@ OFFERS_DIR = ROOT / "data" / "offers"
 OUT_DIR = ROOT / "_site"
 
 REPO_URL = "https://github.com/natwar86/foropensource"
+SITE_URL = "https://foropensource.com"
 
 
 def esc(value) -> str:
@@ -116,7 +117,6 @@ header p.sub { color: var(--muted); margin: 0 0 1.2rem; }
 .badge { font-size: 0.72rem; padding: 0.05rem 0.4rem; border-radius: 4px;
   vertical-align: middle; font-weight: 400; }
 .badge-stale { background: #f5e9c8; color: #7a5d00; }
-.badge-discontinued { background: #f3d6d6; color: #8a2525; }
 #count { color: var(--muted); font-size: 0.88rem; margin: 0 0 1rem; }
 footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem;
   border-top: 1px solid var(--line); padding-top: 1rem; }
@@ -158,7 +158,11 @@ def main() -> int:
     docs = []
     for path in sorted(OFFERS_DIR.glob("*.yaml")):
         doc = yaml.safe_load(path.read_text())
-        if doc:
+        if not doc:
+            continue
+        # Discontinued offers stay in the dataset but are not rendered.
+        doc["offers"] = [o for o in doc["offers"] if o.get("status") != "discontinued"]
+        if doc["offers"]:
             docs.append(doc)
     docs.sort(key=lambda d: d["company"].lower())
 
@@ -179,7 +183,24 @@ def main() -> int:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>foropensource — free products and services for open source</title>
-<meta name="description" content="{len(docs)} companies with verified free offers for open source projects and maintainers.">
+<meta name="description" content="{len(docs)} companies with verified free offers for open source projects and maintainers: CI, hosting, monitoring, security, testing, and more.">
+<link rel="canonical" href="{SITE_URL}/">
+<meta property="og:title" content="foropensource — free products and services for open source">
+<meta property="og:description" content="{len(docs)} companies with {n_offers} verified free offers for open source projects and maintainers.">
+<meta property="og:url" content="{SITE_URL}/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "foropensource offers dataset",
+  "description": "Verified free-for-open-source offers from {len(docs)} companies, as structured YAML.",
+  "url": "{SITE_URL}/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "distribution": [{{"@type": "DataDownload", "encodingFormat": "application/yaml",
+    "contentUrl": "{REPO_URL}/tree/main/data/offers"}}]
+}}</script>
 <style>{CSS}</style>
 </head>
 <body>
@@ -208,6 +229,15 @@ def main() -> int:
     OUT_DIR.mkdir(exist_ok=True)
     (OUT_DIR / "index.html").write_text(page)
     (OUT_DIR / "CNAME").write_text("foropensource.com\n")
+    (OUT_DIR / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n"
+    )
+    (OUT_DIR / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"  <url><loc>{SITE_URL}/</loc><lastmod>{last_verified}</lastmod></url>\n"
+        "</urlset>\n"
+    )
     print(f"Wrote _site/index.html: {len(docs)} companies, {n_offers} offers")
     return 0
 
