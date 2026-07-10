@@ -1,0 +1,22 @@
+company: Socket
+website: https://socket.dev
+categories: [security]
+offers:
+  - product: Socket supply chain security (free for open source)
+    offer_url: https://socket.dev/pricing
+    what_you_get: >-
+      Socket is "free to use for open-source" — the Free plan covers unlimited
+      developers and repos, 1,000 scans per month, detection of 70+ risk
+      types, and automatic blocking of malicious dependencies. Qualifying open
+      source organizations can additionally request a complimentary Team
+      account.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: >-
+      Install Socket on your open source repos using the Free plan; for a
+      complimentary Team account for open source work, contact Socket via
+      their contact form.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, FAQ states 'Socket is and will always be free to use for open-source' with complimentary Team accounts on request"

@@ -1,0 +1,20 @@
+company: Emerge Tools
+website: https://www.emergetools.com
+categories: [testing, monitoring]
+offers:
+  - product: Size Analysis (free for open source)
+    offer_url: https://www.emergetools.com/open-source
+    what_you_get: >-
+      Emerge's mobile app Size Analysis free for non-commercial open source
+      projects: automated size insights, size tracking on every pull
+      request, public shareable build links, dynamic README badges, and up
+      to 5 maintainer accounts.
+    eligibility:
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: project
+      notes: Valid only for non-commercial open source projects.
+    how_to_apply: Submit your repository via the Google Form linked on the open-source page to receive setup instructions.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: emergetools.com/open-source live, 'Size Analysis is free for non-commercial open source projects'"

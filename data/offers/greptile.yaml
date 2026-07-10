@@ -1,0 +1,21 @@
+company: Greptile
+website: https://www.greptile.com
+categories: [ai-ml, ide-tools]
+offers:
+  - product: Greptile AI Code Review (Open Source Program)
+    offer_url: https://www.greptile.com/open-source
+    what_you_get: >-
+      Greptile's codebase-aware AI code review on pull requests, free (100%
+      off) for qualifying open source projects.
+    eligibility:
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Non-commercial projects with MIT or Apache licenses are eligible,
+        per the program page.
+    how_to_apply: >-
+      Sign up via the open source program page (greptile.com/open-source);
+      no separate application form is published.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: open-source program page live, states 'Get Greptile free for your open source project', MIT/Apache non-commercial eligibility"

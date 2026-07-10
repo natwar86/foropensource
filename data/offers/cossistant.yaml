@@ -1,0 +1,23 @@
+company: Cossistant
+website: https://cossistant.com
+categories: [communication, other]
+offers:
+  - product: Cossistant Pro plan (OSS friends Program)
+    offer_url: https://cossistant.com/open-source-program
+    what_you_get: >-
+      Cossistant Pro plan (support/chat widget) free with included credits,
+      plus a dofollow listing on their featured projects page, a guest blog
+      post opportunity, and integration/customization help from the team.
+    eligibility:
+      active_development_required: true
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Requires a public GitHub repo with recent activity and 100+ stars;
+        project must not be profitable yet. In return, must keep Cossistant
+        branding in the widget and display a linked OSS badge in the README.
+    how_to_apply: Apply via the "Join the OSS friends Program" button on the page.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: cossistant.com/open-source-program live, states free Pro plan for 100+ star non-profitable OSS projects"

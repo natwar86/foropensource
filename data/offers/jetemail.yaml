@@ -1,0 +1,28 @@
+company: JetEmail
+website: https://jetemail.com
+categories: [email]
+offers:
+  - product: Pro plan (open source sponsorship program)
+    offer_url: https://jetemail.com/open-source
+    what_you_get: >-
+      Free Pro tier for qualifying open source projects: 50,000 transactional
+      emails per month via SMTP relay and HTTP API, unlimited verified
+      domains, premium IP pool, inbound routing/webhooks, and delivery
+      analytics; higher volume available on request.
+    eligibility:
+      osi_license_required: true
+      active_development_required: true
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Public repo on GitHub/GitLab/Codeberg or similar; maintainership
+        verified via a project-linked email address; for the project itself,
+        not commercial products.
+    how_to_apply: >-
+      Submit repository URL, license type, sending use case and estimated
+      monthly volume via the contact form on the offer page; review takes
+      about two business days.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: jetemail.com/open-source live; page states free Pro tier with 50k emails/month for OSI-licensed, actively developed projects"

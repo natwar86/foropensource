@@ -1,0 +1,21 @@
+company: Aikido Security
+website: https://www.aikido.dev
+categories: [security]
+offers:
+  - product: Aikido AppSec platform (free for open source)
+    offer_url: https://www.aikido.dev/code-quality/free-open-source-ai-code-review2
+    what_you_get: >-
+      Free-forever AI code reviews and security checks for open source
+      projects: AI code reviews with automated fix suggestions, PR security
+      reviews, open source dependency scanning, IDE plugins, integrations
+      (Jira, Linear, Drata, Vanta), reports and analytics, AI/bot protection,
+      and attack surface monitoring.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Eligibility checked case by case; email hovhannes@aikido.dev to
+        confirm your project qualifies. No credit card required.
+    how_to_apply: Sign in, create a workspace, then email hovhannes@aikido.dev for eligibility verification.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: offer page live, headline 'Free AI Code Reviews for Open Source Projects — Forever' with eligibility check via email"

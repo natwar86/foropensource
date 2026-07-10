@@ -1,0 +1,20 @@
+company: Keygen
+website: https://keygen.sh
+categories: [licensing-compliance, storage]
+offers:
+  - product: Free artifact distribution for open source projects
+    offer_url: https://keygen.sh/open-source/
+    what_you_get: >-
+      Free artifact distribution (software distribution and automatic
+      updates via Keygen Dist) for popular open source projects; the page
+      cites Tabby as an example project given free distribution and
+      auto-upgrades.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Project must be open source and "popular"; no further criteria
+        published, granted case-by-case.
+    how_to_apply: Contact Keygen by email (address on the open-source page); no formal application form.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: keygen.sh/open-source live, states free artifact distribution for popular open source projects"

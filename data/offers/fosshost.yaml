@@ -1,0 +1,19 @@
+company: Fosshost
+website: https://fosshost.org
+categories: [hosting]
+offers:
+  - product: Free VPS and web hosting for open source
+    offer_url: https://fosshost.org
+    what_you_get: >-
+      Historically provided free VPS, web hosting, mirror and AArch64
+      compute to ~250 open source projects (including GNOME, Armbian,
+      Debian and FSFE) at no charge. Service no longer exists.
+    eligibility:
+      applies_to: project
+      notes: Program is defunct; listed for historical reference only.
+    how_to_apply: >-
+      No longer possible; applications were suspended in September 2022 and
+      the service reached end of life in December 2022.
+    status: discontinued
+    last_verified: "2026-07-07"
+    verification_source: "manual: widely reported shutdown (BleepingComputer, Dec 2022) — volunteers announced end of life after CEO became unreachable and colocation bills could not be paid"

@@ -1,0 +1,24 @@
+company: GlobalSign
+website: https://www.globalsign.com
+categories: [security]
+offers:
+  - product: Free SSL certificates for open source projects
+    offer_url: https://www.globalsign.com/en/ssl/ssl-open-source/
+    what_you_get: >-
+      Free GlobalSign SSL certificates for qualifying open source projects,
+      helping users verify they are receiving unmodified authentic software
+      or source code.
+    eligibility:
+      osi_license_required: true
+      active_development_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Must pass GlobalSign vetting, achieve an "A" rating on GlobalSign's
+        SSL Checker, and accept the standard Subscriber Agreement.
+    how_to_apply: >-
+      Fill out the contact form on the offer page; GlobalSign's team contacts
+      you to discuss the project.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: offer page live, free SSL for OSI-licensed non-commercial projects passing vetting"

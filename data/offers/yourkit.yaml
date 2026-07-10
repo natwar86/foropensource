@@ -1,0 +1,23 @@
+company: YourKit
+website: https://www.yourkit.com
+categories: [ide-tools]
+offers:
+  - product: YourKit Java Profiler (open source license)
+    offer_url: https://www.yourkit.com/purchase/
+    what_you_get: >-
+      Free YourKit Java Profiler license for developers of the open source
+      project; one installed copy at a time per license key, for development
+      of that specific project only. YourKit asks for a reference link on the
+      project's web pages.
+    eligibility:
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Granted to developers of non-commercial open source projects with an
+        established and active community.
+    how_to_apply: >-
+      Email sales@yourkit.com with subject "YourKit Java Profiler Open Source
+      License Request".
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: yourkit.com/purchase live, free OSS license for non-commercial projects with active community"

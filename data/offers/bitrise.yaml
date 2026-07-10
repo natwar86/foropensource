@@ -1,0 +1,19 @@
+company: Bitrise
+website: https://www.bitrise.io/
+categories: [ci-cd]
+offers:
+  - product: Bitrise mobile CI/CD for open source
+    offer_url: https://bitrise.io/blog/post/free-developer-plan-features-for-open-source-projects-on-bitrise
+    what_you_get: >-
+      Free Developer Plan features for public open source projects: one
+      dedicated concurrency per project, build times up to 45 minutes,
+      unlimited builds, unlimited team members, public build pages/logs with
+      automatic secret filtering.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: App must be added as "public" with an https:// repo URL; benefits attach to the project automatically.
+    how_to_apply: Log in to Bitrise, "Add new app", choose the "public" option, and connect the repo via HTTPS URL.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: Bitrise blog offer page live, details free Developer Plan features for public OSS projects"

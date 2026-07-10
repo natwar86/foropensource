@@ -1,0 +1,21 @@
+company: Mailman 3
+website: https://mailman3.com
+categories: [email]
+offers:
+  - product: Hosted Mailman 3 mailing lists
+    offer_url: https://mailman3.com/
+    what_you_get: >-
+      Free hosting of GNU Mailman 3 mailing lists on the mailman3.com SaaS
+      for open source software projects ("We love open-source software and
+      provide free hosting for OSS mailing lists").
+    eligibility:
+      applies_to: project
+      notes: >-
+        Must be an open source software project; no further published
+        criteria — applications are reviewed per request.
+    how_to_apply: >-
+      Email hostmaster@mailman3.com with the project URL and approximate
+      monthly email volume.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: site live, states free hosting for OSS mailing lists, apply via hostmaster@mailman3.com"

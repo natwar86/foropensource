@@ -1,0 +1,17 @@
+company: StyleCI
+website: https://styleci.io/
+categories: [testing]
+offers:
+  - product: StyleCI code style review
+    offer_url: https://styleci.io/
+    what_you_get: >-
+      Free plan for public projects ("public PHP projects will always be free
+      with StyleCI"): unlimited public repositories, unlimited analyses, and
+      full fixing automation for PHP, JS, CSS, Vue.js, and Python code style.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: Sign up via "Get started" and connect a GitHub, GitLab, or Bitbucket account; no separate application.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: homepage live (2026 copyright), states public PHP projects will always be free"

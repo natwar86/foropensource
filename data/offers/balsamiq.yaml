@@ -1,0 +1,17 @@
+company: Balsamiq
+website: https://balsamiq.com
+categories: [design]
+offers:
+  - product: Balsamiq Wireframes (free licenses for open source)
+    offer_url: https://balsamiq.com/company/free/
+    what_you_get: >-
+      Historically, free Balsamiq Wireframes licenses granted to open source
+      projects (part of Balsamiq's long-running "free licenses for do-gooders"
+      program alongside nonprofits and classrooms). No longer offered.
+    eligibility:
+      applies_to: project
+      notes: Historical program; current eligibility no longer published.
+    how_to_apply: No longer possible; the former application page is gone.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: former free-licenses page returns 403/gone; current discounts page (balsamiq.com/support/sales/discounts/) lists only a 50% nonprofit discount and no open source program; givingback/opensource page covers only Balsamiq's own OSS contributions"

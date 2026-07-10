@@ -1,0 +1,26 @@
+company: Certum
+website: https://www.certum.eu
+categories: [security]
+offers:
+  - product: Open Source Code Signing certificate
+    offer_url: https://shop.certum.eu/open-source-code-signing.html
+    what_you_get: >-
+      NOT free — a heavily discounted code signing certificate product for
+      open source developers, priced "from EUR 69.00 gross" (far below
+      standard code signing certificates). The set bundles the certificate
+      with a cryptoCertum 3.7 IDPrime 940C mini cryptographic card and a
+      card reader (ACS ACR39T-A1 or Omnikey 6121, depending on
+      availability).
+    eligibility:
+      applies_to: maintainer
+      notes: >-
+        Aimed at programmers/developers who share their software free to
+        use or as an open source project; identity verification documents
+        required, but no formal OSS eligibility criteria are published on
+        the product page.
+    how_to_apply: >-
+      Purchase the set from the Certum shop page and complete Certum's
+      identity verification process (documents per their support pages).
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: shop page live, product 'Open Source Code Signing' from EUR 69 gross; discounted product, not a free program"

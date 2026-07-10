@@ -1,0 +1,21 @@
+company: Gradle Inc
+website: https://gradle.com
+categories: [ci-cd]
+offers:
+  - product: Develocity (sponsored OSS instances)
+    offer_url: https://develocity.ai/oss-sponsored-by-develocity/
+    what_you_get: >-
+      Free hosted Develocity instances for key open source projects, including
+      Build Scan, Build Cache, Failure Analytics, and Performance Insights for
+      build/test acceleration and observability. Sponsored recipients include
+      Spring, the Apache Software Foundation, Kotlin, Micronaut, Quarkus, and
+      JUnit.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Aimed at "key" established open source projects, mostly in the JVM
+        ecosystem; no published eligibility rubric.
+    how_to_apply: No public application form; contact Gradle/Develocity directly via their contact channels.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: program page live at develocity.ai/oss-sponsored-by-develocity (gradle.com URL 301s there), states free Develocity instances for key OSS projects"

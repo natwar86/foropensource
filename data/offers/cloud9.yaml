@@ -1,0 +1,17 @@
+company: Cloud9
+website: https://c9.io
+categories: [ide-tools]
+offers:
+  - product: Cloud9 IDE (free workspaces for open source)
+    offer_url: https://c9.io/
+    what_you_get: >-
+      Formerly offered free cloud development workspaces for open source
+      projects on c9.io. After the AWS acquisition, c9.io now redirects to
+      AWS Cloud9, a paid AWS service with no open source offer.
+    eligibility:
+      applies_to: project
+      notes: Historical only; the original c9.io service no longer exists.
+    how_to_apply: Not possible; c9.io redirects to AWS Cloud9, which has no OSS program.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: c9.io 302-redirects to aws.amazon.com/cloud9, which mentions no free open source offer"

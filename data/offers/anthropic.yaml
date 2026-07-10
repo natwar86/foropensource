@@ -1,0 +1,27 @@
+company: Anthropic
+website: https://claude.com
+categories: [ai-ml]
+offers:
+  - product: Claude for Open Source (Claude Max 20x)
+    offer_url: https://claude.com/contact-sales/claude-for-oss
+    what_you_get: >-
+      6 months of free Claude Max 20x subscription for eligible open source
+      maintainers and core contributors; program accepts up to 10,000
+      contributors.
+    eligibility:
+      public_repo_required: true
+      active_development_required: true
+      applies_to: maintainer
+      notes: >-
+        Primary maintainer or core team member of a public repository with
+        5,000+ GitHub stars or 1M+ monthly NPM downloads, with commits,
+        releases, or PR reviews within the last 3 months. Maintainers of
+        smaller but ecosystem-critical projects are invited to apply and
+        explain their project.
+    how_to_apply: >-
+      Application form on the program page; reviewed on a rolling basis,
+      approved applicants get an activation link for Claude Max.
+    renewal: Subscription period is 6 months.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: claude.com/contact-sales/claude-for-oss live, states 6 months free Claude Max 20x with star/download thresholds"

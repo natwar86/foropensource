@@ -1,0 +1,17 @@
+company: Screenshotbot
+website: https://screenshotbot.io
+categories: [testing]
+offers:
+  - product: Screenshotbot hosted screenshot testing (free for open source)
+    offer_url: https://screenshotbot.io/pricing
+    what_you_get: >-
+      Free access to Screenshotbot's hosted screenshot/visual regression
+      testing service for open source projects (the product is also open
+      source and self-hostable).
+    eligibility:
+      applies_to: project
+      notes: Stated in pricing FAQ as "Open source projects get free access"; no further criteria published.
+    how_to_apply: Email support@screenshotbot.io to request free open source access.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: pricing page FAQ live, states open source projects get free access via support email"

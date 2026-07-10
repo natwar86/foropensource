@@ -1,0 +1,27 @@
+company: Discourse
+website: https://www.discourse.org
+categories: [communication]
+offers:
+  - product: Discourse hosted forum (probono plan for open source)
+    offer_url: https://free.discourse.group/
+    what_you_get: >-
+      Free managed Discourse forum hosting on the probono plan: unlimited
+      members and chat, unlimited public and private categories, unlimited
+      tags, custom groups, email support, custom and community themes, custom
+      domain, API and webhook access, and 5 staff seats. Hosted on a
+      .discourse.group subdomain unless approved for a custom domain.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Aimed at popular open source projects; application form asks for
+        project/repository link and contributor count (10+/100+/1000+/10000+).
+        Detailed criteria in the "Free Hosting for Open Source v2" blog post.
+    how_to_apply: >-
+      Application form on the offer page (email, community name, project link,
+      description, contributor count, desired URL); agree to Discourse
+      Self-Serve Hosting Terms.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: >-
+      manual: free.discourse.group redirects to discourse.org/free, page live,
+      describes free probono hosting plan for open source projects.

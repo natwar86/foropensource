@@ -1,0 +1,25 @@
+company: Convex
+website: https://www.convex.dev
+categories: [database, hosting]
+offers:
+  - product: Convex Open Source Program (free Convex Pro)
+    offer_url: https://www.convex.dev/open-source-program
+    what_you_get: >-
+      Free Convex Pro for one team with the built-in monthly Pro resource
+      limits, plus swag (stickers, shirts, gear) and direct access to the
+      Convex team and developer community.
+    eligibility:
+      active_development_required: true
+      applies_to: project
+      notes: >-
+        Project must be actively maintained and fully open source, be built
+        with Convex or planning to integrate it, and support the developer
+        ecosystem (tools, libraries, or resources). Funded companies and
+        startups are directed to the separate Convex for Startups program.
+        Linking back to Convex is encouraged but not required.
+    how_to_apply: >-
+      Apply at convex.dev/open-source-program/apply; applications reviewed
+      on a rolling basis with a response within 60 days.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: program page live, states free Convex Pro for one team for actively maintained fully open source projects"

@@ -1,0 +1,20 @@
+company: Go Report Card
+website: https://goreportcard.com/
+categories: [testing]
+offers:
+  - product: Go Report Card code quality reports
+    offer_url: https://goreportcard.com/
+    what_you_get: >-
+      Formerly free code quality grades (A+ to F) for public Go repositories,
+      with badges for READMEs. The hosted service has been sunset; the code is
+      still available on GitHub for self-hosting.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: >-
+      No longer possible; the hosted service is shut down. Self-host from the
+      GitHub repo or use golangci-lint, the alternative recommended by the
+      maintainers.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: goreportcard.com now shows a sunset notice — 'After more than a decade of serving the ecosystem, Go Report Card has been sunset'"

@@ -1,0 +1,20 @@
+company: Weblate
+website: https://weblate.org
+categories: [other]
+offers:
+  - product: Hosted Weblate (Libre plan)
+    offer_url: https://weblate.org/hosting/
+    what_you_get: >-
+      Free (gratis) Libre plan on hosted.weblate.org with the same limits as
+      the 160k plan: 160,000 hosted strings, unlimited translation projects,
+      components, and translators, with continuous localization features.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Must be a public libre (free/open source licensed) project.
+    how_to_apply: >-
+      Set the project up on hosted.weblate.org/hosting/ and request the Libre
+      plan; no formal application form beyond project setup.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: hosting page live, Libre plan gratis for libre projects with 160k-plan limits"

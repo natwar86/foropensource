@@ -1,0 +1,26 @@
+company: Cloudsmith
+website: https://cloudsmith.com
+categories: [storage, other]
+offers:
+  - product: Cloudsmith open source repository hosting
+    offer_url: https://docs.cloudsmith.com/resources/open-source-hosting-policy
+    what_you_get: >-
+      At least 50 GB of artifact storage plus 200 GB/month of package
+      delivery free across open source repositories (28+ package formats,
+      global CDN edge distribution), including Pro-plan features such as
+      geo/IP restrictions, access logs, and statistics. Exceptional projects
+      can negotiate larger sponsored quotas.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Primary project must be free and open source; applicant must be a
+        maintainer with significant control; no minor forks; artifacts served
+        must be for the project itself (not dependencies only); visible
+        attribution to Cloudsmith required; commercial entities should use
+        paid plans.
+    how_to_apply: >-
+      No advance approval needed: create an open source repository and follow
+      the policy; Cloudsmith may verify eligibility later.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: docs.cloudsmith.com open-source-hosting-policy live, states 50GB storage + 200GB/mo delivery free for qualifying OSS"

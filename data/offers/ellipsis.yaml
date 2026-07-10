@@ -1,0 +1,20 @@
+company: Ellipsis
+website: https://www.ellipsis.dev
+categories: [ai-ml, ide-tools]
+offers:
+  - product: Ellipsis AI code review (free for public repos)
+    offer_url: https://www.ellipsis.dev/pricing
+    what_you_get: >-
+      Ellipsis automated AI code review on GitHub pull requests, completely
+      free for public GitHub repositories with no stated usage limits
+      (private repos instead get a $10/month free usage tier then
+      usage-based billing).
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: >-
+      No application; install the Ellipsis GitHub app - free access is
+      granted automatically based on the repository being public.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: pricing page live, states public GitHub repositories are free"

@@ -1,0 +1,19 @@
+company: Testspace
+website: https://testspace.com/
+categories: [testing]
+offers:
+  - product: Testspace test results dashboard (Open plan)
+    offer_url: https://github.com/marketplace/testspace-com
+    what_you_get: >-
+      "Open" plan at $0 on the GitHub Marketplace: Testspace test management
+      and results dashboard software for open source accounts.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Plan is designated for open source accounts; detailed criteria not published.
+    how_to_apply: >-
+      Install the Testspace app from the GitHub Marketplace and select the
+      free Open plan for your open source account.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: GitHub Marketplace listing live and verified, 'Open' plan at $0 for open source accounts (~1,094 installs)"

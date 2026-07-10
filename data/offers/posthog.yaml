@@ -1,0 +1,19 @@
+company: PostHog
+website: https://posthog.com
+categories: [analytics]
+offers:
+  - product: PostHog for Startups credits (open source track)
+    offer_url: https://posthog.com/handbook/marketing/startups
+    what_you_get: >-
+      $50,000 in PostHog credits (product analytics, session replay, feature
+      flags, etc.) via the PostHog for Startups program; qualifying open
+      source projects can additionally have the standard 12-month credit
+      expiry waived, effectively making the credits non-expiring.
+    eligibility:
+      non_commercial_only: true
+      applies_to: project
+      notes: Open source project without corporate backing and with less than $200k annual revenue.
+    how_to_apply: Sign up for PostHog Cloud, apply via the PostHog for Startups program (posthog.com/startups), then contact support to have the 12-month credit expiry waived.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: PostHog handbook page live, states small OSS projects without corporate backing and <$200k annual revenue can have the 12-month credit expiry waived"

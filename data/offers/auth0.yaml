@@ -1,0 +1,19 @@
+company: Auth0
+website: https://auth0.com
+categories: [auth]
+offers:
+  - product: Auth0 for Open Source (free higher-tier plan)
+    offer_url: https://auth0.com/open-source
+    what_you_get: >-
+      Formerly a free Auth0 subscription for qualifying open source projects.
+      The dedicated program page no longer exists; only the generic free tier
+      (25,000 MAUs for everyone) remains, which is not OSS-specific.
+    eligibility:
+      applies_to: project
+      notes: Historical only; the dedicated OSS program page is gone.
+    how_to_apply: >-
+      No longer possible; auth0.com/open-source returns 404 and
+      auth0.com/opensource only showcases Auth0's own SDKs.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: auth0.com/open-source returns HTTP 404; auth0.com/opensource is about Auth0's own OSS SDKs, no OSS offer found"

@@ -1,0 +1,20 @@
+company: Read the Docs
+website: https://about.readthedocs.com
+categories: [documentation]
+offers:
+  - product: Read the Docs Community documentation hosting
+    offer_url: https://about.readthedocs.com/pricing/
+    what_you_get: >-
+      Free, ad-supported documentation hosting for open source projects on
+      Read the Docs Community: public repository cloning, public docs
+      hosting, automatic builds, versioning, search, pull request previews,
+      and CDN hosting. "Open source documentation is always free on Read the
+      Docs Community."
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: For free and open-source projects; hosted docs are public and ad-supported.
+    how_to_apply: Self-serve — sign up for the Community tier via the "Sign up for open source" link on the pricing page.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, Community plan 'For free and open-source projects', free forever with ad-supported hosting"

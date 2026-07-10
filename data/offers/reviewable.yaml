@@ -1,0 +1,18 @@
+company: Reviewable
+website: https://reviewable.io/
+categories: [testing]
+offers:
+  - product: Reviewable code review
+    offer_url: https://www.reviewable.io/pricing/
+    what_you_get: >-
+      All features free for public repositories, forever: full GitHub code
+      review workflows (multi-round reviews, tracked discussions, review
+      state). Free plan also covers repos attached to an individual user
+      account; private organization repos start at $39/month for ten users.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: Sign in with GitHub on reviewable.io and start reviewing a public repo; no separate application.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page/blog state all features for public repos free of charge, free forever for community projects"

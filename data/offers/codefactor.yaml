@@ -1,0 +1,17 @@
+company: CodeFactor
+website: https://www.codefactor.io/
+categories: [testing]
+offers:
+  - product: CodeFactor Community plan
+    offer_url: https://www.codefactor.io/pricing
+    what_you_get: >-
+      Free Community plan ($0/month) with unlimited public repositories and
+      unlimited users for automated code quality / static analysis; private
+      repositories are not included (0 private repos on the free plan).
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: Sign up on codefactor.io and connect your public repositories; no separate application.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, Community plan $0 with unlimited public repos, 0 private repos"

@@ -1,0 +1,19 @@
+company: lgtm
+website: https://lgtm.com/
+categories: [security]
+offers:
+  - product: LGTM.com automated code analysis
+    offer_url: https://lgtm.com/
+    what_you_get: >-
+      Formerly offered free continuous security/code analysis (CodeQL-based)
+      for open source projects. LGTM.com was shut down in December 2022 after
+      GitHub acquired Semmle; its functionality moved into GitHub code
+      scanning with CodeQL, which remains free for public repositories on
+      GitHub.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: No longer possible; use GitHub code scanning (CodeQL) on public GitHub repositories instead.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: lgtm.com 301-redirects to GitHub blog post 'The next step for LGTM.com: GitHub code scanning' announcing the shutdown"

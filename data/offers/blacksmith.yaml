@@ -1,0 +1,22 @@
+company: Blacksmith
+website: https://www.blacksmith.sh
+categories: [ci-cd]
+offers:
+  - product: Blacksmith GitHub Actions runners (OSS program)
+    offer_url: https://www.blacksmith.sh/pricing
+    what_you_get: >-
+      Free use of Blacksmith's high-performance GitHub Actions runners and
+      CI services for qualifying open source projects (program currently
+      supports projects such as Celery, Ladybird, Zen and Limbo).
+    eligibility:
+      active_development_required: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Requires an actively maintained public repo, a permissive OSS
+        license, and clear community usage; applications reviewed
+        individually.
+    how_to_apply: Submit the OSS program application form on the Blacksmith pricing page.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: pricing page live with OSS program section listing eligibility (actively maintained public repo, permissive license, community usage) and application form"

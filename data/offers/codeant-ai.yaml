@@ -1,0 +1,20 @@
+company: CodeAnt AI
+website: https://www.codeant.ai
+categories: [ai-ml, security]
+offers:
+  - product: CodeAnt AI code review and security platform (100% off for open source)
+    offer_url: https://www.codeant.ai/pricing
+    what_you_get: >-
+      CodeAnt AI's AI code review, SAST security scanning, and code quality
+      platform at 100% off (free) for open source projects.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Pricing page states "100% OFF FOR OPEN SOURCE" but publishes no
+        detailed eligibility criteria; granted case-by-case via email.
+    how_to_apply: >-
+      Email amartya@codeant.ai with subject "Open Source Work" (link on the
+      pricing page).
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: pricing page live, banner '100% OFF FOR OPEN SOURCE' with contact email"

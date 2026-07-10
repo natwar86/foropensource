@@ -1,0 +1,20 @@
+company: Codecov
+website: https://codecov.io/
+categories: [testing]
+offers:
+  - product: Codecov (code coverage for open source)
+    offer_url: https://about.codecov.io/for/open-source/
+    what_you_get: >-
+      Free code coverage analysis for open source projects, including coverage
+      reporting, PR comments with coverage information delivered directly on
+      pull requests, and status checks to block pull requests that fail to
+      meet coverage targets. Page states Codecov "will always be free for
+      open source projects."
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Works with GitHub, GitLab, Bitbucket, and Sentry accounts; an org admin must approve the org.
+    how_to_apply: Sign up free at codecov.io/login/ by connecting a GitHub/GitLab/Bitbucket account; no separate application.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: dedicated open-source page live, states Codecov will always be free for open source projects"

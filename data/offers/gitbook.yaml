@@ -1,0 +1,20 @@
+company: GitBook
+website: https://www.gitbook.com
+categories: [documentation]
+offers:
+  - product: Sponsored site plan (open source docs)
+    offer_url: https://www.gitbook.com/solutions/open-source
+    what_you_get: >-
+      Free branded documentation site for open source projects on the
+      "Sponsored site" plan: custom domain, logo, theme and fonts, scaled
+      docs with sections and groups, AI Assistant, advanced site insights,
+      private share links, and search indexing control. Sites can optionally
+      run ethical ads to fund the project; GitBook takes none of the ad
+      revenue.
+    eligibility:
+      applies_to: project
+      notes: Plan is described as designed for open source users; no further criteria stated on the page.
+    how_to_apply: Contact GitBook support via the button next to the Sponsored plan on the offer page.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: offer page live, describes free Sponsored site plan 'designed for open source users to create branded docs sites'"

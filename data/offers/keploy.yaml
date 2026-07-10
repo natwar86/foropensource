@@ -1,0 +1,28 @@
+company: Keploy
+website: https://keploy.io/
+categories: [testing]
+offers:
+  - product: Keploy OSS Sponsorship (AI test generation)
+    offer_url: https://keploy.io/oss-sponsorship
+    what_you_get: >-
+      Free AI-powered test generation for sponsored open source projects:
+      automated tests from API traffic and code changes, API schema coverage
+      analysis, PR-ready test suggestions, CI credits monthly, and placement
+      in Keploy's OSS showcase. Tiers: Spark (5 seats, ~$9.5K/yr value), Orbit
+      (10 seats, ~$19K), Constellation (20 seats, ~$38K).
+    eligibility:
+      osi_license_required: true
+      active_development_required: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Must be willing to enable AI-generated tests on public PRs and agree
+        to be featured in Keploy's OSS showcase; application-based, acceptance
+        not guaranteed.
+    how_to_apply: >-
+      Submit project details via the application form on the OSS sponsorship
+      page; applications reviewed on a rolling basis, selected projects are
+      tier-matched during onboarding.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: keploy.io/oss-sponsorship live with active application form and tiered sponsorship details"

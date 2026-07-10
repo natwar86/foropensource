@@ -1,0 +1,22 @@
+company: Mintlify
+website: https://www.mintlify.com
+categories: [documentation]
+offers:
+  - product: Mintlify Pro (OSS Program)
+    offer_url: https://www.mintlify.com/oss-program
+    what_you_get: >-
+      Mintlify Pro plan free forever for qualifying open source projects:
+      hosted docs with custom domain and branding, advanced analytics, and
+      interactive API playground with live testing (Pro normally $250/month).
+    eligibility:
+      osi_license_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Project must use a recognized OSS license (MIT, Apache 2.0, GPL,
+        etc.), must not be venture-backed or revenue-funded, and must not be
+        owned or primarily maintained by a for-profit company.
+    how_to_apply: Application form (Typeform) linked from the OSS program page.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: mintlify.com/oss-program live, states 'Pro free forever' for non-commercial OSS-licensed projects"

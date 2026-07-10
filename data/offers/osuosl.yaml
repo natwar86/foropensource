@@ -1,0 +1,37 @@
+company: Oregon State University Open Source Lab (OSUOSL)
+website: https://osuosl.org
+categories: [hosting]
+offers:
+  - product: Open source project hosting
+    offer_url: https://osuosl.org/services/hosting/
+    what_you_get: >-
+      Free managed and unmanaged hosting for open source projects (full
+      server, partial server, or colocation of project-owned hardware),
+      run by the lab that hosts the Linux kernel, Apache Software
+      Foundation, Drupal and 150+ other open source communities.
+    eligibility:
+      osi_license_required: true
+      applies_to: project
+      notes: >-
+        Project must follow an open development model and be freely
+        available under an OSI-approved license; see OSUOSL Hosting Policy.
+    how_to_apply: >-
+      Fill out the Hosting Request form on osuosl.org; the lab responds
+      within a few days.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: osuosl.org/services/hosting/ live; states managed/unmanaged hosting for projects under OSI-approved licenses with open development model"
+  - product: AArch64 and OpenPOWER development hosting
+    offer_url: https://osuosl.org/services/
+    what_you_get: >-
+      Free access to ARM (AArch64) and POWER (PowerLinux/OpenPOWER) servers
+      for functional development and CI/testing of open source software on
+      those architectures (not for performance testing).
+    eligibility:
+      osi_license_required: true
+      applies_to: project
+      notes: Systems intended for functional development and testing only.
+    how_to_apply: Request via the hosting request process on osuosl.org.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: osuosl.org/services/ live; lists AARCH64 and PowerLinux/OpenPOWER development hosting for open source communities"

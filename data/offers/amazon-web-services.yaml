@@ -1,0 +1,29 @@
+company: Amazon Web Services
+website: https://aws.amazon.com
+categories: [hosting]
+offers:
+  - product: AWS Cloud Credits for Open Source
+    offer_url: https://aws.amazon.com/blogs/opensource/aws-promotional-credits-open-source-projects/
+    what_you_get: >-
+      AWS promotional credits (valid one year) for open source projects,
+      typically used for upstream and performance testing, CI/CD, and storage
+      of artifacts on AWS; usable on compute, storage, database, and developer
+      tooling services. Over 200 projects funded since the 2019 launch.
+    eligibility:
+      osi_license_required: true
+      applies_to: project
+      notes: >-
+        Requires an active AWS account with valid payment method and no
+        outstanding invoices. Preference for projects with maintainers from
+        multiple entities or owned by foundations/non-profits; projects
+        dominated by a single vendor or VC-funded are generally not eligible.
+        Non-OSI-licensed projects in relevant domains encouraged to apply.
+    how_to_apply: >-
+      Complete the AWS Open Source Credits application form and email it to
+      awsopensourcecredits@amazon.com; applications reviewed monthly.
+    renewal: Credits expire after one year; re-application needed for continued support.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: >-
+      manual: 2019 announcement page live; AWS "affirming our commitment" blog
+      post confirms Cloud Credits for Open Source still accepting applications.

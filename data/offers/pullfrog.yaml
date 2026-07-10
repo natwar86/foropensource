@@ -1,0 +1,18 @@
+company: Pullfrog
+website: https://pullfrog.com
+categories: [ai-ml, ide-tools]
+offers:
+  - product: Pullfrog for OSS (model costs covered)
+    offer_url: https://pullfrog.com/for-oss
+    what_you_get: >-
+      Pullfrog covers AI model costs for qualifying open source projects,
+      providing unlimited Kimi K2 usage at no cost for its GitHub coding
+      agent.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Repository must have over 1,000 GitHub stars.
+    how_to_apply: Apply via the link on the page, or contact support@pullfrog.com.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: pullfrog.com/for-oss live, states unlimited Kimi K2 usage for repos with 1,000+ stars"

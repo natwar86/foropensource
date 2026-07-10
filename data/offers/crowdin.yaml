@@ -1,0 +1,28 @@
+company: Crowdin
+website: https://crowdin.com
+categories: [other]
+offers:
+  - product: Crowdin (Open Source plan)
+    offer_url: https://crowdin.com/page/open-source-project-setup-request
+    what_you_get: >-
+      Crowdin localization management platform "completely free of charge for
+      open-source projects", including access to beta features, the Global
+      Translation Memory, and Neural Machine Translator access.
+    eligibility:
+      osi_license_required: true
+      min_project_age_months: 3
+      active_development_required: true
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Must be the project lead; project needs an active collaborator
+        community, regularly updated website news, and regular releases.
+        Applicants agree to join the beta group and contribute translations
+        to the shared translation memory.
+    how_to_apply: >-
+      Create a translation project in Crowdin, then submit the request form
+      on the offer page (project name, license, website, description).
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: offer page live, states Crowdin is completely free for open-source projects meeting listed criteria"

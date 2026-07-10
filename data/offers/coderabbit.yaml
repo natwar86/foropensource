@@ -1,0 +1,19 @@
+company: CodeRabbit
+website: https://coderabbit.ai
+categories: [ai-ml]
+offers:
+  - product: CodeRabbit AI code review (Open Source plan)
+    offer_url: https://www.coderabbit.ai/pricing
+    what_you_get: >-
+      Free AI code reviews forever for public repositories (rate-limited Pro
+      features), including PR summarization and reviews in IDE/CLI, with no
+      additional setup required.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: >-
+      Sign up for CodeRabbit with GitHub or GitLab and install it on a public
+      repository; the free open source plan applies automatically.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, states 'free reviews forever for public repositories'"

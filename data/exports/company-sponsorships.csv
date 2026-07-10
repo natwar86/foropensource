@@ -1,0 +1,352 @@
+company,company_github_org,platform,target_type,target,target_name,target_url,oc_total_donated_usd,matched_catalogue_project,matched_repo_url,matched_tier
+1Password,1Password,github_sponsors,User,tarcieri,Tony Arcieri,https://github.com/tarcieri,,cool.io,https://github.com/tarcieri/cool.io,B
+1Password,1Password,github_sponsors,User,BurntSushi,Andrew Gallant,https://github.com/BurntSushi,,ripgrep,https://github.com/burntsushi/ripgrep,A
+1Password,1Password,github_sponsors,User,GuillaumeGomez,Guillaume Gomez,https://github.com/GuillaumeGomez,,sysinfo,https://github.com/guillaumegomez/sysinfo,B
+1Password,1Password,github_sponsors,Organization,tokio-rs,Tokio,https://github.com/tokio-rs,,tokio,https://github.com/tokio-rs/tokio,A
+1Password,1Password,github_sponsors,Organization,rust-analyzer,rust-analyzer,https://github.com/rust-analyzer,,rowan,https://github.com/rust-analyzer/rowan,B
+Amazon Web Services,aws,github_sponsors,User,cperciva,Colin Percival,https://github.com/cperciva,,,,
+Azure Pipelines,microsoft,github_sponsors,Organization,wixtoolset,WiX Toolset,https://github.com/wixtoolset,,wix,https://github.com/wixtoolset/wix,B
+CDN77,cdn77,github_sponsors,User,ondrejmirtes,Ondřej Mirtes,https://github.com/ondrejmirtes,,,,
+Chromatic,chromaui,github_sponsors,User,budtmo,Budi Utomo,https://github.com/budtmo,,docker-android,https://github.com/budtmo/docker-android,B
+Chromatic,chromaui,github_sponsors,Organization,mswjs,Mock Service Worker,https://github.com/mswjs,,msw,https://github.com/mswjs/msw,B
+Chromatic,chromaui,github_sponsors,Organization,openwebdocs,Open Web Docs,https://github.com/openwebdocs,,,,
+Chromatic,chromaui,github_sponsors,Organization,vitest-dev,Vitest,https://github.com/vitest-dev,,vitest,https://github.com/vitest-dev/vitest,A
+Cirrus Labs,cirruslabs,github_sponsors,User,devMEremenko,Maksym Yeromenko,https://github.com/devMEremenko,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,yusukebe,Yusuke Wada,https://github.com/yusukebe,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,shaal,Ofer Shaal,https://github.com/shaal,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,usualoma,Taku Amano,https://github.com/usualoma,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,avelino,Avelino,https://github.com/avelino,,awesome-go,https://github.com/avelino/awesome-go,B
+CodeRabbit,coderabbitai,github_sponsors,User,foosel,Gina Häußge,https://github.com/foosel,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,sindresorhus,Sindre Sorhus,https://github.com/sindresorhus,,awesome-electron,https://github.com/sindresorhus/awesome-electron,B
+CodeRabbit,coderabbitai,github_sponsors,User,frenck,Franck Nijhof,https://github.com/frenck,,python-wled,https://github.com/frenck/python-wled,B
+CodeRabbit,coderabbitai,github_sponsors,User,jdx,,https://github.com/jdx,,mise,https://github.com/jdx/mise,B
+CodeRabbit,coderabbitai,github_sponsors,User,gnachman,George Nachman,https://github.com/gnachman,,iTerm2,https://github.com/gnachman/iterm2,B
+CodeRabbit,coderabbitai,github_sponsors,User,webpro,Lars Kappert,https://github.com/webpro,,reveal-md,https://github.com/webpro/reveal-md,B
+CodeRabbit,coderabbitai,github_sponsors,User,BurntSushi,Andrew Gallant,https://github.com/BurntSushi,,ripgrep,https://github.com/burntsushi/ripgrep,A
+CodeRabbit,coderabbitai,github_sponsors,Organization,Warzone2100,The Warzone 2100 Project,https://github.com/Warzone2100,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,yyx990803,Evan You,https://github.com/yyx990803,,launch-editor,https://github.com/yyx990803/launch-editor,A
+CodeRabbit,coderabbitai,github_sponsors,User,lambdalisue,Λlisue,https://github.com/lambdalisue,,rs-metrics-process,https://github.com/lambdalisue/rs-metrics-process,B
+CodeRabbit,coderabbitai,github_sponsors,User,patak-cat,patak,https://github.com/patak-cat,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,posva,Eduardo San Martin Morote,https://github.com/posva,,pinia,https://github.com/posva/pinia,B
+CodeRabbit,coderabbitai,github_sponsors,User,lukevella,Luke Vella,https://github.com/lukevella,,rallly,https://github.com/lukevella/rallly,B
+CodeRabbit,coderabbitai,github_sponsors,User,slorber,Sébastien Lorber,https://github.com/slorber,,react-async-hook,https://github.com/slorber/react-async-hook,B
+CodeRabbit,coderabbitai,github_sponsors,User,PatrickJS,PatrickJS,https://github.com/PatrickJS,,angular-hmr,https://github.com/patrickjs/angular-hmr,B
+CodeRabbit,coderabbitai,github_sponsors,User,vinhnx,Vinh Nguyen,https://github.com/vinhnx,,vtcode,https://github.com/vinhnx/vtcode,B
+CodeRabbit,coderabbitai,github_sponsors,User,franky47,François Best,https://github.com/franky47,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,tiangolo,Sebastián Ramírez,https://github.com/tiangolo,,fastapi,https://github.com/tiangolo/fastapi,B
+CodeRabbit,coderabbitai,github_sponsors,User,balloob,Paulus Schoutsen,https://github.com/balloob,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,ryoppippi,ryoppippi,https://github.com/ryoppippi,,ccusage,https://github.com/ryoppippi/ccusage,B
+CodeRabbit,coderabbitai,github_sponsors,User,DavidAnson,David Anson,https://github.com/DavidAnson,,markdownlint,https://github.com/davidanson/markdownlint,B
+CodeRabbit,coderabbitai,github_sponsors,User,leaanthony,Lea Anthony,https://github.com/leaanthony,,clir,https://github.com/leaanthony/clir,B
+CodeRabbit,coderabbitai,github_sponsors,User,JanDeDobbeleer,Jan De Dobbeleer,https://github.com/JanDeDobbeleer,,oh-my-posh,https://github.com/jandedobbeleer/oh-my-posh,B
+CodeRabbit,coderabbitai,github_sponsors,User,HerringtonDarkholme,Herrington Darkholme,https://github.com/HerringtonDarkholme,,typescript-repl,https://github.com/herringtondarkholme/typescript-repl,B
+CodeRabbit,coderabbitai,github_sponsors,User,estruyf,Elio Struyf,https://github.com/estruyf,,vscode-front-matter,https://github.com/estruyf/vscode-front-matter,B
+CodeRabbit,coderabbitai,github_sponsors,User,colinhacks,Colin McDonnell,https://github.com/colinhacks,,zod,https://github.com/colinhacks/zod,A
+CodeRabbit,coderabbitai,github_sponsors,User,agavra,Almog Gavra,https://github.com/agavra,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,dannyhw,Daniel Williams,https://github.com/dannyhw,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,bautistaaa,,https://github.com/bautistaaa,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,jdalrymple,Justin Dalrymple,https://github.com/jdalrymple,,gitbeaker,https://github.com/jdalrymple/gitbeaker,B
+CodeRabbit,coderabbitai,github_sponsors,User,utkarshdalal,Utkarsh Dalal,https://github.com/utkarshdalal,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,haydenbleasel,Hayden Bleasel,https://github.com/haydenbleasel,,ultracite,https://github.com/haydenbleasel/ultracite,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,nvaccess,NV Access,https://github.com/nvaccess,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,erikras,Erik Rasmussen,https://github.com/erikras,,redux-form,https://github.com/erikras/redux-form,B
+CodeRabbit,coderabbitai,github_sponsors,User,yamadashy,Kazuki Yamada,https://github.com/yamadashy,,repomix,https://github.com/yamadashy/repomix,B
+CodeRabbit,coderabbitai,github_sponsors,User,ixartz,Remi Wg,https://github.com/ixartz,,Next-js-Boilerplate,https://github.com/ixartz/next-js-boilerplate,B
+CodeRabbit,coderabbitai,github_sponsors,User,nunomaduro,nuno maduro,https://github.com/nunomaduro,,phpinsights,https://github.com/nunomaduro/phpinsights,B
+CodeRabbit,coderabbitai,github_sponsors,User,stijnvanhulle,Stijn Van Hulle,https://github.com/stijnvanhulle,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,eslint,ESLint,https://github.com/eslint,,eslint,https://github.com/eslint/eslint,A
+CodeRabbit,coderabbitai,github_sponsors,Organization,jsdelivr,jsDelivr,https://github.com/jsdelivr,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,neovim,Neovim,https://github.com/neovim,,neovim,https://github.com/neovim/neovim,B
+CodeRabbit,coderabbitai,github_sponsors,User,RezaSi,RezaSi,https://github.com/RezaSi,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,t3dotgg,Theo Browne,https://github.com/t3dotgg,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,xyflow,xyflow,https://github.com/xyflow,,xyflow,https://github.com/xyflow/xyflow,B
+CodeRabbit,coderabbitai,github_sponsors,User,Andarist,Mateusz Burzyński,https://github.com/Andarist,,react-textarea-autosize,https://github.com/andarist/react-textarea-autosize,A
+CodeRabbit,coderabbitai,github_sponsors,User,Raphire,Jeffrey,https://github.com/Raphire,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,ahujasid,,https://github.com/ahujasid,,ableton-mcp,https://github.com/ahujasid/ableton-mcp,B
+CodeRabbit,coderabbitai,github_sponsors,User,santoshyadavdev,Santosh Yadav,https://github.com/santoshyadavdev,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,testcontainers,Testcontainers,https://github.com/testcontainers,,testcontainers-java,https://github.com/testcontainers/testcontainers-java,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,shakacode,ShakaCode,https://github.com/shakacode,,react_on_rails,https://github.com/shakacode/react_on_rails,B
+CodeRabbit,coderabbitai,github_sponsors,User,zricethezav,Zachary Rice,https://github.com/zricethezav,,gitleaks,https://github.com/zricethezav/gitleaks,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,curl,curl,https://github.com/curl,,curl,https://github.com/curl/curl,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,pnpm,pnpm,https://github.com/pnpm,,pnpm,https://github.com/pnpm/pnpm,A
+CodeRabbit,coderabbitai,github_sponsors,User,skydoves,Jaewoong Eum,https://github.com/skydoves,,Balloon,https://github.com/skydoves/balloon,B
+CodeRabbit,coderabbitai,github_sponsors,User,KMKoushik,KM Koushik,https://github.com/KMKoushik,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,pest-parser,pest,https://github.com/pest-parser,,pest,https://github.com/pest-parser/pest,A
+CodeRabbit,coderabbitai,github_sponsors,User,NirDiamant,Nir Diamant,https://github.com/NirDiamant,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,Delta456,Swastik Baranwal,https://github.com/Delta456,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,danielroe,Daniel Roe,https://github.com/danielroe,,beasties,https://github.com/danielroe/beasties,B
+CodeRabbit,coderabbitai,github_sponsors,User,tomalaforge,Laforge Thomas,https://github.com/tomalaforge,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,remorses,Tommy D. Rossi,https://github.com/remorses,,genql,https://github.com/remorses/genql,B
+CodeRabbit,coderabbitai,github_sponsors,User,SaltyAom,SaltyAom,https://github.com/SaltyAom,,memoirist,https://github.com/saltyaom/memoirist,B
+CodeRabbit,coderabbitai,github_sponsors,User,fabian-hiller,Fabian Hiller,https://github.com/fabian-hiller,,valibot,https://github.com/fabian-hiller/valibot,B
+CodeRabbit,coderabbitai,github_sponsors,User,tegnike,ニケちゃん / nikechan,https://github.com/tegnike,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,StefanTerdell,Stefan Terdell,https://github.com/StefanTerdell,,zod-to-json-schema,https://github.com/stefanterdell/zod-to-json-schema,B
+CodeRabbit,coderabbitai,github_sponsors,User,nrslib,nrs,https://github.com/nrslib,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,pHequals7,Pranav Hari,https://github.com/pHequals7,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,zoedsoupe,zoey,https://github.com/zoedsoupe,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,AmanVarshney01,Aman Varshney,https://github.com/AmanVarshney01,,create-better-t-stack,https://github.com/amanvarshney01/create-better-t-stack,B
+CodeRabbit,coderabbitai,github_sponsors,User,nicotsx,Nico,https://github.com/nicotsx,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,rohitg00,Rohit Ghumare,https://github.com/rohitg00,,kubectl-mcp-server,https://github.com/rohitg00/kubectl-mcp-server,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,mockoon,mockoon,https://github.com/mockoon,,mockoon,https://github.com/mockoon/mockoon,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,nocodb,nocodb,https://github.com/nocodb,,nocodb,https://github.com/nocodb/nocodb,B
+CodeRabbit,coderabbitai,github_sponsors,User,MrPunyapal,Punyapal Shah ,https://github.com/MrPunyapal,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,datlechin,Ngô Quốc Đạt,https://github.com/datlechin,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,detekt,detekt,https://github.com/detekt,,detekt,https://github.com/detekt/detekt,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,gofiber,Fiber,https://github.com/gofiber,,fiber,https://github.com/gofiber/fiber,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,coollabsio,coolLabs,https://github.com/coollabsio,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,analysis-tools-dev,Analysis Tools,https://github.com/analysis-tools-dev,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,Flow-Launcher,Flow-Launcher,https://github.com/Flow-Launcher,,Flow.Launcher,https://github.com/flow-launcher/flow.launcher,B
+CodeRabbit,coderabbitai,github_sponsors,User,mrzachnugent,Zach Nugent,https://github.com/mrzachnugent,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,galacean,Galacean,https://github.com/galacean,,engine,https://github.com/galacean/engine,B
+CodeRabbit,coderabbitai,github_sponsors,User,ripgrim,grim,https://github.com/ripgrim,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,trpc,tRPC,https://github.com/trpc,,trpc,https://github.com/trpc/trpc,B
+CodeRabbit,coderabbitai,github_sponsors,User,jnsahaj,Sahaj Jain,https://github.com/jnsahaj,,lumen,https://github.com/jnsahaj/lumen,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,apitable,APITable,https://github.com/apitable,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,roadrunner-server,RoadRunner,https://github.com/roadrunner-server,,roadrunner,https://github.com/roadrunner-server/roadrunner,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,usememos,Memos,https://github.com/usememos,,memos,https://github.com/usememos/memos,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,zenstackhq,ZenStack,https://github.com/zenstackhq,,zenstack,https://github.com/zenstackhq/zenstack,B
+CodeRabbit,coderabbitai,github_sponsors,User,affaan-m,Affaan Mustafa,https://github.com/affaan-m,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,star-history,GitHub Star History,https://github.com/star-history,,,,
+CodeRabbit,coderabbitai,github_sponsors,User,webadderall,webadderall,https://github.com/webadderall,,,,
+CodeRabbit,coderabbitai,github_sponsors,Organization,biomejs,Biome,https://github.com/biomejs,,biome,https://github.com/biomejs/biome,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,trycua,Cua,https://github.com/trycua,,cua,https://github.com/trycua/cua,B
+CodeRabbit,coderabbitai,github_sponsors,Organization,vicinaehq,Vicinae HQ,https://github.com/vicinaehq,,vicinae,https://github.com/vicinaehq/vicinae,B
+Convex,get-convex,github_sponsors,User,yusukebe,Yusuke Wada,https://github.com/yusukebe,,,,
+Convex,get-convex,github_sponsors,User,sunshowers,Rain,https://github.com/sunshowers,,,,
+Convex,get-convex,github_sponsors,User,davidhewitt,David Hewitt,https://github.com/davidhewitt,,pythonize,https://github.com/davidhewitt/pythonize,B
+Convex,get-convex,github_sponsors,User,dtolnay,David Tolnay,https://github.com/dtolnay,,cxx,https://github.com/dtolnay/cxx,B
+Convex,get-convex,github_sponsors,User,colinhacks,Colin McDonnell,https://github.com/colinhacks,,zod,https://github.com/colinhacks/zod,A
+Convex,get-convex,github_sponsors,Organization,xyflow,xyflow,https://github.com/xyflow,,xyflow,https://github.com/xyflow/xyflow,B
+Convex,get-convex,github_sponsors,Organization,tokio-rs,Tokio,https://github.com/tokio-rs,,tokio,https://github.com/tokio-rs/tokio,A
+Convex,get-convex,github_sponsors,User,AmanVarshney01,Aman Varshney,https://github.com/AmanVarshney01,,create-better-t-stack,https://github.com/amanvarshney01/create-better-t-stack,B
+Convex,get-convex,github_sponsors,Organization,arktypeio,ArkType,https://github.com/arktypeio,,arktype,https://github.com/arktypeio/arktype,B
+Convex,get-convex,github_sponsors,User,robelest,Robel Estifanos,https://github.com/robelest,,,,
+Convex,get-convex,github_sponsors,Organization,vitejs,Vite,https://github.com/vitejs,,vite,https://github.com/vitejs/vite,A
+Convex,get-convex,github_sponsors,User,mmailaender,Micha Mailänder,https://github.com/mmailaender,,,,
+Convex,get-convex,github_sponsors,Organization,biomejs,Biome,https://github.com/biomejs,,biome,https://github.com/biomejs/biome,B
+Crowdin,crowdin,github_sponsors,User,kazupon,kazuya kawaguchi,https://github.com/kazupon,,gunshi,https://github.com/kazupon/gunshi,B
+Crowdin,crowdin,github_sponsors,User,amannn,Jan Amann,https://github.com/amannn,,next-intl,https://github.com/amannn/next-intl,B
+Crowdin,crowdin,github_sponsors,User,ixartz,Remi Wg,https://github.com/ixartz,,Next-js-Boilerplate,https://github.com/ixartz/next-js-boilerplate,B
+Datadog,DataDog,github_sponsors,User,nedbat,Ned Batchelder,https://github.com/nedbat,,coveragepy,https://github.com/nedbat/coveragepy,B
+Datadog,DataDog,github_sponsors,User,seanmonstar,Sean McArthur,https://github.com/seanmonstar,,reqwest,https://github.com/seanmonstar/reqwest,B
+Datadog,DataDog,github_sponsors,User,shirou,shirou,https://github.com/shirou,,gopsutil,https://github.com/shirou/gopsutil,B
+Datadog,DataDog,github_sponsors,User,webpro,Lars Kappert,https://github.com/webpro,,reveal-md,https://github.com/webpro/reveal-md,B
+Datadog,DataDog,github_sponsors,Organization,golangci,GolangCI,https://github.com/golangci,,golangci-lint,https://github.com/golangci/golangci-lint,B
+elmah.io,elmahio,github_sponsors,User,patriksvensson,Patrik Svensson,https://github.com/patriksvensson,,dotnet-example,https://github.com/patriksvensson/dotnet-example,B
+elmah.io,elmahio,github_sponsors,User,meziantou,Gérald Barré,https://github.com/meziantou,,Meziantou.Analyzer,https://github.com/meziantou/meziantou.analyzer,B
+elmah.io,elmahio,github_sponsors,User,madskristensen,Mads Kristensen,https://github.com/madskristensen,,BundlerMinifier,https://github.com/madskristensen/bundlerminifier,B
+elmah.io,elmahio,github_sponsors,User,dustinmoris,Dustin Moris Gorski,https://github.com/dustinmoris,,,,
+elmah.io,elmahio,github_sponsors,Organization,zzzprojects,ZZZ Projects,https://github.com/zzzprojects,,html-agility-pack,https://github.com/zzzprojects/html-agility-pack,B
+Emerge Tools,EmergeTools,github_sponsors,User,iBotPeaches,Connor Tumbleson,https://github.com/iBotPeaches,,Apktool,https://github.com/ibotpeaches/apktool,B
+Emerge Tools,EmergeTools,github_sponsors,User,mergesort,Joe Fabisevich,https://github.com/mergesort,,,,
+Emerge Tools,EmergeTools,github_sponsors,User,krzyzanowskim,Marcin Krzyzanowski,https://github.com/krzyzanowskim,,CryptoSwift,https://github.com/krzyzanowskim/cryptoswift,B
+Emerge Tools,EmergeTools,github_sponsors,User,wvabrinskas,William Vabrinskas,https://github.com/wvabrinskas,,,,
+Emerge Tools,EmergeTools,github_sponsors,User,onevcat,Wei Wang,https://github.com/onevcat,,Kingfisher,https://github.com/onevcat/kingfisher,B
+Emerge Tools,EmergeTools,github_sponsors,User,MattKiazyk,Matt Kiazyk,https://github.com/MattKiazyk,,,,
+Emerge Tools,EmergeTools,github_sponsors,User,gpeal,Gabriel Peal,https://github.com/gpeal,,,,
+Emerge Tools,EmergeTools,github_sponsors,User,kasketis,Christos Kasketis,https://github.com/kasketis,,,,
+Emerge Tools,EmergeTools,github_sponsors,User,pedrovgs,Pedro Gómez,https://github.com/pedrovgs,,,,
+Emerge Tools,EmergeTools,github_sponsors,User,dherault,David Hérault,https://github.com/dherault,,serverless-offline,https://github.com/dherault/serverless-offline,B
+Emerge Tools,EmergeTools,github_sponsors,User,AvdLee,Antoine van der Lee,https://github.com/AvdLee,,appstoreconnect-swift-sdk,https://github.com/avdlee/appstoreconnect-swift-sdk,B
+Emerge Tools,EmergeTools,github_sponsors,User,sergio-sastre,Sergio Sastre Flórez,https://github.com/sergio-sastre,,,,
+Emerge Tools,EmergeTools,github_sponsors,Organization,AudioKit,AudioKit,https://github.com/AudioKit,,AudioKit,https://github.com/audiokit/audiokit,B
+Emerge Tools,EmergeTools,github_sponsors,User,rockbruno,Bruno Rocha,https://github.com/rockbruno,,,,
+Emerge Tools,EmergeTools,github_sponsors,Organization,vapor,Vapor,https://github.com/vapor,,vapor,https://github.com/vapor/vapor,B
+Emerge Tools,EmergeTools,github_sponsors,Organization,peripheryapp,Periphery,https://github.com/peripheryapp,,periphery,https://github.com/peripheryapp/periphery,B
+Emerge Tools,EmergeTools,github_sponsors,Organization,detekt,detekt,https://github.com/detekt,,detekt,https://github.com/detekt/detekt,B
+GitBook,GitbookIO,github_sponsors,User,isaacs,isaacs,https://github.com/isaacs,,node-glob,https://github.com/isaacs/node-glob,A
+GitBook,GitbookIO,github_sponsors,User,ai,Andrey Sitnik,https://github.com/ai,,nanoid,https://github.com/ai/nanoid,A
+GitBook,GitbookIO,github_sponsors,User,MikeRalphson,Mike Ralphson,https://github.com/MikeRalphson,,,,
+GitBook,GitbookIO,github_sponsors,User,kossnocorp,Sasha Koss,https://github.com/kossnocorp,,typesaurus,https://github.com/kossnocorp/typesaurus,B
+GitBook,GitbookIO,github_sponsors,User,sindresorhus,Sindre Sorhus,https://github.com/sindresorhus,,awesome-electron,https://github.com/sindresorhus/awesome-electron,B
+GitBook,GitbookIO,github_sponsors,User,wooorm,Titus,https://github.com/wooorm,,remark,https://github.com/wooorm/remark,B
+GitBook,GitbookIO,github_sponsors,User,epoberezkin,Evgeny,https://github.com/epoberezkin,,ajv,https://github.com/epoberezkin/ajv,B
+GitBook,GitbookIO,github_sponsors,User,dmonad, Kevin Jahns,https://github.com/dmonad,,lib0,https://github.com/dmonad/lib0,B
+GitBook,GitbookIO,github_sponsors,Organization,eslint,ESLint,https://github.com/eslint,,eslint,https://github.com/eslint/eslint,A
+GitBook,GitbookIO,github_sponsors,Organization,cheeriojs,Cheerio,https://github.com/cheeriojs,,cheerio,https://github.com/cheeriojs/cheerio,A
+GitBook,GitbookIO,github_sponsors,Organization,babel,Babel,https://github.com/babel,,babel,https://github.com/babel/babel,A
+GitBook,GitbookIO,github_sponsors,Organization,nodejs,Node.js,https://github.com/nodejs,,node,https://github.com/nodejs/node,B
+GitBook,GitbookIO,github_sponsors,Organization,unifiedjs,unified,https://github.com/unifiedjs,,unified,https://github.com/unifiedjs/unified,B
+GitBook,GitbookIO,github_sponsors,Organization,prettier,Prettier,https://github.com/prettier,,prettier,https://github.com/prettier/prettier,A
+GitBook,GitbookIO,github_sponsors,Organization,csstools,CSS Tools,https://github.com/csstools,,sanitize.css,https://github.com/csstools/sanitize.css,B
+GitBook,GitbookIO,github_sponsors,User,fuma-nama,Fuma Nama,https://github.com/fuma-nama,,fumadocs,https://github.com/fuma-nama/fumadocs,B
+GitBook,GitbookIO,github_sponsors,Organization,drizzle-team,Drizzle Team,https://github.com/drizzle-team,,drizzle-orm,https://github.com/drizzle-team/drizzle-orm,B
+GitHub,github,github_sponsors,User,kivikakk,Asherah Connor,https://github.com/kivikakk,,comrak,https://github.com/kivikakk/comrak,B
+GitHub,github,github_sponsors,User,zx2c4,Jason A. Donenfeld,https://github.com/zx2c4,,,,
+GitHub,github,github_sponsors,User,sindresorhus,Sindre Sorhus,https://github.com/sindresorhus,,awesome-electron,https://github.com/sindresorhus/awesome-electron,B
+GitHub,github,github_sponsors,User,f,Fatih Kadir Akın,https://github.com/f,,vue-wait,https://github.com/f/vue-wait,B
+GitHub,github,github_sponsors,User,emmet0r,Emily Lovell,https://github.com/emmet0r,,,,
+GitHub,github,github_sponsors,Organization,Homebrew,Homebrew,https://github.com/Homebrew,,ruby-macho,https://github.com/homebrew/ruby-macho,B
+GitHub,github,github_sponsors,Organization,processing,Processing Foundation,https://github.com/processing,,p5.js,https://github.com/processing/p5.js,B
+GitHub,github,github_sponsors,User,its-a-feature,Cody Thomas,https://github.com/its-a-feature,,,,
+GitHub,github,github_sponsors,User,tannerlinsley,Tanner Linsley,https://github.com/tannerlinsley,,query,https://github.com/tannerlinsley/react-query,A
+GitHub,github,github_sponsors,Organization,exercism,Exercism,https://github.com/exercism,,cli,https://github.com/exercism/cli,B
+GitHub,github,github_sponsors,User,knsv,Knut Sveidqvist,https://github.com/knsv,,mermaid,https://github.com/knsv/mermaid,B
+GitHub,github,github_sponsors,Organization,SAML-Toolkits,SAML-Toolkits,https://github.com/SAML-Toolkits,,php-saml,https://github.com/saml-toolkits/php-saml,B
+Greptile,greptileai,github_sponsors,User,yyx990803,Evan You,https://github.com/yyx990803,,launch-editor,https://github.com/yyx990803/launch-editor,A
+Greptile,greptileai,github_sponsors,User,tiangolo,Sebastián Ramírez,https://github.com/tiangolo,,fastapi,https://github.com/tiangolo/fastapi,B
+Greptile,greptileai,github_sponsors,Organization,neovim,Neovim,https://github.com/neovim,,neovim,https://github.com/neovim/neovim,B
+Greptile,greptileai,github_sponsors,Organization,coollabsio,coolLabs,https://github.com/coollabsio,,,,
+Greptile,greptileai,github_sponsors,Organization,vitejs,Vite,https://github.com/vitejs,,vite,https://github.com/vitejs/vite,A
+Greptile,greptileai,github_sponsors,Organization,trpc,tRPC,https://github.com/trpc,,trpc,https://github.com/trpc/trpc,B
+Greptile,greptileai,github_sponsors,User,affaan-m,Affaan Mustafa,https://github.com/affaan-m,,,,
+Healthchecks.io,healthchecks,github_sponsors,User,bitprophet,Jeff Forcier,https://github.com/bitprophet,,releases,https://github.com/bitprophet/releases,B
+Healthchecks.io,healthchecks,github_sponsors,User,zx2c4,Jason A. Donenfeld,https://github.com/zx2c4,,,,
+Healthchecks.io,healthchecks,github_sponsors,Organization,django,Django,https://github.com/django,,django,https://github.com/django/django,A
+Healthchecks.io,healthchecks,github_sponsors,User,bagder,Daniel Stenberg,https://github.com/bagder,,,,
+Healthchecks.io,healthchecks,github_sponsors,User,dvarrazzo,Daniele Varrazzo,https://github.com/dvarrazzo,,py-setproctitle,https://github.com/dvarrazzo/py-setproctitle,B
+Healthchecks.io,healthchecks,github_sponsors,User,webknjaz,🇺🇦 Sviatoslav Sydorenko (Святослав Сидоренко),https://github.com/webknjaz,,,,
+Healthchecks.io,healthchecks,github_sponsors,User,leongersen,Léon Gersen,https://github.com/leongersen,,noUiSlider,https://github.com/leongersen/nouislider,B
+Healthchecks.io,healthchecks,github_sponsors,Organization,python,Python,https://github.com/python,,cpython,https://github.com/python/cpython,B
+Healthchecks.io,healthchecks,github_sponsors,User,AsamK,Sebastian Scheibner,https://github.com/AsamK,,signal-cli,https://github.com/asamk/signal-cli,B
+Healthchecks.io,healthchecks,github_sponsors,User,cure53,Cure53,https://github.com/cure53,,DOMPurify,https://github.com/cure53/dompurify,A
+Healthchecks.io,healthchecks,github_sponsors,Organization,mastodon,Mastodon,https://github.com/mastodon,,mastodon,https://github.com/mastodon/mastodon,B
+Healthchecks.io,healthchecks,github_sponsors,Organization,typeddjango,TypedDjango,https://github.com/typeddjango,,django-stubs,https://github.com/typeddjango/django-stubs,B
+Keygen,keygen-sh,github_sponsors,User,caesay,Caelan,https://github.com/caesay,,,,
+Keygen,keygen-sh,github_sponsors,User,palkan,Vladimir Dementyev,https://github.com/palkan,,logidze,https://github.com/palkan/logidze,B
+Keygen,keygen-sh,github_sponsors,User,leaanthony,Lea Anthony,https://github.com/leaanthony,,clir,https://github.com/leaanthony/clir,B
+Keygen,keygen-sh,github_sponsors,User,ahonn,,https://github.com/ahonn,,,,
+Keygen,keygen-sh,github_sponsors,User,aminya,Amin Ya,https://github.com/aminya,,setup-cpp,https://github.com/aminya/setup-cpp,B
+Mintlify,mintlify,github_sponsors,User,dacharyc,Dachary,https://github.com/dacharyc,,,,
+Nx Cloud,nrwl,github_sponsors,User,brandonroberts,Brandon Roberts,https://github.com/brandonroberts,,ngrx-store-freeze,https://github.com/brandonroberts/ngrx-store-freeze,B
+Nx Cloud,nrwl,github_sponsors,User,tannerlinsley,Tanner Linsley,https://github.com/tannerlinsley,,query,https://github.com/tannerlinsley/react-query,A
+Nx Cloud,nrwl,github_sponsors,Organization,pnpm,pnpm,https://github.com/pnpm,,pnpm,https://github.com/pnpm/pnpm,A
+Nx Cloud,nrwl,github_sponsors,Organization,napi-rs,Node-API (N-API) for Rust,https://github.com/napi-rs,,napi-rs,https://github.com/napi-rs/napi-rs,A
+Nx Cloud,nrwl,github_sponsors,Organization,vitejs,Vite,https://github.com/vitejs,,vite,https://github.com/vitejs/vite,A
+OpenAI,openai,github_sponsors,User,zkat,Kat Marchán,https://github.com/zkat,,miette,https://github.com/zkat/miette,B
+OpenAI,openai,github_sponsors,User,nedbat,Ned Batchelder,https://github.com/nedbat,,coveragepy,https://github.com/nedbat/coveragepy,B
+OpenAI,openai,github_sponsors,User,ehuss,Eric Huss,https://github.com/ehuss,,,,
+OpenAI,openai,github_sponsors,User,seanmonstar,Sean McArthur,https://github.com/seanmonstar,,reqwest,https://github.com/seanmonstar/reqwest,B
+OpenAI,openai,github_sponsors,User,brettcannon,Brett Cannon,https://github.com/brettcannon,,python-launcher,https://github.com/brettcannon/python-launcher,B
+OpenAI,openai,github_sponsors,User,Byron,Sebastian Thiel,https://github.com/Byron,,gitoxide,https://github.com/byron/gitoxide,B
+OpenAI,openai,github_sponsors,User,dhardy,Diggory Hardy,https://github.com/dhardy,,,,
+OpenAI,openai,github_sponsors,User,sunshowers,Rain,https://github.com/sunshowers,,,,
+OpenAI,openai,github_sponsors,User,RReverser,Ingvar Stepanyan,https://github.com/RReverser,,serde-wasm-bindgen,https://github.com/rreverser/serde-wasm-bindgen,B
+OpenAI,openai,github_sponsors,User,ctz,Joe Birr-Pixton,https://github.com/ctz,,graviola,https://github.com/ctz/graviola,B
+OpenAI,openai,github_sponsors,User,Swatinem,Arpad Borsos,https://github.com/Swatinem,,rust-cache,https://github.com/swatinem/rust-cache,B
+OpenAI,openai,github_sponsors,User,koxudaxi,Koudai Aono,https://github.com/koxudaxi,,datamodel-code-generator,https://github.com/koxudaxi/datamodel-code-generator,B
+OpenAI,openai,github_sponsors,User,gaborbernat,Bernát Gábor,https://github.com/gaborbernat,,,,
+OpenAI,openai,github_sponsors,User,jplatte,Jonas Platte,https://github.com/jplatte,,eyeball,https://github.com/jplatte/eyeball,B
+OpenAI,openai,github_sponsors,User,sirosen,Stephen Rosen,https://github.com/sirosen,,,,
+OpenAI,openai,github_sponsors,User,hugovk,Hugo van Kemenade,https://github.com/hugovk,,em-keyboard,https://github.com/hugovk/em-keyboard,B
+OpenAI,openai,github_sponsors,User,ZacSweers,Zac Sweers,https://github.com/ZacSweers,,MoshiX,https://github.com/zacsweers/moshix,B
+OpenAI,openai,github_sponsors,User,eifinger,Kevin Stillhammer,https://github.com/eifinger,,,,
+OpenAI,openai,github_sponsors,User,messense,messense,https://github.com/messense,,aliyundrive-webdav,https://github.com/messense/aliyundrive-webdav,B
+OpenAI,openai,github_sponsors,User,asottile,anthony sottile,https://github.com/asottile,,pyupgrade,https://github.com/asottile/pyupgrade,B
+OpenAI,openai,github_sponsors,User,dtolnay,David Tolnay,https://github.com/dtolnay,,cxx,https://github.com/dtolnay/cxx,B
+OpenAI,openai,github_sponsors,User,HerringtonDarkholme,Herrington Darkholme,https://github.com/HerringtonDarkholme,,typescript-repl,https://github.com/herringtondarkholme/typescript-repl,B
+OpenAI,openai,github_sponsors,User,GuillaumeGomez,Guillaume Gomez,https://github.com/GuillaumeGomez,,sysinfo,https://github.com/guillaumegomez/sysinfo,B
+OpenAI,openai,github_sponsors,User,jhpratt,Jacob Pratt,https://github.com/jhpratt,,deranged,https://github.com/jhpratt/deranged,B
+OpenAI,openai,github_sponsors,User,Pierre-Sassoulas,Pierre Sassoulas,https://github.com/Pierre-Sassoulas,,django-zxcvbn-password-validator,https://github.com/pierre-sassoulas/django-zxcvbn-password-validator,B
+OpenAI,openai,github_sponsors,Organization,aio-libs,aio-libs,https://github.com/aio-libs,,aiohttp,https://github.com/aio-libs/aiohttp,A
+OpenAI,openai,github_sponsors,User,ofek,Ofek Lev,https://github.com/ofek,,pyapp,https://github.com/ofek/pyapp,B
+OpenAI,openai,github_sponsors,User,nvzqz,Nikolai Vazquez,https://github.com/nvzqz,,divan,https://github.com/nvzqz/divan,B
+OpenAI,openai,github_sponsors,User,richfelker,Rich Felker,https://github.com/richfelker,,,,
+OpenAI,openai,github_sponsors,Organization,tqdm,tqdm developers,https://github.com/tqdm,,tqdm,https://github.com/tqdm/tqdm,B
+OpenAI,openai,github_sponsors,User,weihanglo,Weihang Lo,https://github.com/weihanglo,,,,
+OpenAI,openai,github_sponsors,Organization,tree-sitter,tree-sitter,https://github.com/tree-sitter,,tree-sitter,https://github.com/tree-sitter/tree-sitter,B
+OpenAI,openai,github_sponsors,Organization,encode,Encode,https://github.com/encode,,django-rest-framework,https://github.com/encode/django-rest-framework,A
+OpenAI,openai,github_sponsors,Organization,tokio-rs,Tokio,https://github.com/tokio-rs,,tokio,https://github.com/tokio-rs/tokio,A
+OpenAI,openai,github_sponsors,Organization,pnpm,pnpm,https://github.com/pnpm,,pnpm,https://github.com/pnpm/pnpm,A
+OpenAI,openai,github_sponsors,User,jyn514,jyn,https://github.com/jyn514,,,,
+OpenAI,openai,github_sponsors,Organization,prettier,Prettier,https://github.com/prettier,,prettier,https://github.com/prettier/prettier,A
+OpenAI,openai,github_sponsors,Organization,python-trio,python-trio,https://github.com/python-trio,,trio,https://github.com/python-trio/trio,B
+OpenAI,openai,github_sponsors,User,lcnr,lcnr,https://github.com/lcnr,,,,
+OpenAI,openai,github_sponsors,User,NobodyXu,Jiahao XU,https://github.com/NobodyXu,,,,
+OpenAI,openai,github_sponsors,Organization,telepresenceio,Telepresence,https://github.com/telepresenceio,,telepresence,https://github.com/telepresenceio/telepresence,B
+OpenAI,openai,github_sponsors,Organization,clap-rs,clap-rs,https://github.com/clap-rs,,clap,https://github.com/clap-rs/clap,A
+OpenAI,openai,github_sponsors,User,taiki-e,Taiki Endo,https://github.com/taiki-e,,cargo-llvm-cov,https://github.com/taiki-e/cargo-llvm-cov,B
+OpenAI,openai,github_sponsors,Organization,rust-analyzer,rust-analyzer,https://github.com/rust-analyzer,,rowan,https://github.com/rust-analyzer/rowan,B
+OpenAI,openai,github_sponsors,User,15r10nk,Frank Hoffmann,https://github.com/15r10nk,,inline-snapshot,https://github.com/15r10nk/inline-snapshot,B
+OpenAI,openai,github_sponsors,User,ichard26,Richard Si,https://github.com/ichard26,,,,
+OpenAI,openai,github_sponsors,Organization,rkyv,rkyv,https://github.com/rkyv,,rkyv,https://github.com/rkyv/rkyv,B
+OpenAI,openai,github_sponsors,User,karpetrosyan,Kar Petrosyan,https://github.com/karpetrosyan,,hishel,https://github.com/karpetrosyan/hishel,B
+OpenAI,openai,github_sponsors,Organization,pydantic,Pydantic,https://github.com/pydantic,,pydantic,https://github.com/pydantic/pydantic,A
+OpenAI,openai,github_sponsors,Organization,python-websockets,python-websockets,https://github.com/python-websockets,,websockets,https://github.com/python-websockets/websockets,B
+OpenPanel,Openpanel-dev,github_sponsors,User,uixmat,Matt,https://github.com/uixmat,,,,
+PostHog,PostHog,github_sponsors,Organization,django,Django,https://github.com/django,,django,https://github.com/django/django,A
+PostHog,PostHog,github_sponsors,User,fregante,,https://github.com/fregante,,chrome-webstore-upload-cli,https://github.com/fregante/chrome-webstore-upload-cli,B
+PostHog,PostHog,github_sponsors,User,chrislusf,Chris Lu,https://github.com/chrislusf,,seaweedfs,https://github.com/chrislusf/seaweedfs,B
+PostHog,PostHog,github_sponsors,User,ixartz,Remi Wg,https://github.com/ixartz,,Next-js-Boilerplate,https://github.com/ixartz/next-js-boilerplate,B
+PostHog,PostHog,github_sponsors,Organization,eslint,ESLint,https://github.com/eslint,,eslint,https://github.com/eslint/eslint,A
+PostHog,PostHog,github_sponsors,Organization,ueberdosis,Tiptap,https://github.com/ueberdosis,,tiptap,https://github.com/ueberdosis/tiptap,A
+PostHog,PostHog,github_sponsors,Organization,prettier,Prettier,https://github.com/prettier,,prettier,https://github.com/prettier/prettier,A
+PostHog,PostHog,github_sponsors,Organization,peripheryapp,Periphery,https://github.com/peripheryapp,,periphery,https://github.com/peripheryapp/periphery,B
+PostHog,PostHog,github_sponsors,Organization,detekt,detekt,https://github.com/detekt,,detekt,https://github.com/detekt/detekt,B
+Read the Docs,readthedocs,open_collective,Collective,kiwitcms,Kiwi TCMS,https://opencollective.com/kiwitcms,207,,,
+Read the Docs,readthedocs,open_collective,Collective,celery,Celery,https://opencollective.com/celery,1835,celery,https://github.com/celery/celery,A
+Sauce Labs,saucelabs,github_sponsors,User,danielpaulus,,https://github.com/danielpaulus,,go-ios,https://github.com/danielpaulus/go-ios,B
+Screenshotbot,screenshotbot,github_sponsors,User,pedrovgs,Pedro Gómez,https://github.com/pedrovgs,,,,
+Screenshotbot,screenshotbot,github_sponsors,User,Shinmera,Yukari Hafner,https://github.com/Shinmera,,,,
+Screenshotbot,screenshotbot,github_sponsors,User,sergio-sastre,Sergio Sastre Flórez,https://github.com/sergio-sastre,,,,
+Screenshotbot,screenshotbot,github_sponsors,Organization,plausible,Plausible Analytics,https://github.com/plausible,,analytics,https://github.com/plausible/analytics,B
+Sentry,getsentry,github_sponsors,User,evanphx,Evan Phoenix,https://github.com/evanphx,,benchmark-ips,https://github.com/evanphx/benchmark-ips,B
+Sentry,getsentry,github_sponsors,User,miyagawa,Tatsuhiko Miyagawa,https://github.com/miyagawa,,cpanminus,https://github.com/miyagawa/cpanminus,B
+Sentry,getsentry,github_sponsors,User,nzakas,Nicholas C. Zakas,https://github.com/nzakas,,,,
+Sentry,getsentry,github_sponsors,User,hildjj,Joe Hildebrand,https://github.com/hildjj,,node-cbor,https://github.com/hildjj/node-cbor,B
+Sentry,getsentry,github_sponsors,User,ondrejmirtes,Ondřej Mirtes,https://github.com/ondrejmirtes,,,,
+Sentry,getsentry,github_sponsors,User,ionelmc,Ionel Cristian Mărieș,https://github.com/ionelmc,,pytest-benchmark,https://github.com/ionelmc/pytest-benchmark,B
+Sentry,getsentry,github_sponsors,Organization,celery,Celery,https://github.com/celery,,celery,https://github.com/celery/celery,A
+Sentry,getsentry,github_sponsors,User,piotrmurach,Piotr Murach,https://github.com/piotrmurach,,tty-prompt,https://github.com/piotrmurach/tty-prompt,B
+Sentry,getsentry,github_sponsors,User,adamchainz,Adam Johnson,https://github.com/adamchainz,,django-cors-headers,https://github.com/adamchainz/django-cors-headers,B
+Sentry,getsentry,github_sponsors,User,donavon,Donavon West,https://github.com/donavon,,use-persisted-state,https://github.com/donavon/use-persisted-state,B
+Sentry,getsentry,github_sponsors,User,blakeembrey,Blake Embrey,https://github.com/blakeembrey,,change-case,https://github.com/blakeembrey/change-case,A
+Sentry,getsentry,github_sponsors,User,mholt,Matt Holt,https://github.com/mholt,,caddy,https://github.com/mholt/caddy,B
+Sentry,getsentry,github_sponsors,User,fabiospampinato,Fabio Spampinato,https://github.com/fabiospampinato,,cash,https://github.com/fabiospampinato/cash,B
+Sentry,getsentry,github_sponsors,User,segiddins,Samuel Giddins,https://github.com/segiddins,,cocoapods-dependencies,https://github.com/segiddins/cocoapods-dependencies,B
+Sentry,getsentry,github_sponsors,User,deivid-rodriguez,David Rodríguez,https://github.com/deivid-rodriguez,,byebug,https://github.com/deivid-rodriguez/byebug,A
+Sentry,getsentry,github_sponsors,Organization,twbs,Bootstrap,https://github.com/twbs,,bootstrap,https://github.com/twbs/bootstrap,A
+Sentry,getsentry,github_sponsors,User,tabrindle,Trevor Brindle,https://github.com/tabrindle,,envinfo,https://github.com/tabrindle/envinfo,A
+Sentry,getsentry,github_sponsors,User,akiran,Kiran Abburi,https://github.com/akiran,,react-slick,https://github.com/akiran/react-slick,A
+Sentry,getsentry,github_sponsors,User,dawsbot,Dawson Botsford,https://github.com/dawsbot,,essential-eth,https://github.com/dawsbot/essential-eth,B
+Sentry,getsentry,github_sponsors,User,FezVrasta,Federico Zivolo,https://github.com/FezVrasta,,floating-ui,https://github.com/fezvrasta/popper.js,B
+Sentry,getsentry,github_sponsors,User,typicode,,https://github.com/typicode,,json-server,https://github.com/typicode/json-server,A
+Sentry,getsentry,github_sponsors,User,pedro-psb,Pedro Brochado,https://github.com/pedro-psb,,,,
+Sentry,getsentry,github_sponsors,Organization,markdown-it,Markdown it!,https://github.com/markdown-it,,markdown-it,https://github.com/markdown-it/markdown-it,B
+Sentry,getsentry,github_sponsors,Organization,NaturalIntelligence,Natural Intelligence,https://github.com/NaturalIntelligence,,fast-xml-parser,https://github.com/naturalintelligence/fast-xml-parser,A
+Sentry,getsentry,github_sponsors,Organization,phpstan,PHPStan,https://github.com/phpstan,,phpstan,https://github.com/phpstan/phpstan,B
+Sentry,getsentry,github_sponsors,Organization,yarnpkg,Yarn,https://github.com/yarnpkg,,yarn,https://github.com/yarnpkg/yarn,A
+Sentry,getsentry,github_sponsors,User,kataras,Gerasimos (Makis) Maropoulos,https://github.com/kataras,,iris,https://github.com/kataras/iris,B
+Sentry,getsentry,github_sponsors,User,RobertCraigie,Robert Craigie,https://github.com/RobertCraigie,,pyright-python,https://github.com/robertcraigie/pyright-python,B
+Sentry,getsentry,github_sponsors,Organization,swc-project,swc,https://github.com/swc-project,,swc,https://github.com/swc-project/swc,A
+Sentry,getsentry,github_sponsors,User,kdy1,Donny/강동윤,https://github.com/kdy1,,rust-pmutil,https://github.com/kdy1/rust-pmutil,B
+SignPath,SignPath,github_sponsors,Organization,wixtoolset,WiX Toolset,https://github.com/wixtoolset,,wix,https://github.com/wixtoolset/wix,B
+Tailscale,tailscale,github_sponsors,User,dominikh,Dominik Honnef,https://github.com/dominikh,,go-tools,https://github.com/dominikh/go-tools,B
+Tailscale,tailscale,github_sponsors,User,marijnh,Marijn Haverbeke,https://github.com/marijnh,,acorn,https://github.com/marijnh/acorn,B
+Tailscale,tailscale,github_sponsors,User,kevinburke,Kevin Burke,https://github.com/kevinburke,,nacl,https://github.com/kevinburke/nacl,B
+Tailscale,tailscale,github_sponsors,User,mholt,Matt Holt,https://github.com/mholt,,caddy,https://github.com/mholt/caddy,B
+Tailscale,tailscale,github_sponsors,User,mdlayher,Matt Layher,https://github.com/mdlayher,,netlink,https://github.com/mdlayher/netlink,B
+Tailscale,tailscale,github_sponsors,User,mvdan,Daniel Martí,https://github.com/mvdan,,sh,https://github.com/mvdan/sh,B
+Tailscale,tailscale,github_sponsors,Organization,eslint,ESLint,https://github.com/eslint,,eslint,https://github.com/eslint/eslint,A
+Tailscale,tailscale,github_sponsors,User,davidsbond,David Bond,https://github.com/davidsbond,,,,
+Tailscale,tailscale,github_sponsors,User,artis3n,Ari Kalfus,https://github.com/artis3n,,ansible_galaxy_collection,https://github.com/artis3n/ansible_galaxy_collection,B
+Tailscale,tailscale,github_sponsors,User,nhooyr,,https://github.com/nhooyr,,websocket,https://github.com/nhooyr/websocket,B
+Tailscale,tailscale,github_sponsors,Organization,preactjs,Preact,https://github.com/preactjs,,preact,https://github.com/preactjs/preact,A
+Tailscale,tailscale,github_sponsors,Organization,axios,axios,https://github.com/axios,,axios,https://github.com/axios/axios,A
+Tailscale,tailscale,github_sponsors,Organization,pmndrs,Poimandres,https://github.com/pmndrs,,zustand,https://github.com/pmndrs/zustand,A
+Tailscale,tailscale,github_sponsors,Organization,wixtoolset,WiX Toolset,https://github.com/wixtoolset,,wix,https://github.com/wixtoolset/wix,B
+Tailscale,tailscale,github_sponsors,User,j-modernc-org,,https://github.com/j-modernc-org,,,,
+TestingBot,testingbot,github_sponsors,Organization,testcontainers,Testcontainers,https://github.com/testcontainers,,testcontainers-java,https://github.com/testcontainers/testcontainers-java,B
+Tolgee,tolgee,github_sponsors,Organization,coollabsio,coolLabs,https://github.com/coollabsio,,,,
+Transloadit,transloadit,github_sponsors,User,colinhacks,Colin McDonnell,https://github.com/colinhacks,,zod,https://github.com/colinhacks/zod,A
+Transloadit,transloadit,github_sponsors,Organization,vitejs,Vite,https://github.com/vitejs,,vite,https://github.com/vitejs/vite,A
+Tuist,tuist,github_sponsors,User,kishikawakatsumi,Kishikawa Katsumi,https://github.com/kishikawakatsumi,,KeychainAccess,https://github.com/kishikawakatsumi/keychainaccess,B
+Tuist,tuist,github_sponsors,User,cameroncooke,Cameron Cooke,https://github.com/cameroncooke,,XcodeBuildMCP,https://github.com/cameroncooke/xcodebuildmcp,B
+Tuist,tuist,github_sponsors,User,1024jp,1024jp,https://github.com/1024jp,,GzipSwift,https://github.com/1024jp/gzipswift,B
+Tuist,tuist,github_sponsors,User,cpisciotta,Charles Pisciotta,https://github.com/cpisciotta,,xcbeautify,https://github.com/cpisciotta/xcbeautify,B
+Upstash,upstash,github_sponsors,User,franky47,François Best,https://github.com/franky47,,,,
+Vercel,vercel,github_sponsors,User,dai-shi,Daishi Kato,https://github.com/dai-shi,,waku,https://github.com/dai-shi/waku,B
+Vercel,vercel,github_sponsors,User,yyx990803,Evan You,https://github.com/yyx990803,,launch-editor,https://github.com/yyx990803/launch-editor,A
+Vercel,vercel,github_sponsors,User,rafaelalmeidatk,Rafael Almeida,https://github.com/rafaelalmeidatk,,,,
+Vercel,vercel,github_sponsors,User,pilcrowonpaper,pilcrow,https://github.com/pilcrowonpaper,,lucia,https://github.com/pilcrowonpaper/lucia,B
+Weblate,WeblateOrg,github_sponsors,User,scoder,scoder,https://github.com/scoder,,lupa,https://github.com/scoder/lupa,B
+Weblate,WeblateOrg,github_sponsors,User,Xe,Xe Iaso,https://github.com/Xe,,,,
+Weblate,WeblateOrg,open_collective,Collective,selenium,Selenium,https://opencollective.com/selenium,170,selenium,https://github.com/seleniumhq/selenium,A
+Weblate,WeblateOrg,open_collective,Collective,pytest,pytest,https://opencollective.com/pytest,215,pytest,https://github.com/pytest-dev/pytest,A
+Weblate,WeblateOrg,open_collective,Collective,django-crispy-forms,Django Crispy Forms,https://opencollective.com/django-crispy-forms,220,django-crispy-forms,https://github.com/django-crispy-forms/django-crispy-forms,B
+Weblate,WeblateOrg,open_collective,Collective,pyparsing,Pyparsing,https://opencollective.com/pyparsing,240,pyparsing,https://github.com/pyparsing/pyparsing,A
+Weblate,WeblateOrg,open_collective,Collective,python-social-auth,Python Social Auth,https://opencollective.com/python-social-auth,250,social-app-django,https://github.com/python-social-auth/social-app-django,B
+Weblate,WeblateOrg,open_collective,Collective,typeddjangoorg,TypedDjango,https://opencollective.com/typeddjangoorg,280,django-stubs,https://github.com/typeddjango/django-stubs,B
+Weblate,WeblateOrg,open_collective,Collective,celery,Celery,https://opencollective.com/celery,390,celery,https://github.com/celery/celery,A
+Weblate,WeblateOrg,open_collective,Collective,pre-commit,pre-commit,https://opencollective.com/pre-commit,440,pre-commit,https://github.com/pre-commit/pre-commit,A
+Weblate,WeblateOrg,open_collective,Collective,wemake-python-styleguide,wemake-python-styleguide,https://opencollective.com/wemake-python-styleguide,25,wemake-python-styleguide,https://github.com/wemake-services/wemake-python-styleguide,B

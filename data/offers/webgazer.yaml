@@ -1,0 +1,20 @@
+company: WebGazer
+website: https://www.webgazer.io
+categories: [monitoring]
+offers:
+  - product: WebGazer uptime and cron monitoring (open source program)
+    offer_url: https://www.webgazer.io/for/open-source
+    what_you_get: >-
+      Comprehensive monitoring services at no cost for eligible open source
+      projects: website monitoring (HTTP monitors), cron job monitoring
+      (heartbeat monitors), and hosted status pages.
+    eligibility:
+      applies_to: project
+      notes: Must be an open source project; approval based on application details, no further criteria published.
+    how_to_apply: >-
+      Submit the application form on the offer page with project name,
+      contact email, project URL, repository URL, and a project description;
+      questions to support@webgazer.io.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: offer page live, states 'we provide our comprehensive monitoring services at no cost to eligible projects'"

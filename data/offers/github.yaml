@@ -1,0 +1,38 @@
+company: GitHub
+website: https://github.com
+categories: [hosting, ci-cd, ai-ml]
+offers:
+  - product: GitHub Copilot Pro (free for OSS maintainers)
+    offer_url: https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro
+    what_you_get: >-
+      Free GitHub Copilot Pro subscription (the paid individual tier) for
+      maintainers of popular open source repositories.
+    eligibility:
+      public_repo_required: true
+      applies_to: maintainer
+      notes: >-
+        Must be a maintainer of a "popular" open source repository as
+        determined by GitHub; no public threshold is published. Eligibility
+        is re-evaluated by GitHub every month.
+    how_to_apply: >-
+      No application form: check eligibility under profile menu > Copilot
+      settings; access is granted automatically if you qualify.
+    renewal: Eligibility re-evaluated monthly by GitHub.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: GitHub Docs page live, states Copilot Pro free for maintainers of popular open-source repositories, monthly re-evaluation"
+  - product: GitHub Actions, Packages and paid-tier features on public repositories
+    offer_url: https://github.com/pricing
+    what_you_get: >-
+      GitHub Actions CI/CD minutes and Packages storage are free for public
+      repositories on all plans (private-repo quotas like 2,000 minutes/500MB
+      on Free do not apply), and paid-tier features such as repository rules,
+      code owners, draft pull requests, and multiple pull request assignees
+      are available free on public repositories.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: No application; benefits apply automatically to public repositories.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, Actions/Packages and several features marked 'Free for public repositories'"

@@ -1,0 +1,19 @@
+company: Qlty Software (Code Climate)
+website: https://qlty.sh
+categories: [testing]
+offers:
+  - product: Qlty Cloud (code quality and coverage)
+    offer_url: https://qlty.sh/pricing
+    what_you_get: >-
+      Qlty Cloud (successor to Code Climate Quality) code health and coverage
+      service free for community-based open source projects; Free-plan support
+      via Discord and GitHub on a best-effort basis.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Stated for "community-based open source projects"; no further published
+        criteria.
+    how_to_apply: Sign up at qlty.sh; pricing page indicates OSS use of Qlty Cloud is free (contact them if verification needed).
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: qlty.sh/pricing live, states Qlty Cloud free for community-based open source projects; old docs.codeclimate.com URL redirects to docs.qlty.sh"

@@ -1,0 +1,25 @@
+company: Syncro Soft
+website: https://www.oxygenxml.com
+categories: [ide-tools, documentation]
+offers:
+  - product: Oxygen XML Editor (open-source project donation)
+    offer_url: https://www.oxygenxml.com/open_source_request_form.html
+    what_you_get: >-
+      Up to ten Named User 6-month subscription-free Oxygen XML licenses each
+      year for a project's leads and core contributors.
+    eligibility:
+      active_development_required: true
+      applies_to: contributors
+      notes: >-
+        Requires an established website, a released product, active community
+        (recent forum activity), updated news section, and regular builds.
+        Licenses may only be used for developing the specified open source
+        project; a visible Oxygen XML link on the project site is required.
+    how_to_apply: >-
+      Application form on the offer page (project name, URL, license page,
+      forum/mailing list, description, contact); Oxygen team reviews and
+      responds.
+    renewal: Licenses run 6 months, renewable up to ten per year.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: open_source_request_form.html live, up to ten 6-month Named User licenses/year for OSS project contributors"

@@ -1,0 +1,18 @@
+company: Healthchecks.io
+website: https://healthchecks.io
+categories: [monitoring]
+offers:
+  - product: Healthchecks.io Business plan (cron job monitoring)
+    offer_url: https://healthchecks.io/pricing/
+    what_you_get: >-
+      Business plan free of charge for open-source projects and nonprofits:
+      monitor 100 jobs, 1,000 log entries per job, 50 SMS/WhatsApp credits,
+      20 phone call credits, and email support (vs. the generic free tier's
+      20 jobs and no credits).
+    eligibility:
+      applies_to: project
+      notes: Open-source projects and nonprofits qualify; no further criteria stated.
+    how_to_apply: Contact Healthchecks.io (via the contact/about page) to get set up.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, states 'We offer the Business plan free of charge for open-source projects and nonprofits'"

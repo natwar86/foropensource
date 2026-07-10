@@ -1,0 +1,17 @@
+company: Cirrus Labs
+website: https://cirrus-ci.org
+categories: [ci-cd]
+offers:
+  - product: Cirrus CI
+    offer_url: https://cirrus-ci.org/pricing/
+    what_you_get: >-
+      Historically: free CI for public OSS repositories on Linux, Windows,
+      macOS and FreeBSD (including ARM), capped at 50 compute credits/month
+      (~10,000 Linux CPU-minutes). Service has been shut down.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: No longer possible; service discontinued.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: cirrus-ci.org unresolvable; Cirrus Labs joined OpenAI (announced 2026-04-07), Cirrus CI stopped running jobs 2026-06-01 per multiple sources incl. postgresql.org mailing list and project issue trackers"

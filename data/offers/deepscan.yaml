@@ -1,0 +1,19 @@
+company: DeepScan
+website: https://deepscan.io
+categories: [testing]
+offers:
+  - product: DeepScan static analysis (free open source plan)
+    offer_url: https://deepscan.io/pricing
+    what_you_get: >-
+      Free static analysis for unlimited public JavaScript/TypeScript projects,
+      with automatic GitHub synchronization, code quality grading, and three
+      months of historical trend data.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: >-
+      Sign up with GitHub on deepscan.io and add public repositories; the free
+      open source plan applies automatically.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, free plan offers 'Unlimited public projects' for open source"

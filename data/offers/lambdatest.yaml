@@ -1,0 +1,28 @@
+company: TestMu AI (formerly LambdaTest)
+website: https://www.testmuai.com
+categories: [testing]
+offers:
+  - product: Cross-browser and mobile testing platform (Open Source Program)
+    offer_url: https://www.testmuai.com/open-source/
+    what_you_get: >-
+      Free licenses to test open-source projects across 5,000+ browsers
+      and devices, access to the test orchestration platform with built-in
+      CI and analytics, plus mentorship, promotion, and optional financial
+      sponsorship (a $250,000 open source grants pool). Program materials
+      also mention 10 HyperExecute parallel sessions and full Test-at-Scale
+      access for OSS projects.
+    eligibility:
+      osi_license_required: true
+      active_development_required: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Valid open source license (MIT, Apache 2.0, GPL, etc.), publicly
+        accessible on GitHub/GitLab, recent updates, and clear
+        documentation (README) required.
+    how_to_apply: >-
+      Fill out the application form on the open-source page with project
+      details and repository URL; questions to support@testmuai.com.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: lambdatest.com/open-source-cross-browser-testing 301s to testmuai.com; testmuai.com/open-source/ live, free licenses for OSS projects"

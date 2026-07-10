@@ -1,0 +1,24 @@
+company: Applitools
+website: https://applitools.com
+categories: [testing]
+offers:
+  - product: Applitools Eyes visual AI testing (Open Source licenses)
+    offer_url: https://applitools.com/open-source/
+    what_you_get: >-
+      Free Applitools licenses for open source projects ("providing free
+      licenses to open source projects to help them deliver visually
+      perfect user interfaces"). The page does not publish specific
+      checkpoint/user limits.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Program is for open source maintainers and contributors; detailed
+        qualification criteria are not published on the page — Applitools
+        reviews requests via their sales contact form.
+    how_to_apply: >-
+      Click "Get Free License" on the offer page (routes to
+      applitools.com/contact/sales/open-source) and submit the contact
+      form.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: applitools.com/open-source/ live, states free licenses for open source projects; limits/eligibility not published"

@@ -1,0 +1,18 @@
+company: AppVeyor
+website: https://www.appveyor.com/
+categories: [ci-cd]
+offers:
+  - product: AppVeyor CI free plan for open source
+    offer_url: https://www.appveyor.com/pricing/
+    what_you_get: >-
+      Free CI/CD plan for open source: unlimited public projects, 1 concurrent
+      job, 5 self-hosted jobs, 60-minute max build time, community support.
+      Additionally, a 50% discount on all paid plans for open-source projects
+      (and students/educational orgs) needing more compute or concurrency.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: Sign up via "Get your FREE account" / "Get your OSS project on-board" on the pricing page.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, free plan with unlimited public projects and 1 concurrent job, plus 50% OSS discount on paid plans"

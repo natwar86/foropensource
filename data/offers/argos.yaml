@@ -1,0 +1,25 @@
+company: Argos
+website: https://argos-ci.com
+categories: [testing]
+offers:
+  - product: Argos visual testing (open source sponsorship)
+    offer_url: https://argos-ci.com/docs/learn/billing-and-subscription/subscription/open-source
+    what_you_get: >-
+      Sponsored (free) visual regression testing beyond the standard free plan
+      for qualifying open source projects; exact screenshot quota is agreed
+      per-project when the free plan is insufficient.
+    eligibility:
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Usage must stay within reasonable limits; project must display the
+        Argos banner in its README and include a dofollow link to
+        argos-ci.com with UTM tracking.
+    how_to_apply: >-
+      Email contact@argos-ci.com confirming you meet the criteria, explaining
+      why the free tier is insufficient, with your Argos team slug and a link
+      to your repository.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page and OSS sponsorship docs live, program accepts applications via contact@argos-ci.com"

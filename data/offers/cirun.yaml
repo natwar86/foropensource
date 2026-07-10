@@ -1,0 +1,20 @@
+company: Cirun
+website: https://cirun.io
+categories: [ci-cd]
+offers:
+  - product: Cirun (open source plan)
+    offer_url: https://cirun.io/pricing
+    what_you_get: >-
+      Cirun service free forever for open source: unlimited public
+      repositories and unlimited self-hosted GitHub Actions runners on all
+      supported cloud providers, including ARM-based and GPU runners.
+      Runners launch in your own cloud account, so underlying cloud compute
+      costs are yours.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Free plan covers public repositories only; private repos require a paid tier.
+    how_to_apply: Sign up via the Get Started flow on cirun.io and connect your repository and cloud account.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: cirun.io/pricing live; Open Source tier states 'always free for open source' with unlimited public repos and runners"

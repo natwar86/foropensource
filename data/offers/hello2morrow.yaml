@@ -1,0 +1,21 @@
+company: hello2morrow
+website: https://www.hello2morrow.com
+categories: [other]
+offers:
+  - product: Sonargraph (free open source license)
+    offer_url: https://www.hello2morrow.com/products/sonargraph/non_commercial_license
+    what_you_get: >-
+      Free Sonargraph license for qualifying open source projects
+      (architecture and static code analysis for Java, Kotlin, C#, Python
+      3, Go, TypeScript, C/C++); the free license also covers
+      Sonargraph-Build for use in CI (e.g. breaking the build on metric
+      threshold violations).
+    eligibility:
+      applies_to: project
+      notes: >-
+        Open source project must not be controlled by a for-profit
+        company or a government entity.
+    how_to_apply: Contact sales@hello2morrow.com to request the free open source license.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: non-commercial license page live, states open source projects qualify for a free license if not controlled by a for-profit company or government entity"

@@ -1,0 +1,22 @@
+company: Atlassian
+website: https://www.atlassian.com
+categories: [project-management]
+offers:
+  - product: Atlassian Standard cloud products (Jira, Confluence, etc.)
+    offer_url: https://www.atlassian.com/software/views/open-source-license-request
+    what_you_get: >-
+      No-cost Open Source licenses for Atlassian Standard cloud products
+      (e.g. Jira, Confluence); the free offer applies to Standard plans only.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Project must be public, with publicly accessible website and source
+        repositories; you must create a cloud site with the desired Standard
+        products and set up public access to it.
+    how_to_apply: >-
+      Fill in the Open Source Project License Request form on the offer page;
+      Atlassian follows up to validate and issue the license.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: license request form page live; Atlassian states Standard cloud products are free for qualifying public open source projects"

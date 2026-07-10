@@ -1,0 +1,26 @@
+company: PVS-Studio
+website: https://pvs-studio.com
+categories: [security, other]
+offers:
+  - product: PVS-Studio (Free Open Source License)
+    offer_url: https://pvs-studio.com/en/order/open-source-license/
+    what_you_get: >-
+      Free one-year PVS-Studio static analyzer license (C, C++, C#, Java)
+      for a non-commercial open source project; one license per project,
+      renewable annually.
+    eligibility:
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Project must be a personal creative endeavor; commercial projects,
+        organization-developed projects (with financing or hired
+        developers), and mirrors/forks are excluded. Requires adding
+        PVS-Studio credit markup to the project's README.md and mentioning
+        PVS-Studio in commits that fix issues it found.
+    how_to_apply: >-
+      Add the required PVS-Studio markup to README.md, then fill out the
+      application form on the offer page.
+    renewal: Annual renewal available.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: offer page live, states free one-year license for non-commercial open source projects with README credit requirement"

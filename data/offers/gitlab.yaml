@@ -1,0 +1,27 @@
+company: GitLab
+website: https://about.gitlab.com
+categories: [ci-cd, hosting]
+offers:
+  - product: GitLab for Open Source (GitLab Ultimate)
+    offer_url: https://about.gitlab.com/solutions/open-source/join/
+    what_you_get: >-
+      Free GitLab Ultimate features (SaaS or self-managed) plus 50,000 compute
+      minutes calculated at a program-specific cost factor. Technical support
+      is not included.
+    eligibility:
+      osi_license_required: true
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: organization
+      notes: >-
+        All projects in the namespace must be OSI-licensed; the GitLab group
+        and source code must be publicly visible. Donations allowed, but no
+        selling services, paid enhancements, or add-ons.
+    how_to_apply: >-
+      Create a GitLab account, then complete the application form on the
+      Customers Portal; a coupon code and provisioning instructions arrive by
+      email.
+    renewal: Annual renewal required; can renew up to three months early, account downgraded if lapsed.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: program pages live, Ultimate + 50k compute minutes free for OSI-licensed non-commercial projects"

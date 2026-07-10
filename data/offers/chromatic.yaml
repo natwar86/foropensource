@@ -1,0 +1,21 @@
+company: Chromatic
+website: https://www.chromatic.com
+categories: [testing]
+offers:
+  - product: Chromatic visual testing (Open Source plan)
+    offer_url: https://www.chromatic.com/pricing
+    what_you_get: >-
+      Free Chromatic for open source projects ("Free for open source.
+      Building in the open? We'd love to support your project."). Specific
+      snapshot limits for the OSS plan are not published on the pricing
+      page.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Page says "Contact us to see if you're eligible"; no explicit
+        published criteria beyond building in the open.
+    how_to_apply: Contact Chromatic sales via the "Contact Sales" link on the pricing page to request open source eligibility.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: chromatic.com/pricing live, states 'Free for open source' with contact-based eligibility check"

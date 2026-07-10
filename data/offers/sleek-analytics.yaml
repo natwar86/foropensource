@@ -1,0 +1,20 @@
+company: Sleek Analytics
+website: https://getsleek.io
+categories: [analytics]
+offers:
+  - product: Sleek Pro plan (free for open source maintainers)
+    offer_url: https://getsleek.io/oss
+    what_you_get: >-
+      1 year of the Sleek Pro plan free for open source maintainers:
+      real-time analytics, unlimited events, and everything offered to
+      paying customers.
+    eligibility:
+      applies_to: maintainer
+      notes: Open to anyone maintaining an open source project; no further criteria published.
+    how_to_apply: >-
+      Application form on the page (name, email, project name, website,
+      GitHub URL); response within a few days.
+    renewal: Free period is 1 year.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: getsleek.io/oss live, states 1 year free Pro plan for OSS maintainers"

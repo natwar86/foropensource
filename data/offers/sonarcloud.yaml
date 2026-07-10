@@ -1,0 +1,18 @@
+company: SonarCloud (SonarQube Cloud)
+website: https://sonarcloud.io/
+categories: [testing]
+offers:
+  - product: SonarQube Cloud open source plan
+    offer_url: https://www.sonarsource.com/products/sonarcloud/
+    what_you_get: >-
+      Free open source plan on SonarQube Cloud (formerly SonarCloud):
+      automated code review with continuous quality and security analysis for
+      many popular languages and DevOps integrations, free for open source /
+      public repository projects.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: Sign up for free on SonarQube Cloud and analyze your public repository; no separate application.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: product page live (sonarcloud.io redirects to sonarsource.com), states an open source plan is available"

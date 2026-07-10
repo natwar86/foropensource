@@ -1,0 +1,19 @@
+company: Code Climate
+website: https://codeclimate.com/
+categories: [testing]
+offers:
+  - product: Code Climate Quality (free for open source)
+    offer_url: https://codeclimate.com/blog/code-climate-is-free-for-open-source
+    what_you_get: >-
+      Formerly offered free automated code review and maintainability/test
+      coverage analysis for open source repositories. The Quality product was
+      spun out to a separate company (Qlty Software) in December 2025 and the
+      Code Climate open source program no longer exists; Code Climate now
+      focuses on its enterprise Velocity product.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: No longer possible via Code Climate; docs.codeclimate.com now redirects to docs.qlty.sh (Qlty Software).
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: codeclimate.com returns 503; Quality spun out to Qlty Software (Dec 2025), Code Climate docs redirect to docs.qlty.sh with no OSS program stated"

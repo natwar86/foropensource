@@ -1,0 +1,71 @@
+company: JetBrains
+website: https://www.jetbrains.com
+categories: [ide-tools, ci-cd, project-management]
+offers:
+  - product: All Products Pack (OSS development licenses)
+    offer_url: https://www.jetbrains.com/community/opensource/
+    what_you_get: >-
+      Free licenses for the full JetBrains product lineup (IntelliJ IDEA
+      Ultimate, PyCharm, WebStorm, etc.) for a project's core contributors,
+      for use on the open source project.
+    eligibility:
+      osi_license_required: true
+      min_project_age_months: 3
+      active_development_required: true
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: contributors
+      notes: >-
+        Project may not offer paid sponsorship, receive commercial funding,
+        provide paid support/consulting/training, or distribute paid versions;
+        regular releases required; applicant must be a project lead or
+        regular committer.
+    how_to_apply: Application form on the offer page; project lead applies on behalf of contributors.
+    renewal: Annual re-application required.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: program page live ('Licenses for Open Source Development'); eligibility terms confirmed from program text"
+  - product: TeamCity (Open Source license)
+    offer_url: https://www.jetbrains.com/community/opensource/
+    what_you_get: >-
+      Free TeamCity Professional Server open source license: unlimited
+      servers with up to 100 build configurations per server and 3 build
+      agents per server at no cost, with free upgrades during the license
+      term.
+    eligibility:
+      osi_license_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Restricted to development of non-commercial open source projects
+        meeting the Open Source Definition; licensee must be an open source
+        development group.
+    how_to_apply: >-
+      Request via the JetBrains open source program page (team tool licenses,
+      including TeamCity, are requested alongside All Products Pack
+      subscriptions).
+    renewal: 1-year license; free renewal on written request 30 days before expiration.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: TeamCity Open Source License Agreement live at jetbrains.com/legal/docs/teamcity/license_opensource/ (v10.3); OSS program lists TeamCity among team tools offered"
+  - product: YouTrack (OSS team license)
+    offer_url: https://www.jetbrains.com/community/opensource/
+    what_you_get: >-
+      Free YouTrack issue tracking license for the open source team,
+      requested through the JetBrains open source program (program covers
+      team tools including YouTrack and TeamCity).
+    eligibility:
+      osi_license_required: true
+      min_project_age_months: 3
+      active_development_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Same program terms as All Products Pack: no paid sponsorship,
+        commercial funding, paid support, or paid versions. Note YouTrack
+        also has a generic free tier for up to 10 users for anyone.
+    how_to_apply: Request team tool licenses via the open source program application form.
+    renewal: Annual re-application required.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: OSS program text states core contributors may request licenses for team tools (YouTrack, TeamCity) in addition to All Products Pack"

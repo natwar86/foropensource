@@ -1,0 +1,27 @@
+company: Heroku
+website: https://www.heroku.com
+categories: [hosting]
+offers:
+  - product: Open Source Software Credit Program
+    offer_url: https://www.heroku.com/open-source-credit-program
+    what_you_get: >-
+      A set monthly Heroku credit allocation for 12 months, typically $25 to
+      $500 USD/month (discretionary), usable on Heroku products such as Dynos,
+      Postgres, and Key-Value Store; not valid for third-party add-ons. Unused
+      monthly credits do not roll over.
+    eligibility:
+      applies_to: maintainer
+      notes: >-
+        Applicant must maintain an open source project running (or intending
+        to run) on Heroku, have an active Heroku account verified with a
+        credit/debit card, use a standard open source license, and have a Code
+        of Conduct. Salesforce employees and government officials excluded.
+    how_to_apply: >-
+      Application form on the program page; applications reviewed once per
+      month, approvals within ten business days.
+    renewal: Annual re-application required to keep receiving credits.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: >-
+      manual: program page live, states monthly credits ($25-$500) for 12
+      months for open source maintainers.

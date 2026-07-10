@@ -1,0 +1,19 @@
+company: Scrutinizer
+website: https://scrutinizer-ci.com/
+categories: [testing]
+offers:
+  - product: Scrutinizer continuous code inspection
+    offer_url: https://scrutinizer-ci.com/pricing
+    what_you_get: >-
+      Free continuous code quality analysis for open-source repositories;
+      Scrutinizer does not charge for open-source repositories and you can add
+      as many as you like.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: >-
+      Sign up on scrutinizer-ci.com and add your open-source repository; no
+      charge applies to open-source repos.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: site live but blocks automated fetch (HTTP 403); Google-indexed pricing page snippet states 'Scrutinizer does not charge for open-source repositories'"

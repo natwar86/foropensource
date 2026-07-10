@@ -1,0 +1,22 @@
+company: jsDelivr
+website: https://www.jsdelivr.com
+categories: [cdn]
+offers:
+  - product: jsDelivr public CDN for open source packages
+    offer_url: https://www.jsdelivr.com
+    what_you_get: >-
+      Free production CDN for open source packages published on npm or GitHub:
+      four CDN and three DNS providers with 540+ points of presence, HTTP/3,
+      brotli compression, on-demand minification, file combining, version
+      aliasing, usage statistics, and a public API. No stated usage limits for
+      eligible open source packages; serves 150 billion requests/month.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Package must be published on npm or a public GitHub repository; no application, works instantly.
+    how_to_apply: No application needed; load files directly via cdn.jsdelivr.net URLs for any npm or GitHub package.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: >-
+      manual: jsdelivr.com live, self-describes as "a free CDN for open source
+      projects" built for production use.

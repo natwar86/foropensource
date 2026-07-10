@@ -1,0 +1,25 @@
+company: Sentry
+website: https://sentry.io
+categories: [error-tracking, monitoring]
+offers:
+  - product: Sentry Open-Source Sponsorship Plan (error monitoring and observability)
+    offer_url: https://sentry.io/for/open-source/
+    what_you_get: >-
+      Free sponsored plan with Business features and no term limit: 5M
+      errors, 5,000GB logs, 1B spans, 100K replays, 500 cron monitors, 25
+      uptime monitors, 3K continuous profile hours, 150 UI profile hours,
+      10GB attachments, 1,000 size analysis uploads, and Seer for 5 active
+      contributors; overage budget can be enabled.
+    eligibility:
+      osi_license_required: true
+      applies_to: project
+      notes: >-
+        Project must be released under a friendly license like Apache or
+        MIT and qualify as genuinely open source software.
+    how_to_apply: >-
+      Application form on the offer page: provide name/email/website,
+      select "Open-Source" company type, Sentry org details, project
+      description and GitHub repository link.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: sentry.io/for/open-source/ live; sponsorship plan quotas listed (5M errors, 1B spans etc.), Apache/MIT-style license required"

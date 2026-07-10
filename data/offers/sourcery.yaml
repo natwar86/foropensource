@@ -1,0 +1,18 @@
+company: Sourcery
+website: https://sourcery.ai
+categories: [testing, security]
+offers:
+  - product: Sourcery AI code review (Open Source plan)
+    offer_url: https://sourcery.ai/pricing
+    what_you_get: >-
+      Pro features free for open source repositories, plus limited security
+      scans for up to 3 repos run biweekly (paid Team plans have 200+ repos
+      with daily scans).
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Works right away on projects in a public repo on GitHub, GitLab, etc.
+    how_to_apply: Sign up via the open source plan link on the pricing page; works automatically for public repos.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, dedicated Open Source tier with Pro for open source repos and biweekly security scans for 3 repos"

@@ -1,0 +1,17 @@
+company: cubic
+website: https://www.cubic.dev
+categories: [ai-ml, ide-tools]
+offers:
+  - product: cubic AI code review (free for open source)
+    offer_url: https://www.cubic.dev/pricing-plans
+    what_you_get: >-
+      cubic's AI code review is 100% free for open source teams: connect it
+      to a public repository to get unlimited AI reviews on pull requests,
+      with codebase-wide, context-aware analysis.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: No application; connect cubic to a public repository via the GitHub integration.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: pricing page live, states 'cubic is 100% free for open source teams' and free for public repositories"

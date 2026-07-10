@@ -1,0 +1,20 @@
+company: Sonar (SonarSource)
+website: https://www.sonarsource.com
+categories: [testing, security]
+offers:
+  - product: SonarQube Cloud (formerly SonarCloud)
+    offer_url: https://www.sonarsource.com/solutions/commitment-to-open-source/
+    what_you_get: >-
+      SonarQube Cloud automated code quality and security analysis "free for
+      analyzing open source projects" — continuous analysis of public open
+      source repositories across many languages and DevOps integrations.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Free analysis applies to open source (public) projects; detailed
+        criteria not published on the page.
+    how_to_apply: Sign up on SonarQube Cloud and import the public open source repository; no separate application.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: commitment-to-open-source page live, states SonarQube Cloud is free for analyzing open source projects"

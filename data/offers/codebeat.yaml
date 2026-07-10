@@ -1,0 +1,17 @@
+company: codebeat
+website: https://codebeat.co/
+categories: [testing]
+offers:
+  - product: codebeat automated code review
+    offer_url: https://codebeat.co/
+    what_you_get: >-
+      Formerly offered free automated code review and quality analytics for
+      open source (public) repositories, covering mobile and web codebases.
+      The service has shut down entirely.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: No longer possible; the service is defunct.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: codebeat.co shows shutdown notice ('Servers are down, support is closed'), redirects to codequest.com"

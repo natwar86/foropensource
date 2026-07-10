@@ -1,0 +1,20 @@
+company: Caphyon
+website: https://www.advancedinstaller.com
+categories: [ide-tools]
+offers:
+  - product: Advanced Installer (Architect license)
+    offer_url: https://www.advancedinstaller.com/free-license.html
+    what_you_get: >-
+      Free Advanced Installer Architect license (the highest tier) for
+      developers of open source projects, for building Windows installers.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Must have an open source project; detailed criteria not published,
+        reviewed per request.
+    how_to_apply: >-
+      Email support@advancedinstaller.com with your name and details about
+      your open source project; response in 1-2 business days.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: free-license.html live, offers free Architect license for open source projects via email request"

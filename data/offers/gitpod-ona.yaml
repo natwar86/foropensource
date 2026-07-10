@@ -1,0 +1,23 @@
+company: Gitpod (Ona)
+website: https://www.gitpod.io
+categories: [ide-tools, ai-ml]
+offers:
+  - product: Ona for Open Source (cloud dev environments + AI agents)
+    offer_url: https://ona.com/open-source
+    what_you_get: >-
+      Up to $200/month in free Ona credits for open source maintainers and
+      contributors, usable for Ona's cloud development environments and AI
+      software engineering agents. Successor to the former "Gitpod for Open
+      Source" free plan after the Gitpod-to-Ona rebrand.
+    eligibility:
+      applies_to: maintainer
+      notes: >-
+        Open to maintainers and contributors of open source projects; detailed
+        criteria not published on the announcement, decided at application review.
+    how_to_apply: Apply via the signup form at ona.com/open-source.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: >-
+      manual: old gitpod.io/for/opensource 308-redirects to ona.com (404); program
+      relaunched as "Ona for Open Source" per ona.com/stories/ona-for-open-source
+      and dev.to coverage (Feb 2026), $200/month free credits.

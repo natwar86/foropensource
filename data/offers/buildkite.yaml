@@ -1,0 +1,19 @@
+company: Buildkite
+website: https://buildkite.com
+categories: [ci-cd]
+offers:
+  - product: Buildkite Pipelines (free Pro plan for open source)
+    offer_url: https://buildkite.com/pricing/
+    what_you_get: >-
+      Free access to the Pro plan (normally $30 USD per active user per month)
+      for open source projects; usage and inclusions are discussed with
+      Buildkite on a case-by-case basis.
+    eligibility:
+      applies_to: project
+      notes: Must be an open source project; approval handled case-by-case by Buildkite.
+    how_to_apply: >-
+      Contact Buildkite to discuss usage and inclusions; no self-service
+      signup for the open source plan.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, states 'Buildkite is free for open source projects' with contact-us application"

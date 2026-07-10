@@ -1,0 +1,26 @@
+company: Tembo
+website: https://www.tembo.io
+categories: [ai-ml, database]
+offers:
+  - product: Tembo platform (free for open source)
+    offer_url: https://www.tembo.io/oss
+    what_you_get: >-
+      Full access to all Tembo features including AI agents, automations,
+      and integrations, with unlimited contributors, priority support, and
+      perpetual free access for as long as the project remains open source.
+    eligibility:
+      osi_license_required: true
+      non_commercial_only: true
+      active_development_required: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Project must be publicly hosted on GitHub or GitLab under an
+        OSI-approved license (e.g. MIT, Apache 2.0), be non-commercial with
+        no revenue, show active development and community participation;
+        applicant must be an official owner or maintainer.
+    how_to_apply: Application form on the page (name, email, repository link) with maintainer confirmation.
+    renewal: Free access continues as long as the project remains open source.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: tembo.io/oss live, states full feature access free for OSI-licensed non-commercial projects"

@@ -1,0 +1,26 @@
+company: DigitalOcean
+website: https://www.digitalocean.com
+categories: [hosting]
+offers:
+  - product: DigitalOcean Credits for Open Source
+    offer_url: https://www.digitalocean.com/open-source
+    what_you_get: >-
+      Grants of DigitalOcean infrastructure credits for a project's
+      development, infrastructure, and testing needs, usable on Droplets,
+      managed databases, App Platform, and managed Kubernetes. Grant amounts
+      vary by project tier; each grant lasts one year.
+    eligibility:
+      osi_license_required: true
+      applies_to: project
+      notes: >-
+        Project must meet DigitalOcean's Grant Tier Criteria; a Code of Conduct
+        is encouraged but not strictly required.
+    how_to_apply: >-
+      Application form on the Credits for Open Source page; review takes 7-10
+      business days, notification by email.
+    renewal: Annual re-application required; renewal not guaranteed, reminders start 65 days before expiration.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: >-
+      manual: digitalocean.com/open-source live, describes credit grants for
+      OSI-licensed projects with annual renewal.

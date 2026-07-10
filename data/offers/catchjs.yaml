@@ -1,0 +1,18 @@
+company: CatchJS
+website: https://catchjs.com
+categories: [error-tracking]
+offers:
+  - product: CatchJS JavaScript error tracking
+    offer_url: https://catchjs.com/
+    what_you_get: >-
+      Complimentary (free) CatchJS subscription for open source software
+      projects; site states they give free subscriptions to open source
+      projects out of appreciation for the OSS community. Exact plan tier
+      not specified on the page.
+    eligibility:
+      applies_to: project
+      notes: Must be part of an open source software project; detailed criteria not published.
+    how_to_apply: Apply via the form at https://catchjs.com/Contact/OpenSource (linked "Click here to apply" on the homepage).
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: homepage live, states free subscription for open source projects with apply link"

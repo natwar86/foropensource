@@ -1,0 +1,24 @@
+company: Fastly
+website: https://www.fastly.com
+categories: [cdn]
+offers:
+  - product: Fast Forward (free CDN and edge services)
+    offer_url: https://www.fastly.com/fast-forward
+    what_you_get: >-
+      Free Fastly services (CDN, edge delivery and related services) for
+      eligible open source projects and the nonprofits that support them.
+      Program has backed major ecosystems (Python, Rust, Ruby, Apache
+      projects) since 2014; exact quotas are agreed after application.
+    eligibility:
+      osi_license_required: true
+      applies_to: project
+      notes: >-
+        Projects should be open (open source license, collaborative values),
+        community-centered (inclusive to contributors), and built on trust
+        (security-minded). Nonprofits supporting OSS also eligible.
+    how_to_apply: >-
+      Application form on the Fast Forward page describing how the project
+      meets the criteria; Fastly follows up about technical needs.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: fastly.com/fast-forward live, free services for eligible open source projects and supporting nonprofits"

@@ -1,0 +1,25 @@
+company: Sauce Labs
+website: https://saucelabs.com
+categories: [testing]
+offers:
+  - product: Open Sauce (free open source accounts)
+    offer_url: https://opensource.saucelabs.com/
+    what_you_get: >-
+      Free Sauce Labs accounts for qualifying open source projects for
+      cross-browser and mobile testing on the Sauce Labs cloud;
+      historically the Open Sauce plan gave unlimited testing minutes on
+      multiple parallel VMs with access to all OS/browser combinations.
+    eligibility:
+      public_repo_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Account may only be used for the open source project; test results
+        (videos, screenshots, logs) are publicly accessible; support limited
+        to account issues.
+    how_to_apply: >-
+      Sign up via the Sauce Labs open source page with your project's
+      repository URL and a description of the project.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: saucelabs.com/pricing live and states 'free accounts for qualifying initiatives' for open source, linking to opensource.saucelabs.com; plan details from Open Sauce program materials"

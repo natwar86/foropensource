@@ -1,0 +1,20 @@
+company: CodeScene
+website: https://codescene.com
+categories: [testing]
+offers:
+  - product: CodeScene for Open Source (community edition)
+    offer_url: https://codescene.com/product/codescene-for-open-source
+    what_you_get: >-
+      Free CodeScene community edition for open source projects: automated code
+      reviews via PR integration, technical debt management with Hotspots, Code
+      Health measurement, knowledge distribution visualization, PDF analysis
+      reports, virtual code review, and customizable Code Health rules.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Pricing page states "CodeScene is free for open-source projects"; no
+        further published criteria.
+    how_to_apply: Use the "Get community edition" flow linked from codescene.com/pricing.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, dedicated free community edition for open source projects distinct from paid Standard/Pro plans"

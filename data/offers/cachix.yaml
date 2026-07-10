@@ -1,0 +1,18 @@
+company: Cachix
+website: https://www.cachix.org
+categories: [storage, ci-cd]
+offers:
+  - product: Cachix Nix binary cache (open source tier)
+    offer_url: https://www.cachix.org/pricing
+    what_you_get: >-
+      Free Nix binary cache with a 5 GB storage limit (compressed) for open
+      source projects, plus 20 Cachix Deploy agents.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Offer is stated as being for open source projects; page does not
+        document a verification process or further criteria.
+    how_to_apply: Sign up on cachix.org; the free open source tier is provisioned on signup for OSS use.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, states free 5 GB limit for open source projects and 20 Deploy agents"

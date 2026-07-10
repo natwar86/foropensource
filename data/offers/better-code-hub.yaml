@@ -1,0 +1,16 @@
+company: Better Code Hub
+website: https://bettercodehub.com/
+categories: [testing]
+offers:
+  - product: Better Code Hub (maintainability analysis)
+    offer_url: https://bettercodehub.com/
+    what_you_get: >-
+      Formerly offered free source code maintainability analysis (10 SIG
+      guidelines) for open source repositories. The service has been retired
+      and is no longer available.
+    eligibility:
+      applies_to: project
+    how_to_apply: No longer possible; site says to contact Software Improvement Group about Sigrid instead.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: bettercodehub.com states 'Better Code Hub has retired!' and points to Sigrid via direct contact only"

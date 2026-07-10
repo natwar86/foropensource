@@ -1,0 +1,25 @@
+company: Tailscale
+website: https://tailscale.com
+categories: [networking]
+offers:
+  - product: Tailscale mesh VPN (Community on GitHub plan)
+    offer_url: https://tailscale.com/kb/1154/free-plans-discounts
+    what_you_get: >-
+      Free "Community on GitHub" plan for open source organizations —
+      comparable to paid plans, intended for uses like shared build tools,
+      internal test servers, and sharing project resources among
+      developers. Exact user/device limits are not published on the plans
+      page.
+    eligibility:
+      osi_license_required: true
+      applies_to: organization
+      notes: >-
+        Must have a GitHub organization, use GitHub for authentication,
+        and use Tailscale for an open source project with an OSI-approved
+        license.
+    how_to_apply: >-
+      Cannot be enabled from the admin console Billing page; sign in with
+      GitHub authentication and contact Tailscale Support to enroll.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: KB page kb/1154 live, describes free Community on GitHub plan for OSI-licensed projects via GitHub org"

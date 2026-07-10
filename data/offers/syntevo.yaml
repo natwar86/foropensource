@@ -1,0 +1,21 @@
+company: syntevo
+website: https://www.syntevo.com
+categories: [ide-tools]
+offers:
+  - product: SmartGit (non-commercial license)
+    offer_url: https://www.smartgit.dev/purchase/
+    what_you_get: >-
+      Free SmartGit license (Git GUI client for Windows, macOS, Linux) for
+      open-source developers, offered under syntevo's non-commercial license
+      program (also covering students and public academic/charitable staff).
+    eligibility:
+      non_commercial_only: true
+      applies_to: maintainer
+      notes: >-
+        Open-source developers are an explicitly named eligible group;
+        program is shared with students and employees of public academic and
+        charitable institutions.
+    how_to_apply: Request a complimentary license via the registration form at syntevo.com/register-non-commercial/.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: smartgit.dev/purchase live, states free licenses for 'open-source developers' via non-commercial registration form"

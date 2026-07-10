@@ -1,0 +1,17 @@
+company: Zeplin
+website: https://zeplin.io
+categories: [design]
+offers:
+  - product: Zeplin Basic, 3 Pack plan (design handoff)
+    offer_url: https://support.zeplin.io/en/articles/3411436-zeplin-for-education-ngos-and-open-source-community
+    what_you_get: >-
+      The monthly Basic, 3 Pack plan free for one year — a personal workspace,
+      up to 3 active projects, and unlimited members.
+    eligibility:
+      applies_to: contributors
+      notes: Program covers open source contributors (alongside students, teachers, and nonprofits); page does not publish license or project-age requirements.
+    how_to_apply: Fill out the Typeform application linked from the support article ("Apply now").
+    renewal: Offer granted for one year.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: support article live, states open source contributors get 'the monthly Basic, 3 Pack plan free for one year'"

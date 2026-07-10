@@ -1,0 +1,23 @@
+company: elmah.io
+website: https://elmah.io
+categories: [error-tracking, monitoring]
+offers:
+  - product: elmah.io error logging and uptime monitoring (Small Business subscription)
+    offer_url: https://elmah.io/sponsorship/opensource/
+    what_you_get: >-
+      Free Small Business subscription to elmah.io (error logging and uptime
+      monitoring for .NET) to monitor your open source project. Subscription
+      may only be used for the open source project itself.
+    eligibility:
+      public_repo_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Project must be publicly available on GitHub, Bitbucket, or similar
+        and be open source. Requires a backlink to elmah.io from the project's
+        landing page or repository. Subscription restricted to monitoring that
+        project only.
+    how_to_apply: Get in contact with elmah.io (via site contact) to redeem the free subscription, per the open source sponsorship page.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: sponsorship/opensource page live, states free Small Business subscription for open source projects with backlink requirement"

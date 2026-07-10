@@ -1,0 +1,21 @@
+company: Lost Pixel
+website: https://lost-pixel.com
+categories: [testing]
+offers:
+  - product: Lost Pixel visual regression testing (open source plan)
+    offer_url: https://lost-pixel.com
+    what_you_get: >-
+      Formerly free visual regression testing for open-source projects
+      (historically 7,000 snapshots/month with unlimited team members). The
+      product is being sunset following the team joining Figma; the open
+      source self-hosted tool remains on GitHub.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: >-
+      No longer recommended; the hosted platform is winding down after the
+      Figma acquisition. Previously applicants contacted the team via a form
+      on the site.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: lost-pixel.com live but announces 'Lost Pixel is joining Figma' and product sunset (announced April 2026)"

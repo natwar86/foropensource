@@ -1,0 +1,17 @@
+company: Bump.sh
+website: https://bump.sh
+categories: [documentation]
+offers:
+  - product: Bump.sh Pro plan (API documentation)
+    offer_url: https://bump.sh/pricing/
+    what_you_get: >-
+      Free access to the Bump.sh Pro plan (listed at $250/month) for open
+      source projects — hosted API documentation and changelogs for
+      OpenAPI/AsyncAPI definitions.
+    eligibility:
+      applies_to: project
+      notes: Project must be submitted for approval; page states only "Submit your project and get free access to Bump.sh Pro plan. We love open source."
+    how_to_apply: Email hello@bump.sh with your open source project details (link on the pricing page).
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, states 'Submit your project and get free access to Bump.sh Pro plan. We love open source.'"

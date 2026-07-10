@@ -1,0 +1,18 @@
+company: PullApprove
+website: https://www.pullapprove.com/
+categories: [testing]
+offers:
+  - product: PullApprove code review workflows
+    offer_url: https://www.pullapprove.com/
+    what_you_get: >-
+      Free use for public repositories ("Free for public repos, 14-day trial
+      for private"): code review workflow management via CODEREVIEW.toml with
+      path-based ownership, approval requirements, and team-based review
+      routing for pull requests.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: Use it with a public repository; site says no account required, no separate application.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pullapprove.com live, states 'Free for public repos, 14-day trial for private'"

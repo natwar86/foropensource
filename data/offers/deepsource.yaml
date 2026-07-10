@@ -1,0 +1,21 @@
+company: DeepSource
+website: https://deepsource.com
+categories: [testing, security]
+offers:
+  - product: DeepSource static analysis (OSS plan)
+    offer_url: https://deepsource.com/pricing
+    what_you_get: >-
+      Free plan for open source: unlimited public repositories, unlimited team
+      members, 1,000 pull requests reviewed per month, static analysis, SAST,
+      IaC scanning, code coverage, secrets detection, and 1,000 automated code
+      formatting runs per month (AI Review/Autofix are pay-as-you-go).
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        "Free for open-source projects, and always will be"; no formal vetting
+        described beyond repositories being public open source.
+    how_to_apply: Sign up on deepsource.com and connect public repositories; no separate application.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, dedicated OSS plan with 1,000 PRs/month for public open source repos"

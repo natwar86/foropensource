@@ -1,0 +1,28 @@
+company: OpenPanel
+website: https://openpanel.dev
+categories: [analytics]
+offers:
+  - product: OpenPanel analytics (free for open source)
+    offer_url: https://openpanel.dev/open-source
+    what_you_get: >-
+      Free web/product analytics for open source projects with up to 2.5
+      million events per month, full feature access (funnels, retention,
+      custom dashboards, real-time analytics), unlimited team members, and
+      priority support.
+    eligibility:
+      osi_license_required: true
+      active_development_required: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Requires OSI-approved license (MIT, Apache, GPL, etc.), public repo
+        on GitHub/GitLab or similar, active development and community, and
+        a primarily non-commercial purpose (commercial OSS considered
+        case-by-case). In return: a backlink in your website or README and
+        optionally a real-time visitor widget.
+    how_to_apply: >-
+      Email oss@openpanel.dev with project URL, license type, and a brief
+      description; response within a few business days.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: openpanel.dev/open-source live, states 2.5M events/month free with OSI-license and backlink terms"

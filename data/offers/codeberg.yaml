@@ -1,0 +1,20 @@
+company: Codeberg
+website: https://codeberg.org
+categories: [hosting, ci-cd]
+offers:
+  - product: Codeberg (Forgejo git hosting, Pages, CI/CD, Weblate)
+    offer_url: https://codeberg.org/
+    what_you_get: >-
+      Free Git repository hosting on Forgejo, static site hosting via
+      Codeberg Pages, CI/CD (Woodpecker-based), and a Weblate translation
+      instance, run by a Berlin-based non-profit funded by membership dues
+      and donations (629k+ projects hosted).
+    eligibility:
+      applies_to: project
+      notes: >-
+        Services are explicitly for free and open-source projects; content
+        must comply with Codeberg's FOSS-focused terms of use.
+    how_to_apply: Register an account directly at codeberg.org; no approval process for standard use.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: homepage live, states it 'provides services to free and open-source projects' including Git hosting, Pages, CI/CD, Weblate"

@@ -1,0 +1,21 @@
+company: Equinix Metal
+website: https://deploy.equinix.com
+categories: [hosting]
+offers:
+  - product: Open-Source Partner Program (bare-metal infrastructure)
+    offer_url: https://deploy.equinix.com/open-source/
+    what_you_get: >-
+      Formerly free bare-metal servers and network transfer for notable open
+      source projects (e.g. freedesktop.org, Alpine Linux, CNCF community
+      infrastructure). Program ended with the shutdown of the Equinix Metal
+      platform.
+    eligibility:
+      applies_to: project
+      notes: Program no longer accepting projects; platform sunset.
+    how_to_apply: No longer possible; the Equinix Metal platform was retired.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: >-
+      manual: Equinix Metal sunset June 30, 2026 (announced Nov 2024); press
+      coverage confirms Open-Source Partner Program ended, FOSS projects
+      migrating (LowEndBox, FOSS Force, Data Center Knowledge).

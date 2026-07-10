@@ -1,0 +1,23 @@
+company: RISE Project (RISC-V Software Ecosystem)
+website: https://riseproject.dev
+categories: [ci-cd]
+offers:
+  - product: RISE RISC-V Runners
+    offer_url: https://riseproject.dev/2026/03/24/announcing-the-rise-risc-v-runners-free-native-risc-v-ci-on-github/
+    what_you_get: >-
+      Free native RISC-V GitHub Actions runners for any open source project
+      on GitHub: bare-metal RISC-V servers (hosted at Scaleway, no
+      emulation), Docker-in-Docker support, fresh isolated environment per
+      job, one job per node; use label ubuntu-24.04-riscv.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Free of charge to any open source project on GitHub; no approval
+        process and no allowlist.
+    how_to_apply: >-
+      Install the RISE runners GitHub App (org or personal variant) and add
+      "runs-on: ubuntu-24.04-riscv" to your workflow.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: announcement live on riseproject.dev (2026-03-24); states free of charge to any open source project on GitHub, no approval process"

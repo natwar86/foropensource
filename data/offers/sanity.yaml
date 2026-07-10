@@ -1,0 +1,18 @@
+company: Sanity
+website: https://www.sanity.io
+categories: [other, documentation]
+offers:
+  - product: Sanity Open Source plan (Growth plan free for OSS)
+    offer_url: https://www.sanity.io/docs/open-source-plan
+    what_you_get: >-
+      Formerly offered Sanity's Growth plan free to non-monetized open
+      source projects (including multiple datasets, extra users, and SSO).
+      The program no longer exists.
+    eligibility:
+      non_commercial_only: true
+      applies_to: project
+      notes: Historical terms; program has been discontinued.
+    how_to_apply: No longer possible; the plan has been discontinued.
+    status: discontinued
+    last_verified: "2026-07-07"
+    verification_source: "manual: official docs page at sanity.io/docs/open-source-plan now states 'The Open Source plan has been discontinued.'"

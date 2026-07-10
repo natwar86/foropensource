@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foropensource.com/schemas/offer.schema.json",
+  "title": "Company with free-for-open-source offers",
+  "type": "object",
+  "required": ["company", "website", "offers"],
+  "additionalProperties": false,
+  "properties": {
+    "company": { "type": "string", "minLength": 1 },
+    "website": { "type": "string", "format": "uri" },
+    "categories": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "ide-tools", "ci-cd", "hosting", "monitoring", "error-tracking",
+          "security", "auth", "email", "database", "storage", "cdn",
+          "analytics", "project-management", "communication", "design",
+          "documentation", "testing", "ai-ml", "networking", "licensing-compliance", "other"
+        ]
+      },
+      "minItems": 1
+    },
+    "offers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["product", "offer_url", "what_you_get", "eligibility", "how_to_apply", "status", "last_verified"],
+        "additionalProperties": false,
+        "properties": {
+          "product": { "type": "string", "minLength": 1 },
+          "offer_url": { "type": "string", "format": "uri" },
+          "what_you_get": {
+            "type": "string",
+            "minLength": 10,
+            "description": "Concrete description: 'free All Products Pack for core contributors', not 'free stuff'"
+          },
+          "eligibility": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "osi_license_required": { "type": "boolean" },
+              "min_project_age_months": { "type": "integer", "minimum": 0 },
+              "active_development_required": { "type": "boolean" },
+              "non_commercial_only": { "type": "boolean" },
+              "public_repo_required": { "type": "boolean" },
+              "applies_to": { "enum": ["project", "maintainer", "contributors", "organization"] },
+              "notes": { "type": "string" }
+            }
+          },
+          "how_to_apply": { "type": "string", "minLength": 5 },
+          "renewal": { "type": "string", "description": "e.g. 'annual re-application required'" },
+          "status": { "enum": ["active", "stale", "discontinued"] },
+          "last_verified": { "type": "string", "format": "date" },
+          "verification_source": {
+            "type": "string",
+            "description": "How it was verified: 'manual: page live', 'automated: content hash', URL of announcement, etc."
+          }
+        }
+      }
+    }
+  }
+}

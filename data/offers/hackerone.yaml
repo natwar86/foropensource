@@ -1,0 +1,26 @@
+company: HackerOne
+website: https://www.hackerone.com
+categories: [security]
+offers:
+  - product: HackerOne Community Edition
+    offer_url: https://www.hackerone.com/company/open-source-community
+    what_you_get: >-
+      Free vulnerability coordination / bug bounty platform for open source
+      projects: security page with disclosure policy, report management with
+      discussion tools, intelligent duplicate detection, hacker reputation and
+      private invites, API access, and analytics dashboards. Only cost is a 5%
+      payment processing fee if you choose to pay bounties.
+    eligibility:
+      osi_license_required: true
+      min_project_age_months: 3
+      active_development_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Must add a SECURITY.md in the project root, link to the HackerOne
+        profile from the project website, and respond to new reports within a
+        week.
+    how_to_apply: Application form on the page (project name, website, motivation); reviews typically complete within one business week.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: Community Edition page live at hackerone.com/company/open-source-community (old /community/open-source URL 404s), free for OSI-licensed active projects"

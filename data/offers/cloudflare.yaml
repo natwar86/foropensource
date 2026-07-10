@@ -1,0 +1,26 @@
+company: Cloudflare
+website: https://www.cloudflare.com
+categories: [cdn, security, hosting]
+offers:
+  - product: Project Alexandria (open source program)
+    offer_url: https://www.cloudflare.com/lp/project-alexandria/
+    what_you_get: >-
+      Recurring annual credits providing Cloudflare products free, tailored
+      to project size: Pro/Business/Enterprise plan upgrades (Rules, Polish
+      image optimization, WAF, Security Analytics, Page Shield), increased
+      Workers and Pages request limits, expanded R2 object storage, advanced
+      Zero Trust (Remote Browser Isolation, unlimited users), and a dedicated
+      Discord channel.
+    eligibility:
+      osi_license_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Must be an open source project with a recognized OSS license and
+        operate solely on a non-profit basis and/or align with the program's
+        mission.
+    how_to_apply: Apply via the Project Alexandria application form on the landing page.
+    renewal: Credits recur annually.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: Cloudflare blog 'Expanding Cloudflare's support for open source projects with Project Alexandria' + LP confirmed via search (direct fetch 403 bot-blocked)"

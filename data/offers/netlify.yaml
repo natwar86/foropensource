@@ -1,0 +1,23 @@
+company: Netlify
+website: https://www.netlify.com
+categories: [hosting]
+offers:
+  - product: Netlify Open Source plan
+    offer_url: https://www.netlify.com/legal/open-source-policy/
+    what_you_get: >-
+      Free Open Source plan with 10,000 credits per month, free production
+      deploys, unlimited team members; sites remain active even if credits
+      run out, and additional credits can be purchased at Pro plan rates.
+    eligibility:
+      osi_license_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        OSI-approved license (or certain Creative Commons licenses with
+        attribution), a code of conduct featured prominently in the repo or
+        docs, and a "powered by Netlify" link/badge on the site's main page.
+        Netlify monitors compliance and may downgrade violating plans.
+    how_to_apply: Fill out the application form linked from the open source policy page for review.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: open source policy page live (updated 2026), states 10,000 credits/month and unlimited team members for qualifying OSS projects"

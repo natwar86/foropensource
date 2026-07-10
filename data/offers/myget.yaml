@@ -1,0 +1,26 @@
+company: MyGet
+website: https://www.myget.org
+categories: [other]
+offers:
+  - product: MyGet Open Source subscription (package hosting)
+    offer_url: https://www.myget.org/opensource
+    what_you_get: >-
+      Free MyGet subscription for open source projects: public and community
+      feeds, 1 GB storage, packages up to 100 MB each, Build Services and
+      Symbols Services, and the option to promote feeds in the gallery.
+      Higher storage can be requested in the application.
+    eligibility:
+      osi_license_required: true
+      min_project_age_months: 3
+      active_development_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Applicant must be a project lead or active contributor (commit within
+        the last month); project must comply with the OSD, not be backed by
+        commercial entities or paid contributors, and not sell services or
+        paid versions.
+    how_to_apply: Web form on the offer page with name, email, project details, license, project age, and your role.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: opensource page live, states free plan with 1 GB storage and Build/Symbols services for qualifying OSS projects"

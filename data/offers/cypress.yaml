@@ -1,0 +1,25 @@
+company: Cypress
+website: https://www.cypress.io/
+categories: [testing]
+offers:
+  - product: Cypress Cloud Open Source Plan
+    offer_url: https://docs.cypress.io/cloud/account-management/billing-and-usage#Open-Source-Plan
+    what_you_get: >-
+      Free Cypress Cloud plan for qualifying open source projects with 5 free
+      user seats, 100,000 test results per month, parallelization with load
+      balancing, and access to integrations.
+    eligibility:
+      osi_license_required: true
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: organization
+      notes: >-
+        All projects in the Cypress Cloud organization must be public and
+        non-commercial; organization must have recorded at least 500 tests.
+    how_to_apply: >-
+      In the Cypress Cloud dashboard go to Billing & Usage, click Upgrade,
+      select "Apply for an open source plan", and submit the application form;
+      the Cypress team reviews and confirms by email.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page states Cypress Cloud 'free to use for non-commercial open-source, public projects'; OSS plan docs live with quotas"

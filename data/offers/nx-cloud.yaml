@@ -1,0 +1,24 @@
+company: Nx Cloud
+website: https://nx.dev
+categories: [ci-cd]
+offers:
+  - product: Nx Cloud (OSS plan)
+    offer_url: https://nx.dev/pricing
+    what_you_get: >-
+      Free Nx Cloud plan for open source projects: fully managed remote
+      caching, distributed task execution and unlimited CI pipeline
+      executions, plus free full-featured Nx Powerpack licenses for OSS
+      maintainers.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Aimed at open source repositories using Nx; maintainers wanting a
+        Powerpack license can also reach out via powerpack-support@nrwl.io.
+    how_to_apply: >-
+      Apply via the OSS plan application linked from the Nx pricing page FAQ
+      ("Is there a plan for open source projects?"); confirm the Powerpack
+      question in the form if you also want a Powerpack license.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: nx.dev/pricing FAQ live and lists an open source plan; Nx docs/blog confirm free OSS plan with unlimited CI pipeline executions and free Powerpack for OSS"

@@ -1,0 +1,22 @@
+company: Fibery
+website: https://fibery.com
+categories: [project-management, documentation]
+offers:
+  - product: Fibery (work & knowledge management platform)
+    offer_url: https://fibery.com/blog/product-updates/fibery-special-pricing/
+    what_you_get: >-
+      Fibery is 100% free for all open-source projects (full product at no
+      cost, not a discount). Fibery also offers a separate 50% permanent
+      discount for educational and nonprofit organizations.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Page states the offer applies to open-source projects; no detailed
+        criteria (license, age, activity) are published. Applicants who do
+        not fit standard categories are invited to contact Fibery directly.
+    how_to_apply: >-
+      Submit the application form for open-source projects linked from the
+      special-pricing page ("just let us know").
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: special-pricing page live at fibery.com, states 'Fibery is 100% free for all open-source projects' with application form"

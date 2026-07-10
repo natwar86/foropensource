@@ -1,0 +1,22 @@
+company: Transifex
+website: https://www.transifex.com
+categories: [other]
+offers:
+  - product: Transifex (Open Source plan)
+    offer_url: https://www.transifex.com/open-source/
+    what_you_get: >-
+      Transifex localization platform free forever for qualifying open source
+      projects, including collaboration with translator communities, APIs and
+      SDKs, and support for 100+ frameworks and tools.
+    eligibility:
+      osi_license_required: true
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: project
+      notes: Project must have no funding, revenue, or commercialization model.
+    how_to_apply: >-
+      Sign up via the "Use Transifex for Free" link on the open source page
+      (app.transifex.com/signup); eligibility is based on the stated criteria.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: open-source page live, states Transifex free for OSI-licensed non-commercial projects"

@@ -1,0 +1,24 @@
+company: Algolia
+website: https://www.algolia.com
+categories: [other]
+offers:
+  - product: Algolia for Open Source (search API credits)
+    offer_url: https://www.algolia.com/for-open-source/
+    what_you_get: >-
+      200 units free per month on the standard pay-as-you-go plan, translating
+      to 200,000 records and 200,000 search requests (worth roughly
+      $180/month).
+    eligibility:
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Open to licensed open source software, developer community projects,
+        or legally-recognized non-profits with needs exceeding the standard
+        free tier. Requires displaying a "Search by Algolia" logo linking to
+        algolia.com (alternatives negotiable).
+    how_to_apply: >-
+      Application form on the offer page; questions to community@algolia.com.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: for-open-source page live, 200 free units/month for non-commercial OSS projects; DocSearch is now free for all technical docs sites, not OSS-specific"

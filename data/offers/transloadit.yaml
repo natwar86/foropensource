@@ -1,0 +1,20 @@
+company: Transloadit
+website: https://transloadit.com
+categories: [other]
+offers:
+  - product: Transloadit (file uploading and encoding API)
+    offer_url: https://transloadit.com/pricing/
+    what_you_get: >-
+      Free access to the Transloadit file uploading and media encoding
+      platform for open source projects and nonprofits.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Open source projects and nonprofit organizations qualify; a
+        "Powered by Transloadit" link on your website is required.
+    how_to_apply: >-
+      Add a "Powered by Transloadit" link to your website and reach out to
+      support@transloadit.com to apply.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, states free access for open source and nonprofits with 'Powered by Transloadit' link"

@@ -1,0 +1,22 @@
+company: CodSpeed
+website: https://codspeed.io
+categories: [testing, ci-cd]
+offers:
+  - product: CodSpeed continuous benchmarking (Free plan for open source)
+    offer_url: https://codspeed.io/pricing
+    what_you_get: >-
+      Free continuous performance tracking in CI with unlimited users for
+      open-source projects (private repos capped at 5 users), unlimited
+      repository runs, 600 macro runner minutes/month, 3-month history,
+      pull-request performance reports, and CPU/wall-time instruments.
+    eligibility:
+      osi_license_required: true
+      public_repo_required: true
+      applies_to: project
+      notes: Project must be publicly accessible with an OSI-approved license.
+    how_to_apply: >-
+      Use the Free plan directly; for extra macro runner minutes email
+      support@codspeed.io with project details.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, Free plan states 'Unlimited for open-source projects' with OSI-approved license requirement"

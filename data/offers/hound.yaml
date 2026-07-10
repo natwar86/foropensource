@@ -1,0 +1,19 @@
+company: Hound
+website: https://houndci.com/
+categories: [testing]
+offers:
+  - product: Hound automated style review
+    offer_url: https://houndci.com/
+    what_you_get: >-
+      Free automated code style review on GitHub pull requests for public
+      repositories ("Hound is free for public repos!"), with comments on
+      style issues, support for 12+ languages (JavaScript, Ruby, Python,
+      Swift, PHP, Go, TypeScript, etc.) and customizable style guides.
+      Private repos start at $29/month.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+    how_to_apply: Click "Get started with GitHub" and sign in with a GitHub account; no separate application.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: homepage live, states 'Hound is free for public repos!'"

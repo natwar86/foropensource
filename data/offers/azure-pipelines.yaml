@@ -1,0 +1,38 @@
+company: Azure Pipelines
+website: https://azure.microsoft.com/en-us/products/devops/pipelines/
+categories: [ci-cd, hosting]
+offers:
+  - product: Azure Pipelines free parallel jobs for open source (public projects)
+    offer_url: https://azure.microsoft.com/en-us/products/devops/pipelines/
+    what_you_get: >-
+      Historically 10 free Microsoft-hosted parallel jobs with unlimited
+      minutes for open source (public) projects on Linux, macOS, and Windows.
+      No longer available to new projects.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Public projects in Azure DevOps are retired: new public projects can
+        no longer be created, and existing public projects retain their free
+        parallelism grants only until they convert to private in 2027.
+    how_to_apply: No longer possible; new public projects cannot be created.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: Microsoft Learn concurrent-jobs doc (updated 2026-06) states public projects are retired, existing grants end when projects convert to private in 2027"
+  - product: Azure credits for open source projects
+    offer_url: https://opensource.microsoft.com/azure-credits/
+    what_you_get: >-
+      Grants of Azure credits for short-term development, infrastructure, and
+      testing needs of open source projects, typically for one Microsoft
+      fiscal year. Closed to direct applications.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Microsoft is not accepting new applications from projects directly;
+        it relies on strategic relationships where Microsoft product teams
+        identify and partner with open source communities they depend on.
+        Long-term hosting, CI/CD, or ongoing databases are out of scope.
+    how_to_apply: "Application form is closed; participation is by Microsoft invitation only."
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: program page live but states 'Microsoft is not accepting new applications from projects directly' and the application form is not open"

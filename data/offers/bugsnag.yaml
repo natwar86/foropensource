@@ -1,0 +1,26 @@
+company: BugSnag
+website: https://www.bugsnag.com
+categories: [error-tracking]
+offers:
+  - product: BugSnag error monitoring (open source / non-profit plan)
+    offer_url: https://www.bugsnag.com/open-source/
+    what_you_get: >-
+      Free standard plan for open source projects and non-profits: unlimited
+      BugSnag usage with up to 15,000 events per month, up to 15
+      collaborators, and access to the Releases Dashboard and Session
+      Tracking.
+    eligibility:
+      osi_license_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Requires an open source license (or non-profit certificate); project
+        must be non-commercial, non-political, non-offensive, non-religious,
+        and must display the BugSnag logo with a backlink on its site.
+    how_to_apply: >-
+      Create a free BugSnag account, then submit the request form on the
+      offer page with your license, README/About page, account email, and
+      proof of the BugSnag logo backlink.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: offer page live, states free plan with 15,000 events/month and 15 collaborators for open source and non-profits"

@@ -1,0 +1,23 @@
+company: POEditor
+website: https://poeditor.com
+categories: [other]
+offers:
+  - product: POEditor (Open Source Project status)
+    offer_url: https://poeditor.com/kb/open-source-localization
+    what_you_get: >-
+      Free localization for open source software with no string limitation
+      (unlimited strings into unlimited languages, unlimited contributors),
+      versus the regular free plan's 1,000-string cap.
+    eligibility:
+      osi_license_required: true
+      applies_to: project
+      notes: >-
+        Must provide the OSI-approved license type, a project description,
+        and a link to the project page when requesting OS status.
+    how_to_apply: >-
+      Create a project in POEditor, then in project Settings > Advanced click
+      the Request link next to "Open Source Project" and submit the form for
+      review.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: KB page live, states unlimited strings free for OSI-licensed open source projects"

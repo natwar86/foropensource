@@ -1,0 +1,22 @@
+company: Statically
+website: https://statically.io
+categories: [cdn]
+offers:
+  - product: Statically CDN
+    offer_url: https://statically.io/
+    what_you_get: >-
+      Free global CDN for open source projects: serves static assets from
+      public Git repositories (GitHub, GitLab, Bitbucket), npm packages, and
+      GitHub Gists via cdn.statically.io URLs, powered by bunny.net and
+      Cloudflare. Note the /img/ image-proxy endpoint has been disabled due
+      to abuse.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Serves assets from publicly hosted repositories and packages; intended for open-source projects.
+    how_to_apply: >-
+      No application; construct URLs like
+      https://cdn.statically.io/gh/:user/:repo@:tag/:file (or /npm/, /gist/).
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: statically.io live, 'A free CDN for Git repositories, npm, and open source projects'"

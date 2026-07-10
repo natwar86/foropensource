@@ -1,0 +1,19 @@
+company: BrowserStack
+website: https://www.browserstack.com
+categories: [testing]
+offers:
+  - product: BrowserStack Open Source program (Live, Automate, Percy)
+    offer_url: https://www.browserstack.com/open-source
+    what_you_get: >-
+      Free unlimited testing on desktop and mobile with Live, Automate, and
+      Percy for 5 users and 5 parallel tests, across 3,000+ browsers and real
+      devices; membership lasts for the duration of the project.
+    eligibility:
+      applies_to: project
+      notes: For open source projects; a project URL is required when applying.
+    how_to_apply: >-
+      Sign up (or sign in) via the open source program page and provide the
+      project URL during registration.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: open-source page live, unlimited Live/Automate/Percy testing free for OSS projects, 5 users / 5 parallels"

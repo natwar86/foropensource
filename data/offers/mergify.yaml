@@ -1,0 +1,21 @@
+company: Mergify
+website: https://mergify.com
+categories: [ci-cd]
+offers:
+  - product: Mergify (merge queue & CI automation)
+    offer_url: https://mergify.com/pricing
+    what_you_get: >-
+      Full product at zero cost for open source projects ("Full product,
+      zero cost. For open source and teams up to 5."): CI Insights, Test
+      Insights, Merge Queue, Merge Protections, and Stacks, plus email
+      support.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Free plan covers open source projects (private repositories are
+        limited to 5 users); the pricing page does not detail what
+        qualifies a project as open source.
+    how_to_apply: Sign up at dashboard.mergify.com via the Get started button; no application form.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: pricing page live, free tier states full product at zero cost for open source projects"

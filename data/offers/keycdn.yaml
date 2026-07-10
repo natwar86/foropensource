@@ -1,0 +1,19 @@
+company: KeyCDN
+website: https://www.keycdn.com
+categories: [cdn]
+offers:
+  - product: Open Source CDN account
+    offer_url: https://www.keycdn.com/open-source-cdn
+    what_you_get: >-
+      Free KeyCDN account for open source projects to accelerate delivery of
+      "static assets on your website or a link to an open source library you
+      want to accelerate", including global network coverage, instant cache
+      purging via API or dashboard, and delivery analytics. Past supported
+      projects include Meteor, webpack, and FreeNAS.
+    eligibility:
+      applies_to: project
+      notes: Must currently maintain an open source project needing CDN services.
+    how_to_apply: Contact KeyCDN via the offer page ("Please contact us to get started").
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: open-source-cdn page live, offers free CDN accounts to open source projects"

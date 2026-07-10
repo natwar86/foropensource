@@ -1,0 +1,26 @@
+company: Graphite
+website: https://graphite.com
+categories: [ide-tools, ci-cd, ai-ml]
+offers:
+  - product: Graphite for Open Source (Standard plan free)
+    offer_url: https://graphite.com/blog/startup-program-announcement
+    what_you_get: >-
+      Full Graphite Standard plan free for open source projects: unlimited
+      stacking (stacked PRs), insights, automations, and the stack-aware
+      merge queue, with no limit on the number of contributors.
+    eligibility:
+      public_repo_required: true
+      applies_to: organization
+      notes: >-
+        OSS projects with 10 or fewer GitHub org members are auto-detected
+        and activated on signup; larger projects apply directly and are
+        reviewed individually (program targets projects that could not
+        otherwise afford a plan). Venture-backed "open core" companies with
+        more than 10 members are excluded and directed to the standard trial.
+    how_to_apply: >-
+      Small projects: sign up for a Graphite Standard annual plan and
+      eligibility is auto-detected. Larger projects: contact Graphite with
+      your GitHub org, website, and project description.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: graphite.com/blog/startup-program-announcement live, 'Graphite is now free for startups and open source projects' with Standard-plan OSS terms"

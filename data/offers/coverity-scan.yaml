@@ -1,0 +1,22 @@
+company: Coverity Scan
+website: https://scan.coverity.com/
+categories: [security, testing]
+offers:
+  - product: Coverity Scan static analysis
+    offer_url: https://scan.coverity.com/
+    what_you_get: >-
+      Free static analysis for open source projects in Java, C/C++, C#,
+      JavaScript, Ruby, or Python, analyzing every line of code and potential
+      execution path, with defect root-cause explanations, GitHub/Travis CI
+      integration, and a web interface for triaging defects. Build submission
+      frequency limits vary by project size.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Must be an open source project; ~9,700 OSS projects use the service.
+    how_to_apply: >-
+      Sign up and register your project on scan.coverity.com, upload your
+      build, then view and fix defects in the web interface.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: page live, states 'fix defects in your ... open source project for free'; announcement dated July 2025 shows service active"

@@ -1,0 +1,17 @@
+company: DeployHQ
+website: https://www.deployhq.com/
+categories: [ci-cd]
+offers:
+  - product: DeployHQ open source discount
+    offer_url: https://www.deployhq.com/blog/how-deployhq-is-open-open-source-students-and-non-profits
+    what_you_get: >-
+      NOT free — a 50% discount on DeployHQ deployment automation plans for
+      open source projects (also students and non-profits). A separate generic
+      free tier (3 projects, unlimited deployments) is available to everyone.
+    eligibility:
+      applies_to: project
+      notes: Open source projects, students, and non-profits qualify; approval by DeployHQ required.
+    how_to_apply: Sign up, then contact/email DeployHQ with details of your open source project to request the discount.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: DeployHQ blog post live, states 50% discount for open source projects, students and non-profits"

@@ -1,0 +1,27 @@
+company: Cal.com
+website: https://cal.com
+categories: [project-management, other]
+offers:
+  - product: Cal.com OSS sponsorship (sponsored team plan)
+    offer_url: https://cal.com/help/event-types/sponsor
+    what_you_get: >-
+      Sponsored (free) access to Cal.com's paid team offering for open
+      source projects (applicants provide their Cal.com team slug); exact
+      plan tier is not specified on the page. In exchange the project must
+      display a "Book us with Cal.com" banner in its footer and README with
+      UTM-tagged links.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Project must be open source and non-commercial, or a commercial open
+        source company with less than $2M ARR; must explain why the generic
+        free tier / self-hosted open core is insufficient. Limited openings
+        per month; requests reviewed monthly at Cal.com's discretion.
+    how_to_apply: >-
+      Email peer@cal.com with project description, confirmation of criteria,
+      why the free tier is insufficient, your Cal.com team slug, and a link
+      to the repository.
+    renewal: Sponsorships reviewed monthly; continued banner display required.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: cal.com/help/event-types/sponsor live, OSS sponsorship terms (<$2M ARR, banner requirement, monthly review)"

@@ -1,0 +1,19 @@
+company: Gandi
+website: https://www.gandi.net
+categories: [other]
+offers:
+  - product: Gandi Supports (domains/hosting support for community projects)
+    offer_url: https://www.gandi.net/en/gandi-supports
+    what_you_get: >-
+      Case-by-case free support — the page states Gandi helps projects with
+      "financial, technical, administrative, or moral" assistance (historically
+      free domain names and hosting). No fixed tiers or quantities are
+      published; supported projects listed include Debian, Ubuntu, GNOME,
+      Framasoft, and Creative Commons.
+    eligibility:
+      applies_to: project
+      notes: Not exclusively open source — program targets "concrete, open, alternative" projects offering an alternative to dominant commercial suppliers; in practice most listed beneficiaries are open source/community projects.
+    how_to_apply: Email non-profit@gandi.net with your project proposal.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: Gandi Supports page live, lists eligibility criteria (concrete/open/alternative), application email, and 30+ supported OSS projects; benefits are unspecified/case-by-case"

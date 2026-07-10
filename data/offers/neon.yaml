@@ -1,0 +1,24 @@
+company: Neon
+website: https://neon.com
+categories: [database]
+offers:
+  - product: Neon Open Source Program (Postgres platform credits)
+    offer_url: https://neon.com/programs/open-source
+    what_you_get: >-
+      Up to $5,000 per year in Neon platform credits for open source
+      projects that use Postgres, plus $20 per referred customer (unlimited)
+      and promotional support (blog features, social media, case studies,
+      co-marketing).
+    eligibility:
+      osi_license_required: true
+      applies_to: project
+      notes: >-
+        Software must be open source under a recognized license and
+        self-hostable, must use Postgres as a component or extension, and
+        must document how users can integrate it with Neon. Existing Neon
+        usage not required, but integrated projects get priority.
+    how_to_apply: Application form on the program page; response typically within 1-3 business days.
+    renewal: Credits are granted annually (up to $5,000/year).
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: neon.com/programs/open-source live, states up to $5,000 yearly credits for Postgres-based OSS projects"

@@ -1,0 +1,24 @@
+company: MacStadium
+website: https://www.macstadium.com
+categories: [ci-cd, hosting]
+offers:
+  - product: Open Source Program (hosted Mac mini)
+    offer_url: https://macstadium.com/company/opensource
+    what_you_get: >-
+      Free access to a cloud-hosted, bare-metal Mac mini (Apple silicon
+      available) for building and testing on macOS, typically used as a remote
+      CI build agent. Over 100 open source projects sponsored, including
+      Homebrew and Swift Package Index.
+    eligibility:
+      min_project_age_months: 3
+      active_development_required: true
+      applies_to: project
+      notes: >-
+        Applicant must be a project lead or regular contributor not paid to
+        work on the project; project must not get the majority of its funding
+        from commercial organizations; software must be free to users (paid
+        support/consulting/training allowed); regular builds released.
+    how_to_apply: Join the waitlist on the program page; openings granted as they become available.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: program page live at macstadium.com/company/opensource (old /opensource URL is 404), states free Mac mini for approved OSS projects"

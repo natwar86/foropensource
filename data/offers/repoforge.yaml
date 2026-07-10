@@ -1,0 +1,18 @@
+company: RepoForge
+website: https://repoforge.io
+categories: [hosting]
+offers:
+  - product: Hosted package repositories (open source plan)
+    offer_url: https://repoforge.io
+    what_you_get: >-
+      Free-forever plan for open source projects with 100 MB storage and
+      unlimited public packages on RepoForge's cloud-hosted package
+      repositories.
+    eligibility:
+      non_commercial_only: true
+      applies_to: project
+      notes: "Plan is for open source projects; not for commercial use."
+    how_to_apply: Sign up directly at app.repoforge.io; no separate approval process mentioned.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: site live, pricing shows free-forever open source plan (100 MB, unlimited public packages, non-commercial)"

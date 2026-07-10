@@ -1,0 +1,18 @@
+company: Stainless
+website: https://stainless.com
+categories: [ide-tools, documentation, other]
+offers:
+  - product: Stainless SDK generator Starter plan (free for FOSS)
+    offer_url: https://stainless.com/pricing
+    what_you_get: >-
+      Stainless Starter plan (normally $79/month per SDK generator) free
+      for qualifying non-commercial open source projects: SDK generation
+      from OpenAPI specs, plus documentation site and MCP server generation.
+    eligibility:
+      non_commercial_only: true
+      applies_to: project
+      notes: Limited to qualifying non-commercial open source (FOSS) projects; reviewed and approved case by case.
+    how_to_apply: Create a free account, then email Stainless (address on pricing page) to request FOSS approval.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: pricing page live, states Starter plan free for qualifying non-commercial FOSS projects"

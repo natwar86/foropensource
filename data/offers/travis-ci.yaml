@@ -1,0 +1,19 @@
+company: Travis CI
+website: https://www.travis-ci.com
+categories: [ci-cd]
+offers:
+  - product: Travis CI for open source (travis-ci.org)
+    offer_url: https://www.travis-ci.com/pricing/
+    what_you_get: >-
+      Historically, unlimited free CI/CD builds for public open source
+      repositories on travis-ci.org. That platform was shut down in June 2021
+      and the free unlimited OSS model was replaced by a credits-based system;
+      today only trial credits and paid plans (from $15/month) are offered.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Historical eligibility; the program no longer accepts open source projects for free unlimited builds.
+    how_to_apply: No longer possible; travis-ci.org signups were migrated to paid/credit plans on travis-ci.com.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: travis-ci.com/pricing shows only paid tiers ($15+/month), no free OSS plan; travis-ci.org shut down June 2021 after 2020 move to credits model"

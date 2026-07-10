@@ -1,0 +1,24 @@
+company: Bunny.net
+website: https://bunny.net
+categories: [cdn]
+offers:
+  - product: hop.js (free open-source CDN)
+    offer_url: https://hopjs.bunny.net/
+    what_you_get: >-
+      Completely free CDN for open-source packages: serves millions of npm and
+      cdnjs packages globally from bunny.net's 119+ datacenters, with all
+      logging disabled (no tracking or profiling), malware scanning of files
+      before distribution, and packages permanently mirrored to Bunny Storage.
+      URL-compatible with cdnjs/jsDelivr (swap hostname to cdn.hopjs.net).
+    eligibility:
+      applies_to: project
+      notes: >-
+        Serves publicly published open-source packages (npm and cdnjs
+        repositories); no account or application needed to load packages.
+    how_to_apply: >-
+      No application; reference files directly via
+      https://cdn.hopjs.net/npm/<package>/<version>/<file> or browse packages
+      at hopjs.bunny.net.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: hopjs.bunny.net live ('Free privacy-first JavaScript and CSS CDN'); details from bunny.net launch blog post"

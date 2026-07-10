@@ -1,0 +1,18 @@
+company: Codeac.io
+website: https://www.codeac.io
+categories: [testing]
+offers:
+  - product: Codeac automated code review (open source plan)
+    offer_url: https://www.codeac.io/pricing.html
+    what_you_get: >-
+      Forever-free plan for open source with unlimited public repositories on
+      Codeac's automated code quality / SAST analysis platform; private
+      repositories require the paid Pro plan.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Applies to public repositories; no separate approval process published.
+    how_to_apply: Sign up at app.codeac.io and connect public repositories; no application needed.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing page live, shows forever-free open source plan with unlimited public repositories"

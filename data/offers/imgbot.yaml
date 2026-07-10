@@ -1,0 +1,18 @@
+company: Imgbot
+website: https://imgbot.net
+categories: [other]
+offers:
+  - product: Imgbot automated image optimization (GitHub App)
+    offer_url: https://github.com/marketplace/imgbot
+    what_you_get: >-
+      Free "Open Source" plan: unlimited public repos, unlimited users.
+      Imgbot losslessly compresses images in your repository and opens
+      automated pull requests with the optimized files.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Free plan covers public repositories only; private repos require a paid plan.
+    how_to_apply: Install the Imgbot GitHub App from the GitHub Marketplace listing and select the free open source plan for public repos.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: GitHub Marketplace listing live, free plan states unlimited public repos and users"

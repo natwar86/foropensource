@@ -1,0 +1,23 @@
+company: Sonatype
+website: https://www.sonatype.com
+categories: [other]
+offers:
+  - product: Maven Central publishing
+    offer_url: https://central.sonatype.org/
+    what_you_get: >-
+      Free publishing and hosting of open source Java/JVM components on the
+      Central Repository (Maven Central), the default artifact repository for
+      the Java ecosystem. Free for ordinary community open source publishing;
+      commercial-natured publishing may be subject to fees or limits.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Components must declare their distribution license in the POM and
+        meet metadata/GPG/coordinate requirements; requires verified
+        namespace ownership. Published artifacts are immutable.
+    how_to_apply: >-
+      Sign up at central.sonatype.com (Google/GitHub/email), verify a
+      namespace, then publish via the Central Portal or build-tool plugins.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: central.sonatype.org docs live; publishing-limits doc states Maven Central remains free for ordinary community open source publishing"

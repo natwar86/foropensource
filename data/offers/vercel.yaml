@@ -1,0 +1,23 @@
+company: Vercel
+website: https://vercel.com
+categories: [hosting]
+offers:
+  - product: Vercel Open Source Program
+    offer_url: https://vercel.com/open-source-program
+    what_you_get: >-
+      $3,600 in Vercel platform credits distributed over 12 months, an OSS
+      Starter Pack with credits from third-party services, and priority
+      community support from Vercel. Projects graduate after 12 months.
+    eligibility:
+      active_development_required: true
+      applies_to: project
+      notes: >-
+        Project must be hosted on (or plan to use) Vercel, demonstrate
+        measurable impact or growth potential, adopt a Code of Conduct, and use
+        credits solely for the open source project. Projects at any stage
+        welcome.
+    how_to_apply: Apply via the program page; cohort-based — applications were closed as of July 2026, reopening in August.
+    renewal: 12-month program; projects graduate after 12 months to make room for new applicants.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: program page live, states $3,600 credits over 12 months for OSS projects; applications reopen August 2026"

@@ -1,0 +1,23 @@
+company: AppSignal
+website: https://www.appsignal.com
+categories: [error-tracking, monitoring]
+offers:
+  - product: AppSignal APM (sponsored open source account)
+    offer_url: https://www.appsignal.com/open-source
+    what_you_get: >-
+      Free sponsored AppSignal account for open-source software and "for
+      good" projects, with core monitoring features: error tracking,
+      performance monitoring, host monitoring, anomaly detection, uptime
+      monitoring and log management. No named tier or hard limits
+      published on the page.
+    eligibility:
+      applies_to: project
+      notes: >-
+        For open-source maintainers and software development volunteers /
+        "for good" projects; no further published requirements.
+    how_to_apply: >-
+      Email support@appsignal.com with the subject "Hi AppSignal, can I
+      get a sponsored account?" to request a sponsored account.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: appsignal.com/open-source live, states 'Free for open-source software and for good projects', apply via support email"

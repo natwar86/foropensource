@@ -1,0 +1,28 @@
+company: TestingBot
+website: https://testingbot.com/
+categories: [testing]
+offers:
+  - product: TestingBot browser and device grid (open source plan)
+    offer_url: https://testingbot.com/open-source
+    what_you_get: >-
+      Free unlimited automated testing for open source projects with 2
+      concurrent tests, access to 6100+ browsers and real iOS/Android devices,
+      support for Selenium, Cypress, Playwright, Puppeteer, Appium, Espresso,
+      XCUITest and Maestro, plus video, screenshots, console/network logs,
+      CI/CD integration and status badges.
+    eligibility:
+      osi_license_required: true
+      active_development_required: true
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Must be publicly hosted on GitHub, GitLab or Bitbucket with a clear
+        README and recent commits.
+    how_to_apply: >-
+      Create a free account (no credit card), submit your repository URL and
+      project description; approval typically within a couple of business
+      days.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: testingbot.com/open-source live, details free unlimited testing with 2 concurrent sessions for OSI-licensed projects"

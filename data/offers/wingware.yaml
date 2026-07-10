@@ -1,0 +1,28 @@
+company: Wingware
+website: https://wingware.com
+categories: [ide-tools]
+offers:
+  - product: Wing Pro (free license for open source developers)
+    offer_url: https://wingware.com/store/free
+    what_you_get: >-
+      Free Wing Pro (Python IDE) license for unpaid open source
+      development; includes upgrades only within the same major release
+      version (reapply for new major versions). No support guarantees for
+      free-license users.
+    eligibility:
+      non_commercial_only: true
+      active_development_required: true
+      applies_to: maintainer
+      notes: >-
+        Must use Wing Pro solely for unpaid and unfunded open source
+        development; project needs a website with a clear description, at
+        least one non-trivial public release, and a copy of or link to the
+        open source license; applicant must show proof of past
+        contribution to the project.
+    how_to_apply: >-
+      Request via the free licenses page on wingware.com, including proof
+      of past contribution to the open source project.
+    renewal: Reapply for each new major release version.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: wingware.com/store/free live, states free Wing Pro licenses for unpaid/unfunded open source development with proof of contribution"

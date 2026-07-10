@@ -1,0 +1,18 @@
+company: Tesults
+website: https://www.tesults.com
+categories: [testing]
+offers:
+  - product: Tesults test results reporting (open source program)
+    offer_url: https://www.tesults.com/docs/pricing
+    what_you_get: >-
+      Complimentary access to the Standard plan (normally $19 per active user
+      per month) for independent or community-driven open source projects.
+    eligibility:
+      applies_to: maintainer
+      notes: >-
+        Aimed at independent maintainers and community-driven projects rather
+        than projects primarily maintained by commercial organizations.
+    how_to_apply: Email help@tesults.com to apply for the open source program.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: pricing docs page live, offers complimentary Standard plan for independent/community-driven OSS projects"

@@ -1,0 +1,19 @@
+company: SourceForge
+website: https://sourceforge.net
+categories: [hosting]
+offers:
+  - product: SourceForge open source project hosting and distribution
+    offer_url: https://sourceforge.net/create/
+    what_you_get: >-
+      Free project hosting for open source software: download distribution
+      with unlimited bandwidth over a global mirror network, download
+      analytics, git/Mercurial/Subversion repository hosting, issue tracking,
+      forums, wiki documentation, and listing in the Open Source Directory
+      (~20 million users, 2.6M downloads/day).
+    eligibility:
+      applies_to: project
+      notes: Project must be open source software; the free tier is specifically for OSS projects (business software is a separate directory).
+    how_to_apply: Create a project at https://sourceforge.net/create/ (or import from GitHub); free registration, no application review described.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: create page live, states unlimited bandwidth and full hosting toolset free for Open Source projects"

@@ -1,0 +1,22 @@
+company: Zulip
+website: https://zulip.com
+categories: [communication]
+offers:
+  - product: Zulip Cloud Standard
+    offer_url: https://zulip.com/for/open-source/
+    what_you_get: >-
+      Zulip Cloud Standard (the paid team chat plan, including full message
+      history) free for open-source projects; Zulip sponsors hundreds of
+      open-source projects including Rust and Lean.
+    eligibility:
+      applies_to: organization
+      notes: >-
+        Open-source project communities; formal criteria not published on the
+        page — sponsorship requests are reviewed. Self-hosting the 100%
+        open-source Zulip server is an alternative.
+    how_to_apply: >-
+      Create a Zulip Cloud organization and use the "Request sponsorship"
+      flow (or contact sales@zulip.com).
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: page live, states 'Zulip Cloud Standard is free for open-source projects!'"

@@ -1,0 +1,26 @@
+company: Helpmonks
+website: https://helpmonks.com
+categories: [email]
+offers:
+  - product: Helpmonks Hosted Edition (shared inbox)
+    offer_url: https://helpmonks.com/email-management-for-non-profits/
+    what_you_get: >-
+      Helpmonks Hosted Edition (SaaS shared team inbox / email management)
+      free of charge for open source projects; nonprofits instead get a
+      discount of up to 30% on all plans.
+    eligibility:
+      public_repo_required: true
+      active_development_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Code must be publicly available (GitHub, Bitbucket, etc.) with proof
+        the project is actively used; commercial open source projects are not
+        accepted. Requests are evaluated individually.
+    how_to_apply: >-
+      Create a free Helpmonks account, then email hi@helpmonks.com with the
+      account details and information about the project and its online
+      presence.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: offer page live, states Hosted Edition free of charge for open source projects"

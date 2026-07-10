@@ -1,0 +1,27 @@
+company: Docker
+website: https://www.docker.com
+categories: [ci-cd, storage]
+offers:
+  - product: Docker-Sponsored Open Source (Docker Hub + Team subscription)
+    offer_url: https://www.docker.com/community/open-source/application/
+    what_you_get: >-
+      Verified DSOS badge on Docker Hub, removal of Docker Hub rate limits for
+      the project's public images (for maintainers and everyone pulling them),
+      and one-year free Docker Team subscriptions for core contributors
+      including Docker Desktop, 15 concurrent autobuilds, unlimited
+      vulnerability scans, RBAC, audit logs, unlimited teams, and scoped tokens.
+    eligibility:
+      active_development_required: true
+      non_commercial_only: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Project must be in public Docker Hub repos with publicly accessible
+        source meeting the OSI open source definition; images or dependencies
+        updated within the past 6 months; no commercialization pathway
+        (donations acceptable).
+    how_to_apply: Application form (Airtable) linked from the program page.
+    renewal: Benefits valid one year; renewable if requirements still met.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: program page live, describes free Team subscription, no rate limits, and verified badge for OSS projects"

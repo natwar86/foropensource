@@ -1,0 +1,24 @@
+company: Upstash
+website: https://upstash.com
+categories: [database, other]
+offers:
+  - product: Upstash Open Source Program (monthly credits)
+    offer_url: https://upstash.com/open-source
+    what_you_get: >-
+      $1,000 monthly credit grant covering all Upstash costs (Redis, QStash,
+      etc.), direct technical/integration support with Pro-level priority,
+      and co-marketing (technical articles, backlinks).
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        For open source projects building on Upstash; no further formal
+        criteria published. Application form notes it is open until
+        September 29th, so availability may be time-windowed.
+    how_to_apply: >-
+      Application form on the page (name, Twitter/X username, GitHub repo
+      link); reviewed on a rolling basis.
+    renewal: Credit grant is monthly.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: upstash.com/open-source live, states $1,000 monthly credit grant for OSS projects"

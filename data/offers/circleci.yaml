@@ -1,0 +1,18 @@
+company: CircleCI
+website: https://circleci.com/
+categories: [ci-cd]
+offers:
+  - product: CircleCI open source plan
+    offer_url: https://circleci.com/open-source/
+    what_you_get: >-
+      Free CI/CD credits for open source organizations: up to 400,000 credits
+      per month for Linux, Arm, and Docker builds plus 30,000 credits per
+      month for macOS and Windows builds, with enterprise-grade features such
+      as SSH debugging, Docker layer caching, and self-hosted runners.
+    eligibility:
+      public_repo_required: true
+      applies_to: organization
+    how_to_apply: Sign up for free on circleci.com with your open source project; credits apply to OSS builds.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: open-source page live, states 400k credits/month Linux and 30k credits/month macOS/Windows for OSS"

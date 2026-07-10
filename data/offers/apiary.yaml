@@ -1,0 +1,17 @@
+company: Apiary
+website: https://apiary.io
+categories: [documentation]
+offers:
+  - product: Apiary API design and documentation platform
+    offer_url: https://apiary.io/
+    what_you_get: >-
+      Formerly offered its API design, documentation, and mocking platform
+      free for open source projects. The entire hosted service has been shut
+      down, so no offer of any kind remains.
+    eligibility:
+      applies_to: project
+      notes: Historical only; the service no longer accepts users.
+    how_to_apply: Not possible; the service has been shut down.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: apiary.io returns 502; Oracle terminated Apiary support and shut the hosted product on 2025-09-09 (see apisyouwonthate.com/blog/goodbye-apiary-io)"

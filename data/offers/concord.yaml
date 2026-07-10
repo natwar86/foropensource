@@ -1,0 +1,18 @@
+company: Concord
+website: https://www.concord.tech
+categories: [other]
+offers:
+  - product: Concord data privacy / consent compliance platform (Essentials plan)
+    offer_url: https://www.concord.tech/open-source
+    what_you_get: >-
+      Essentials plan free for life for verifiable open source projects:
+      data privacy compliance management and consent/trust tools for the
+      project's site.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Must be a verifiable open source project; application asks for a link to a verifiable open source repo.
+    how_to_apply: Fill in the form on the open source page with name, email, website URL, and a verifiable open source repo link.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: open-source page live, states Essentials plan FREE for life for verifiable open source projects"

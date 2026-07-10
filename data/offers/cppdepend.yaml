@@ -1,0 +1,25 @@
+company: CppDepend
+website: https://www.cppdepend.com
+categories: [other]
+offers:
+  - product: CppDepend Pro (Open Source Contributor License)
+    offer_url: https://www.cppdepend.com/cppdepend-for-oss
+    what_you_get: >-
+      Free CppDepend Pro license (C/C++ static analysis: code quality
+      metrics, dependency analysis, code review automation, reports) for
+      active open source contributors; reported as a 1-year license.
+    eligibility:
+      min_project_age_months: 3
+      active_development_required: true
+      applies_to: contributors
+      notes: >-
+        Applicant must be a project lead or active committer with at least
+        three months of contributions and active community engagement.
+        Requires adding the CppDepend logo with a link on the project page.
+    how_to_apply: >-
+      Add the CppDepend logo/link to the project page, then email
+      support@cppdepend.com with your name and project URL.
+    renewal: 1-year license (re-request for renewal).
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: offer page live (references v2026.1), states free Pro license for project leads/active committers with 3+ months of contributions"

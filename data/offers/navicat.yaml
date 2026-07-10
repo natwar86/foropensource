@@ -1,0 +1,28 @@
+company: Navicat
+website: https://www.navicat.com
+categories: [database, ide-tools]
+offers:
+  - product: Navicat (Open Source Project License)
+    offer_url: https://www.navicat.com/en/store/open-source
+    what_you_get: >-
+      Complimentary Navicat license (database GUI/administration tools) for
+      approved open source projects; sponsored projects display a Navicat
+      logo on their website.
+    eligibility:
+      osi_license_required: true
+      min_project_age_months: 3
+      active_development_required: true
+      public_repo_required: true
+      applies_to: maintainer
+      notes: >-
+        Applicant must be a project leader or committer with 3+ months on the
+        project; project needs a publicly accessible website, regular
+        updates, public source code, and must be an accredited non-profit
+        organization.
+    how_to_apply: >-
+      Application form on the offer page with project details (name, URL,
+      description, developer count) and contact info; reviewed within 2
+      business days.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: navicat.com/en/store/open-source live, lists 7 eligibility criteria incl. OSI license and 3-month tenure"

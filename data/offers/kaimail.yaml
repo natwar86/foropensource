@@ -1,0 +1,18 @@
+company: KaiMail
+website: https://kaimail.net
+categories: [email]
+offers:
+  - product: KaiMail email forwarding for custom domains
+    offer_url: https://kaimail.net/blog/email-for-open-source/tokyo-python-meetup-april-2026-email-in-python/
+    what_you_get: >-
+      Free program for open source projects and volunteer communities to use
+      their own domain for email: custom-domain addresses (e.g. contact@,
+      sponsors@, security@) with forwarding, DKIM/ARC signing, no mail server,
+      no per-seat fees.
+    eligibility:
+      applies_to: project
+      notes: Open source projects and volunteer communities; detailed criteria not published, set up per request.
+    how_to_apply: Contact KaiMail and tell them about your project or community ("tell us about it and we will get you set up").
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: KaiMail blog (April 2026) live, states free program for open source projects and volunteer communities to use their own domain"

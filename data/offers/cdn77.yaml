@@ -1,0 +1,22 @@
+company: CDN77
+website: https://www.cdn77.com
+categories: [cdn]
+offers:
+  - product: CDN77 open-source sponsorship
+    offer_url: https://www.cdn77.com/sponsorship
+    what_you_get: >-
+      Free CDN77 content delivery services for accepted open-source projects
+      ("we offer our services for free to those who make the internet a
+      better place"). Sponsored projects include Blender, GNOME, Let's
+      Encrypt, Fedora, Manjaro and 20+ others.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Projects evaluated case-by-case on "added value, longevity, and
+        relevance to our industry".
+    how_to_apply: >-
+      Email juraj.kacaba@cdn77.com (Head of Client Implementations) describing
+      the project in detail, why it matters, and how CDN77 can support it.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: sponsorship page live, states free services for open-source projects with sponsor list"

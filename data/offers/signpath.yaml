@@ -1,0 +1,29 @@
+company: SignPath
+website: https://signpath.io
+categories: [security]
+offers:
+  - product: SignPath code signing (via SignPath Foundation)
+    offer_url: https://signpath.io/solutions/open-source-community
+    what_you_get: >-
+      Free code signing service and an OV-level code signing certificate
+      issued to SignPath Foundation, with the private key stored on the
+      Foundation's HSM. Supports signing EXE, MSI, Docker images, Office
+      macros and more, with CI/CD pipeline integration (GitHub Actions,
+      Azure DevOps, Jenkins), audit trails and policy enforcement, at no
+      cost.
+    eligibility:
+      osi_license_required: true
+      active_development_required: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        OSI-approved license without commercial dual-licensing for all
+        components; project must already have released the software in the
+        form to be signed (no release history = not eligible).
+    how_to_apply: >-
+      Apply at signpath.org ("Apply for Free Code Signing") with the
+      project's repository URL, download page URL and description; the
+      Foundation reviews eligibility.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: signpath.io/solutions/open-source-community live, states tools 'available at no cost' for OSS; eligibility per signpath.org terms"

@@ -1,0 +1,22 @@
+company: Tuist
+website: https://tuist.dev
+categories: [ci-cd, ide-tools]
+offers:
+  - product: Tuist server (open source program)
+    offer_url: https://tuist.dev/blog/2024/04/25/tuist-cloud-free-for-open-source/
+    what_you_get: >-
+      All paid Tuist server features free forever for open source projects,
+      including binary caching and selective testing (build time improvements
+      of 70% and more cited for cached builds).
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Project must be open source and add a note about Tuist to its
+        README.md.
+    how_to_apply: >-
+      Email contact@tuist.dev with a link to the repository and your account
+      handle; the team sets the plan on your account.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: program announcement live on tuist.dev blog; pricing page FAQ confirms custom arrangements via contact@tuist.dev"

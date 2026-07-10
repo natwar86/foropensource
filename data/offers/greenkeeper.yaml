@@ -1,0 +1,19 @@
+company: Greenkeeper
+website: https://greenkeeper.io
+categories: [security]
+offers:
+  - product: Greenkeeper automated npm dependency management
+    offer_url: https://greenkeeper.io/
+    what_you_get: >-
+      Historically, free automated npm dependency monitoring and update PRs
+      for open source repositories. The service ceased operation on June 3,
+      2020; the site directs users to Snyk as its successor for free
+      open source dependency upgrades.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Historical eligibility; the service no longer operates.
+    how_to_apply: No longer possible; the site recommends migrating to Snyk.
+    status: discontinued
+    last_verified: "2026-07-06"
+    verification_source: "manual: greenkeeper.io states 'Greenkeeper has said goodbye on June 3rd, 2020' and points to Snyk as successor"

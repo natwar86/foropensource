@@ -1,0 +1,43 @@
+company: ej-technologies
+website: https://www.ej-technologies.com
+categories: [ide-tools]
+offers:
+  - product: JProfiler (open source license)
+    offer_url: https://www.ej-technologies.com/jprofiler/openSource
+    what_you_get: >-
+      Free JProfiler (Java profiler) licenses covering a project's core
+      committers, granted in exchange for a link to the JProfiler site
+      (preferably a text link containing "Java profiler", no nofollow).
+    eligibility:
+      non_commercial_only: true
+      applies_to: contributors
+      notes: >-
+        Non-profit open source projects with an established website and a
+        released product.
+    how_to_apply: >-
+      Online form on the offer page (project name, website URL, contact,
+      number of developers); processing up to 24 hours, license sent by
+      email.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: jprofiler/openSource page live, free licenses for non-profit OSS projects in exchange for a backlink"
+  - product: install4j (open source license)
+    offer_url: https://www.ej-technologies.com/install4j/openSource
+    what_you_get: >-
+      Free install4j (multi-platform Java installer builder) license for the
+      project's developers, granted in exchange for a link to the install4j
+      site (preferably a text link containing "multi-platform installer
+      builder", no nofollow).
+    eligibility:
+      non_commercial_only: true
+      applies_to: contributors
+      notes: >-
+        Non-profit open source projects with an established website and a
+        released product.
+    how_to_apply: >-
+      Online form on the offer page (project name, website URL, contact,
+      max number of developers); processing up to 24 hours, license sent by
+      email.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: install4j/openSource page live, free licenses for non-profit OSS projects in exchange for a backlink"

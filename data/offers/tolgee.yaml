@@ -1,0 +1,21 @@
+company: Tolgee
+website: https://tolgee.io
+categories: [other]
+offers:
+  - product: Tolgee Cloud Business plan for open source
+    offer_url: https://tolgee.io/blog/free-software-localization
+    what_you_get: >-
+      Tolgee Cloud Business plan free for open source projects (localization/
+      translation management platform); paid-tier features at no cost, granted
+      on request. Self-hosting the open source Tolgee platform is also free.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Project must be open source software that can be freely used, changed,
+        and shared (in modified or unmodified form) by anyone.
+    how_to_apply: Email info@tolgee.io or DM the team in the Tolgee Slack community.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: >-
+      manual: Tolgee blog post live, states "Business plan is free for all
+      open-source projects", apply by email/Slack; not listed on pricing page.

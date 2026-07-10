@@ -1,0 +1,23 @@
+company: Scout APM
+website: https://scoutapm.com
+categories: [monitoring, error-tracking]
+offers:
+  - product: Scout Monitoring (Large plan for OSS)
+    offer_url: https://www.scoutapm.com/open-source
+    what_you_get: >-
+      Free access to Scout's Large plan with full features: application
+      traces, error monitoring, log management, query analysis, and alerting.
+      Supports Ruby, Python, PHP, and Elixir.
+    eligibility:
+      public_repo_required: true
+      osi_license_required: true
+      notes: >-
+        Requires an open source license (MIT, Apache, GPL, etc.) and the
+        project must not be used as part of a commercial SaaS product.
+      applies_to: project
+    how_to_apply: >-
+      Open a support ticket via the "Apply for Free Access" link on the offer
+      page with a link to your repo and a brief description.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: scoutapm.com/open-source live, states free Large plan for open-source-licensed, non-commercial projects"

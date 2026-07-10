@@ -1,0 +1,40 @@
+company: OpenAI
+website: https://openai.com
+categories: [ai-ml]
+offers:
+  - product: Codex for Open Source (ChatGPT Pro subscription)
+    offer_url: https://developers.openai.com/community/codex-for-oss
+    what_you_get: >-
+      6 months of free ChatGPT Pro with Codex access for open source
+      maintainers, plus conditional access to Codex Security for
+      repositories needing deeper security analysis.
+    eligibility:
+      public_repo_required: true
+      applies_to: maintainer
+      notes: >-
+        For core maintainers of widely used public projects (press coverage
+        cites roughly 1,000+ GitHub stars); projects that do not fit the
+        criteria but play an important ecosystem role are invited to apply
+        and explain why. You can apply for yourself or nominate another
+        maintainer.
+    how_to_apply: >-
+      Application form at openai.com/form/codex-for-oss/; reviewed on a
+      rolling basis, Codex Security access reviewed case by case.
+    renewal: Subscription benefit lasts 6 months.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: developers.openai.com/community/codex-for-oss live, lists 6 months ChatGPT Pro + Codex Security + fund credits"
+  - product: Codex Open Source Fund (API credit grants)
+    offer_url: https://openai.com/form/codex-open-source-fund/
+    what_you_get: >-
+      One-time API credit grants of up to $25,000 per project from a $1
+      million fund, for open source projects integrating Codex CLI or
+      OpenAI models (e.g. Codex-powered PR review or release automation).
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: Separate from the 6-month ChatGPT Pro subscription benefit; grants are one-time.
+    how_to_apply: Application form at openai.com/form/codex-open-source-fund/.
+    status: active
+    last_verified: "2026-07-07"
+    verification_source: "manual: fund described on live Codex for OSS community page and openai.com application form (form URL blocks bots but program confirmed via developers.openai.com)"

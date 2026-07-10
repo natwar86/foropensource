@@ -1,0 +1,22 @@
+company: Meterian
+website: https://www.meterian.io/
+categories: [security]
+offers:
+  - product: Meterian dependency vulnerability scanning (free for open source)
+    offer_url: https://www.meterian.io/plans/
+    what_you_get: >-
+      Free plan with unlimited open-source projects (plus 1 closed-source
+      project), 10 analyses per day, and HTML reports; public GitHub repos on
+      the free plan are rescanned roughly every 2.5 hours.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Analyses are free for open source projects as long as the client
+        detects the project as open source; classification is automatic.
+    how_to_apply: >-
+      Sign in to the Meterian dashboard and scan your open source
+      repositories; no application needed.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: plans page live, free plan lists 'Unlimited opensource projects'"

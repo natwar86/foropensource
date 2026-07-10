@@ -1,0 +1,20 @@
+company: Araxis
+website: https://www.araxis.com
+categories: [ide-tools]
+offers:
+  - product: Araxis Merge
+    offer_url: https://www.araxis.com/buy/index.en
+    what_you_get: >-
+      No-cost licenses for Araxis Merge (advanced 2/3-way file comparison,
+      merging and folder synchronization tool) for contributors to open
+      source projects.
+    eligibility:
+      applies_to: contributors
+      notes: >-
+        Page states "no-cost licences for contributors to Open Source
+        projects"; detailed qualification criteria are not published and are
+        handled on request.
+    how_to_apply: Contact Araxis via their discounts/contact page to request an open source contributor license.
+    status: active
+    last_verified: "2026-07-06"
+    verification_source: "manual: araxis.com/buy page live, quotes 'no-cost licences for contributors to Open Source projects'"
