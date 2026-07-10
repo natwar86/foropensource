@@ -47,7 +47,7 @@ def render_offer(offer: dict) -> str:
     elig = eligibility_line(offer.get("eligibility") or {})
     parts = [
         '<div class="offer">',
-        f'<p class="offer-title"><a href="{esc(offer["offer_url"])}" rel="nofollow">'
+        f'<p class="offer-title"><a href="{esc(offer["offer_url"])}" target="_blank" rel="noopener nofollow">'
         f'{esc(offer["product"])}</a>{badge}</p>',
         f'<p class="offer-what">{esc(offer["what_you_get"])}</p>',
     ]
@@ -74,7 +74,7 @@ def render_company(doc: dict) -> str:
     ).lower()
     return f"""
 <article class="company" data-search="{esc(search_blob)}" data-categories="{esc(' '.join(cats))}">
-  <h2><a href="{esc(doc['website'])}" rel="nofollow">{esc(doc['company'])}</a></h2>
+  <h2><a href="{esc(doc['website'])}" target="_blank" rel="noopener nofollow">{esc(doc['company'])}</a></h2>
   <p class="tags">{tags}</p>
   {offers_html}
 </article>"""
