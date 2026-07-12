@@ -1,0 +1,22 @@
+company: Lokalise
+website: https://lokalise.com
+categories: [other]
+offers:
+  - product: Lokalise for open source
+    offer_url: https://lokalise.com/pricing/
+    what_you_get: >-
+      Free use of the Lokalise localization/translation management platform
+      for open source projects (non-profits get a discount rather than a
+      free plan).
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Open source projects; qualification is confirmed by Lokalise on
+        contact. Specific criteria are not published on the pricing page.
+    how_to_apply: >-
+      Contact Lokalise (via the contact option referenced in the pricing
+      FAQ) to confirm the project qualifies for the free plan.
+    status: active
+    last_verified: "2026-07-12"
+    verification_source: "manual: pricing page FAQ states 'We offer Lokalise for free to open source projects', confirmed live 2026-07-12; surfaced by discovery sweep 2026-07"

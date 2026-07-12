@@ -6,7 +6,7 @@ Browse the list at **https://foropensource.com**.
 
 ## What's in here
 
-**`data/offers/`** — one YAML file per company, 163 companies so far. Each offer records what you get, who is eligible, how to apply, and a `last_verified` date with a note on how it was checked. Example:
+**`data/offers/`** — one YAML file per company, 164 companies so far. Each offer records what you get, who is eligible, how to apply, and a `last_verified` date with a note on how it was checked. Example:
 
 ```yaml
 company: BrowserStack
