@@ -14,6 +14,7 @@ OUT_DIR = ROOT / "_site"
 
 REPO_URL = "https://github.com/natwar86/foropensource"
 SITE_URL = "https://foropensource.com"
+GA_MEASUREMENT_ID = "G-WL62869LEP"
 
 
 def esc(value) -> str:
@@ -40,7 +41,7 @@ def eligibility_line(elig: dict) -> str:
     return "; ".join(bits)
 
 
-def render_offer(offer: dict) -> str:
+def render_offer(offer: dict, company: str) -> str:
     status = offer.get("status", "active")
     badge = ""
     if status != "active":
@@ -48,7 +49,8 @@ def render_offer(offer: dict) -> str:
     elig = eligibility_line(offer.get("eligibility") or {})
     parts = [
         '<div class="offer">',
-        f'<p class="offer-title"><a href="{esc(offer["offer_url"])}" target="_blank" rel="noopener nofollow">'
+        f'<p class="offer-title"><a href="{esc(offer["offer_url"])}" target="_blank" rel="noopener nofollow" '
+        f'data-track="offer_click" data-company="{esc(company)}" data-product="{esc(offer["product"])}">'
         f'{esc(offer["product"])}</a>{badge}</p>',
         f'<p class="offer-what">{esc(offer["what_you_get"])}</p>',
     ]
@@ -67,7 +69,7 @@ def render_offer(offer: dict) -> str:
 def render_company(doc: dict) -> str:
     cats = doc.get("categories") or []
     tags = "".join(f'<span class="tag">{esc(c)}</span>' for c in cats)
-    offers_html = "\n".join(render_offer(o) for o in doc["offers"])
+    offers_html = "\n".join(render_offer(o, doc["company"]) for o in doc["offers"])
     search_blob = " ".join(
         [doc["company"]]
         + cats
@@ -75,7 +77,7 @@ def render_company(doc: dict) -> str:
     ).lower()
     return f"""
 <article class="company" data-search="{esc(search_blob)}" data-categories="{esc(' '.join(cats))}">
-  <h2><a href="{esc(doc['website'])}" target="_blank" rel="noopener nofollow">{esc(doc['company'])}</a></h2>
+  <h2><a href="{esc(doc['website'])}" target="_blank" rel="noopener nofollow" data-track="company_click" data-company="{esc(doc['company'])}">{esc(doc['company'])}</a></h2>
   <p class="tags">{tags}</p>
   {offers_html}
 </article>"""
@@ -152,6 +154,16 @@ for (const btn of buttons) {
   });
 }
 apply();
+
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('a[data-track]');
+  if (!a || typeof gtag !== 'function') return;
+  gtag('event', a.dataset.track, {
+    company: a.dataset.company,
+    product: a.dataset.product || undefined,
+    link_url: a.href,
+  });
+});
 """
 
 
@@ -191,6 +203,13 @@ def main() -> int:
 <meta property="og:url" content="{SITE_URL}/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', '{GA_MEASUREMENT_ID}');
+</script>
 <script type="application/ld+json">{{
   "@context": "https://schema.org",
   "@type": "Dataset",
