@@ -6,7 +6,12 @@ Pages:
   /company/<slug>/        one page per company (SEO: "{company} open source")
   /category/<slug>/       one page per category
   /sponsors/              league table from data/exports/company-sponsorships.csv
-Plus offers.json, rules.json (for the matcher), sitemap.xml, robots.txt.
+Companies whose offers are all discontinued get a "graveyard" page with
+alternatives instead of a directory entry.
+
+Plus offers.json, offers.csv, rules.json (for the matcher), llms.txt,
+llms-full.txt, sitemap.xml, robots.txt, 404.html, and og.png (copied
+from assets/).
 """
 
 import csv
@@ -46,6 +51,10 @@ def esc(value) -> str:
 
 def cat_label(slug: str) -> str:
     return CATEGORY_LABELS.get(slug, slug.replace("-", " "))
+
+
+def n_companies(n: int) -> str:
+    return f"{n} company" if n == 1 else f"{n} companies"
 
 
 def eligibility_line(elig: dict) -> str:
@@ -162,6 +171,11 @@ nav.top a { margin-right: 1rem; }
 .badge { font-size: 0.72rem; padding: 0.05rem 0.4rem; border-radius: 4px;
   vertical-align: middle; font-weight: 400; }
 .badge-stale { background: #f5e9c8; color: #7a5d00; }
+.badge-discontinued { background: #f3d6d6; color: #8a2626; }
+@media (prefers-color-scheme: dark) {
+  .badge-stale { background: #3d3416; color: #d9b84a; }
+  .badge-discontinued { background: #3d1f1f; color: #d98a8a; }
+}
 #count { color: var(--muted); font-size: 0.88rem; margin: 0 0 1rem; }
 footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem;
   border-top: 1px solid var(--line); padding-top: 1rem; }
@@ -220,6 +234,8 @@ function apply() {
 }
 
 search.addEventListener('input', apply);
+const q = new URLSearchParams(location.search).get('q');
+if (q) search.value = q;
 for (const btn of buttons) {
   btn.addEventListener('click', () => {
     activeCat = activeCat === btn.dataset.cat ? null : btn.dataset.cat;
@@ -586,6 +602,25 @@ MATCHER_JS = r"""
 """
 
 
+def json_ld_script(data: dict) -> str:
+    return ('<script type="application/ld+json">'
+            + json.dumps(data, ensure_ascii=False)
+            + "</script>\n")
+
+
+def breadcrumbs_json_ld(*crumbs: tuple[str, str]) -> str:
+    """crumbs: (name, path) pairs, root first."""
+    return json_ld_script({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i, "name": name,
+             "item": f"{SITE_URL}{path}"}
+            for i, (name, path) in enumerate(crumbs, 1)
+        ],
+    })
+
+
 def page(*, title: str, description: str, canonical_path: str, body: str,
          extra_head: str = "", scripts: str = "") -> str:
     """Shared page shell: head with GA + SEO tags, body, tracking JS."""
@@ -602,7 +637,13 @@ def page(*, title: str, description: str, canonical_path: str, body: str,
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:url" content="{SITE_URL}{canonical_path}">
 <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
+<meta property="og:site_name" content="foropensource">
+<meta property="og:image" content="{SITE_URL}/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="foropensource — free products and services for open source">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{SITE_URL}/og.png">
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -669,18 +710,47 @@ def build_index(docs: list[dict], n_offers: int, all_cats: list[str],
 <p>Latest verification pass: {esc(last_verified)}.
 See also: <a href="/sponsors/">which companies sponsor the most open source projects</a>.</p>"""
 
-    json_ld = f"""<script type="application/ld+json">{{
-  "@context": "https://schema.org",
-  "@type": "Dataset",
-  "name": "foropensource offers dataset",
-  "description": "Verified free-for-open-source offers from {len(docs)} companies, as structured YAML.",
-  "url": "{SITE_URL}/",
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "isAccessibleForFree": true,
-  "distribution": [{{"@type": "DataDownload", "encodingFormat": "application/yaml",
-    "contentUrl": "{REPO_URL}/tree/main/data/offers"}}]
-}}</script>
-"""
+    json_ld = json_ld_script({
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": f"{SITE_URL}/#website",
+                "url": f"{SITE_URL}/",
+                "name": "foropensource",
+                "description": "Verified free-for-open-source offers, re-checked weekly.",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": f"{SITE_URL}/?q={{search_term_string}}",
+                    },
+                    "query-input": "required name=search_term_string",
+                },
+            },
+            {
+                "@type": "Dataset",
+                "name": "foropensource offers dataset",
+                "description": f"Verified free-for-open-source offers from {len(docs)} "
+                "companies: what you get, eligibility, how to apply, and when each "
+                "offer was last verified. Re-checked weekly.",
+                "url": f"{SITE_URL}/",
+                "keywords": ["open source", "free for open source", "developer tools",
+                             "sponsorship", "OSS"],
+                "creator": {"@type": "Organization", "name": "foropensource",
+                            "url": f"{SITE_URL}/"},
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "isAccessibleForFree": True,
+                "dateModified": last_verified,
+                "distribution": [
+                    {"@type": "DataDownload", "encodingFormat": "text/csv",
+                     "contentUrl": f"{SITE_URL}/offers.csv"},
+                    {"@type": "DataDownload", "encodingFormat": "application/json",
+                     "contentUrl": f"{SITE_URL}/offers.json"},
+                ],
+            },
+        ],
+    })
     return page(
         title="foropensource — free products and services for open source",
         description=f"{len(docs)} companies with {n_offers} verified free offers for "
@@ -726,6 +796,71 @@ def build_company_page(doc: dict) -> str:
         f"— verified {verified}.",
         canonical_path=f"/company/{doc['slug']}/",
         body=body,
+        extra_head=breadcrumbs_json_ld(
+            ("All offers", "/"), (company, f"/company/{doc['slug']}/")
+        ),
+    )
+
+
+def build_discontinued_page(doc: dict, active_docs: list[dict]) -> str:
+    """Page for a company whose free-for-OSS offers have all been discontinued.
+
+    These answer "is X still free for open source?" searches and point to
+    live alternatives, so they stay in the sitemap but not in the directory.
+    """
+    company = doc["company"]
+    cats = doc.get("categories") or []
+    products = [o["product"] for o in doc["offers"]]
+    verified = max((o.get("last_verified", "") for o in doc["offers"]), default="")
+    offers_html = "\n".join(render_offer(o, company) for o in doc["offers"])
+
+    alt_docs = []
+    for d in active_docs:
+        if set(d.get("categories") or []) & set(cats):
+            alt_docs.append(d)
+    alt_html = ""
+    if alt_docs:
+        items = "".join(
+            f'<li><a href="/company/{esc(d["slug"])}/">{esc(d["company"])}</a></li>'
+            for d in alt_docs[:8]
+        )
+        cat_links = ", ".join(
+            f'<a href="/category/{esc(c)}/">all free {esc(cat_label(c))} offers</a>'
+            for c in cats
+        )
+        alt_html = f"""<h3>Still-active alternatives</h3>
+<ul>{items}</ul>
+<p>Browse {cat_links}, or <a href="/#matcher">match your repo</a> against every
+current offer.</p>"""
+    else:
+        alt_html = ('<p><a href="/">Browse the directory</a> for current offers, or '
+                    '<a href="/#matcher">match your repo</a>.</p>')
+
+    body = f"""<header>
+  <h1><a href="/">foropensource</a></h1>
+</header>
+{NAV}
+<p class="crumbs"><a href="/">All offers</a> &rsaquo; {esc(company)}</p>
+<h2>Is {esc(company)} still free for open source? No.</h2>
+<div class="note"><p>{esc(company)}'s free-for-open-source
+{"offer has" if len(products) == 1 else "offers have"} been discontinued
+(last checked {esc(verified)}). The details below are kept for reference.</p></div>
+<article class="company">
+  {offers_html}
+</article>
+{alt_html}
+<p>Know of a new {esc(company)} offer for open source?
+<a href="{REPO_URL}/blob/main/data/offers/{esc(doc['slug'])}.yaml">Update it on GitHub</a>.</p>"""
+    return page(
+        title=f"Is {company} still free for open source? Discontinued — and alternatives",
+        description=f"{company}'s free offer for open source "
+        f"({'; '.join(products)[:100]}) has been discontinued, last checked "
+        f"{verified}. Current alternatives and how to apply.",
+        canonical_path=f"/company/{doc['slug']}/",
+        body=body,
+        extra_head=breadcrumbs_json_ld(
+            ("All offers", "/"), (company, f"/company/{doc['slug']}/")
+        ),
     )
 
 
@@ -741,7 +876,7 @@ def build_category_page(cat: str, docs: list[dict], total_companies: int) -> str
 {NAV}
 <p class="crumbs"><a href="/">All offers</a> &rsaquo; {esc(title_label)}</p>
 <h2>Free {esc(label)} for open source projects</h2>
-<p class="sub">{len(docs)} companies, {n_offers} verified offers.
+<p class="sub">{n_companies(len(docs))}, {n_offers} verified offers.
 Not sure which you qualify for? <a href="/#matcher">Match your repo</a>.</p>
 {cards}
 <p><a href="/">Browse all {total_companies} companies</a></p>"""
@@ -751,6 +886,19 @@ Not sure which you qualify for? <a href="/#matcher">Match your repo</a>.</p>
         f"projects, from {names} and more. What you get and how to apply.",
         canonical_path=f"/category/{cat}/",
         body=body,
+        extra_head=breadcrumbs_json_ld(
+            ("All offers", "/"), (title_label, f"/category/{cat}/")
+        ) + json_ld_script({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": f"Free {label} for open source projects",
+            "numberOfItems": len(docs),
+            "itemListElement": [
+                {"@type": "ListItem", "position": i, "name": d["company"],
+                 "url": f"{SITE_URL}/company/{d['slug']}/"}
+                for i, d in enumerate(docs, 1)
+            ],
+        }),
     )
 
 
@@ -818,18 +966,133 @@ employing maintainers, and free products
     )
 
 
+def build_404() -> str:
+    body = f"""<header>
+  <h1><a href="/">foropensource</a></h1>
+</header>
+{NAV}
+<h2>Page not found</h2>
+<p>Company pages live at <code>/company/&lt;name&gt;/</code> and categories at
+<code>/category/&lt;name&gt;/</code>.</p>
+<p><a href="/">Browse all offers</a> or <a href="/#matcher">match your repo</a>
+to see what it qualifies for.</p>"""
+    return page(
+        title="Page not found — foropensource",
+        description="Page not found.",
+        canonical_path="/404.html",
+        body=body,
+        extra_head='<meta name="robots" content="noindex">\n',
+    )
+
+
+def write_offers_csv(all_docs: list[dict], out_path: Path) -> None:
+    cols = ["company", "website", "categories", "product", "offer_url",
+            "what_you_get", "eligibility", "how_to_apply", "status",
+            "last_verified", "page_url"]
+    with out_path.open("w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(cols)
+        for doc in all_docs:
+            for o in doc.get("offers") or []:
+                w.writerow([
+                    doc["company"], doc.get("website", ""),
+                    "|".join(doc.get("categories") or []),
+                    o.get("product", ""), o.get("offer_url", ""),
+                    o.get("what_you_get", "").strip(),
+                    eligibility_line(o.get("eligibility") or {}),
+                    o.get("how_to_apply", "").strip(),
+                    o.get("status", "active"), o.get("last_verified", ""),
+                    f"{SITE_URL}/company/{doc['slug']}/",
+                ])
+
+
+def build_llms_txt(docs: list[dict], dead_docs: list[dict], n_offers: int,
+                   all_cats: list[str], last_verified: str) -> str:
+    lines = [
+        "# foropensource",
+        "",
+        f"> {len(docs)} companies with {n_offers} verified free offers for open "
+        "source projects and maintainers: CI, hosting, monitoring, security, "
+        "testing, IDEs, and more. Every offer is automatically re-verified weekly "
+        f"(latest pass: {last_verified}). Data is CC BY 4.0.",
+        "",
+        f"Machine-readable data: [offers.csv]({SITE_URL}/offers.csv) and "
+        f"[offers.json]({SITE_URL}/offers.json) (JSON includes discontinued "
+        f"offers). Full offer text: [llms-full.txt]({SITE_URL}/llms-full.txt). "
+        f"Source data (YAML): [{REPO_URL}]({REPO_URL}).",
+        "",
+        "## Categories",
+        "",
+    ]
+    for c in all_cats:
+        n = sum(1 for d in docs if c in (d.get("categories") or []))
+        lines.append(f"- [Free {cat_label(c)} for open source]"
+                     f"({SITE_URL}/category/{c}/): {n_companies(n)}")
+    lines += ["", "## Companies", ""]
+    for d in docs:
+        products = "; ".join(o["product"] for o in d["offers"])
+        lines.append(f"- [{d['company']}]({SITE_URL}/company/{d['slug']}/): {products}")
+    if dead_docs:
+        lines += ["", "## Discontinued offers", ""]
+        for d in dead_docs:
+            lines.append(f"- [{d['company']}]({SITE_URL}/company/{d['slug']}/): "
+                         "discontinued; page lists current alternatives")
+    lines += [
+        "",
+        "## Other pages",
+        "",
+        f"- [Which companies sponsor the most open source projects?]"
+        f"({SITE_URL}/sponsors/): league table from GitHub Sponsors and "
+        "Open Collective data",
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def build_llms_full_txt(docs: list[dict], n_offers: int, last_verified: str) -> str:
+    lines = [
+        "# foropensource — all verified free-for-open-source offers",
+        "",
+        f"> {len(docs)} companies, {n_offers} offers. Latest verification pass: "
+        f"{last_verified}. Data CC BY 4.0, source: {REPO_URL}",
+        "",
+    ]
+    for d in docs:
+        cats = ", ".join(cat_label(c) for c in (d.get("categories") or []))
+        lines += [f"## {d['company']}", "",
+                  f"Website: {d.get('website', '')}",
+                  f"Categories: {cats}",
+                  f"Details: {SITE_URL}/company/{d['slug']}/", ""]
+        for o in d["offers"]:
+            lines += [f"### {o['product']}", "",
+                      f"What you get: {o.get('what_you_get', '').strip()}"]
+            elig = eligibility_line(o.get("eligibility") or {})
+            if elig:
+                lines.append(f"Eligibility: {elig}")
+            lines += [f"How to apply: {o.get('how_to_apply', '').strip()}",
+                      f"Offer URL: {o.get('offer_url', '')}",
+                      f"Last verified: {o.get('last_verified', '')}", ""]
+    return "\n".join(lines)
+
+
 def main() -> int:
-    docs = []
+    docs, dead_docs = [], []
     for path in sorted(OFFERS_DIR.glob("*.yaml")):
         doc = yaml.safe_load(path.read_text())
         if not doc:
             continue
         doc["slug"] = path.stem
-        # Discontinued offers stay in the dataset but are not rendered.
-        doc["offers"] = [o for o in doc["offers"] if o.get("status") != "discontinued"]
-        if doc["offers"]:
+        # Discontinued offers stay in the dataset; companies with at least one
+        # active offer render normally, all-discontinued companies get a
+        # "graveyard" page with alternatives.
+        active = [o for o in doc["offers"] if o.get("status") != "discontinued"]
+        if active:
+            doc = dict(doc, offers=active)
             docs.append(doc)
+        else:
+            dead_docs.append(doc)
     docs.sort(key=lambda d: d["company"].lower())
+    dead_docs.sort(key=lambda d: d["company"].lower())
 
     n_offers = sum(len(d["offers"]) for d in docs)
     for d in docs:
@@ -839,28 +1102,43 @@ def main() -> int:
         (o.get("last_verified", "") for d in docs for o in d["offers"]), default=""
     )
 
+    def doc_lastmod(d: dict) -> str:
+        return max((o.get("last_verified", "") for o in d["offers"]),
+                   default="") or last_verified
+
     OUT_DIR.mkdir(exist_ok=True)
     (OUT_DIR / "index.html").write_text(build_index(docs, n_offers, all_cats, last_verified))
 
-    urls = ["/"]
+    urls = [("/", last_verified)]
     for d in docs:
         out = OUT_DIR / "company" / d["slug"]
         out.mkdir(parents=True, exist_ok=True)
         (out / "index.html").write_text(build_company_page(d))
-        urls.append(f"/company/{d['slug']}/")
+        urls.append((f"/company/{d['slug']}/", doc_lastmod(d)))
+    for d in dead_docs:
+        out = OUT_DIR / "company" / d["slug"]
+        out.mkdir(parents=True, exist_ok=True)
+        (out / "index.html").write_text(build_discontinued_page(d, docs))
+        urls.append((f"/company/{d['slug']}/", doc_lastmod(d)))
     for cat in all_cats:
         cat_docs = [d for d in docs if cat in (d.get("categories") or [])]
         out = OUT_DIR / "category" / cat
         out.mkdir(parents=True, exist_ok=True)
         (out / "index.html").write_text(build_category_page(cat, cat_docs, len(docs)))
-        urls.append(f"/category/{cat}/")
+        urls.append((f"/category/{cat}/",
+                     max(doc_lastmod(d) for d in cat_docs)))
     if SPONSORSHIPS_CSV.is_file():
         out = OUT_DIR / "sponsors"
         out.mkdir(parents=True, exist_ok=True)
         (out / "index.html").write_text(build_sponsors_page(docs))
-        urls.append("/sponsors/")
+        urls.append(("/sponsors/", last_verified))
 
     (OUT_DIR / "CNAME").write_text("foropensource.com\n")
+    (OUT_DIR / "404.html").write_text(build_404())
+    og_src = ROOT / "assets" / "og.png"
+    if og_src.is_file():
+        (OUT_DIR / "og.png").write_bytes(og_src.read_bytes())
+
     # Machine-readable exports. offers.json includes discontinued offers and slugs.
     all_docs = []
     for p in sorted(OFFERS_DIR.glob("*.yaml")):
@@ -869,21 +1147,27 @@ def main() -> int:
             d["slug"] = p.stem
             all_docs.append(d)
     (OUT_DIR / "offers.json").write_text(json.dumps(all_docs, indent=1))
+    write_offers_csv(all_docs, OUT_DIR / "offers.csv")
+    (OUT_DIR / "llms.txt").write_text(
+        build_llms_txt(docs, dead_docs, n_offers, all_cats, last_verified))
+    (OUT_DIR / "llms-full.txt").write_text(
+        build_llms_full_txt(docs, n_offers, last_verified))
     rules = yaml.safe_load(RULES_PATH.read_text())
     (OUT_DIR / "rules.json").write_text(json.dumps(rules, indent=1))
     (OUT_DIR / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n"
     )
     url_entries = "\n".join(
-        f"  <url><loc>{SITE_URL}{u}</loc><lastmod>{last_verified}</lastmod></url>"
-        for u in urls
+        f"  <url><loc>{SITE_URL}{u}</loc><lastmod>{mod}</lastmod></url>"
+        for u, mod in urls
     )
     (OUT_DIR / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f"{url_entries}\n</urlset>\n"
     )
-    print(f"Wrote _site: {len(docs)} companies, {n_offers} offers, {len(urls)} pages")
+    print(f"Wrote _site: {len(docs)} companies ({len(dead_docs)} discontinued), "
+          f"{n_offers} offers, {len(urls)} pages")
     return 0
 
 
