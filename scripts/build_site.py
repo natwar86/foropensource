@@ -659,7 +659,9 @@ gtag('config', '{GA_MEASUREMENT_ID}');
 <footer>
   <p>Offers data is <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
   Community-maintained: <a href="{REPO_URL}">github.com/natwar86/foropensource</a> &mdash;
-  add a company or flag a dead offer with a pull request.</p>
+  add a company or flag a dead offer with a pull request, or
+  <a href="{REPO_URL}/issues/new?template=suggest-offer.yml">suggest an offer</a>
+  in under a minute (just paste a link).</p>
 </footer>
 </main>
 <script>{TRACK_JS}</script>

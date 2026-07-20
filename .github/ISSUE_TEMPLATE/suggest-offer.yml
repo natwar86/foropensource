@@ -1,0 +1,35 @@
+name: Suggest an offer
+description: Know a company with a free-for-open-source offer we're missing? Paste a link — we'll verify and add it.
+title: "Offer suggestion: <company>"
+labels: [offer-suggestion]
+body:
+  - type: input
+    id: company
+    attributes:
+      label: Company
+      placeholder: e.g. Acme Cloud
+    validations:
+      required: true
+  - type: input
+    id: offer-url
+    attributes:
+      label: Offer page URL
+      description: The page describing the free-for-open-source offer (not the company homepage).
+      placeholder: https://example.com/open-source
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What do open source projects get?
+      description: Optional — a sentence is plenty. We verify every offer before listing it.
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Your relation to this offer
+      options:
+        - I use it in my open source project
+        - I work for this company
+        - I just came across it
+    validations:
+      required: true
