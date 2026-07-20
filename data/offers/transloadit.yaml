@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: Transloadit (file uploading and encoding API)
     offer_url: https://transloadit.com/pricing/
+    verify_anchor:
+      - "nonprofits can get free access"
     what_you_get: >-
       Free access to the Transloadit file uploading and media encoding
       platform for open source projects and nonprofits.

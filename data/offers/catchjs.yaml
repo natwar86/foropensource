@@ -4,6 +4,8 @@ categories: [error-tracking]
 offers:
   - product: CatchJS JavaScript error tracking
     offer_url: https://catchjs.com/
+    verify_anchor:
+      - "free subscription to such projects"
     what_you_get: >-
       Complimentary (free) CatchJS subscription for open source software
       projects; site states they give free subscriptions to open source

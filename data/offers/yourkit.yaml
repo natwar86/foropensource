@@ -4,6 +4,8 @@ categories: [ide-tools]
 offers:
   - product: YourKit Java Profiler (open source license)
     offer_url: https://www.yourkit.com/purchase/
+    verify_anchor:
+      - "non-commercial open source projects"
     what_you_get: >-
       Free YourKit Java Profiler license for developers of the open source
       project; one installed copy at a time per license key, for development

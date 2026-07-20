@@ -4,6 +4,8 @@ categories: [testing, security]
 offers:
   - product: SonarQube Cloud (formerly SonarCloud)
     offer_url: https://www.sonarsource.com/solutions/commitment-to-open-source/
+    verify_anchor:
+      - "free for analyzing open source projects"
     what_you_get: >-
       SonarQube Cloud automated code quality and security analysis "free for
       analyzing open source projects" — continuous analysis of public open

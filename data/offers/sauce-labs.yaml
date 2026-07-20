@@ -3,7 +3,9 @@ website: https://saucelabs.com
 categories: [testing]
 offers:
   - product: Open Sauce (free open source accounts)
-    offer_url: https://opensource.saucelabs.com/
+    offer_url: https://saucelabs.com/pricing
+    verify_anchor:
+      - "free accounts for qualifying initiatives"
     what_you_get: >-
       Free Sauce Labs accounts for qualifying open source projects for
       cross-browser and mobile testing on the Sauce Labs cloud;

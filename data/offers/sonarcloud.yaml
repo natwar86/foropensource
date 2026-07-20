@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: SonarQube Cloud open source plan
     offer_url: https://www.sonarsource.com/products/sonarcloud/
+    verify_anchor:
+      - "open source plan is available"
     what_you_get: >-
       Free open source plan on SonarQube Cloud (formerly SonarCloud):
       automated code review with continuous quality and security analysis for

@@ -55,6 +55,12 @@
           "verification_source": {
             "type": "string",
             "description": "How it was verified: 'manual: page live', 'automated: content hash', URL of announcement, etc."
+          },
+          "verify_anchor": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 8 },
+            "description": "Exact phrases from the offer page (case-insensitive). The automated verifier confirms the offer deterministically when any phrase appears in the fetched or rendered page text."
           }
         }
       }

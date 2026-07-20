@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: Lokalise for open source
     offer_url: https://lokalise.com/pricing/
+    verify_anchor:
+      - "we offer lokalise for free to open source projects"
     what_you_get: >-
       Free use of the Lokalise localization/translation management platform
       for open source projects (non-profits get a discount rather than a
@@ -19,4 +21,4 @@ offers:
       FAQ) to confirm the project qualifies for the free plan.
     status: active
     last_verified: "2026-07-12"
-    verification_source: "manual: pricing page FAQ states 'We offer Lokalise for free to open source projects', confirmed live 2026-07-12; surfaced by discovery sweep 2026-07"
+    verification_source: "manual: pricing page FAQ states 'We offer Lokalise for free to open source projects' (collapsed accordion, only visible after JS render); re-confirmed by screenshot 2026-07-20"

@@ -4,6 +4,8 @@ categories: [ci-cd]
 offers:
   - product: Nx Cloud (OSS plan)
     offer_url: https://nx.dev/pricing
+    verify_anchor:
+      - "plan for open source projects"
     what_you_get: >-
       Free Nx Cloud plan for open source projects: fully managed remote
       caching, distributed task execution and unlimited CI pipeline

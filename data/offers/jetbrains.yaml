@@ -4,6 +4,8 @@ categories: [ide-tools, ci-cd, project-management]
 offers:
   - product: All Products Pack (OSS development licenses)
     offer_url: https://www.jetbrains.com/community/opensource/
+    verify_anchor:
+      - "licenses for open source development"
     what_you_get: >-
       Free licenses for the full JetBrains product lineup (IntelliJ IDEA
       Ultimate, PyCharm, WebStorm, etc.) for a project's core contributors,
@@ -27,6 +29,8 @@ offers:
     verification_source: "manual: program page live ('Licenses for Open Source Development'); eligibility terms confirmed from program text"
   - product: TeamCity (Open Source license)
     offer_url: https://www.jetbrains.com/community/opensource/
+    verify_anchor:
+      - "licenses for open source development"
     what_you_get: >-
       Free TeamCity Professional Server open source license: unlimited
       servers with up to 100 build configurations per server and 3 build
@@ -50,6 +54,8 @@ offers:
     verification_source: "manual: TeamCity Open Source License Agreement live at jetbrains.com/legal/docs/teamcity/license_opensource/ (v10.3); OSS program lists TeamCity among team tools offered"
   - product: YouTrack (OSS team license)
     offer_url: https://www.jetbrains.com/community/opensource/
+    verify_anchor:
+      - "licenses for open source development"
     what_you_get: >-
       Free YouTrack issue tracking license for the open source team,
       requested through the JetBrains open source program (program covers

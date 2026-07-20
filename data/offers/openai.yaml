@@ -4,6 +4,8 @@ categories: [ai-ml]
 offers:
   - product: Codex for Open Source (ChatGPT Pro subscription)
     offer_url: https://developers.openai.com/community/codex-for-oss
+    verify_anchor:
+      - "six months of chatgpt pro"
     what_you_get: >-
       6 months of free ChatGPT Pro with Codex access for open source
       maintainers, plus conditional access to Codex Security for

@@ -4,6 +4,8 @@ categories: [project-management]
 offers:
   - product: Atlassian Standard cloud products (Jira, Confluence, etc.)
     offer_url: https://www.atlassian.com/software/views/open-source-license-request
+    verify_anchor:
+      - "open source project license request"
     what_you_get: >-
       No-cost Open Source licenses for Atlassian Standard cloud products
       (e.g. Jira, Confluence); the free offer applies to Standard plans only.

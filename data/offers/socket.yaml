@@ -4,6 +4,8 @@ categories: [security]
 offers:
   - product: Socket supply chain security (free for open source)
     offer_url: https://socket.dev/pricing
+    verify_anchor:
+      - "free to use for open-source"
     what_you_get: >-
       Socket is "free to use for open-source" — the Free plan covers unlimited
       developers and repos, 1,000 scans per month, detection of 70+ risk

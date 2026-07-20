@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Tesults test results reporting (open source program)
     offer_url: https://www.tesults.com/docs/pricing
+    verify_anchor:
+      - "complimentary access to the standard plan"
     what_you_get: >-
       Complimentary access to the Standard plan (normally $19 per active user
       per month) for independent or community-driven open source projects.
