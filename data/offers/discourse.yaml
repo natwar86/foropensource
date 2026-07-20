@@ -3,7 +3,9 @@ website: https://www.discourse.org
 categories: [communication]
 offers:
   - product: Discourse hosted forum (probono plan for open source)
-    offer_url: https://free.discourse.group/
+    offer_url: https://www.discourse.org/open-source
+    verify_anchor:
+      - "qualifying creators can apply for free hosting"
     what_you_get: >-
       Free managed Discourse forum hosting on the probono plan: unlimited
       members and chat, unlimited public and private categories, unlimited
