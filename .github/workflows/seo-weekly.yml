@@ -1,0 +1,13 @@
+name: SEO weekly
+
+on:
+  schedule:
+    - cron: "0 7 * * 2"   # Tuesdays 07:00 UTC (verifier ran Monday)
+  workflow_dispatch: {}
+
+jobs:
+  seo:
+    uses: natwar86/seo-loop/.github/workflows/run.yml@main
+    secrets:
+      GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
