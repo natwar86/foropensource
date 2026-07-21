@@ -5,9 +5,31 @@ on:
     - cron: "0 7 * * 2"   # Tuesdays 07:00 UTC (verifier ran Monday)
   workflow_dispatch: {}
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   seo:
-    uses: natwar86/seo-loop/.github/workflows/run.yml@main
-    secrets:
-      GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Checkout seo-loop engine (private, via deploy key)
+        uses: actions/checkout@v4
+        with:
+          repository: natwar86/seo-loop
+          ssh-key: ${{ secrets.SEO_LOOP_DEPLOY_KEY }}
+          path: .seo-loop-engine
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run seo-loop
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: bash .seo-loop-engine/run.sh
