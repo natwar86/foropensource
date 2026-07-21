@@ -1,6 +1,6 @@
 # Config for the weekly SEO loop (github.com/natwar86/seo-loop)
 site_url: https://foropensource.com
-ga4_property_id: "GA4_PROPERTY_ID"  # TODO: numeric ID from GA Admin -> Property details
+ga4_property_id: "545439427"
 gsc_site: sc-domain:foropensource.com
 crawl:
   mode: build
