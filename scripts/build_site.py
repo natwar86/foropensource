@@ -977,7 +977,13 @@ def build_404() -> str:
 <p>Company pages live at <code>/company/&lt;name&gt;/</code> and categories at
 <code>/category/&lt;name&gt;/</code>.</p>
 <p><a href="/">Browse all offers</a> or <a href="/#matcher">match your repo</a>
-to see what it qualifies for.</p>"""
+to see what it qualifies for.</p>
+<script>
+gtag('event', 'page_not_found', {{
+  missing_path: location.pathname + location.search,
+  referrer: document.referrer || '(none)'
+}});
+</script>"""
     return page(
         title="Page not found — foropensource",
         description="Page not found.",
