@@ -4,6 +4,8 @@ categories: [email]
 offers:
   - product: Pro plan (open source sponsorship program)
     offer_url: https://jetemail.com/open-source
+    verify_anchor:
+      - "free for open source projects"
     what_you_get: >-
       Free Pro tier for qualifying open source projects: 50,000 transactional
       emails per month via SMTP relay and HTTP API, unlimited verified

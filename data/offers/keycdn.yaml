@@ -4,6 +4,8 @@ categories: [cdn]
 offers:
   - product: Open Source CDN account
     offer_url: https://www.keycdn.com/open-source-cdn
+    verify_anchor:
+      - "We deliver open source software at speed and scale"
     what_you_get: >-
       Free KeyCDN account for open source projects to accelerate delivery of
       "static assets on your website or a link to an open source library you

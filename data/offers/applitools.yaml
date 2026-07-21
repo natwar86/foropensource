@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Applitools Eyes visual AI testing (Open Source licenses)
     offer_url: https://applitools.com/open-source/
+    verify_anchor:
+      - "Free visual testing for open source projects"
     what_you_get: >-
       Free Applitools licenses for open source projects ("providing free
       licenses to open source projects to help them deliver visually

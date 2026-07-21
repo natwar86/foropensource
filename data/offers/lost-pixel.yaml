@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Lost Pixel visual regression testing (open source plan)
     offer_url: https://lost-pixel.com
+    verify_anchor:
+      - "Free for Open Source"
     what_you_get: >-
       Formerly free visual regression testing for open-source projects
       (historically 7,000 snapshots/month with unlimited team members). The

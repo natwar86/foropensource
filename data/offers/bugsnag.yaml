@@ -4,6 +4,8 @@ categories: [error-tracking]
 offers:
   - product: BugSnag error monitoring (open source / non-profit plan)
     offer_url: https://www.bugsnag.com/open-source/
+    verify_anchor:
+      - "Free for Open Source"
     what_you_get: >-
       Free standard plan for open source projects and non-profits: unlimited
       BugSnag usage with up to 15,000 events per month, up to 15

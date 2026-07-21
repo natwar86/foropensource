@@ -4,6 +4,8 @@ categories: [ai-ml, ide-tools]
 offers:
   - product: Greptile AI Code Review (Open Source Program)
     offer_url: https://www.greptile.com/open-source
+    verify_anchor:
+      - "Open Source Program"
     what_you_get: >-
       Greptile's codebase-aware AI code review on pull requests, free (100%
       off) for qualifying open source projects.

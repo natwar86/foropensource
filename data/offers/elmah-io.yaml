@@ -4,6 +4,8 @@ categories: [error-tracking, monitoring]
 offers:
   - product: elmah.io error logging and uptime monitoring (Small Business subscription)
     offer_url: https://elmah.io/sponsorship/opensource/
+    verify_anchor:
+      - "Monitor your open source website for free"
     what_you_get: >-
       Free Small Business subscription to elmah.io (error logging and uptime
       monitoring for .NET) to monitor your open source project. Subscription

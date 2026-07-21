@@ -4,6 +4,8 @@ categories: [ci-cd]
 offers:
   - product: Mergify (merge queue & CI automation)
     offer_url: https://mergify.com/pricing
+    verify_anchor:
+      - "Full product, zero cost"
     what_you_get: >-
       Full product at zero cost for open source projects ("Full product,
       zero cost. For open source and teams up to 5."): CI Insights, Test

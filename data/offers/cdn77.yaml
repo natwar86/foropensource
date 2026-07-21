@@ -4,6 +4,8 @@ categories: [cdn]
 offers:
   - product: CDN77 open-source sponsorship
     offer_url: https://www.cdn77.com/sponsorship
+    verify_anchor:
+      - "support open-source"
     what_you_get: >-
       Free CDN77 content delivery services for accepted open-source projects
       ("we offer our services for free to those who make the internet a

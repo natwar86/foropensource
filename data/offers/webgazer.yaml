@@ -4,6 +4,8 @@ categories: [monitoring]
 offers:
   - product: WebGazer uptime and cron monitoring (open source program)
     offer_url: https://www.webgazer.io/for/open-source
+    verify_anchor:
+      - "free to open source projects"
     what_you_get: >-
       Comprehensive monitoring services at no cost for eligible open source
       projects: website monitoring (HTTP monitors), cron job monitoring

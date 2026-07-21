@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Code Climate Quality (free for open source)
     offer_url: https://codeclimate.com/blog/code-climate-is-free-for-open-source
+    verify_anchor:
+      - "Is Free for Open Source"
     what_you_get: >-
       Formerly offered free automated code review and maintainability/test
       coverage analysis for open source repositories. The Quality product was

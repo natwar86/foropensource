@@ -4,6 +4,8 @@ categories: [database, other]
 offers:
   - product: Upstash Open Source Program (monthly credits)
     offer_url: https://upstash.com/open-source
+    verify_anchor:
+      - "Open-Source Program"
     what_you_get: >-
       $1,000 monthly credit grant covering all Upstash costs (Redis, QStash,
       etc.), direct technical/integration support with Pro-level priority,

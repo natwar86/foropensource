@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: Algolia for Open Source (search API credits)
     offer_url: https://www.algolia.com/for-open-source/
+    verify_anchor:
+      - "Open Source license"
     what_you_get: >-
       200 units free per month on the standard pay-as-you-go plan, translating
       to 200,000 records and 200,000 search requests (worth roughly

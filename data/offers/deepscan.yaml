@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: DeepScan static analysis (free open source plan)
     offer_url: https://deepscan.io/pricing
+    verify_anchor:
+      - "is free for open source projects"
     what_you_get: >-
       Free static analysis for unlimited public JavaScript/TypeScript projects,
       with automatic GitHub synchronization, code quality grading, and three

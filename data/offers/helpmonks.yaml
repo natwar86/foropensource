@@ -4,6 +4,8 @@ categories: [email]
 offers:
   - product: Helpmonks Hosted Edition (shared inbox)
     offer_url: https://helpmonks.com/email-management-for-non-profits/
+    verify_anchor:
+      - "Email Management for non-profits and open source projects"
     what_you_get: >-
       Helpmonks Hosted Edition (SaaS shared team inbox / email management)
       free of charge for open source projects; nonprofits instead get a

@@ -4,6 +4,8 @@ categories: [ci-cd]
 offers:
   - product: Bitrise mobile CI/CD for open source
     offer_url: https://bitrise.io/blog/post/free-developer-plan-features-for-open-source-projects-on-bitrise
+    verify_anchor:
+      - "free for open source projects"
     what_you_get: >-
       Free Developer Plan features for public open source projects: one
       dedicated concurrency per project, build times up to 45 minutes,

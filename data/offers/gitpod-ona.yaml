@@ -4,6 +4,8 @@ categories: [ide-tools, ai-ml]
 offers:
   - product: Ona for Open Source (cloud dev environments + AI agents)
     offer_url: https://ona.com/open-source
+    verify_anchor:
+      - "monthly free credits for maintainers"
     what_you_get: >-
       Up to $200/month in free Ona credits for open source maintainers and
       contributors, usable for Ona's cloud development environments and AI

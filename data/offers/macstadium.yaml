@@ -4,6 +4,8 @@ categories: [ci-cd, hosting]
 offers:
   - product: Open Source Program (hosted Mac mini)
     offer_url: https://macstadium.com/company/opensource
+    verify_anchor:
+      - "open source program"
     what_you_get: >-
       Free access to a cloud-hosted, bare-metal Mac mini (Apple silicon
       available) for building and testing on macOS, typically used as a remote

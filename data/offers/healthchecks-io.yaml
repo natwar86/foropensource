@@ -4,6 +4,8 @@ categories: [monitoring]
 offers:
   - product: Healthchecks.io Business plan (cron job monitoring)
     offer_url: https://healthchecks.io/pricing/
+    verify_anchor:
+      - "Business plan free of charge for open"
     what_you_get: >-
       Business plan free of charge for open-source projects and nonprofits:
       monitor 100 jobs, 1,000 log entries per job, 50 SMS/WhatsApp credits,

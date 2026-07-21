@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: Sonargraph (free open source license)
     offer_url: https://www.hello2morrow.com/products/sonargraph/non_commercial_license
+    verify_anchor:
+      - "open source project qualifies for a free license"
     what_you_get: >-
       Free Sonargraph license for qualifying open source projects
       (architecture and static code analysis for Java, Kotlin, C#, Python

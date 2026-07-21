@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Screenshotbot hosted screenshot testing (free for open source)
     offer_url: https://screenshotbot.io/pricing
+    verify_anchor:
+      - "Open source projects get free access"
     what_you_get: >-
       Free access to Screenshotbot's hosted screenshot/visual regression
       testing service for open source projects (the product is also open

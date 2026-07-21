@@ -4,6 +4,8 @@ categories: [ci-cd, hosting]
 offers:
   - product: GitLab for Open Source (GitLab Ultimate)
     offer_url: https://about.gitlab.com/solutions/open-source/join/
+    verify_anchor:
+      - "Open Source Program"
     what_you_get: >-
       Free GitLab Ultimate features (SaaS or self-managed) plus 50,000 compute
       minutes calculated at a program-specific cost factor. Technical support

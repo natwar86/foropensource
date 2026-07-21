@@ -4,6 +4,8 @@ categories: [hosting]
 offers:
   - product: AWS Cloud Credits for Open Source
     offer_url: https://aws.amazon.com/blogs/opensource/aws-promotional-credits-open-source-projects/
+    verify_anchor:
+      - "AWS promotional credits for open source projects"
     what_you_get: >-
       AWS promotional credits (valid one year) for open source projects,
       typically used for upstream and performance testing, CI/CD, and storage

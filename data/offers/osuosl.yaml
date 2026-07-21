@@ -4,6 +4,8 @@ categories: [hosting]
 offers:
   - product: Open source project hosting
     offer_url: https://osuosl.org/services/hosting/
+    verify_anchor:
+      - "Managed and Unmanaged Hosting"
     what_you_get: >-
       Free managed and unmanaged hosting for open source projects (full
       server, partial server, or colocation of project-owned hardware),
@@ -23,6 +25,8 @@ offers:
     verification_source: "manual: osuosl.org/services/hosting/ live; states managed/unmanaged hosting for projects under OSI-approved licenses with open development model"
   - product: AArch64 and OpenPOWER development hosting
     offer_url: https://osuosl.org/services/
+    verify_anchor:
+      - "150 other leading open source communities"
     what_you_get: >-
       Free access to ARM (AArch64) and POWER (PowerLinux/OpenPOWER) servers
       for functional development and CI/testing of open source software on

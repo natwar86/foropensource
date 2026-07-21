@@ -4,6 +4,8 @@ categories: [ci-cd, storage]
 offers:
   - product: Docker-Sponsored Open Source (Docker Hub + Team subscription)
     offer_url: https://www.docker.com/community/open-source/application/
+    verify_anchor:
+      - "Open Source Program"
     what_you_get: >-
       Verified DSOS badge on Docker Hub, removal of Docker Hub rate limits for
       the project's public images (for maintainers and everyone pulling them),

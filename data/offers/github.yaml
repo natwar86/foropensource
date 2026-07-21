@@ -4,6 +4,8 @@ categories: [hosting, ci-cd, ai-ml]
 offers:
   - product: GitHub Copilot Pro (free for OSS maintainers)
     offer_url: https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro
+    verify_anchor:
+      - "Access Copilot Pro for free"
     what_you_get: >-
       Free GitHub Copilot Pro subscription (the paid individual tier) for
       maintainers of popular open source repositories.

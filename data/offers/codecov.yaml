@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Codecov (code coverage for open source)
     offer_url: https://about.codecov.io/for/open-source/
+    verify_anchor:
+      - "free for open source projects"
     what_you_get: >-
       Free code coverage analysis for open source projects, including coverage
       reporting, PR comments with coverage information delivered directly on

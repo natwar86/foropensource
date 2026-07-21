@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: StyleCI code style review
     offer_url: https://styleci.io/
+    verify_anchor:
+      - "What about Open Source"
     what_you_get: >-
       Free plan for public projects ("public PHP projects will always be free
       with StyleCI"): unlimited public repositories, unlimited analyses, and

@@ -4,6 +4,8 @@ categories: [error-tracking, monitoring]
 offers:
   - product: AppSignal APM (sponsored open source account)
     offer_url: https://www.appsignal.com/open-source
+    verify_anchor:
+      - "is Free for Open-Source Software"
     what_you_get: >-
       Free sponsored AppSignal account for open-source software and "for
       good" projects, with core monitoring features: error tracking,

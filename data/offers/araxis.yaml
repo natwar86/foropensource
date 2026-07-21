@@ -4,6 +4,8 @@ categories: [ide-tools]
 offers:
   - product: Araxis Merge
     offer_url: https://www.araxis.com/buy/index.en
+    verify_anchor:
+      - "no-cost licences for contributors to Open Source"
     what_you_get: >-
       No-cost licenses for Araxis Merge (advanced 2/3-way file comparison,
       merging and folder synchronization tool) for contributors to open

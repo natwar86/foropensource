@@ -4,6 +4,8 @@ categories: [documentation]
 offers:
   - product: Sponsored site plan (open source docs)
     offer_url: https://www.gitbook.com/solutions/open-source
+    verify_anchor:
+      - "open source docs that help fund your project"
     what_you_get: >-
       Free branded documentation site for open source projects on the
       "Sponsored site" plan: custom domain, logo, theme and fonts, scaled

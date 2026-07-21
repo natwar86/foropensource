@@ -4,6 +4,8 @@ categories: [project-management, other]
 offers:
   - product: Cal.com OSS sponsorship (sponsored team plan)
     offer_url: https://cal.com/help/event-types/sponsor
+    verify_anchor:
+      - "Can Cal.com sponsor my open source project"
     what_you_get: >-
       Sponsored (free) access to Cal.com's paid team offering for open
       source projects (applicants provide their Cal.com team slug); exact

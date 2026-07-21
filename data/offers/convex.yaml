@@ -4,6 +4,8 @@ categories: [database, hosting]
 offers:
   - product: Convex Open Source Program (free Convex Pro)
     offer_url: https://www.convex.dev/open-source-program
+    verify_anchor:
+      - "Convex for Open Source"
     what_you_get: >-
       Free Convex Pro for one team with the built-in monthly Pro resource
       limits, plus swag (stickers, shirts, gear) and direct access to the

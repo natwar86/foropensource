@@ -4,6 +4,8 @@ categories: [ide-tools]
 offers:
   - product: JProfiler (open source license)
     offer_url: https://www.ej-technologies.com/jprofiler/openSource
+    verify_anchor:
+      - "Open Source Licenses"
     what_you_get: >-
       Free JProfiler (Java profiler) licenses covering a project's core
       committers, granted in exchange for a link to the JProfiler site
@@ -23,6 +25,8 @@ offers:
     verification_source: "manual: jprofiler/openSource page live, free licenses for non-profit OSS projects in exchange for a backlink"
   - product: install4j (open source license)
     offer_url: https://www.ej-technologies.com/install4j/openSource
+    verify_anchor:
+      - "Open Source Licenses"
     what_you_get: >-
       Free install4j (multi-platform Java installer builder) license for the
       project's developers, granted in exchange for a link to the install4j

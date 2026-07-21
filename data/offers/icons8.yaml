@@ -4,6 +4,8 @@ categories: [design]
 offers:
   - product: Icons8 graphics for open source projects
     offer_url: https://icons8.com/license
+    verify_anchor:
+      - "projects can get our graphics for free"
     what_you_get: >-
       Free Icons8 graphics for established open source projects — the license
       page states "Established open-source projects can get our graphics for

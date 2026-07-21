@@ -4,6 +4,8 @@ categories: [security]
 offers:
   - product: Meterian dependency vulnerability scanning (free for open source)
     offer_url: https://www.meterian.io/plans/
+    verify_anchor:
+      - "are free for open source projects"
     what_you_get: >-
       Free plan with unlimited open-source projects (plus 1 closed-source
       project), 10 analyses per day, and HTML reports; public GitHub repos on

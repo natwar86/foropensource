@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Cross-browser and mobile testing platform (Open Source Program)
     offer_url: https://www.testmuai.com/open-source/
+    verify_anchor:
+      - "Free Open Source Program"
     what_you_get: >-
       Free licenses to test open-source projects across 5,000+ browsers
       and devices, access to the test orchestration platform with built-in

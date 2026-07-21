@@ -4,6 +4,8 @@ categories: [database, ide-tools]
 offers:
   - product: Navicat (Open Source Project License)
     offer_url: https://www.navicat.com/en/store/open-source
+    verify_anchor:
+      - "open source license"
     what_you_get: >-
       Complimentary Navicat license (database GUI/administration tools) for
       approved open source projects; sponsored projects display a Navicat

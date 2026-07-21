@@ -4,6 +4,8 @@ categories: [cdn]
 offers:
   - product: Statically CDN
     offer_url: https://statically.io/
+    verify_anchor:
+      - "free CDN for Git repositories"
     what_you_get: >-
       Free global CDN for open source projects: serves static assets from
       public Git repositories (GitHub, GitLab, Bitbucket), npm packages, and

@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Keploy OSS Sponsorship (AI test generation)
     offer_url: https://keploy.io/oss-sponsorship
+    verify_anchor:
+      - "open source license"
     what_you_get: >-
       Free AI-powered test generation for sponsored open source projects:
       automated tests from API traffic and code changes, API schema coverage

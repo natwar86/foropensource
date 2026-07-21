@@ -4,6 +4,8 @@ categories: [security, other]
 offers:
   - product: PVS-Studio (Free Open Source License)
     offer_url: https://pvs-studio.com/en/order/open-source-license/
+    verify_anchor:
+      - "open source Licensing"
     what_you_get: >-
       Free one-year PVS-Studio static analyzer license (C, C++, C#, Java)
       for a non-commercial open source project; one license per project,

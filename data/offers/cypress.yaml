@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Cypress Cloud Open Source Plan
     offer_url: https://docs.cypress.io/cloud/account-management/billing-and-usage#Open-Source-Plan
+    verify_anchor:
+      - "free Open Source Plan"
     what_you_get: >-
       Free Cypress Cloud plan for qualifying open source projects with 5 free
       user seats, 100,000 test results per month, parallelization with load

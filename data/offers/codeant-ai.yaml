@@ -4,6 +4,8 @@ categories: [ai-ml, security]
 offers:
   - product: CodeAnt AI code review and security platform (100% off for open source)
     offer_url: https://www.codeant.ai/pricing
+    verify_anchor:
+      - "100% OFF FOR OPEN SOURCE"
     what_you_get: >-
       CodeAnt AI's AI code review, SAST security scanning, and code quality
       platform at 100% off (free) for open source projects.

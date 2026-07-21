@@ -4,6 +4,8 @@ categories: [ide-tools]
 offers:
   - product: SmartGit (non-commercial license)
     offer_url: https://www.smartgit.dev/purchase/
+    verify_anchor:
+      - "used free of charge by open-source developers"
     what_you_get: >-
       Free SmartGit license (Git GUI client for Windows, macOS, Linux) for
       open-source developers, offered under syntevo's non-commercial license

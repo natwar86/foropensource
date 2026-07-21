@@ -4,6 +4,8 @@ categories: [communication]
 offers:
   - product: Zulip Cloud Standard
     offer_url: https://zulip.com/for/open-source/
+    verify_anchor:
+      - "is free for open-source projects"
     what_you_get: >-
       Zulip Cloud Standard (the paid team chat plan, including full message
       history) free for open-source projects; Zulip sponsors hundreds of

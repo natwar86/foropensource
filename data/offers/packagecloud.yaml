@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: Free for Open Source program (hosted package repositories)
     offer_url: https://blog.packagecloud.io/packagecloud-loves-oss/
+    verify_anchor:
+      - "Free for Open Source"
     what_you_get: >-
       Free hosted package repositories (APT/DEB, YUM/RPM, npm, Maven, PyPI,
       RubyGems, etc.) for open source projects, beyond the generic free plan

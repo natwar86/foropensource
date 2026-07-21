@@ -4,6 +4,8 @@ categories: [security, testing]
 offers:
   - product: Coverity Scan static analysis
     offer_url: https://scan.coverity.com/
+    verify_anchor:
+      - "open source project for free"
     what_you_get: >-
       Free static analysis for open source projects in Java, C/C++, C#,
       JavaScript, Ruby, or Python, analyzing every line of code and potential

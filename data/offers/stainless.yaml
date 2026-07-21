@@ -4,6 +4,8 @@ categories: [ide-tools, documentation, other]
 offers:
   - product: Stainless SDK generator Starter plan (free for FOSS)
     offer_url: https://stainless.com/pricing
+    verify_anchor:
+      - "Starter plan for free to qualifying non-commercial"
     what_you_get: >-
       Stainless Starter plan (normally $79/month per SDK generator) free
       for qualifying non-commercial open source projects: SDK generation

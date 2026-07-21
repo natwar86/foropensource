@@ -4,6 +4,8 @@ categories: [ai-ml]
 offers:
   - product: Claude for Open Source (Claude Max 20x)
     offer_url: https://claude.com/contact-sales/claude-for-oss
+    verify_anchor:
+      - "Open Source Program"
     what_you_get: >-
       6 months of free Claude Max 20x subscription for eligible open source
       maintainers and core contributors; program accepts up to 10,000

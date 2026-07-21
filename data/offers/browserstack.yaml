@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: BrowserStack Open Source program (Live, Automate, Percy)
     offer_url: https://www.browserstack.com/open-source
+    verify_anchor:
+      - "Open Source program"
     what_you_get: >-
       Free unlimited testing on desktop and mobile with Live, Automate, and
       Percy for 5 users and 5 parallel tests, across 3,000+ browsers and real

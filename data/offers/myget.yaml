@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: MyGet Open Source subscription (package hosting)
     offer_url: https://www.myget.org/opensource
+    verify_anchor:
+      - "MyGet Open Source Subscription"
     what_you_get: >-
       Free MyGet subscription for open source projects: public and community
       feeds, 1 GB storage, packages up to 100 MB each, Build Services and

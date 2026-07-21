@@ -4,6 +4,8 @@ categories: [hosting]
 offers:
   - product: Netlify Open Source plan
     offer_url: https://www.netlify.com/legal/open-source-policy/
+    verify_anchor:
+      - "Open Source Plan Policy"
     what_you_get: >-
       Free Open Source plan with 10,000 credits per month, free production
       deploys, unlimited team members; sites remain active even if credits

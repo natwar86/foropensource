@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Qlty Cloud (code quality and coverage)
     offer_url: https://qlty.sh/pricing
+    verify_anchor:
+      - "free for open source projects"
     what_you_get: >-
       Qlty Cloud (successor to Code Climate Quality) code health and coverage
       service free for community-based open source projects; Free-plan support

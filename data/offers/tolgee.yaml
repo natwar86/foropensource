@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: Tolgee Cloud Business plan for open source
     offer_url: https://tolgee.io/blog/free-software-localization
+    verify_anchor:
+      - "Free for open-source projects"
     what_you_get: >-
       Tolgee Cloud Business plan free for open source projects (localization/
       translation management platform); paid-tier features at no cost, granted

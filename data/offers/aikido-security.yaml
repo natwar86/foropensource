@@ -4,6 +4,8 @@ categories: [security]
 offers:
   - product: Aikido AppSec platform (free for open source)
     offer_url: https://www.aikido.dev/code-quality/free-open-source-ai-code-review2
+    verify_anchor:
+      - "Free Open Source AI Code Reviews"
     what_you_get: >-
       Free-forever AI code reviews and security checks for open source
       projects: AI code reviews with automated fix suggestions, PR security

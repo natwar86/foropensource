@@ -4,6 +4,8 @@ categories: [licensing-compliance, storage]
 offers:
   - product: Free artifact distribution for open source projects
     offer_url: https://keygen.sh/open-source/
+    verify_anchor:
+      - "support Open Source"
     what_you_get: >-
       Free artifact distribution (software distribution and automatic
       updates via Keygen Dist) for popular open source projects; the page

@@ -4,6 +4,8 @@ categories: [testing, monitoring]
 offers:
   - product: Size Analysis (free for open source)
     offer_url: https://www.emergetools.com/open-source
+    verify_anchor:
+      - "Size Analysis is free for non-commercial open source projects"
     what_you_get: >-
       Emerge's mobile app Size Analysis free for non-commercial open source
       projects: automated size insights, size tracking on every pull

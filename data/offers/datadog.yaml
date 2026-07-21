@@ -4,6 +4,8 @@ categories: [monitoring, security]
 offers:
   - product: Datadog observability platform (Open Source Projects program)
     offer_url: https://www.datadoghq.com/partner/open-source/
+    verify_anchor:
+      - "open source license"
     what_you_get: >-
       Free Datadog account for the project's own infrastructure: cloud
       observability and security platform including infrastructure and

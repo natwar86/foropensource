@@ -4,6 +4,8 @@ categories: [error-tracking, monitoring]
 offers:
   - product: Sentry Open-Source Sponsorship Plan (error monitoring and observability)
     offer_url: https://sentry.io/for/open-source/
+    verify_anchor:
+      - "Open-Source Sponsorship"
     what_you_get: >-
       Free sponsored plan with Business features and no term limit: 5M
       errors, 5,000GB logs, 1B spans, 100K replays, 500 cron monitors, 25

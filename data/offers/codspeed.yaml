@@ -4,6 +4,8 @@ categories: [testing, ci-cd]
 offers:
   - product: CodSpeed continuous benchmarking (Free plan for open source)
     offer_url: https://codspeed.io/pricing
+    verify_anchor:
+      - "support open source projects"
     what_you_get: >-
       Free continuous performance tracking in CI with unlimited users for
       open-source projects (private repos capped at 5 users), unlimited

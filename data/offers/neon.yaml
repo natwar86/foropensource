@@ -4,6 +4,8 @@ categories: [database]
 offers:
   - product: Neon Open Source Program (Postgres platform credits)
     offer_url: https://neon.com/programs/open-source
+    verify_anchor:
+      - "Open Source Program"
     what_you_get: >-
       Up to $5,000 per year in Neon platform credits for open source
       projects that use Postgres, plus $20 per referred customer (unlimited)

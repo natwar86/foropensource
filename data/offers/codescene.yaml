@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: CodeScene for Open Source (community edition)
     offer_url: https://codescene.com/product/codescene-for-open-source
+    verify_anchor:
+      - "Free for your open-source project"
     what_you_get: >-
       Free CodeScene community edition for open source projects: automated code
       reviews via PR integration, technical debt management with Hotspots, Code

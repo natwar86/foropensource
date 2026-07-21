@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Coveralls test coverage
     offer_url: https://coveralls.io/pricing
+    verify_anchor:
+      - "free for open source"
     what_you_get: >-
       Free test coverage tracking, history, and statistics for open source
       repositories. Pricing page states "Coveralls will always be free for

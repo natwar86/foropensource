@@ -4,6 +4,8 @@ categories: [ci-cd]
 offers:
   - product: RISE RISC-V Runners
     offer_url: https://riseproject.dev/2026/03/24/announcing-the-rise-risc-v-runners-free-native-risc-v-ci-on-github/
+    verify_anchor:
+      - "managed GitHub Actions runner service"
     what_you_get: >-
       Free native RISC-V GitHub Actions runners for any open source project
       on GitHub: bare-metal RISC-V servers (hosted at Scaleway, no

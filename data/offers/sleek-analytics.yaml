@@ -4,6 +4,8 @@ categories: [analytics]
 offers:
   - product: Sleek Pro plan (free for open source maintainers)
     offer_url: https://getsleek.io/oss
+    verify_anchor:
+      - "Free analytics for open source projects"
     what_you_get: >-
       1 year of the Sleek Pro plan free for open source maintainers:
       real-time analytics, unlimited events, and everything offered to

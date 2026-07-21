@@ -4,6 +4,8 @@ categories: [other, documentation]
 offers:
   - product: Sanity Open Source plan (Growth plan free for OSS)
     offer_url: https://www.sanity.io/docs/open-source-plan
+    verify_anchor:
+      - "Open-source projects that are based on sponsorships"
     what_you_get: >-
       Formerly offered Sanity's Growth plan free to non-monetized open
       source projects (including multiple datasets, extra users, and SSO).

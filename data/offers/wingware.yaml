@@ -4,6 +4,8 @@ categories: [ide-tools]
 offers:
   - product: Wing Pro (free license for open source developers)
     offer_url: https://wingware.com/store/free
+    verify_anchor:
+      - "open source license"
     what_you_get: >-
       Free Wing Pro (Python IDE) license for unpaid open source
       development; includes upgrades only within the same major release

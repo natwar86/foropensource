@@ -4,6 +4,8 @@ categories: [ide-tools, ci-cd, ai-ml]
 offers:
   - product: Graphite for Open Source (Standard plan free)
     offer_url: https://graphite.com/blog/startup-program-announcement
+    verify_anchor:
+      - "free for startups and open source projects"
     what_you_get: >-
       Full Graphite Standard plan free for open source projects: unlimited
       stacking (stacked PRs), insights, automations, and the stack-aware

@@ -4,6 +4,8 @@ categories: [hosting]
 offers:
   - product: Vercel Open Source Program
     offer_url: https://vercel.com/open-source-program
+    verify_anchor:
+      - "Open Source Program"
     what_you_get: >-
       $3,600 in Vercel platform credits distributed over 12 months, an OSS
       Starter Pack with credits from third-party services, and priority

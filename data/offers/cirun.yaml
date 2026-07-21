@@ -4,6 +4,8 @@ categories: [ci-cd]
 offers:
   - product: Cirun (open source plan)
     offer_url: https://cirun.io/pricing
+    verify_anchor:
+      - "free for open source"
     what_you_get: >-
       Cirun service free forever for open source: unlimited public
       repositories and unlimited self-hosted GitHub Actions runners on all

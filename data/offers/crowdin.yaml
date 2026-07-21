@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: Crowdin (Open Source plan)
     offer_url: https://crowdin.com/page/open-source-project-setup-request
+    verify_anchor:
+      - "Open Source License"
     what_you_get: >-
       Crowdin localization management platform "completely free of charge for
       open-source projects", including access to beta features, the Global

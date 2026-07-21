@@ -4,6 +4,8 @@ categories: [ci-cd]
 offers:
   - product: Blacksmith GitHub Actions runners (OSS program)
     offer_url: https://www.blacksmith.sh/pricing
+    verify_anchor:
+      - "free plan falling short for many OSS"
     what_you_get: >-
       Free use of Blacksmith's high-performance GitHub Actions runners and
       CI services for qualifying open source projects (program currently

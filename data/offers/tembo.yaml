@@ -4,6 +4,8 @@ categories: [ai-ml, database]
 offers:
   - product: Tembo platform (free for open source)
     offer_url: https://www.tembo.io/oss
+    verify_anchor:
+      - "Open Source Program"
     what_you_get: >-
       Full access to all Tembo features including AI agents, automations,
       and integrations, with unlimited contributors, priority support, and

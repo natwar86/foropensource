@@ -4,6 +4,8 @@ categories: [ai-ml, ide-tools]
 offers:
   - product: cubic AI code review (free for open source)
     offer_url: https://www.cubic.dev/pricing-plans
+    verify_anchor:
+      - "free for open source teams"
     what_you_get: >-
       cubic's AI code review is 100% free for open source teams: connect it
       to a public repository to get unlimited AI reviews on pull requests,

@@ -4,6 +4,8 @@ categories: [documentation]
 offers:
   - product: Bump.sh Pro plan (API documentation)
     offer_url: https://bump.sh/pricing/
+    verify_anchor:
+      - "get free access to Bump.sh Pro plan"
     what_you_get: >-
       Free access to the Bump.sh Pro plan (listed at $250/month) for open
       source projects — hosted API documentation and changelogs for

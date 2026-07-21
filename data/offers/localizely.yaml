@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: Localizely translation management platform
     offer_url: https://localizely.com/pricing/
+    verify_anchor:
+      - "Free for Open Source"
     what_you_get: >-
       Localizely (cloud translation/localization management platform) completely
       free for open-source projects; pricing page states "If you have an

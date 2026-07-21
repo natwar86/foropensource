@@ -4,6 +4,8 @@ categories: [analytics]
 offers:
   - product: OpenPanel analytics (free for open source)
     offer_url: https://openpanel.dev/open-source
+    verify_anchor:
+      - "Free Analytics for Open Source Projects"
     what_you_get: >-
       Free web/product analytics for open source projects with up to 2.5
       million events per month, full feature access (funnels, retention,

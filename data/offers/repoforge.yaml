@@ -4,6 +4,8 @@ categories: [hosting]
 offers:
   - product: Hosted package repositories (open source plan)
     offer_url: https://repoforge.io
+    verify_anchor:
+      - "Free For open source projects"
     what_you_get: >-
       Free-forever plan for open source projects with 100 MB storage and
       unlimited public packages on RepoForge's cloud-hosted package

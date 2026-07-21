@@ -28,6 +28,8 @@ offers:
     verification_source: "manual: developers.openai.com/community/codex-for-oss live, lists 6 months ChatGPT Pro + Codex Security + fund credits"
   - product: Codex Open Source Fund (API credit grants)
     offer_url: https://openai.com/form/codex-open-source-fund/
+    verify_anchor:
+      - "supporting open source"
     what_you_get: >-
       One-time API credit grants of up to $25,000 per project from a $1
       million fund, for open source projects integrating Codex CLI or

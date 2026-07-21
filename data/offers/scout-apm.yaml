@@ -4,6 +4,8 @@ categories: [monitoring, error-tracking]
 offers:
   - product: Scout Monitoring (Large plan for OSS)
     offer_url: https://www.scoutapm.com/open-source
+    verify_anchor:
+      - "open source license"
     what_you_get: >-
       Free access to Scout's Large plan with full features: application
       traces, error monitoring, log management, query analysis, and alerting.

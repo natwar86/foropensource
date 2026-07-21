@@ -4,6 +4,8 @@ categories: [cdn]
 offers:
   - product: jsDelivr public CDN for open source packages
     offer_url: https://www.jsdelivr.com
+    verify_anchor:
+      - "reliable CDN for JS and open source"
     what_you_get: >-
       Free production CDN for open source packages published on npm or GitHub:
       four CDN and three DNS providers with 540+ points of presence, HTTP/3,

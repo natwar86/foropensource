@@ -4,6 +4,8 @@ categories: [security]
 offers:
   - product: Greenkeeper automated npm dependency management
     offer_url: https://greenkeeper.io/
+    verify_anchor:
+      - "free plan for Open Source"
     what_you_get: >-
       Historically, free automated npm dependency monitoring and update PRs
       for open source repositories. The service ceased operation on June 3,

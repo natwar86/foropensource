@@ -4,6 +4,8 @@ categories: [security]
 offers:
   - product: Secure Developer Program (Snyk security platform)
     offer_url: https://snyk.io/open-source/
+    verify_anchor:
+      - "open source program"
     what_you_get: >-
       A free Snyk account with full enterprise entitlements and no usage
       limitations for open source projects, plus a members' Discord community

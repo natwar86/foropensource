@@ -4,6 +4,8 @@ categories: [ide-tools]
 offers:
   - product: Advanced Installer (Architect license)
     offer_url: https://www.advancedinstaller.com/free-license.html
+    verify_anchor:
+      - "Free Advanced Installer License for Open-Source"
     what_you_get: >-
       Free Advanced Installer Architect license (the highest tier) for
       developers of open source projects, for building Windows installers.

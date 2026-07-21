@@ -4,6 +4,8 @@ categories: [ide-tools, documentation]
 offers:
   - product: Oxygen XML Editor (open-source project donation)
     offer_url: https://www.oxygenxml.com/open_source_request_form.html
+    verify_anchor:
+      - "open-source license"
     what_you_get: >-
       Up to ten Named User 6-month subscription-free Oxygen XML licenses each
       year for a project's leads and core contributors.

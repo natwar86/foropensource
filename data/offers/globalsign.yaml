@@ -4,6 +4,8 @@ categories: [security]
 offers:
   - product: Free SSL certificates for open source projects
     offer_url: https://www.globalsign.com/en/ssl/ssl-open-source/
+    verify_anchor:
+      - "support the open source community"
     what_you_get: >-
       Free GlobalSign SSL certificates for qualifying open source projects,
       helping users verify they are receiving unmodified authentic software

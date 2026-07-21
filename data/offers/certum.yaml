@@ -4,6 +4,8 @@ categories: [security]
 offers:
   - product: Open Source Code Signing certificate
     offer_url: https://shop.certum.eu/open-source-code-signing.html
+    verify_anchor:
+      - "Open Source Code Signing"
     what_you_get: >-
       NOT free — a heavily discounted code signing certificate product for
       open source developers, priced "from EUR 69.00 gross" (far below

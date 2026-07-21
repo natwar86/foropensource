@@ -4,6 +4,8 @@ categories: [email]
 offers:
   - product: Hosted Mailman 3 mailing lists
     offer_url: https://mailman3.com/
+    verify_anchor:
+      - "Open-source support initiative"
     what_you_get: >-
       Free hosting of GNU Mailman 3 mailing lists on the mailman3.com SaaS
       for open source software projects ("We love open-source software and

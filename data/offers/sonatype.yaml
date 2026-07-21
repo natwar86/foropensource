@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: Maven Central publishing
     offer_url: https://central.sonatype.org/
+    verify_anchor:
+      - "Serving Open Source Components Since 2002"
     what_you_get: >-
       Free publishing and hosting of open source Java/JVM components on the
       Central Repository (Maven Central), the default artifact repository for

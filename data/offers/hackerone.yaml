@@ -4,6 +4,8 @@ categories: [security]
 offers:
   - product: HackerOne Community Edition
     offer_url: https://www.hackerone.com/company/open-source-community
+    verify_anchor:
+      - "HackerOne Community Edition"
     what_you_get: >-
       Free vulnerability coordination / bug bounty platform for open source
       projects: security page with disclosure policy, report management with

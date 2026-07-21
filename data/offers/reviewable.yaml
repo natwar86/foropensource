@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Reviewable code review
     offer_url: https://www.reviewable.io/pricing/
+    verify_anchor:
+      - "Free forever for community projects and personal use"
     what_you_get: >-
       All features free for public repositories, forever: full GitHub code
       review workflows (multi-round reviews, tracked discussions, review

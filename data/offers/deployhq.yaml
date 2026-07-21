@@ -4,6 +4,8 @@ categories: [ci-cd]
 offers:
   - product: DeployHQ open source discount
     offer_url: https://www.deployhq.com/blog/how-deployhq-is-open-open-source-students-and-non-profits
+    verify_anchor:
+      - "Supporting Open Source"
     what_you_get: >-
       NOT free — a 50% discount on DeployHQ deployment automation plans for
       open source projects (also students and non-profits). A separate generic

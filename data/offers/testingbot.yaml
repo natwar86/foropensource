@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: TestingBot browser and device grid (open source plan)
     offer_url: https://testingbot.com/open-source
+    verify_anchor:
+      - "Free for Open-Source"
     what_you_get: >-
       Free unlimited automated testing for open source projects with 2
       concurrent tests, access to 6100+ browsers and real iOS/Android devices,

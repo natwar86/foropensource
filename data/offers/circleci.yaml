@@ -4,6 +4,8 @@ categories: [ci-cd]
 offers:
   - product: CircleCI open source plan
     offer_url: https://circleci.com/open-source/
+    verify_anchor:
+      - "Free OSS Continuous Integration"
     what_you_get: >-
       Free CI/CD credits for open source organizations: up to 400,000 credits
       per month for Linux, Arm, and Docker builds plus 30,000 credits per

@@ -21,6 +21,8 @@ offers:
     verification_source: "manual: Microsoft Learn concurrent-jobs doc (updated 2026-06) states public projects are retired, existing grants end when projects convert to private in 2027"
   - product: Azure credits for open source projects
     offer_url: https://opensource.microsoft.com/azure-credits/
+    verify_anchor:
+      - "Azure credits for open source projects"
     what_you_get: >-
       Grants of Azure credits for short-term development, infrastructure, and
       testing needs of open source projects, typically for one Microsoft

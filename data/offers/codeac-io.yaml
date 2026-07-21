@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Codeac automated code review (open source plan)
     offer_url: https://www.codeac.io/pricing.html
+    verify_anchor:
+      - "Open-source $0 Forever"
     what_you_get: >-
       Forever-free plan for open source with unlimited public repositories on
       Codeac's automated code quality / SAST analysis platform; private

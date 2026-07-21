@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: POEditor (Open Source Project status)
     offer_url: https://poeditor.com/kb/open-source-localization
+    verify_anchor:
+      - "provided for free on POEditor"
     what_you_get: >-
       Free localization for open source software with no string limitation
       (unlimited strings into unlimited languages, unlimited contributors),

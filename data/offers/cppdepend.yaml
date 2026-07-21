@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: CppDepend Pro (Open Source Contributor License)
     offer_url: https://www.cppdepend.com/cppdepend-for-oss
+    verify_anchor:
+      - "Free CppDepend Pro License for Open Source Contributors"
     what_you_get: >-
       Free CppDepend Pro license (C/C++ static analysis: code quality
       metrics, dependency analysis, code review automation, reports) for

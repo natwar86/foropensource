@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Scrutinizer continuous code inspection
     offer_url: https://scrutinizer-ci.com/pricing
+    verify_anchor:
+      - "Free for open-source projects"
     what_you_get: >-
       Free continuous code quality analysis for open-source repositories;
       Scrutinizer does not charge for open-source repositories and you can add

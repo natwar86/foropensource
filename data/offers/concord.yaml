@@ -4,6 +4,8 @@ categories: [other]
 offers:
   - product: Concord data privacy / consent compliance platform (Essentials plan)
     offer_url: https://www.concord.tech/open-source
+    verify_anchor:
+      - "Free Plan for Life"
     what_you_get: >-
       Essentials plan free for life for verifiable open source projects:
       data privacy compliance management and consent/trust tools for the

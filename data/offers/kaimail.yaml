@@ -4,6 +4,8 @@ categories: [email]
 offers:
   - product: KaiMail email forwarding for custom domains
     offer_url: https://kaimail.net/blog/email-for-open-source/tokyo-python-meetup-april-2026-email-in-python/
+    verify_anchor:
+      - "offer a free program for open source"
     what_you_get: >-
       Free program for open source projects and volunteer communities to use
       their own domain for email: custom-domain addresses (e.g. contact@,

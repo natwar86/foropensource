@@ -4,6 +4,8 @@ categories: [ci-cd]
 offers:
   - product: AppVeyor CI free plan for open source
     offer_url: https://www.appveyor.com/pricing/
+    verify_anchor:
+      - "Open-source FREE Unlimited public projects"
     what_you_get: >-
       Free CI/CD plan for open source: unlimited public projects, 1 concurrent
       job, 5 self-hosted jobs, 60-minute max build time, community support.

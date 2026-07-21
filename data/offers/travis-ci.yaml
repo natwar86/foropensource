@@ -4,6 +4,8 @@ categories: [ci-cd]
 offers:
   - product: Travis CI for open source (travis-ci.org)
     offer_url: https://www.travis-ci.com/pricing/
+    verify_anchor:
+      - "Open Source Only"
     what_you_get: >-
       Historically, unlimited free CI/CD builds for public open source
       repositories on travis-ci.org. That platform was shut down in June 2021

@@ -4,6 +4,8 @@ categories: [project-management, documentation]
 offers:
   - product: Fibery (work & knowledge management platform)
     offer_url: https://fibery.com/blog/product-updates/fibery-special-pricing/
+    verify_anchor:
+      - "Open source companies support"
     what_you_get: >-
       Fibery is 100% free for all open-source projects (full product at no
       cost, not a discount). Fibery also offers a separate 50% permanent

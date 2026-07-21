@@ -4,6 +4,8 @@ categories: [testing]
 offers:
   - product: Chromatic visual testing (Open Source plan)
     offer_url: https://www.chromatic.com/pricing
+    verify_anchor:
+      - "Free for open source"
     what_you_get: >-
       Free Chromatic for open source projects ("Free for open source.
       Building in the open? We'd love to support your project."). Specific

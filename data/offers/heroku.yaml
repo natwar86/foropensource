@@ -4,6 +4,8 @@ categories: [hosting]
 offers:
   - product: Open Source Software Credit Program
     offer_url: https://www.heroku.com/open-source-credit-program
+    verify_anchor:
+      - "Heroku Open Source Software Credit Program"
     what_you_get: >-
       A set monthly Heroku credit allocation for 12 months, typically $25 to
       $500 USD/month (discretionary), usable on Heroku products such as Dynos,

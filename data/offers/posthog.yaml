@@ -4,6 +4,8 @@ categories: [analytics]
 offers:
   - product: PostHog for Startups credits (open source track)
     offer_url: https://posthog.com/handbook/marketing/startups
+    verify_anchor:
+      - "open source projects without corporate backing"
     what_you_get: >-
       $50,000 in PostHog credits (product analytics, session replay, feature
       flags, etc.) via the PostHog for Startups program; qualifying open

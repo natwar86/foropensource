@@ -4,6 +4,8 @@ categories: [documentation]
 offers:
   - product: Mintlify Pro (OSS Program)
     offer_url: https://www.mintlify.com/oss-program
+    verify_anchor:
+      - "supporting non-commercial open source projects"
     what_you_get: >-
       Mintlify Pro plan free forever for qualifying open source projects:
       hosted docs with custom domain and branding, advanced analytics, and

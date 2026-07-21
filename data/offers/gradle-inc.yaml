@@ -4,6 +4,8 @@ categories: [ci-cd]
 offers:
   - product: Develocity (sponsored OSS instances)
     offer_url: https://develocity.ai/oss-sponsored-by-develocity/
+    verify_anchor:
+      - "free open source program"
     what_you_get: >-
       Free hosted Develocity instances for key open source projects, including
       Build Scan, Build Cache, Failure Analytics, and Performance Insights for

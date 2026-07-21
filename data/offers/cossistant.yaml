@@ -4,6 +4,8 @@ categories: [communication, other]
 offers:
   - product: Cossistant Pro plan (OSS friends Program)
     offer_url: https://cossistant.com/open-source-program
+    verify_anchor:
+      - "Open Source Program"
     what_you_get: >-
       Cossistant Pro plan (support/chat widget) free with included credits,
       plus a dofollow listing on their featured projects page, a guest blog
