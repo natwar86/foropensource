@@ -17,6 +17,7 @@ from assets/).
 import csv
 import html
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -47,6 +48,50 @@ CATEGORY_LABELS = {
 
 def esc(value) -> str:
     return html.escape(str(value), quote=True)
+
+
+# Google truncates SERP titles around 60 chars and snippets around 155-160.
+# Lengths are measured on the raw text, which is what Google renders — the
+# HTML-escaped form is longer (an apostrophe becomes &#x27;) but that is not
+# what gets counted.
+TITLE_LIMIT = 60
+DESC_LIMIT = 158
+
+
+def short_name(company: str) -> str:
+    """Drop a trailing parenthetical: titles want the brand, not the gloss.
+
+    "Qlty Software (Code Climate)" -> "Qlty Software"
+    """
+    return re.sub(r"\s*\([^)]*\)\s*$", "", company).strip() or company
+
+
+def possessive(name: str) -> str:
+    """"Azure Pipelines'" not "Azure Pipelines's"."""
+    return f"{name}'" if name.rstrip().endswith(("s", "S")) else f"{name}'s"
+
+
+def fit_title(*candidates: str) -> str:
+    """First candidate that fits the SERP width; else trim the last one.
+
+    Callers pass richest-first, so a short brand keeps the full phrasing and a
+    long one degrades to the bare keyword rather than being cut mid-word.
+    """
+    for candidate in candidates:
+        if len(candidate) <= TITLE_LIMIT:
+            return candidate
+    return clamp(candidates[-1], TITLE_LIMIT)
+
+
+def clamp(text: str, limit: int) -> str:
+    """Trim to a word boundary; SERP truncation cuts mid-word and looks broken."""
+    text = " ".join(str(text).split())
+    if len(text) <= limit:
+        return text
+    cut = text[:limit - 1]
+    if " " in cut:
+        cut = cut[:cut.rfind(" ")]
+    return cut.rstrip(" ,;:—-") + "…"
 
 
 def cat_label(slug: str) -> str:
@@ -755,9 +800,10 @@ See also: <a href="/sponsors/">which companies sponsor the most open source proj
     })
     return page(
         title="foropensource — free products and services for open source",
-        description=f"{len(docs)} companies with {n_offers} verified free offers for "
-        "open source projects and maintainers: CI, hosting, monitoring, security, "
-        "testing, and more. Paste your repo to see what it qualifies for.",
+        description=clamp(
+            f"{len(docs)} companies with {n_offers} verified free offers for open "
+            "source projects: CI, hosting, monitoring, security, testing and more. "
+            "Paste your repo to see what it qualifies for.", DESC_LIMIT),
         canonical_path="/",
         body=body,
         extra_head=json_ld,
@@ -792,10 +838,16 @@ def build_company_page(doc: dict) -> str:
 <p>Not sure you qualify? <a href="/#matcher">Match your repo</a> against all
 {esc(doc['total_offers'])} offers, or browse {cat_links or 'the directory'}.</p>"""
     return page(
-        title=f"{company} free for open source — what you get and how to apply",
-        description=f"{company}'s {offers_word} for open source: "
-        f"{'; '.join(products)[:120]}. Eligibility, what you get, and how to apply "
-        f"— verified {verified}.",
+        title=fit_title(
+            f"{company} free for open source — what you get and how to apply",
+            f"{short_name(company)} free for open source — how to apply",
+            f"{short_name(company)} free for open source",
+        ),
+        # Ordered so the trim eats boilerplate, not the offer or the date.
+        description=clamp(
+            f"{possessive(short_name(company))} {offers_word} for open source: "
+            f"{clamp('; '.join(products), 60)}. Verified {verified} — what you "
+            f"get, who qualifies, and how to apply.", DESC_LIMIT),
         canonical_path=f"/company/{doc['slug']}/",
         body=body,
         extra_head=breadcrumbs_json_ld(
@@ -854,10 +906,15 @@ current offer.</p>"""
 <p>Know of a new {esc(company)} offer for open source?
 <a href="{REPO_URL}/blob/main/data/offers/{esc(doc['slug'])}.yaml">Update it on GitHub</a>.</p>"""
     return page(
-        title=f"Is {company} still free for open source? Discontinued — and alternatives",
-        description=f"{company}'s free offer for open source "
-        f"({'; '.join(products)[:100]}) has been discontinued, last checked "
-        f"{verified}. Current alternatives and how to apply.",
+        title=fit_title(
+            f"Is {company} still free for open source? Discontinued — and alternatives",
+            f"Is {company} still free for open source? Discontinued",
+            f"Is {short_name(company)} still free for open source?",
+        ),
+        description=clamp(
+            f"{possessive(short_name(company))} free offer for open source has "
+            f"been discontinued, last checked {verified}. What it was, and the "
+            f"current alternatives.", DESC_LIMIT),
         canonical_path=f"/company/{doc['slug']}/",
         body=body,
         extra_head=breadcrumbs_json_ld(
@@ -883,9 +940,14 @@ Not sure which you qualify for? <a href="/#matcher">Match your repo</a>.</p>
 {cards}
 <p><a href="/">Browse all {total_companies} companies</a></p>"""
     return page(
-        title=f"Free {label} for open source projects — {n_offers} verified offers",
-        description=f"{n_offers} verified free {label} offers for open source "
-        f"projects, from {names} and more. What you get and how to apply.",
+        title=fit_title(
+            f"Free {label} for open source projects — {n_offers} verified offers",
+            f"Free {label} for open source — {n_offers} verified offers",
+            f"Free {label} for open source",
+        ),
+        description=clamp(
+            f"{n_offers} verified free {label} offers for open source projects, "
+            f"from {names} and more. What you get and how to apply.", DESC_LIMIT),
         canonical_path=f"/category/{cat}/",
         body=body,
         extra_head=breadcrumbs_json_ld(
@@ -960,9 +1022,10 @@ employing maintainers, and free products
 (CC BY 4.0). Missing a company's sponsorships? <a href="{REPO_URL}">Open a pull request</a>.</p>"""
     return page(
         title="Which companies sponsor the most open source projects?",
-        description=f"League table of {len(ranked)} companies by publicly visible "
-        "open source sponsorships on GitHub Sponsors and Open Collective — "
-        f"{n_total} sponsorships counted, updated from a public dataset.",
+        description=clamp(
+            f"League table of {len(ranked)} companies by publicly visible open "
+            f"source sponsorships on GitHub Sponsors and Open Collective — "
+            f"{n_total} sponsorships counted.", DESC_LIMIT),
         canonical_path="/sponsors/",
         body=body,
     )
