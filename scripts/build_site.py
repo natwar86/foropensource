@@ -51,6 +51,44 @@ def esc(value) -> str:
     return html.escape(str(value), quote=True)
 
 
+_EM_DASH = re.compile(r"\s*(?:—|&mdash;|&#8212;|&#x2014;)\s*")
+
+
+def no_em_dash(s):
+    """Replace em dashes (literal or HTML entity) with commas, and tidy up.
+
+    Applied to rendered pages and to offer text at load time, so em dashes
+    never surface on the site — including in the client-side matcher output,
+    whose JS string literals are part of the page and get converted too.
+    """
+    if not isinstance(s, str):
+        return s
+    if not any(t in s for t in ("—", "&mdash;", "&#8212;", "&#x2014;")):
+        return s
+    s = _EM_DASH.sub(", ", s)
+    s = re.sub(r"([.!?;:])\s*,\s*", r"\1 ", s)  # sentence punctuation then comma
+    s = re.sub(r"\s+,", ",", s)                 # no space before a comma
+    s = re.sub(r",\s*,", ", ", s)               # collapse doubled commas
+    return s
+
+
+def normalize_doc(doc: dict) -> dict:
+    """Strip em dashes from a loaded offer doc's text fields (in place)."""
+    if isinstance(doc.get("company"), str):
+        doc["company"] = no_em_dash(doc["company"])
+    for o in doc.get("offers") or []:
+        for k in ("product", "what_you_get", "how_to_apply"):
+            if isinstance(o.get(k), str):
+                o[k] = no_em_dash(o[k])
+        elig = o.get("eligibility") or {}
+        if isinstance(elig.get("notes"), str):
+            elig["notes"] = no_em_dash(elig["notes"])
+        if isinstance(o.get("verify_anchor"), list):
+            o["verify_anchor"] = [no_em_dash(x) if isinstance(x, str) else x
+                                  for x in o["verify_anchor"]]
+    return doc
+
+
 # Google truncates SERP titles around 60 chars and snippets around 155-160.
 # Lengths are measured on the raw text, which is what Google renders — the
 # HTML-escaped form is longer (an apostrophe becomes &#x27;) but that is not
@@ -78,6 +116,7 @@ def fit_title(*candidates: str) -> str:
     Callers pass richest-first, so a short brand keeps the full phrasing and a
     long one degrades to the bare keyword rather than being cut mid-word.
     """
+    candidates = [no_em_dash(c) for c in candidates]
     for candidate in candidates:
         if len(candidate) <= TITLE_LIMIT:
             return candidate
@@ -86,7 +125,7 @@ def fit_title(*candidates: str) -> str:
 
 def clamp(text: str, limit: int) -> str:
     """Trim to a word boundary; SERP truncation cuts mid-word and looks broken."""
-    text = " ".join(str(text).split())
+    text = no_em_dash(" ".join(str(text).split()))
     if len(text) <= limit:
         return text
     cut = text[:limit - 1]
@@ -1020,7 +1059,7 @@ def breadcrumbs_json_ld(*crumbs: tuple[str, str]) -> str:
 def page(*, title: str, description: str, canonical_path: str, body: str,
          extra_head: str = "", scripts: str = "") -> str:
     """Shared page shell: head with GA + SEO tags, body, tracking JS."""
-    return f"""<!doctype html>
+    return no_em_dash(f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -1063,7 +1102,7 @@ gtag('config', '{GA_MEASUREMENT_ID}');
 {scripts}
 </body>
 </html>
-"""
+""")
 
 
 MASTHEAD = """<div class="mast"><div class="wrap in">
@@ -1513,6 +1552,7 @@ def main() -> int:
         doc = yaml.safe_load(path.read_text())
         if not doc:
             continue
+        normalize_doc(doc)
         doc["slug"] = path.stem
         # Discontinued offers stay in the dataset; companies with at least one
         # active offer render normally, all-discontinued companies get a
@@ -1580,6 +1620,7 @@ def main() -> int:
     for p in sorted(OFFERS_DIR.glob("*.yaml")):
         d = yaml.safe_load(p.read_text())
         if d:
+            normalize_doc(d)
             d["slug"] = p.stem
             all_docs.append(d)
     (OUT_DIR / "offers.json").write_text(json.dumps(all_docs, indent=1))
