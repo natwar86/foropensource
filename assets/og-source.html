@@ -1,0 +1,51 @@
+<!doctype html><meta charset="utf-8"><title>og.png source</title>
+<!-- Renders assets/og.png. Update the stats below when they drift, then:
+  chrome --headless --screenshot=assets/og.png --window-size=1200,630 \
+    --force-device-scale-factor=2 --hide-scrollbars --virtual-time-budget=6000 assets/og-source.html -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;height:630px;overflow:hidden}
+body{
+  --paper:#f2f1ea; --card:#fff; --ink:#1a1a15; --ink-2:#3a3a32; --muted:#6c6b61; --faint:#9d9b8f;
+  --line:#e7e5db; --line-strong:#d8d6ca;
+  --active:#137244; --active-bg:#e6f1ea; --active-brd:#bfe0cd;
+  --hl:#cbe8d6;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --sans:"IBM Plex Sans",-apple-system,sans-serif;
+  background:var(--paper);color:var(--ink);font-family:var(--sans);
+  -webkit-font-smoothing:antialiased;
+}
+</style>
+<style>
+.card{position:absolute;inset:46px;background:var(--card);border:1px solid var(--line-strong);
+  display:flex;flex-direction:column}
+.head{display:flex;justify-content:space-between;align-items:baseline;
+  padding:30px 46px;border-bottom:1px solid var(--line)}
+.bm{font-family:var(--mono);font-weight:600;font-size:24px;white-space:nowrap}
+.bm .sub{color:var(--muted);font-weight:400}
+.reg{font-family:var(--mono);font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);white-space:nowrap}
+.mid{flex:1;padding:52px 46px 0}
+h1{font-size:66px;font-weight:700;letter-spacing:-.025em;line-height:1.12;max-width:20ch}
+h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--hl) 62%);padding:0 .04em}
+.fields{display:flex;border-top:1px solid var(--line);margin-top:0}
+.f{flex:1;padding:26px 46px;border-right:1px solid var(--line)}
+.f:last-child{border-right:none}
+.f .k{font-family:var(--mono);font-size:16px;letter-spacing:.11em;text-transform:uppercase;color:var(--faint)}
+.f .v{font-size:34px;font-weight:600;margin-top:8px}
+.f .v .ok{color:var(--active)}
+</style>
+<div class="card">
+  <div class="head">
+    <div class="bm">foropensource<span class="sub"> &middot; the open-source offer registry</span></div>
+    <div class="reg">foropensource.com</div>
+  </div>
+  <div class="mid">
+    <h1>What your open-source project can get, <em>free</em></h1>
+  </div>
+  <div class="fields">
+    <div class="f"><div class="k">Companies</div><div class="v">147</div></div>
+    <div class="f"><div class="k">Offers</div><div class="v">153</div></div>
+    <div class="f"><div class="k">Verification</div><div class="v"><span class="ok">&#10003;</span> weekly</div></div>
+  </div>
+</div>
