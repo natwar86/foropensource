@@ -1074,8 +1074,8 @@ def page(*, title: str, description: str, canonical_path: str, body: str,
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="foropensource">
 <meta property="og:image" content="{SITE_URL}/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
 <meta property="og:image:alt" content="foropensource — free products and services for open source">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{SITE_URL}/og.png">
