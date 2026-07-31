@@ -1096,7 +1096,7 @@ gtag('config', '{GA_MEASUREMENT_ID}');
 {body}
 <footer class="site-foot"><div class="wrap fg">
   <span>foropensource — offers data <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · community-maintained · re-verified weekly</span>
-  <span><a href="{REPO_URL}">GitHub</a> &middot; <a href="{REPO_URL}/issues/new?template=suggest-offer.yml">Suggest an offer</a> &middot; <a href="/offers.json">offers.json</a></span>
+  <span><a href="{REPO_URL}" target="_blank" rel="noopener">GitHub</a> &middot; <a href="{REPO_URL}/issues/new?template=suggest-offer.yml" target="_blank" rel="noopener">Suggest an offer</a> &middot; <a href="/offers.json">offers.json</a></span>
 </div></footer>
 <script>{TRACK_JS}</script>
 {scripts}
@@ -1108,8 +1108,8 @@ gtag('config', '{GA_MEASUREMENT_ID}');
 MASTHEAD = """<div class="mast"><div class="wrap in">
   <a class="bm" href="/">foropensource<span class="sub"> &middot; the open-source offer registry</span></a>
   <nav class="mnav">
-    <a href="/">Directory</a><a href="/#check">Match a repo</a>
-    <a href="/sponsors/">Sponsors</a><a href="{repo}">GitHub</a>
+    <a href="/#directory">Directory</a>
+    <a href="/sponsors/">Sponsors</a><a href="{repo}" target="_blank" rel="noopener">GitHub</a>
   </nav>
 </div></div>""".format(repo=REPO_URL)
 
@@ -1231,7 +1231,7 @@ def build_company_page(doc: dict) -> str:
 <p class="crumbs"><a href="/">Directory</a> &rsaquo; {esc(company)}</p>
 {render_record(doc)}
 <p class="pnote">Verified {esc(verified)}. Details changed?
-<a href="{REPO_URL}/blob/main/data/offers/{esc(doc['slug'])}.yaml">Fix it on GitHub</a>.
+<a href="{REPO_URL}/blob/main/data/offers/{esc(doc['slug'])}.yaml" target="_blank" rel="noopener">Fix it on GitHub</a>.
 Not sure you qualify? <a href="/#check">Match your repo</a> against all
 {esc(doc['total_offers'])} offers{f", or browse {cat_links}" if cat_links else ""}.</p>
 </div>"""
@@ -1292,7 +1292,7 @@ current offer.</p>"""
 {render_record(doc, discontinued=True)}
 {alt_html}
 <p class="pnote">Know of a new {esc(company)} offer for open source?
-<a href="{REPO_URL}/blob/main/data/offers/{esc(doc['slug'])}.yaml">Update it on GitHub</a>.</p>
+<a href="{REPO_URL}/blob/main/data/offers/{esc(doc['slug'])}.yaml" target="_blank" rel="noopener">Update it on GitHub</a>.</p>
 </div>"""
     return page(
         title=fit_title(
@@ -1408,18 +1408,19 @@ def build_sponsors_page(docs: list[dict]) -> str:
 <div class="pagehead">
   <h1>Which companies sponsor the most open source projects?</h1>
   <p class="sub">{len(ranked)} companies with {n_total} publicly visible sponsorships of
-  open source projects and maintainers, counted from GitHub Sponsors and Open
-  Collective. Expand a company to see who they sponsor.</p>
+  open source projects and maintainers, counted from GitHub Sponsors, Open
+  Collective, and companies&rsquo; own public disclosures. Expand a company to see
+  who they sponsor.</p>
 </div>
 <div class="note"><strong>What this measures:</strong> breadth, not dollars.
 GitHub Sponsors hides amounts, so a company sponsoring five projects at $10,000
-each ranks below one sponsoring fifty at $10. It also excludes support that
-doesn&rsquo;t flow through these platforms: direct grants, foundation memberships,
+each ranks below one sponsoring fifty at $10. It also misses support that
+isn&rsquo;t publicly visible somewhere: undisclosed grants, foundation memberships,
 employing maintainers, and free products
 (<a href="/">tracked separately in the offers directory</a>).</div>
 <div style="margin-top:20px">{''.join(entries)}</div>
-<p class="pnote">Data: <a href="{REPO_URL}/blob/main/data/exports/company-sponsorships.csv">company-sponsorships.csv</a>
-(CC BY 4.0). Missing a company&rsquo;s sponsorships? <a href="{REPO_URL}">Open a pull request</a>.</p>
+<p class="pnote">Data: <a href="{REPO_URL}/blob/main/data/exports/company-sponsorships.csv" target="_blank" rel="noopener">company-sponsorships.csv</a>
+(CC BY 4.0). Missing a company&rsquo;s sponsorships? <a href="{REPO_URL}" target="_blank" rel="noopener">Open a pull request</a>.</p>
 </div>"""
     return page(
         title="Which companies sponsor the most open source projects?",
