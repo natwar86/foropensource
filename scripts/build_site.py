@@ -46,6 +46,31 @@ CATEGORY_LABELS = {
     "other": "more tools",
 }
 
+# Extra search-only vocabulary per category: what people type vs. what the
+# slug/label says. Folded into each row's data-search blob at build time.
+CATEGORY_SYNONYMS = {
+    "ci-cd": "continuous integration delivery build pipeline runners actions",
+    "ide-tools": "editor ide license development",
+    "ai-ml": "llm gpt machine learning model inference copilot code review",
+    "cdn": "content delivery bandwidth edge",
+    "error-tracking": "crash reporting exceptions",
+    "monitoring": "apm observability uptime metrics logs alerting",
+    "testing": "qa test browser e2e visual regression coverage",
+    "security": "vulnerability scanning sast dependency audit pentest sbom",
+    "hosting": "deploy cloud server vps paas compute credits",
+    "documentation": "docs wiki knowledge base",
+    "database": "postgres mysql sql data store",
+    "storage": "object s3 backup files",
+    "project-management": "issues kanban tracker boards",
+    "email": "smtp newsletter transactional mail",
+    "communication": "chat slack video meetings",
+    "analytics": "stats metrics tracking web",
+    "design": "figma icons ui ux",
+    "auth": "authentication login sso identity",
+    "networking": "vpn tunnel dns",
+    "licensing-compliance": "sbom licenses legal audit",
+}
+
 
 def esc(value) -> str:
     return html.escape(str(value), quote=True)
@@ -289,8 +314,12 @@ def render_row(doc: dict, with_check: bool = True) -> str:
     cat_tags = "".join(
         f'<a class="tag" href="/category/{esc(c)}/">{esc(cat_label(c))}</a>' for c in cats
     )
-    blob = " ".join([doc["company"]] + cats
-                    + [o.get("product", "") + " " + o.get("what_you_get", "") for o in doc["offers"]]).lower()
+    blob = " ".join(
+        [doc["company"], doc.get("fos_id", "")] + cats
+        + [cat_label(c) for c in cats]
+        + [CATEGORY_SYNONYMS.get(c, "") for c in cats]
+        + [o.get("product", "") + " " + o.get("what_you_get", "") for o in doc["offers"]]
+    ).lower()
     ver = max((o.get("last_verified", "") for o in doc["offers"]), default="")
     verword = "re-check due" if st == "stale" else "verified"
     url = off0.get("offer_url", "#")
@@ -303,7 +332,7 @@ def render_row(doc: dict, with_check: bool = True) -> str:
         f'{check_btn}'
     )
     detail = f'<div class="detail">{_offer_blocks(doc, False)}<div class="rec-ft">{footer}</div></div>'
-    return f'''<div class="rowwrap" data-slug="{esc(doc["slug"])}" data-cats="{esc(" ".join(cats))}" data-status="{st}" data-search="{esc(blob)}">
+    return f'''<div class="rowwrap" data-slug="{esc(doc["slug"])}" data-cats="{esc(" ".join(cats))}" data-status="{st}" data-name="{esc(doc["company"].lower())}" data-search="{esc(blob)}">
   <div class="row" tabindex="0">
     <span class="ix">{esc(doc.get("fos_id", ""))}</span>
     <span class="co"><a class="name" href="/company/{esc(doc["slug"])}/">{esc(doc["company"])}</a><span class="rtags">{cat_tags}</span></span>
@@ -591,15 +620,71 @@ INDEX_JS = """
     });
   });
 
+  // Precompute word lists once; scoring runs per keystroke.
+  for (const w of rows) {
+    w._name = w.dataset.name || '';
+    w._nameWords = w._name.split(/\\s+/);
+    w._blobWords = (w.dataset.search || '').split(/[^a-z0-9+#./-]+/).filter(Boolean);
+  }
+
+  // true if a and b are within one edit (incl. transposition) - typo tolerance
+  function near(a, b) {
+    if (a === b) return true;
+    const la = a.length, lb = b.length;
+    if (Math.abs(la - lb) > 1) return false;
+    let i = 0, j = 0, edits = 0;
+    while (i < la && j < lb) {
+      if (a[i] === b[j]) { i++; j++; continue; }
+      if (++edits > 1) return false;
+      if (la === lb && a[i] === b[j + 1] && a[i + 1] === b[j]) { i += 2; j += 2; }
+      else if (la > lb) i++;
+      else if (lb > la) j++;
+      else { i++; j++; }
+    }
+    return edits + (la - i) + (lb - j) <= 1;
+  }
+
+  // Per-token score: 0 = no match (tokens are AND'd). Field-weighted so
+  // company-name hits outrank category hits outrank description hits.
+  function tokenScore(w, t) {
+    if (w._name === t) return 100;
+    if (w._name.startsWith(t)) return 60;
+    if (w._nameWords.some(n => n.startsWith(t))) return 50;
+    if (t.length >= 5 && w._nameWords.some(n => near(n, t))) return 30;
+    const cats = w.dataset.cats;
+    if (cats && cats.split(' ').some(c => c.startsWith(t))) return 25;
+    if (w._blobWords.some(b => b.startsWith(t))) return 12;
+    if (t.length >= 4 && w.dataset.search.includes(t)) return 6;
+    if (t.length >= 5 && w._blobWords.some(b => near(b, t))) return 4;
+    return 0;
+  }
+
   function apply() {
     const q = search ? search.value.trim().toLowerCase() : '';
+    const tokens = q ? q.split(/\\s+/).filter(Boolean) : [];
     let shown = 0, elig = 0;
+    const scored = [];
     for (const w of rows) {
       const okCat = !cat || w.dataset.cats.split(' ').includes(cat);
-      const okQ = !q || w.dataset.search.includes(q);
-      const vis = okCat && okQ;
+      let s = 0;
+      if (okCat && tokens.length) {
+        for (const t of tokens) {
+          const ts = tokenScore(w, t);
+          if (!ts) { s = 0; break; }
+          s += ts;
+        }
+      }
+      const vis = okCat && (!tokens.length || s > 0);
       w.style.display = vis ? '' : 'none';
-      if (vis) { shown++; if (w.dataset.elig === 'yes') elig++; }
+      if (vis) { shown++; if (w.dataset.elig === 'yes') elig++; scored.push([s, w]); }
+    }
+    // Rank by score while typing; restore registry order when cleared.
+    const parent = rows[0] && rows[0].parentNode;
+    if (parent) {
+      const order = tokens.length
+        ? scored.sort((a, b) => b[0] - a[0]).map(p => p[1])
+        : rows;
+      for (const w of order) parent.appendChild(w);
     }
     if (empty) empty.style.display = shown ? 'none' : 'block';
     let base = '<b>' + shown + '</b> of ' + rows.length + ' records';
@@ -613,6 +698,11 @@ INDEX_JS = """
     search.addEventListener('input', apply);
     const q = new URLSearchParams(location.search).get('q');
     if (q) search.value = q;
+    document.addEventListener('keydown', e => {
+      if (e.key === '/' && !(e.target.closest && e.target.closest('input,textarea,select'))) {
+        e.preventDefault(); search.focus();
+      }
+    });
   }
   chips.forEach(c => c.addEventListener('click', () => {
     chips.forEach(x => x.classList.remove('on'));
