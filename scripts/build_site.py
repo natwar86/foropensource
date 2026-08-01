@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OFFERS_DIR = ROOT / "data" / "offers"
 RULES_PATH = ROOT / "matching" / "rules.yaml"
 SPONSORSHIPS_CSV = ROOT / "data" / "exports" / "company-sponsorships.csv"
+PROJECTS_CSV = ROOT / "data" / "exports" / "sponsored-projects.csv"
 OUT_DIR = ROOT / "_site"
 
 REPO_URL = "https://github.com/natwar86/foropensource"
@@ -585,6 +586,20 @@ body.checked .reqs-note{display:none}
 .sp ul{margin:10px 0 2px;padding-left:18px}
 .sp li{font-size:.9rem;margin:3px 0}
 .sp li a{color:var(--link);text-decoration:none}.sp li a:hover{text-decoration:underline}
+
+/* project sponsor pages */
+.facts{font-family:var(--mono);font-size:.86rem;color:var(--ink-2);margin:14px 0 4px}
+.facts a{color:var(--link);text-decoration:none}.facts a:hover{text-decoration:underline}
+.sponsor-list{list-style:none;margin:0;padding:0}
+.sponsor-list li{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;
+  padding:13px 20px;border-bottom:1px solid var(--line);font-size:.95rem}
+.sponsor-list li:last-child{border-bottom:none}
+.sponsor-list .name{font-weight:600}
+.sponsor-list a.name{color:var(--ink);text-decoration:none}
+.sponsor-list a.name:hover{color:var(--link)}
+.sponsor-list .via{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.sponsor-list .via a{color:var(--link);text-decoration:none}
+.sponsor-list .via a:hover{text-decoration:underline}
 
 /* footer */
 .site-foot{border-top:1px solid var(--line-strong);margin-top:56px;padding:34px 0 60px;
@@ -1456,8 +1471,127 @@ def build_category_page(cat: str, docs: list[dict], total_companies: int) -> str
     )
 
 
-def build_sponsors_page(docs: list[dict]) -> str:
+PLATFORM_LABELS = {
+    "github_sponsors": "GitHub Sponsors",
+    "open_collective": "Open Collective",
+    "company_website": "company disclosure",
+}
+
+
+def load_sponsor_projects() -> list[dict]:
+    """Projects with at least one company sponsor, joined on matched_repo_url.
+
+    Each entry: {name, slug, repo_url, sponsors: [csv rows], stats: row|None}.
+    Slug = repo basename; verified collision-free across the matched set.
+    """
+    if not SPONSORSHIPS_CSV.is_file() or not PROJECTS_CSV.is_file():
+        return []
+    with PROJECTS_CSV.open() as f:
+        stats_by_repo = {p["repo_url"].lower().rstrip("/"): p for p in csv.DictReader(f)}
+    by_repo: dict[str, dict] = {}
+    with SPONSORSHIPS_CSV.open() as f:
+        for row in csv.DictReader(f):
+            url = row["matched_repo_url"].lower().rstrip("/")
+            if not row["matched_catalogue_project"] or not url:
+                continue
+            proj = by_repo.setdefault(url, {
+                "name": row["matched_catalogue_project"],
+                "slug": url.rsplit("/", 1)[-1],
+                "repo_url": row["matched_repo_url"],
+                "sponsors": [],
+                "stats": stats_by_repo.get(url),
+            })
+            proj["sponsors"].append(row)
+    projects = sorted(by_repo.values(), key=lambda p: p["name"].lower())
+    slugs = [p["slug"] for p in projects]
+    dupes = {s for s in slugs if slugs.count(s) > 1}
+    if dupes:  # two different repos sharing a basename: disambiguate with owner
+        for p in projects:
+            if p["slug"] in dupes:
+                owner = p["repo_url"].rstrip("/").split("/")[-2].lower()
+                p["slug"] = f"{owner}-{p['slug']}"
+    return projects
+
+
+def build_project_page(proj: dict, docs: list[dict], n_offers: int) -> str:
+    """/sponsors/<slug>/ — who sponsors this project, with funding facts."""
+    slug_by_name = {d["company"].lower(): d["slug"] for d in docs}
+    name = proj["name"]
+    repo_path = proj["repo_url"].split("github.com/")[-1].rstrip("/")
+    sponsors = sorted(proj["sponsors"], key=lambda r: r["company"].lower())
+
+    rows_html = []
+    for r in sponsors:
+        cslug = slug_by_name.get(r["company"].lower())
+        cname = (f'<a class="name" href="/company/{esc(cslug)}/">{esc(r["company"])}</a>'
+                 if cslug else f'<span class="name">{esc(r["company"])}</span>')
+        via = PLATFORM_LABELS.get(r["platform"], r["platform"].replace("_", " "))
+        detail = ""
+        tname = r["target_name"] or r["target"]
+        if tname and tname.lower() not in (name.lower(), repo_path.split("/")[0].lower()):
+            detail = (f' &middot; through <a href="{esc(r["target_url"])}" target="_blank" '
+                      f'rel="noopener nofollow">{esc(tname)}</a>')
+        usd = ""
+        if r["oc_total_donated_usd"]:
+            try:
+                usd = f' &middot; ${float(r["oc_total_donated_usd"]):,.0f} donated'
+            except ValueError:
+                pass
+        rows_html.append(f'<li>{cname}<span class="via">via {esc(via)}{detail}{usd}</span></li>')
+
+    facts = []
+    st = proj["stats"]
+    if st:
+        if st["github_sponsors_count"]:
+            facts.append(f'<b>{int(st["github_sponsors_count"]):,}</b> sponsors on '
+                         f'<a href="https://github.com/sponsors/{esc(st["owner"])}" '
+                         f'target="_blank" rel="noopener nofollow">GitHub Sponsors</a>')
+        if st["oc_received_12mo_usd"]:
+            oc_link = (f'<a href="https://opencollective.com/{esc(st["oc_slug"])}" '
+                       f'target="_blank" rel="noopener nofollow">Open Collective</a>'
+                       if st["oc_slug"] else "Open Collective")
+            facts.append(f'<b>${int(float(st["oc_received_12mo_usd"])):,}</b> received '
+                         f"in the last 12 months on {oc_link}")
+    facts_html = (f'<p class="facts">{" &middot; ".join(facts)}</p>' if facts else "")
+
+    n = len(sponsors)
+    body = f"""<div class="wrap">
+<p class="crumbs"><a href="/">Directory</a> &rsaquo; <a href="/sponsors/">Sponsors</a> &rsaquo; {esc(name)}</p>
+<div class="pagehead">
+  <h1>Who sponsors {esc(name)}?</h1>
+  <p class="sub">{n_companies(n)} publicly sponsor
+  <a href="{esc(proj["repo_url"])}" target="_blank" rel="noopener nofollow">{esc(repo_path)}</a>,
+  counted from GitHub Sponsors, Open Collective, and companies&rsquo; own disclosures.</p>
+</div>
+{facts_html}
+<div class="idx"><ul class="sponsor-list">{"".join(rows_html)}</ul></div>
+<div class="note"><strong>What this counts:</strong> company sponsorships we can
+see publicly and match to this project. Individual sponsors, private amounts, and
+support outside these platforms are not included.</div>
+<p class="pnote">Maintain {esc(name)}?
+<a href="/#match={esc(repo_path and "github.com/" + repo_path)}">Match it against
+all {n_offers} free-for-open-source offers</a>, or see
+<a href="/sponsors/">which companies sponsor the most open source</a>.
+Data: <a href="{REPO_URL}/blob/main/data/exports/company-sponsorships.csv"
+target="_blank" rel="noopener">company-sponsorships.csv</a> (CC BY 4.0).</p>
+</div>"""
+    return page(
+        title=fit_title(
+            f"Who sponsors {name}? {n_companies(n)} tracked",
+            f"Who sponsors {name}?"),
+        description=clamp(
+            f"{n_companies(n)} publicly sponsor {name}: "
+            + ", ".join(r["company"] for r in sponsors)
+            + ". Counted from GitHub Sponsors, Open Collective, and company disclosures.",
+            DESC_LIMIT),
+        canonical_path=f"/sponsors/{proj['slug']}/",
+        body=body,
+    )
+
+
+def build_sponsors_page(docs: list[dict], proj_link_by_repo: dict[str, str] | None = None) -> str:
     """League table from company-sponsorships.csv."""
+    proj_link_by_repo = proj_link_by_repo or {}
     slug_by_name = {d["company"].lower(): d["slug"] for d in docs}
     counts: dict[str, list[dict]] = defaultdict(list)
     dollars: dict[str, float] = defaultdict(float)
@@ -1480,12 +1614,17 @@ def build_sponsors_page(docs: list[dict]) -> str:
             f'<a href="/company/{esc(slug)}/">{esc(company)}</a>' if slug else esc(company)
         )
         usd = f" &middot; ${dollars[company]:,.0f} via Open Collective" if dollars[company] else ""
+        def annot(r: dict) -> str:
+            proj = r["matched_catalogue_project"]
+            if not proj:
+                return ""
+            link = proj_link_by_repo.get(r["matched_repo_url"].lower().rstrip("/"))
+            label = f'<a href="{link}">{esc(proj)}</a>' if link else esc(proj)
+            return f" ({label})" if proj != (r["target_name"] or r["target"]) \
+                else (f' &middot; <a href="{link}">who else sponsors it?</a>' if link else "")
         targets = "".join(
             f'<li><a href="{esc(r["target_url"])}" target="_blank" rel="noopener nofollow">'
-            f"{esc(r['target_name'] or r['target'])}</a>"
-            + (f" ({esc(r['matched_catalogue_project'])})" if r["matched_catalogue_project"]
-               and r["matched_catalogue_project"] != (r["target_name"] or r["target"]) else "")
-            + "</li>"
+            f"{esc(r['target_name'] or r['target'])}</a>" + annot(r) + "</li>"
             for r in rows
         )
         entries.append(f"""<details class="sp" id="{esc(company.lower().replace(' ', '-'))}">
@@ -1695,10 +1834,19 @@ def main() -> int:
         urls.append((f"/category/{cat}/",
                      max(doc_lastmod(d) for d in cat_docs)))
     if SPONSORSHIPS_CSV.is_file():
+        projects = load_sponsor_projects()
+        proj_link_by_repo = {
+            p["repo_url"].lower().rstrip("/"): f"/sponsors/{p['slug']}/" for p in projects
+        }
         out = OUT_DIR / "sponsors"
         out.mkdir(parents=True, exist_ok=True)
-        (out / "index.html").write_text(build_sponsors_page(docs))
+        (out / "index.html").write_text(build_sponsors_page(docs, proj_link_by_repo))
         urls.append(("/sponsors/", last_verified))
+        for p in projects:
+            pout = out / p["slug"]
+            pout.mkdir(parents=True, exist_ok=True)
+            (pout / "index.html").write_text(build_project_page(p, docs, n_offers))
+            urls.append((f"/sponsors/{p['slug']}/", last_verified))
 
     (OUT_DIR / "CNAME").write_text("foropensource.com\n")
     (OUT_DIR / "404.html").write_text(build_404())
