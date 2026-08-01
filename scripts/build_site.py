@@ -1162,7 +1162,8 @@ def breadcrumbs_json_ld(*crumbs: tuple[str, str]) -> str:
 
 
 def page(*, title: str, description: str, canonical_path: str, body: str,
-         extra_head: str = "", scripts: str = "") -> str:
+         extra_head: str = "", scripts: str = "", og_image: str = "/og.png",
+         og_alt: str = "foropensource — free products and services for open source") -> str:
     """Shared page shell: head with GA + SEO tags, body, tracking JS."""
     return no_em_dash(f"""<!doctype html>
 <html lang="en">
@@ -1178,12 +1179,12 @@ def page(*, title: str, description: str, canonical_path: str, body: str,
 <meta property="og:url" content="{SITE_URL}{canonical_path}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="foropensource">
-<meta property="og:image" content="{SITE_URL}/og.png">
+<meta property="og:image" content="{SITE_URL}{og_image}">
 <meta property="og:image:width" content="2400">
 <meta property="og:image:height" content="1260">
-<meta property="og:image:alt" content="foropensource — free products and services for open source">
+<meta property="og:image:alt" content="{esc(og_alt)}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{SITE_URL}/og.png">
+<meta name="twitter:image" content="{SITE_URL}{og_image}">
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -1575,6 +1576,26 @@ all {n_offers} free-for-open-source offers</a>, or see
 Data: <a href="{REPO_URL}/blob/main/data/exports/company-sponsorships.csv"
 target="_blank" rel="noopener">company-sponsorships.csv</a> (CC BY 4.0).</p>
 </div>"""
+    schema = breadcrumbs_json_ld(
+        ("Directory", "/"), ("Sponsors", "/sponsors/"),
+        (name, f"/sponsors/{proj['slug']}/"),
+    ) + json_ld_script({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": f"Companies sponsoring {name}",
+        "numberOfItems": n,
+        "about": {"@type": "SoftwareSourceCode", "name": name,
+                  "codeRepository": proj["repo_url"]},
+        "itemListElement": [
+            {"@type": "ListItem", "position": i, "item": {
+                "@type": "Organization", "name": r["company"],
+                "url": (f"{SITE_URL}/company/{slug_by_name[r['company'].lower()]}/"
+                        if r["company"].lower() in slug_by_name else r["target_url"]),
+            }} for i, r in enumerate(sponsors, 1)
+        ],
+    })
+    md_alt = (f'<link rel="alternate" type="text/markdown" '
+              f'href="{SITE_URL}/sponsors/{proj["slug"]}/index.md">\n')
     return page(
         title=fit_title(
             f"Who sponsors {name}? {n_companies(n)} tracked",
@@ -1586,7 +1607,66 @@ target="_blank" rel="noopener">company-sponsorships.csv</a> (CC BY 4.0).</p>
             DESC_LIMIT),
         canonical_path=f"/sponsors/{proj['slug']}/",
         body=body,
+        extra_head=schema + md_alt,
+        og_image="/og-sponsors.png",
+        og_alt=f"Who sponsors {name}? Corporate open source sponsorships tracked by foropensource",
     )
+
+
+def build_project_page_md(proj: dict, docs: list[dict], n_offers: int) -> str:
+    """Markdown mirror of the project sponsor page, for LLM/agent consumption."""
+    slug_by_name = {d["company"].lower(): d["slug"] for d in docs}
+    name = proj["name"]
+    repo_path = proj["repo_url"].split("github.com/")[-1].rstrip("/")
+    sponsors = sorted(proj["sponsors"], key=lambda r: r["company"].lower())
+    lines = [
+        f"# Who sponsors {name}?",
+        "",
+        f"{n_companies(len(sponsors))} publicly sponsor [{repo_path}]({proj['repo_url']}), "
+        "counted from GitHub Sponsors, Open Collective, and companies' own disclosures.",
+        "",
+    ]
+    for r in sponsors:
+        cslug = slug_by_name.get(r["company"].lower())
+        link = f"{SITE_URL}/company/{cslug}/" if cslug else r["target_url"]
+        via = PLATFORM_LABELS.get(r["platform"], r["platform"].replace("_", " "))
+        tname = r["target_name"] or r["target"]
+        detail = (f", through {tname}" if tname and tname.lower()
+                  not in (name.lower(), repo_path.split("/")[0].lower()) else "")
+        usd = ""
+        if r["oc_total_donated_usd"]:
+            try:
+                usd = f", ${float(r['oc_total_donated_usd']):,.0f} donated"
+            except ValueError:
+                pass
+        lines.append(f"- [{r['company']}]({link}) via {via}{detail}{usd}")
+    st = proj["stats"]
+    if st and (st["github_sponsors_count"] or st["oc_received_12mo_usd"]):
+        lines.append("")
+        facts = []
+        if st["github_sponsors_count"]:
+            facts.append(f"{int(st['github_sponsors_count']):,} sponsors on GitHub Sponsors "
+                         f"(https://github.com/sponsors/{st['owner']})")
+        if st["oc_received_12mo_usd"]:
+            oc = f"${int(float(st['oc_received_12mo_usd'])):,} received in the last 12 months on Open Collective"
+            if st["oc_slug"]:
+                oc += f" (https://opencollective.com/{st['oc_slug']})"
+            facts.append(oc)
+        lines.append("Funding facts: " + "; ".join(facts) + ".")
+    lines += [
+        "",
+        "Scope: company sponsorships visible publicly and matched to this project. "
+        "Individual sponsors, private amounts, and support outside these platforms "
+        "are not included.",
+        "",
+        f"Maintain {name}? Match it against all {n_offers} free-for-open-source "
+        f"offers: {SITE_URL}/#match=github.com/{repo_path}",
+        "",
+        f"HTML version: {SITE_URL}/sponsors/{proj['slug']}/ · "
+        f"Data (CC BY-SA 4.0): {REPO_URL}/blob/main/data/exports/company-sponsorships.csv",
+        "",
+    ]
+    return no_em_dash("\n".join(lines))
 
 
 def build_sponsors_page(docs: list[dict], proj_link_by_repo: dict[str, str] | None = None) -> str:
@@ -1651,6 +1731,21 @@ employing maintainers, and free products
 <p class="pnote">Data: <a href="{REPO_URL}/blob/main/data/exports/company-sponsorships.csv" target="_blank" rel="noopener">company-sponsorships.csv</a>
 (CC BY 4.0). Missing a company&rsquo;s sponsorships? <a href="{REPO_URL}" target="_blank" rel="noopener">Open a pull request</a>.</p>
 </div>"""
+    schema = breadcrumbs_json_ld(
+        ("Directory", "/"), ("Sponsors", "/sponsors/"),
+    ) + json_ld_script({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Companies ranked by publicly visible open source sponsorships",
+        "numberOfItems": len(ranked),
+        "itemListElement": [
+            {"@type": "ListItem", "position": rank, "item": {
+                "@type": "Organization", "name": company,
+                **({"url": f"{SITE_URL}/company/{slug_by_name[company.lower()]}/"}
+                   if company.lower() in slug_by_name else {}),
+            }} for rank, (company, _rows) in enumerate(ranked, 1)
+        ],
+    })
     return page(
         title="Which companies sponsor the most open source projects?",
         description=clamp(
@@ -1659,6 +1754,9 @@ employing maintainers, and free products
             f"{n_total} sponsorships counted.", DESC_LIMIT),
         canonical_path="/sponsors/",
         body=body,
+        extra_head=schema,
+        og_image="/og-sponsors.png",
+        og_alt="Which companies sponsor the most open source projects? League table by foropensource",
     )
 
 
@@ -1708,7 +1806,8 @@ def write_offers_csv(all_docs: list[dict], out_path: Path) -> None:
 
 
 def build_llms_txt(docs: list[dict], dead_docs: list[dict], n_offers: int,
-                   all_cats: list[str], last_verified: str) -> str:
+                   all_cats: list[str], last_verified: str,
+                   projects: list[dict] | None = None) -> str:
     lines = [
         "# foropensource",
         "",
@@ -1740,13 +1839,25 @@ def build_llms_txt(docs: list[dict], dead_docs: list[dict], n_offers: int,
                          "discontinued; page lists current alternatives")
     lines += [
         "",
-        "## Other pages",
+        "## Sponsorship data",
         "",
         f"- [Which companies sponsor the most open source projects?]"
-        f"({SITE_URL}/sponsors/): league table from GitHub Sponsors and "
-        "Open Collective data",
+        f"({SITE_URL}/sponsors/): league table from GitHub Sponsors, "
+        "Open Collective, and company disclosures",
         "",
     ]
+    if projects:
+        lines += [
+            f"Per-project sponsor pages ({len(projects)} projects; each also has a "
+            "markdown mirror at index.md, e.g. "
+            f"{SITE_URL}/sponsors/{projects[0]['slug']}/index.md):",
+            "",
+        ]
+        for p in sorted(projects, key=lambda p: p["name"].lower()):
+            companies = ", ".join(sorted({r["company"] for r in p["sponsors"]}))
+            lines.append(f"- [Who sponsors {p['name']}?]"
+                         f"({SITE_URL}/sponsors/{p['slug']}/): {companies}")
+        lines.append("")
     return "\n".join(lines)
 
 
@@ -1846,13 +1957,17 @@ def main() -> int:
             pout = out / p["slug"]
             pout.mkdir(parents=True, exist_ok=True)
             (pout / "index.html").write_text(build_project_page(p, docs, n_offers))
+            (pout / "index.md").write_text(build_project_page_md(p, docs, n_offers))
             urls.append((f"/sponsors/{p['slug']}/", last_verified))
+    else:
+        projects = []
 
     (OUT_DIR / "CNAME").write_text("foropensource.com\n")
     (OUT_DIR / "404.html").write_text(build_404())
-    og_src = ROOT / "assets" / "og.png"
-    if og_src.is_file():
-        (OUT_DIR / "og.png").write_bytes(og_src.read_bytes())
+    for og_name in ("og.png", "og-sponsors.png"):
+        og_src = ROOT / "assets" / og_name
+        if og_src.is_file():
+            (OUT_DIR / og_name).write_bytes(og_src.read_bytes())
 
     # Machine-readable exports. offers.json includes discontinued offers and slugs.
     all_docs = []
@@ -1865,7 +1980,7 @@ def main() -> int:
     (OUT_DIR / "offers.json").write_text(json.dumps(all_docs, indent=1))
     write_offers_csv(all_docs, OUT_DIR / "offers.csv")
     (OUT_DIR / "llms.txt").write_text(
-        build_llms_txt(docs, dead_docs, n_offers, all_cats, last_verified))
+        build_llms_txt(docs, dead_docs, n_offers, all_cats, last_verified, projects))
     (OUT_DIR / "llms-full.txt").write_text(
         build_llms_full_txt(docs, n_offers, last_verified))
     rules = yaml.safe_load(RULES_PATH.read_text())
