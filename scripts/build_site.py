@@ -22,6 +22,7 @@ import sys
 from collections import defaultdict
 from datetime import date
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 import yaml
 
@@ -195,6 +196,32 @@ def _domain_path(url: str) -> str:
     return re.sub(r"^https?://(www\.)?", "", url or "").rstrip("/")
 
 
+REF_VALUE = "foropensource.com"
+# Our own destinations: tagging them tells us nothing we don't already know.
+NO_REF_HOSTS = {"foropensource.com", "www.foropensource.com"}
+
+
+def ref_url(url: str) -> str:
+    """Tag an outbound link with ?ref=foropensource.com.
+
+    Companies read `ref` in their own analytics, so every click we send them
+    is attributable. Skips our own site and our own repo, keeps an existing
+    `ref` if the offer URL already carries one, and preserves the fragment.
+    """
+    if not (url or "").startswith(("http://", "https://")):
+        return url
+    if url.startswith(REPO_URL):
+        return url
+    parts = urlsplit(url)
+    if parts.netloc.lower().split(":")[0] in NO_REF_HOSTS:
+        return url
+    query = parse_qsl(parts.query, keep_blank_values=True)
+    if any(k.lower() == "ref" for k, _ in query):
+        return url
+    query.append(("ref", REF_VALUE))
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
+
+
 def offer_status(offer: dict) -> str:
     st = (offer.get("status") or "active").lower()
     if st == "discontinued":
@@ -327,7 +354,7 @@ def render_row(doc: dict, with_check: bool = True) -> str:
     check_btn = ('<button class="check-one">&#9889; Check my repo against this</button>'
                  if with_check else '<a class="prog" href="/#check">Check your repo &rarr;</a>')
     footer = (
-        f'<a class="prog" href="{esc(url)}" target="_blank" rel="noopener nofollow" '
+        f'<a class="prog primary" href="{esc(ref_url(url))}" target="_blank" rel="noopener nofollow" '
         f'data-track="offer_click" data-company="{esc(doc["company"])}" '
         f'data-product="{esc(off0.get("product", ""))}">Open program page &nearr;</a>'
         f'{check_btn}'
@@ -370,10 +397,10 @@ def render_record(doc: dict, discontinued: bool = False) -> str:
         sc, slabel = {"active": "a", "stale": "s"}[s], s.upper()
         verline = f'{"re-check due" if s == "stale" else "verified"} <b>{esc(ver)}</b>'
         banner, cls = "", ""
-        name_html = (f'<a href="{esc(doc["website"])}" target="_blank" rel="noopener nofollow" '
+        name_html = (f'<a href="{esc(ref_url(doc["website"]))}" target="_blank" rel="noopener nofollow" '
                      f'data-track="company_click" data-company="{esc(company)}">{esc(company)}</a>')
         url = doc["offers"][0].get("offer_url", "#")
-        footer = (f'<a class="prog" href="{esc(url)}" target="_blank" rel="noopener nofollow" '
+        footer = (f'<a class="prog primary" href="{esc(ref_url(url))}" target="_blank" rel="noopener nofollow" '
                   f'data-track="offer_click" data-company="{esc(company)}" data-product="{esc(prod)}">'
                   f'Open program page &nearr;</a>'
                   f'<a class="prog" href="/#check">Check your repo &rarr;</a>')
@@ -555,10 +582,19 @@ body.checked .reqs-note{display:none}
 .prov{font-family:var(--mono);font-size:.76rem;color:var(--muted);line-height:1.6}
 .prov b{color:var(--ink-2);font-weight:500}
 .prov .anchor{color:var(--ink-2);background:#f4f3ee;border:1px solid var(--line);border-radius:2px;padding:1px 5px}
-.rec-ft{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 18px;
+.rec-ft{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;
   border-top:1px solid var(--line-strong);background:#faf9f5;flex-wrap:wrap}
 .rec-ft .prog{font-family:var(--mono);font-size:.79rem;color:var(--link);text-decoration:none}
 .rec-ft .prog:hover{text-decoration:underline}
+/* the one thing we want clicked: a real button, not a footnote link */
+.rec-ft .prog.primary{font-family:var(--sans);font-size:1rem;font-weight:600;letter-spacing:-.005em;
+  color:var(--card);background:var(--ink);border-radius:8px;padding:14px 24px;line-height:1.2;
+  box-shadow:0 1px 2px rgba(0,0,0,.14);transition:background .12s,transform .12s}
+.rec-ft .prog.primary:hover{background:#000;text-decoration:none;transform:translateY(-1px)}
+.rec-ft .prog.primary:active{transform:none}
+.rec-ft .check-one{font-family:var(--mono);font-size:.79rem;color:var(--muted);background:none;
+  border:1px solid var(--line-strong);border-radius:6px;padding:9px 14px;cursor:pointer;transition:.12s}
+.rec-ft .check-one:hover{border-color:var(--ink);color:var(--ink)}
 .no-apply{font-family:var(--mono);font-size:.75rem;color:var(--faint)}
 
 /* matcher report */
@@ -615,6 +651,8 @@ body.checked .reqs-note{display:none}
   .rstatus{grid-area:status;justify-self:end}.rver{grid-area:ver}.chev{grid-area:chev;justify-self:end}
   .mnav{display:none}.spec .r{grid-template-columns:1fr;gap:4px}
   .rec-id{flex-direction:column}.rec-id .tags{justify-content:flex-start;max-width:100%}
+  .rec-ft{flex-direction:column;align-items:stretch}
+  .rec-ft .prog.primary{text-align:center}
 }
 """
 
@@ -937,8 +975,20 @@ MATCHER_JS = r"""
       '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
 
+  // Mirrors ref_url() in build_site.py — offers.json stays untagged, links don't.
+  function refUrl(url) {
+    if (!/^https?:\/\//.test(url || '')) return url;
+    try {
+      const u = new URL(url);
+      if (u.hostname === 'foropensource.com' || u.hostname === 'www.foropensource.com') return url;
+      if (u.searchParams.has('ref')) return url;
+      u.searchParams.set('ref', 'foropensource.com');
+      return u.toString();
+    } catch (_) { return url; }
+  }
+
   function offerLink(slug, company, product, url) {
-    return '<a href="' + h(url) + '" target="_blank" rel="noopener nofollow" ' +
+    return '<a href="' + h(refUrl(url)) + '" target="_blank" rel="noopener nofollow" ' +
       'data-track="offer_click" data-company="' + h(company) + '" data-product="' + h(product) + '">' +
       h(product) + '</a>';
   }
@@ -1530,7 +1580,7 @@ def build_project_page(proj: dict, docs: list[dict], n_offers: int) -> str:
         detail = ""
         tname = r["target_name"] or r["target"]
         if tname and tname.lower() not in (name.lower(), repo_path.split("/")[0].lower()):
-            detail = (f' &middot; through <a href="{esc(r["target_url"])}" target="_blank" '
+            detail = (f' &middot; through <a href="{esc(ref_url(r["target_url"]))}" target="_blank" '
                       f'rel="noopener nofollow">{esc(tname)}</a>')
         usd = ""
         if r["oc_total_donated_usd"]:
@@ -1545,10 +1595,10 @@ def build_project_page(proj: dict, docs: list[dict], n_offers: int) -> str:
     if st:
         if st["github_sponsors_count"]:
             facts.append(f'<b>{int(st["github_sponsors_count"]):,}</b> sponsors on '
-                         f'<a href="https://github.com/sponsors/{esc(st["owner"])}" '
+                         f'<a href="{esc(ref_url("https://github.com/sponsors/" + st["owner"]))}" '
                          f'target="_blank" rel="noopener nofollow">GitHub Sponsors</a>')
         if st["oc_received_12mo_usd"]:
-            oc_link = (f'<a href="https://opencollective.com/{esc(st["oc_slug"])}" '
+            oc_link = (f'<a href="{esc(ref_url("https://opencollective.com/" + st["oc_slug"]))}" '
                        f'target="_blank" rel="noopener nofollow">Open Collective</a>'
                        if st["oc_slug"] else "Open Collective")
             facts.append(f'<b>${int(float(st["oc_received_12mo_usd"])):,}</b> received '
@@ -1561,7 +1611,7 @@ def build_project_page(proj: dict, docs: list[dict], n_offers: int) -> str:
 <div class="pagehead">
   <h1>Who sponsors {esc(name)}?</h1>
   <p class="sub">{n_companies(n)} publicly sponsor
-  <a href="{esc(proj["repo_url"])}" target="_blank" rel="noopener nofollow">{esc(repo_path)}</a>,
+  <a href="{esc(ref_url(proj["repo_url"]))}" target="_blank" rel="noopener nofollow">{esc(repo_path)}</a>,
   counted from GitHub Sponsors, Open Collective, and companies&rsquo; own disclosures.</p>
 </div>
 {facts_html}
@@ -1703,7 +1753,7 @@ def build_sponsors_page(docs: list[dict], proj_link_by_repo: dict[str, str] | No
             return f" ({label})" if proj != (r["target_name"] or r["target"]) \
                 else (f' &middot; <a href="{link}">who else sponsors it?</a>' if link else "")
         targets = "".join(
-            f'<li><a href="{esc(r["target_url"])}" target="_blank" rel="noopener nofollow">'
+            f'<li><a href="{esc(ref_url(r["target_url"]))}" target="_blank" rel="noopener nofollow">'
             f"{esc(r['target_name'] or r['target'])}</a>" + annot(r) + "</li>"
             for r in rows
         )
