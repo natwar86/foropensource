@@ -2041,6 +2041,9 @@ def main() -> int:
     rules = yaml.safe_load(RULES_PATH.read_text())
     (OUT_DIR / "rules.json").write_text(json.dumps(rules, indent=1))
     (OUT_DIR / "robots.txt").write_text(
+        f"# Machine-readable index for LLM agents: {SITE_URL}/llms.txt\n"
+        f"# Full offer text: {SITE_URL}/llms-full.txt\n"
+        f"# Structured data: {SITE_URL}/offers.json, {SITE_URL}/offers.csv\n"
         f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n"
     )
     url_entries = "\n".join(
