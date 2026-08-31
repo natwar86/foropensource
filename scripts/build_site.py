@@ -1390,6 +1390,12 @@ def build_company_page(doc: dict) -> str:
     verified = max((o.get("last_verified", "") for o in doc["offers"]), default="")
     body = f"""<div class="wrap">
 <p class="crumbs"><a href="/">Directory</a> &rsaquo; {esc(company)}</p>
+<div class="pagehead">
+  <h1>{esc(company)} free for open source</h1>
+  <div class="note">What {esc(short_name(company))} gives open source projects,
+  who qualifies, and how to apply. {n} verified {"offer" if n == 1 else "offers"},
+  last checked {esc(verified)}.</div>
+</div>
 {render_record(doc)}
 <p class="pnote">Verified {esc(verified)}. Details changed?
 <a href="{REPO_URL}/blob/main/data/offers/{esc(doc['slug'])}.yaml" target="_blank" rel="noopener">Fix it on GitHub</a>.
