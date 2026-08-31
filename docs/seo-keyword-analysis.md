@@ -117,10 +117,50 @@ each dimension separately and the two do not reconcile. Expected, not an error.
 37 clicks is a small sample. The site is three months old. Treat everything
 here as direction, not proof.
 
+### The nine pages with no impressions
+
+Checked with the URL Inspection API on 2026-08-31. They split cleanly.
+
+**Seven are graveyard pages and they are healthy.** Auth0, Balsamiq, codebeat,
+Equinix Metal, Fosshost, Greenkeeper, lgtm. All return verdict PASS, coverage
+"Submitted and indexed", crawled between 2026-07-29 and 2026-08-11, robots
+ALLOWED, canonical matching. They get no impressions because nobody searches
+for a discontinued product. The other ten graveyard pages do get impressions,
+so the page type works. Nothing here to fix.
+
+**Two are active pages Google has never fetched.** OpenPanel and Upstash return
+"Discovered - currently not indexed" with `lastCrawlTime: never`. Every obvious
+cause was ruled out: both have been in the sitemap since 2026-07-10, both are
+linked from the homepage, canonical and robots are fine, and internal links
+rank 86th and 66th of 164 against a median of 3. Content depth is normal at 202
+and 194 words, against Cachix at 187 words which ranks and pulls 144
+impressions. Google discovered the URLs and deprioritised fetching them. No
+lever on this side beyond requesting indexing by hand.
+
+### The graveyard was orphaned (fixed 2026-08-31)
+
+Ranking company pages by inbound internal links turned up the real problem.
+All 17 discontinued pages had **zero** inbound links, reachable by sitemap
+alone. Keeping them out of the directory is deliberate. Leaving them with no
+link anywhere was not, and it defeats their stated purpose of catching "is X
+still free for open source?" and routing people to a live alternative.
+
+Fixed in `9df2107`: each category page now ends with the discontinued companies
+in that category.
+
+Auth0 needed a data change rather than a template change. Its only category was
+`auth`, it is the sole member, and it is dead, so no `/category/auth/` page gets
+generated. The same gap ran the other way: its page listed no alternatives,
+because that needs an active company sharing a category. It gained `security` as
+a second category, which is honest for an identity product and fixes both
+directions. Synced to the private repo as `03a3415`.
+
+Audited against the live site afterwards: 17 of 17 linked, zero orphans.
+
 ### Not reflected here
 
-Company pages got an `h1` on 2026-08-31, along with `Offer` schema and markdown
-mirrors. All three landed after this data window.
+Company pages got an `h1` on 2026-08-31, along with `Offer` schema, markdown
+mirrors, and the graveyard links above. All landed after this data window.
 
 ---
 
@@ -130,7 +170,9 @@ mirrors. All three landed after this data window.
    answers and July never measured it.
 2. Leave the bare-brand queries alone. Position 10 to 30 against the vendor's
    own domain is not winnable and not worth the effort.
-3. Check the nine company pages with no impressions at all.
+3. Watch whether the graveyard links move the seven zero-impression pages.
+   They were indexed already, so the links change ranking inputs, not
+   discovery.
 4. Re-pull this report in October. One month of tenfold growth is not a trend.
 
 Distribution still matters more than search. July finding 1 holds: even "free
