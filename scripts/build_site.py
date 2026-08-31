@@ -1203,6 +1203,48 @@ def json_ld_script(data: dict) -> str:
             + "</script>\n")
 
 
+def offers_json_ld(doc: dict, discontinued: bool = False) -> str:
+    """Organization + one Offer per free-for-open-source program.
+
+    price 0 is the literal truth here: these are sponsorships, not trials.
+    A discontinued record still emits its offers, marked Discontinued, so a
+    consumer reading only the structured data does not read it as live.
+    """
+    company, slug = doc["company"], doc["slug"]
+    org_id = f"{SITE_URL}/company/{slug}/#org"
+    avail = ("https://schema.org/Discontinued" if discontinued
+             else "https://schema.org/InStock")
+    graph = [{
+        "@type": "Organization",
+        "@id": org_id,
+        "name": company,
+        "url": doc["website"],
+    }]
+    for o in doc["offers"]:
+        elig = o.get("eligibility") or {}
+        terms = [v for v in (elig.get("notes"), o.get("how_to_apply")) if v]
+        offer = {
+            "@type": "Offer",
+            "name": o.get("product") or f"{company} for open source",
+            "description": clamp(o.get("what_you_get", ""), 500),
+            "url": o.get("offer_url") or doc["website"],
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": avail,
+            "offeredBy": {"@id": org_id},
+            "category": ", ".join(cat_label(c) for c in doc.get("categories") or []),
+            "itemOffered": {
+                "@type": "Service",
+                "name": o.get("product") or company,
+                "provider": {"@id": org_id},
+            },
+        }
+        if terms:
+            offer["termsOfService"] = clamp(" ".join(terms), 500)
+        graph.append(offer)
+    return json_ld_script({"@context": "https://schema.org", "@graph": graph})
+
+
 def breadcrumbs_json_ld(*crumbs: tuple[str, str]) -> str:
     """crumbs: (name, path) pairs, root first."""
     return json_ld_script({
@@ -1379,6 +1421,8 @@ def build_index(docs: list[dict], n_offers: int, all_cats: list[str],
 
 
 def build_company_page(doc: dict) -> str:
+    md_alt = (f'<link rel="alternate" type="text/markdown" '
+              f'href="{SITE_URL}/company/{doc["slug"]}/index.md">\n')
     company = doc["company"]
     cats = doc.get("categories") or []
     products = [o["product"] for o in doc["offers"]]
@@ -1417,7 +1461,7 @@ Not sure you qualify? <a href="/#check">Match your repo</a> against all
         body=body,
         extra_head=breadcrumbs_json_ld(
             ("All offers", "/"), (company, f"/company/{doc['slug']}/")
-        ),
+        ) + offers_json_ld(doc) + md_alt,
     )
 
 
@@ -1427,6 +1471,8 @@ def build_discontinued_page(doc: dict, active_docs: list[dict]) -> str:
     These answer "is X still free for open source?" searches and point to
     live alternatives, so they stay in the sitemap but not in the directory.
     """
+    md_alt = (f'<link rel="alternate" type="text/markdown" '
+              f'href="{SITE_URL}/company/{doc["slug"]}/index.md">\n')
     company = doc["company"]
     cats = doc.get("categories") or []
     products = [o["product"] for o in doc["offers"]]
@@ -1475,7 +1521,7 @@ current offer.</p>"""
         body=body,
         extra_head=breadcrumbs_json_ld(
             ("All offers", "/"), (company, f"/company/{doc['slug']}/")
-        ),
+        ) + offers_json_ld(doc, discontinued=True) + md_alt,
         scripts=f"<script>{INDEX_JS}</script>",
     )
 
@@ -1730,6 +1776,68 @@ def build_project_page_md(proj: dict, docs: list[dict], n_offers: int) -> str:
     return no_em_dash("\n".join(lines))
 
 
+def build_company_page_md(doc: dict, n_offers: int, discontinued: bool = False) -> str:
+    """Markdown mirror of a company page, for LLM/agent consumption."""
+    company = doc["company"]
+    cats = doc.get("categories") or []
+    verified = max((o.get("last_verified", "") for o in doc["offers"]), default="")
+    if discontinued:
+        lines = [f"# Is {company} still free for open source? No.", "",
+                 f"{possessive(short_name(company))} free-for-open-source "
+                 f"{'offer has' if len(doc['offers']) == 1 else 'offers have'} been "
+                 f"discontinued. Last checked {verified}. Kept on the record so you "
+                 "do not waste an application.", ""]
+    else:
+        lines = [f"# {company} free for open source", "",
+                 f"What {short_name(company)} gives open source projects, who "
+                 f"qualifies, and how to apply. {len(doc['offers'])} verified "
+                 f"{'offer' if len(doc['offers']) == 1 else 'offers'}, last checked "
+                 f"{verified}.", ""]
+    lines += [f"- Website: {doc['website']}",
+              f"- Categories: {', '.join(cat_label(c) for c in cats) or 'n/a'}", ""]
+    for o in doc["offers"]:
+        elig = o.get("eligibility") or {}
+        lines.append(f"## {o.get('product') or company}")
+        lines.append("")
+        if o.get("what_you_get"):
+            lines.append(f"**What you get.** {o['what_you_get']}")
+            lines.append("")
+        bits = []
+        if elig.get("applies_to"):
+            bits.append(f"applies to the {elig['applies_to']}")
+        if elig.get("osi_license_required"):
+            bits.append("OSI-approved license required")
+        if elig.get("min_project_age_months"):
+            bits.append(f"project at least {elig['min_project_age_months']} month(s) old")
+        if elig.get("active_development_required"):
+            bits.append("active development required")
+        if elig.get("non_commercial_only"):
+            bits.append("non-commercial use only")
+        if bits or elig.get("notes"):
+            joined = "; ".join(bits)
+            joined = joined[:1].upper() + joined[1:]
+            lines.append("**Who qualifies.** " + joined
+                         + (f". {elig['notes']}" if elig.get("notes") else "."))
+            lines.append("")
+        if o.get("how_to_apply"):
+            lines.append(f"**How to apply.** {o['how_to_apply']}")
+            lines.append("")
+        if o.get("offer_url"):
+            lines.append(f"Program page: {o['offer_url']}")
+            lines.append("")
+        if o.get("verification_source"):
+            lines.append(f"Verified {o.get('last_verified', '')} - {o['verification_source']}")
+            lines.append("")
+    lines += [
+        f"Match your repo against all {n_offers} offers: {SITE_URL}/#check",
+        "",
+        f"HTML version: {SITE_URL}/company/{doc['slug']}/ · "
+        f"Data (CC BY 4.0): {SITE_URL}/offers.json",
+        "",
+    ]
+    return no_em_dash("\n".join(lines))
+
+
 def build_sponsors_page(docs: list[dict], proj_link_by_repo: dict[str, str] | None = None) -> str:
     """League table from company-sponsorships.csv."""
     proj_link_by_repo = proj_link_by_repo or {}
@@ -1880,6 +1988,8 @@ def build_llms_txt(docs: list[dict], dead_docs: list[dict], n_offers: int,
         f"Machine-readable data: [offers.csv]({SITE_URL}/offers.csv) and "
         f"[offers.json]({SITE_URL}/offers.json) (JSON includes discontinued "
         f"offers). Full offer text: [llms-full.txt]({SITE_URL}/llms-full.txt). "
+        f"Every company page has a markdown mirror at index.md, e.g. "
+        f"{SITE_URL}/company/{docs[0]['slug']}/index.md. "
         f"Source data (YAML): [{REPO_URL}]({REPO_URL}).",
         "",
         "## Categories",
@@ -1992,11 +2102,14 @@ def main() -> int:
         out = OUT_DIR / "company" / d["slug"]
         out.mkdir(parents=True, exist_ok=True)
         (out / "index.html").write_text(build_company_page(d))
+        (out / "index.md").write_text(build_company_page_md(d, n_offers))
         urls.append((f"/company/{d['slug']}/", doc_lastmod(d)))
     for d in dead_docs:
         out = OUT_DIR / "company" / d["slug"]
         out.mkdir(parents=True, exist_ok=True)
         (out / "index.html").write_text(build_discontinued_page(d, docs))
+        (out / "index.md").write_text(
+            build_company_page_md(d, n_offers, discontinued=True))
         urls.append((f"/company/{d['slug']}/", doc_lastmod(d)))
     for cat in all_cats:
         cat_docs = [d for d in docs if cat in (d.get("categories") or [])]
