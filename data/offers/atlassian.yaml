@@ -20,5 +20,5 @@ offers:
       Fill in the Open Source Project License Request form on the offer page;
       Atlassian follows up to validate and issue the license.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: license request form page live; Atlassian states Standard cloud products are free for qualifying public open source projects"

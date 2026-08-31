@@ -20,5 +20,5 @@ offers:
       Contact Lokalise (via the contact option referenced in the pricing
       FAQ) to confirm the project qualifies for the free plan.
     status: active
-    last_verified: "2026-07-12"
+    last_verified: "2026-08-31"
     verification_source: "manual: pricing page FAQ states 'We offer Lokalise for free to open source projects' (collapsed accordion, only visible after JS render); re-confirmed by screenshot 2026-07-20"

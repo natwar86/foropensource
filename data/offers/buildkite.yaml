@@ -16,6 +16,6 @@ offers:
     how_to_apply: >-
       Contact Buildkite to discuss usage and inclusions; no self-service
       signup for the open source plan.
-    status: active
-    last_verified: "2026-07-06"
+    status: stale
+    last_verified: "2026-08-10"
     verification_source: "manual: pricing page live, states 'Buildkite is free for open source projects' with contact-us application"

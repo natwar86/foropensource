@@ -25,7 +25,7 @@ offers:
     how_to_apply: Application form on the offer page; project lead applies on behalf of contributors.
     renewal: Annual re-application required.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: program page live ('Licenses for Open Source Development'); eligibility terms confirmed from program text"
   - product: TeamCity (Open Source license)
     offer_url: https://www.jetbrains.com/community/opensource/
@@ -50,7 +50,7 @@ offers:
       subscriptions).
     renewal: 1-year license; free renewal on written request 30 days before expiration.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: TeamCity Open Source License Agreement live at jetbrains.com/legal/docs/teamcity/license_opensource/ (v10.3); OSS program lists TeamCity among team tools offered"
   - product: YouTrack (OSS team license)
     offer_url: https://www.jetbrains.com/community/opensource/
@@ -73,5 +73,5 @@ offers:
     how_to_apply: Request team tool licenses via the open source program application form.
     renewal: Annual re-application required.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: OSS program text states core contributors may request licenses for team tools (YouTrack, TeamCity) in addition to All Products Pack"

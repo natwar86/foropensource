@@ -22,6 +22,6 @@ offers:
       Add the CppDepend logo/link to the project page, then email
       support@cppdepend.com with your name and project URL.
     renewal: 1-year license (re-request for renewal).
-    status: active
-    last_verified: "2026-07-07"
+    status: stale
+    last_verified: "2026-08-31"
     verification_source: "manual: offer page live (references v2026.1), states free Pro license for project leads/active committers with 3+ months of contributions"

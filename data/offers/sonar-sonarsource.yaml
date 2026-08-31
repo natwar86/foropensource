@@ -18,5 +18,5 @@ offers:
         criteria not published on the page.
     how_to_apply: Sign up on SonarQube Cloud and import the public open source repository; no separate application.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: commitment-to-open-source page live, states SonarQube Cloud is free for analyzing open source projects"

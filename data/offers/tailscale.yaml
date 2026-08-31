@@ -23,5 +23,5 @@ offers:
       Cannot be enabled from the admin console Billing page; sign in with
       GitHub authentication and contact Tailscale Support to enroll.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: KB page kb/1154 live, describes free Community on GitHub plan for OSI-licensed projects via GitHub org"

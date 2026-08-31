@@ -27,5 +27,5 @@ offers:
       Application form on the partner program page; Datadog evaluates
       submissions case by case.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: datadoghq.com/partner/open-source/ live; free accounts for non-commercial OSS projects 1+ year old with 5+ contributors"

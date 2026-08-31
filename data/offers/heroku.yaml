@@ -23,7 +23,7 @@ offers:
       month, approvals within ten business days.
     renewal: Annual re-application required to keep receiving credits.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: >-
       manual: program page live, states monthly credits ($25-$500) for 12
       months for open source maintainers.

@@ -19,8 +19,8 @@ offers:
       Application form on the Credits for Open Source page; review takes 7-10
       business days, notification by email.
     renewal: Annual re-application required; renewal not guaranteed, reminders start 65 days before expiration.
-    status: active
-    last_verified: "2026-07-06"
+    status: stale
+    last_verified: "2026-08-03"
     verification_source: >-
       manual: digitalocean.com/open-source live, describes credit grants for
       OSI-licensed projects with annual renewal.

@@ -18,6 +18,6 @@ offers:
         Eligibility checked case by case; email hovhannes@aikido.dev to
         confirm your project qualifies. No credit card required.
     how_to_apply: Sign in, create a workspace, then email hovhannes@aikido.dev for eligibility verification.
-    status: active
-    last_verified: "2026-07-06"
+    status: stale
+    last_verified: "2026-08-10"
     verification_source: "manual: offer page live, headline 'Free AI Code Reviews for Open Source Projects — Forever' with eligibility check via email"

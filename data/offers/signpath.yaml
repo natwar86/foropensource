@@ -27,5 +27,5 @@ offers:
       project's repository URL, download page URL and description; the
       Foundation reviews eligibility.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: signpath.io/solutions/open-source-community live, states tools 'available at no cost' for OSS; eligibility per signpath.org terms"

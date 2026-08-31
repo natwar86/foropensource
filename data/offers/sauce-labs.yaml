@@ -23,5 +23,5 @@ offers:
       Sign up via the Sauce Labs open source page with your project's
       repository URL and a description of the project.
     status: active
-    last_verified: "2026-07-07"
+    last_verified: "2026-08-31"
     verification_source: "manual: saucelabs.com/pricing live and states 'free accounts for qualifying initiatives' for open source, linking to opensource.saucelabs.com; plan details from Open Sauce program materials"

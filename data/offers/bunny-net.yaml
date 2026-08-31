@@ -20,5 +20,5 @@ offers:
       https://cdn.hopjs.net/npm/<package>/<version>/<file> or browse packages
       at hopjs.bunny.net.
     status: active
-    last_verified: "2026-07-07"
+    last_verified: "2026-07-20"
     verification_source: "manual: hopjs.bunny.net live ('Free privacy-first JavaScript and CSS CDN'); details from bunny.net launch blog post"

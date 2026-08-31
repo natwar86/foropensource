@@ -20,5 +20,5 @@ offers:
       Sign up and register your project on scan.coverity.com, upload your
       build, then view and fix defects in the web interface.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: page live, states 'fix defects in your ... open source project for free'; announcement dated July 2025 shows service active"

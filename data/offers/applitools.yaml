@@ -21,6 +21,6 @@ offers:
       Click "Get Free License" on the offer page (routes to
       applitools.com/contact/sales/open-source) and submit the contact
       form.
-    status: active
-    last_verified: "2026-07-06"
+    status: stale
+    last_verified: "2026-08-17"
     verification_source: "manual: applitools.com/open-source/ live, states free licenses for open source projects; limits/eligibility not published"

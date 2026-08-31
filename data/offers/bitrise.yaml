@@ -17,5 +17,5 @@ offers:
       notes: App must be added as "public" with an https:// repo URL; benefits attach to the project automatically.
     how_to_apply: Log in to Bitrise, "Add new app", choose the "public" option, and connect the repo via HTTPS URL.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: Bitrise blog offer page live, details free Developer Plan features for public OSS projects"

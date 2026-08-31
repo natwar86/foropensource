@@ -23,6 +23,6 @@ offers:
         applicant must be an official owner or maintainer.
     how_to_apply: Application form on the page (name, email, repository link) with maintainer confirmation.
     renewal: Free access continues as long as the project remains open source.
-    status: active
-    last_verified: "2026-07-07"
+    status: stale
+    last_verified: "2026-07-20"
     verification_source: "manual: tembo.io/oss live, states full feature access free for OSI-licensed non-commercial projects"

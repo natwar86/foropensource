@@ -15,5 +15,5 @@ offers:
       applies_to: project
     how_to_apply: No application; connect cubic to a public repository via the GitHub integration.
     status: active
-    last_verified: "2026-07-07"
+    last_verified: "2026-08-31"
     verification_source: "manual: pricing page live, states 'cubic is 100% free for open source teams' and free for public repositories"

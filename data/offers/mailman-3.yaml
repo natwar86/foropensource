@@ -19,5 +19,5 @@ offers:
       Email hostmaster@mailman3.com with the project URL and approximate
       monthly email volume.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: site live, states free hosting for OSS mailing lists, apply via hostmaster@mailman3.com"

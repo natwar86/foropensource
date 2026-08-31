@@ -18,7 +18,7 @@ offers:
       notes: Package must be published on npm or a public GitHub repository; no application, works instantly.
     how_to_apply: No application needed; load files directly via cdn.jsdelivr.net URLs for any npm or GitHub package.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: >-
       manual: jsdelivr.com live, self-describes as "a free CDN for open source
       projects" built for production use.

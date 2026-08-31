@@ -21,7 +21,7 @@ offers:
       Fill out the Hosting Request form on osuosl.org; the lab responds
       within a few days.
     status: active
-    last_verified: "2026-07-07"
+    last_verified: "2026-08-31"
     verification_source: "manual: osuosl.org/services/hosting/ live; states managed/unmanaged hosting for projects under OSI-approved licenses with open development model"
   - product: AArch64 and OpenPOWER development hosting
     offer_url: https://osuosl.org/services/
@@ -37,5 +37,5 @@ offers:
       notes: Systems intended for functional development and testing only.
     how_to_apply: Request via the hosting request process on osuosl.org.
     status: active
-    last_verified: "2026-07-07"
+    last_verified: "2026-08-31"
     verification_source: "manual: osuosl.org/services/ live; lists AARCH64 and PowerLinux/OpenPOWER development hosting for open source communities"

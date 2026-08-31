@@ -20,5 +20,5 @@ offers:
       No application; construct URLs like
       https://cdn.statically.io/gh/:user/:repo@:tag/:file (or /npm/, /gist/).
     status: active
-    last_verified: "2026-07-07"
+    last_verified: "2026-08-31"
     verification_source: "manual: statically.io live, 'A free CDN for Git repositories, npm, and open source projects'"

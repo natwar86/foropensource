@@ -226,6 +226,11 @@ def offer_status(offer: dict) -> str:
     st = (offer.get("status") or "active").lower()
     if st == "discontinued":
         return "discontinued"
+    # The weekly verifier writes status: stale when a page stops matching.
+    # ADR-0005 keeps a human between that and discontinued, so show the offer
+    # as re-check due until someone confirms, however fresh its date is.
+    if st == "stale":
+        return "stale"
     lv = offer.get("last_verified")
     if lv:
         try:

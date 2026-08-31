@@ -26,5 +26,5 @@ offers:
       Create a translation project in Crowdin, then submit the request form
       on the offer page (project name, license, website, description).
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: offer page live, states Crowdin is completely free for open-source projects meeting listed criteria"

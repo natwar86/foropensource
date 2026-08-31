@@ -17,5 +17,5 @@ offers:
       Sign up on scrutinizer-ci.com and add your open-source repository; no
       charge applies to open-source repos.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: site live but blocks automated fetch (HTTP 403); Google-indexed pricing page snippet states 'Scrutinizer does not charge for open-source repositories'"

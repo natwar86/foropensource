@@ -21,5 +21,5 @@ offers:
       Install the RISE runners GitHub App (org or personal variant) and add
       "runs-on: ubuntu-24.04-riscv" to your workflow.
     status: active
-    last_verified: "2026-07-07"
+    last_verified: "2026-08-31"
     verification_source: "manual: announcement live on riseproject.dev (2026-03-24); states free of charge to any open source project on GitHub, no approval process"

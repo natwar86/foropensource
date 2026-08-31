@@ -23,5 +23,5 @@ offers:
       select "Open-Source" company type, Sentry org details, project
       description and GitHub repository link.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: sentry.io/for/open-source/ live; sponsorship plan quotas listed (5M errors, 1B spans etc.), Apache/MIT-style license required"

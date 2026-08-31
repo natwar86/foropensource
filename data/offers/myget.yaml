@@ -24,5 +24,5 @@ offers:
         paid versions.
     how_to_apply: Web form on the offer page with name, email, project details, license, project age, and your role.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: opensource page live, states free plan with 1 GB storage and Build/Symbols services for qualifying OSS projects"

@@ -21,7 +21,7 @@ offers:
       settings; access is granted automatically if you qualify.
     renewal: Eligibility re-evaluated monthly by GitHub.
     status: active
-    last_verified: "2026-07-07"
+    last_verified: "2026-08-31"
     verification_source: "manual: GitHub Docs page live, states Copilot Pro free for maintainers of popular open-source repositories, monthly re-evaluation"
   - product: GitHub Actions, Packages and paid-tier features on public repositories
     offer_url: https://github.com/pricing
@@ -36,5 +36,5 @@ offers:
       applies_to: project
     how_to_apply: No application; benefits apply automatically to public repositories.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: pricing page live, Actions/Packages and several features marked 'Free for public repositories'"

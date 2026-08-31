@@ -25,5 +25,5 @@ offers:
       approved applicants get an activation link for Claude Max.
     renewal: Subscription period is 6 months.
     status: active
-    last_verified: "2026-07-07"
+    last_verified: "2026-08-31"
     verification_source: "manual: claude.com/contact-sales/claude-for-oss live, states 6 months free Claude Max 20x with star/download thresholds"

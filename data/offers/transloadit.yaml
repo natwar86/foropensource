@@ -17,6 +17,6 @@ offers:
     how_to_apply: >-
       Add a "Powered by Transloadit" link to your website and reach out to
       support@transloadit.com to apply.
-    status: active
-    last_verified: "2026-07-06"
+    status: stale
+    last_verified: "2026-07-20"
     verification_source: "manual: pricing page live, states free access for open source and nonprofits with 'Powered by Transloadit' link"

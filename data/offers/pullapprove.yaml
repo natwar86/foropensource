@@ -14,5 +14,5 @@ offers:
       applies_to: project
     how_to_apply: Use it with a public repository; site says no account required, no separate application.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: pullapprove.com live, states 'Free for public repos, 14-day trial for private'"

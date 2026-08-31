@@ -23,7 +23,7 @@ offers:
       description, contributor count, desired URL); agree to Discourse
       Self-Serve Hosting Terms.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: >-
       manual: free.discourse.group redirects to discourse.org/free, page live,
       describes free probono hosting plan for open source projects.

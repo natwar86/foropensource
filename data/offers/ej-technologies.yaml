@@ -21,7 +21,7 @@ offers:
       number of developers); processing up to 24 hours, license sent by
       email.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: jprofiler/openSource page live, free licenses for non-profit OSS projects in exchange for a backlink"
   - product: install4j (open source license)
     offer_url: https://www.ej-technologies.com/install4j/openSource
@@ -43,5 +43,5 @@ offers:
       max number of developers); processing up to 24 hours, license sent by
       email.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: install4j/openSource page live, free licenses for non-profit OSS projects in exchange for a backlink"

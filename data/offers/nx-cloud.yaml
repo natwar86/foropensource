@@ -22,5 +22,5 @@ offers:
       ("Is there a plan for open source projects?"); confirm the Powerpack
       question in the form if you also want a Powerpack license.
     status: active
-    last_verified: "2026-07-07"
+    last_verified: "2026-08-31"
     verification_source: "manual: nx.dev/pricing FAQ live and lists an open source plan; Nx docs/blog confirm free OSS plan with unlimited CI pipeline executions and free Powerpack for OSS"

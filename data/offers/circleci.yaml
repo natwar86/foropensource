@@ -16,5 +16,5 @@ offers:
       applies_to: organization
     how_to_apply: Sign up for free on circleci.com with your open source project; credits apply to OSS builds.
     status: active
-    last_verified: "2026-07-06"
+    last_verified: "2026-08-31"
     verification_source: "manual: open-source page live, states 400k credits/month Linux and 30k credits/month macOS/Windows for OSS"
