@@ -1526,12 +1526,27 @@ current offer.</p>"""
     )
 
 
-def build_category_page(cat: str, docs: list[dict], total_companies: int) -> str:
+def build_category_page(cat: str, docs: list[dict], total_companies: int,
+                        dead_docs: list[dict] | None = None) -> str:
     label = cat_label(cat)
     n_offers = sum(len(d["offers"]) for d in docs)
     names = ", ".join(d["company"] for d in docs[:6])
     rows = "\n".join(render_row(d, with_check=False) for d in docs)
     title_label = label if label == "CI/CD" or label[0].isupper() else label.capitalize()
+    # Graveyard records are kept out of the directory, so this is the only
+    # internal link they get. Without it they are reachable by sitemap alone.
+    dead = sorted(dead_docs or [], key=lambda d: d["company"].lower())
+    dead_html = ""
+    if dead:
+        links = ", ".join(
+            f'<a href="/company/{esc(d["slug"])}/">{esc(d["company"])}</a>' for d in dead
+        )
+        dead_html = (
+            f'<div class="dir-top" style="border-top:none;padding-top:34px">'
+            f'<h2>Discontinued {esc(label)}</h2></div>\n'
+            f'<p class="pnote">{"This offer is" if len(dead) == 1 else "These offers are"} '
+            f'gone. Kept on the record so you do not waste an application: {links}.</p>'
+        )
     body = f"""<div class="wrap">
 <p class="crumbs"><a href="/">Directory</a> &rsaquo; {esc(title_label)}</p>
 <div class="pagehead">
@@ -1549,6 +1564,7 @@ def build_category_page(cat: str, docs: list[dict], total_companies: int) -> str
   {rows}
 </div>
 <div class="empty" id="empty">No records match.</div>
+{dead_html}
 <p class="pnote"><a href="/">Browse all {total_companies} companies</a> in the directory.</p>
 </div>"""
     return page(
@@ -2113,9 +2129,11 @@ def main() -> int:
         urls.append((f"/company/{d['slug']}/", doc_lastmod(d)))
     for cat in all_cats:
         cat_docs = [d for d in docs if cat in (d.get("categories") or [])]
+        cat_dead = [d for d in dead_docs if cat in (d.get("categories") or [])]
         out = OUT_DIR / "category" / cat
         out.mkdir(parents=True, exist_ok=True)
-        (out / "index.html").write_text(build_category_page(cat, cat_docs, len(docs)))
+        (out / "index.html").write_text(
+            build_category_page(cat, cat_docs, len(docs), cat_dead))
         urls.append((f"/category/{cat}/",
                      max(doc_lastmod(d) for d in cat_docs)))
     if SPONSORSHIPS_CSV.is_file():

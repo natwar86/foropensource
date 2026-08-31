@@ -1,6 +1,6 @@
 company: Auth0
 website: https://auth0.com
-categories: [auth]
+categories: [auth, security]
 offers:
   - product: Auth0 for Open Source (free higher-tier plan)
     offer_url: https://auth0.com/open-source
