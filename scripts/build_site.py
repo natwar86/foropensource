@@ -451,10 +451,10 @@ a{color:inherit}
 .mnav a.on{color:var(--ink);border-bottom:2px solid var(--ink);padding-bottom:2px}
 
 /* hero */
-.hero{max-width:680px;padding:55px 0 50px}
+.hero{padding:55px 0 50px}
 .hero h1{font-size:clamp(2rem,4vw,2.9rem);font-weight:700;letter-spacing:-.025em;line-height:1.1}
 .hero h1 em{font-style:normal;background:linear-gradient(transparent 60%,#cbe8d6 60%);padding:0 .04em}
-.hero .tagline{font-size:1.12rem;color:var(--muted);margin-top:18px;line-height:1.55;max-width:52ch}
+.hero .tagline{font-size:1.12rem;color:var(--muted);margin-top:18px;line-height:1.55}
 .hero-match{display:flex;gap:10px;margin-top:30px;max-width:540px}
 .hero-match input{flex:1;padding:15px 17px;font-family:var(--mono);font-size:.95rem;border:1px solid var(--line-strong);
   border-radius:8px;background:var(--card);color:var(--ink)}
