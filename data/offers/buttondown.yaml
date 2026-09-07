@@ -1,0 +1,23 @@
+company: Buttondown
+website: https://buttondown.com
+categories: [email]
+offers:
+  - product: Buttondown for open source (50% discount for non-profit projects)
+    offer_url: https://buttondown.com/use-cases/open-source
+    verify_anchor:
+      - "If your open source project is a registered non-profit, we offer a 50% discount on all plans"
+    what_you_get: >-
+      Half price on every Buttondown newsletter plan for open source
+      projects that are registered non-profits. Buttondown is a non-tracking
+      email newsletter service with an API.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Open source projects that are legally registered non-profits. No
+        application process is published.
+    how_to_apply: >-
+      Sign up, then contact Buttondown support with proof of the project's
+      non-profit status; the offer page publishes no form.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: buttondown.com/use-cases/open-source states the 50% discount for registered non-profit open source projects (checked 2026-09-07); found via the Homebrew and Astro sponsor pages"

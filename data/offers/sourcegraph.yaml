@@ -1,0 +1,25 @@
+company: Sourcegraph
+website: https://sourcegraph.com
+categories: [ide-tools, ai-ml]
+offers:
+  - product: Sourcegraph workspace licenses for CNCF project maintainers
+    offer_url: https://sourcegraph.com/supporting-open-source
+    verify_anchor:
+      - "Supporting the CNCF"
+      - "graduated, incubating, and sandbox projects"
+    what_you_get: >-
+      Complimentary Sourcegraph AI and code search workspace licenses for
+      maintainers of Cloud Native Computing Foundation projects.
+    eligibility:
+      osi_license_required: true
+      applies_to: maintainer
+      notes: >-
+        Open source developers who actively maintain a CNCF project at the
+        graduated, incubating or sandbox level. Public code search on
+        sourcegraph.com is free for everyone and is not part of this offer.
+    how_to_apply: >-
+      Fill in the Sourcegraph Workspace Application form embedded on the
+      offer page: email, name, and a link to the project's CNCF page.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: sourcegraph.com/supporting-open-source (redirects to /supporting-the-cncf) read 2026-09-07; the embedded Google Form states Sourcegraph 'offers complimentary AI & code search workspace licenses to eligible OSS developers who actively maintain a CNCF project'. sourcegraph.com returns 403 to some automated fetchers."

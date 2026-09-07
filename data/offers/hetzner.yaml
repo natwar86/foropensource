@@ -1,0 +1,28 @@
+company: Hetzner
+website: https://www.hetzner.com
+categories: [hosting]
+offers:
+  - product: Hetzner Cloud credit for open source API integrations
+    offer_url: https://docs.hetzner.com/cloud/api/faq/
+    verify_anchor:
+      - "your product is Open Source, you may be eligible for a free one time"
+    what_you_get: >-
+      A one-time credit of 50 EUR or 50 USD (excluding VAT) on a Hetzner
+      Cloud account for developers who build an open source integration on
+      the Hetzner Cloud API.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        The project must be an open source integration built on the Hetzner
+        Cloud API (libraries, tools, providers). Hetzner asks for the type of
+        integration, the GitHub repository, and links to earlier open source
+        work. Granted at Hetzner's discretion; there is no general free
+        hosting program for open source projects.
+    how_to_apply: >-
+      Open a support request from the Hetzner Console that describes the
+      integration, with the GitHub repository link and links to previous
+      open source work.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: docs.hetzner.com/cloud/api/faq/ entry 'Do you sponsor efforts to integrate Hetzner Cloud into Open Source libs?' read 2026-09-07; found via the Gentoo and Debian sponsor pages"
