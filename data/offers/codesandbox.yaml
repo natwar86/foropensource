@@ -1,0 +1,36 @@
+company: CodeSandbox
+website: https://codesandbox.io
+categories: [ide-tools]
+offers:
+  - product: CodeSandbox Friends (free workspace for open source projects)
+    offer_url: https://codesandbox.io/docs/learn/plans/codesandbox-friends
+    verify_anchor:
+      - "CodeSandbox Friends program"
+      - "Unlimited number of Sandboxes on the eligible workspace"
+    what_you_get: >-
+      Free or low-cost access to CodeSandbox for the approved project: an
+      unlimited number of Sandboxes on the eligible workspace and early
+      access to Sandbox API updates. Projects that are no longer maintained
+      but otherwise qualify can get a custom Sandbox limit for documentation
+      and educational examples.
+    eligibility:
+      osi_license_required: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Licensed open source libraries, frameworks and plugins that are
+        publicly available; developer community projects that give away
+        tools, content or education; and legally recognized non-profits.
+        Open source projects backed or owned by for-profit companies are not
+        eligible (CodeSandbox may offer them a discounted Enterprise plan).
+        The applicant must own the project or repository, apply once per
+        project, and explain how the project would benefit. Access is at
+        CodeSandbox's discretion and the program can be withdrawn with 30
+        days' notice.
+    how_to_apply: >-
+      Submit the CodeSandbox support form at codesandbox.io/support and
+      select "CodeSandbox Friends". Approved owners can then invite
+      contributors to the Friends workspace.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: docs page text confirmed from its source in the codesandbox/docs repository (packages/projects-docs/pages/learn/plans/codesandbox-friends.mdx, last changed 2024-09-05) and a 2026-02-15 Wayback snapshot; codesandbox.io returns 403 to automated fetches (Cloudflare bot check), so the weekly verifier may report this page inconclusive"

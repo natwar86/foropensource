@@ -1,0 +1,25 @@
+company: pre-commit.ci
+website: https://pre-commit.ci
+categories: [ci-cd]
+offers:
+  - product: pre-commit.ci (free for open source repositories)
+    offer_url: https://pre-commit.ci/
+    verify_anchor:
+      - "always be free for open source repositories"
+    what_you_get: >-
+      Hosted pre-commit runs on every push and pull request with automatic
+      fixes pushed back to the branch, shared tool caching, and weekly
+      autoupdate pull requests; free forever for open source repositories.
+      Private and organization repositories are paid through the GitHub
+      Marketplace.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Public open source repositories on GitHub.
+    how_to_apply: >-
+      Sign in with GitHub on pre-commit.ci and enable the app on the public
+      repository; there is no application form.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: pre-commit.ci pricing section states 'pre-commit.ci will always be free for open source repositories' (checked 2026-09-07); found via the pytest and Woodpecker READMEs"

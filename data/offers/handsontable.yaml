@@ -1,0 +1,28 @@
+company: Handsontable
+website: https://handsontable.com
+categories: [other]
+offers:
+  - product: Handsontable non-commercial license (free for open-source projects)
+    offer_url: https://handsontable.com/docs/react-data-grid/software-license/
+    verify_anchor:
+      - "non-commercial or open-source project"
+    what_you_get: >-
+      Free use of the Handsontable JavaScript data grid, including its
+      React, Angular and Vue wrappers, under the Non-Commercial and
+      Evaluation License, with no watermark or console notice.
+    eligibility:
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Projects with no monetary intent, which the docs list as
+        non-commercial or open-source use (teaching, research, evaluation,
+        testing). A project connected to commercial activity needs a paid
+        license before it reaches production. Handsontable itself is
+        source-available, not OSI-licensed.
+    how_to_apply: >-
+      No application: set the licenseKey option to
+      "non-commercial-and-evaluation" in the grid configuration, as the
+      License key docs page describes.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: docs software-license page says 'To use Handsontable in a non-commercial or open-source project, see the License key page'; the license-key page gives the non-commercial-and-evaluation key (checked 2026-09-07)"

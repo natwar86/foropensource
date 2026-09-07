@@ -1,0 +1,27 @@
+company: RelativeCI
+website: https://relative-ci.com
+categories: [ci-cd, testing]
+offers:
+  - product: RelativeCI Open Source plan (bundle size analysis and monitoring)
+    offer_url: https://relative-ci.com/pricing
+    verify_anchor:
+      - "Always free for open source organizations"
+      - "Open Source subscription is available only for public repositories"
+    what_you_get: >-
+      Free bundle analysis and monitoring for JavaScript builds: fair-use
+      limits of 500 jobs and 250 MiB of stats per month, unlimited users and
+      projects, 12 months of data retention, GitHub integration, Slack
+      notifications and metrics forwarding. RelativeCI raises the limits on
+      request.
+    eligibility:
+      public_repo_required: true
+      applies_to: organization
+      notes: >-
+        Open source organizations; the subscription applies to public
+        repositories only.
+    how_to_apply: >-
+      Sign up on relative-ci.com and pick the Open source option on the
+      pricing page; no application form.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: relative-ci.com/pricing lists the Open source plan and its fair-use limits (checked 2026-09-07); found via the webpack and Preact READMEs"

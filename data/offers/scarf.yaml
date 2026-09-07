@@ -1,0 +1,27 @@
+company: Scarf
+website: https://about.scarf.sh
+categories: [analytics]
+offers:
+  - product: Open Source Foundation Partnership Program (complimentary Scarf credits)
+    offer_url: https://about.scarf.sh/foundation-backed-projects/
+    verify_anchor:
+      - "complimentary Scarf credits to OSS projects housed within a partner foundation"
+      - "25 company unlocks per month"
+    what_you_get: >-
+      Complimentary credits on Scarf's download and usage analytics
+      platform: 25 company unlocks and 100 runs per month, above the free
+      Starter plan's limits. Foundations may add further benefits.
+    eligibility:
+      osi_license_required: true
+      applies_to: project
+      notes: >-
+        The project must be housed in a partner foundation: the Linux
+        Foundation or one of its member projects (CNCF, FINOS, Agentic AI
+        Foundation), the Apache Software Foundation, OWASP, or CommonHaus.
+    how_to_apply: >-
+      Create a Scarf organization, then request OSS Foundation Partner
+      activation as described on the offer page (via Scarf's Slack community
+      or its support email); Scarf verifies the foundation membership.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: about.scarf.sh/foundation-backed-projects/ live 2026-09-07; benefits and partner foundations read from the page. The Starter plan is free for everyone and is not listed here."

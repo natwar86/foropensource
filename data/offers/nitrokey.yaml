@@ -1,0 +1,25 @@
+company: Nitrokey
+website: https://www.nitrokey.com
+categories: [security]
+offers:
+  - product: Nitrokey Community Program (free test devices)
+    offer_url: https://www.nitrokey.com/community-program
+    verify_anchor:
+      - "free Nitrokey test devices"
+    what_you_get: >-
+      Free Nitrokey hardware security keys and devices for testing and
+      integration work.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Open source projects in security software or hardware development.
+        Journalists, bloggers, academic researchers and students who cover
+        open source security software or hardware can also apply. Nitrokey
+        decides case by case.
+    how_to_apply: >-
+      Send an application through the contact form on the offer page that
+      describes the community, the project, and why Nitrokey should support
+      it with free test devices.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: nitrokey.com/community-program live 2026-09-07; eligibility examples and 'You can apply to get free Nitrokey test devices' read from the page"
