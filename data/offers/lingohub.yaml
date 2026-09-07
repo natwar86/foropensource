@@ -1,0 +1,27 @@
+company: LingoHub
+website: https://lingohub.com
+categories: [other]
+offers:
+  - product: LingoHub Sponsored Plan (free for open source projects)
+    offer_url: https://lingohub.com/pricing
+    verify_anchor:
+      - "Free for open source projects"
+      - "Sponsored Plan"
+    what_you_get: >-
+      Free use of the LingoHub localization and translation management
+      platform under its Sponsored Plan. The pricing page lists open source
+      projects and non-profits as free and educational institutions as
+      discounted.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Open source projects; LingoHub confirms qualification on request.
+        No published criteria beyond "building something that makes the
+        world better".
+    how_to_apply: >-
+      Use the "Request Sponsored Plan" link on the pricing page, which opens
+      an email to sales@lingohub.com; describe the project and ask for the
+      open source Sponsored Plan.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: lingohub.com/pricing states 'Free for open source projects' under the Sponsored Plan; the request link is mailto:sales@lingohub.com (checked 2026-09-07)"

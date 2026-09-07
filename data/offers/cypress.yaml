@@ -22,6 +22,6 @@ offers:
       In the Cypress Cloud dashboard go to Billing & Usage, click Upgrade,
       select "Apply for an open source plan", and submit the application form;
       the Cypress team reviews and confirms by email.
-    status: active
+    status: stale
     last_verified: "2026-08-24"
     verification_source: "manual: pricing page states Cypress Cloud 'free to use for non-commercial open-source, public projects'; OSS plan docs live with quotas"

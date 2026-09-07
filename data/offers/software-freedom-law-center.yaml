@@ -1,0 +1,25 @@
+company: Software Freedom Law Center
+website: https://softwarefreedom.org
+categories: [licensing-compliance]
+offers:
+  - product: Pro bono legal services for free and open source software projects
+    offer_url: https://softwarefreedom.org/services/
+    verify_anchor:
+      - "We offer the following services to our clients"
+      - "Trademark Counseling"
+    what_you_get: >-
+      Pro bono legal counsel for FOSS projects: licensing advice and license
+      implementation, trademark registration and defense, nonprofit
+      governance, patent questions, and community education. SFLC also gives
+      licensing assistance to FOSS developers who are not clients.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Free, libre and open source software projects and their developers.
+        SFLC is a 501(c)(3) nonprofit and takes on clients at its discretion.
+    how_to_apply: >-
+      Contact SFLC through the contact page at softwarefreedom.org/about/contact/
+      with a description of the project and the legal question.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: softwarefreedom.org homepage states SFLC 'provides pro-bono legal services to developers of Free, Libre, and Open Source Software'; services page lists licensing, trademark and education services (checked 2026-09-07)"

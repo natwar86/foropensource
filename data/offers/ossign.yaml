@@ -1,0 +1,35 @@
+company: OSSign
+website: https://ossign.org
+categories: [security]
+offers:
+  - product: OSSign free code signing for open source projects
+    offer_url: https://ossign.org/
+    verify_anchor:
+      - "free code signing for qualifying open source projects"
+    what_you_get: >-
+      Free trusted code signing of release executables under OSSign's
+      certificate, wired into the project's build pipeline; signatures are
+      trusted by major operating systems. EV certificates and attestation
+      signing are available for select projects on request.
+    eligibility:
+      osi_license_required: true
+      min_project_age_months: 6
+      active_development_required: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        The majority of the code must be under an OSI-approved license with
+        all release code publicly reviewable; at least 6 months of activity
+        on the account, organization and project (forks included); a public
+        build pipeline that verifiably links each release binary to its
+        source and runs code quality checks. Commercial projects with an
+        open source license are considered case by case. Tools with a
+        political or controversial purpose, including offensive security
+        tooling, are not signed.
+    how_to_apply: >-
+      Register the project through the application form on ossign.org. As of
+      September 2026 the site says new applications are suspended while a
+      backlog is processed and asks applicants to check back in a few weeks.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: ossign.org rendered 2026-09-07 (JS-only page); qualification criteria and the applications-suspended notice read from the page"

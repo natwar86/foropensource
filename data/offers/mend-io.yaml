@@ -1,0 +1,27 @@
+company: Mend.io
+website: https://www.mend.io
+categories: [security, ci-cd]
+offers:
+  - product: Mend Renovate Community (OSS) Cloud plan (increased resources for OSI-licensed projects)
+    offer_url: https://docs.mend.io/renovate/latest/mend-renovate-cloud-resource-tiers
+    verify_anchor:
+      - "request increased resources on Mend Renovate Cloud"
+      - "Community (OSS)"
+    what_you_get: >-
+      A free upgrade of the hosted Mend Renovate app for the organization:
+      2 concurrent jobs instead of 1, 6 GB job memory instead of 3 GB, 25 GB
+      disk instead of 15 GB, a 60-minute job timeout instead of 30, and
+      access to Merge Confidence workflows.
+    eligibility:
+      osi_license_required: true
+      applies_to: organization
+      notes: >-
+        Projects under an OSI-approved license that run Renovate on Mend's
+        hosted Community Cloud. Acceptance is at Mend's discretion.
+    how_to_apply: >-
+      Open a "Mend Hosted Request" discussion on the Renovate GitHub
+      Discussions board and name the organization that needs the increased
+      resources.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: docs.mend.io resource-tiers page fetched 2026-09-07; tier table and request route read from the page. Also listed in the GitHub Maintainer Month 2026 partner pack."

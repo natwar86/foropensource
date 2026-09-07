@@ -1,0 +1,25 @@
+company: fal
+website: https://fal.ai
+categories: [ai-ml]
+offers:
+  - product: fal Research Grants (free compute for open source AI work)
+    offer_url: https://fal.ai/grants
+    verify_anchor:
+      - "fal Research Grants"
+      - "cutting-edge open source initiatives"
+    what_you_get: >-
+      Free compute on fal's GPU platform for researchers and developers
+      working on open source AI initiatives; a past grantee credits the
+      grant with accelerating training for the Moondream model.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Open to anyone working on an open source AI initiative; the page says
+        no formal degree is required. Grants are awarded at fal's discretion.
+    how_to_apply: >-
+      Email grants@fal.ai with a description of the project, its goals, how
+      it fits fal's open source mission, and links to relevant work or
+      GitHub repositories.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: fal.ai/grants live 2026-09-07; page states the program 'provides free compute resources to researchers and developers working on cutting-edge open source initiatives' and names grants@fal.ai as the application route"

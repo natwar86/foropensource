@@ -1,0 +1,28 @@
+company: Mockoon
+website: https://mockoon.com
+categories: [testing]
+offers:
+  - product: Mockoon Cloud for Open Source (free cloud account)
+    offer_url: https://mockoon.com/mockoon-cloud-open-source/
+    verify_anchor:
+      - "free Mockoon Cloud accounts to eligible open-source projects"
+    what_you_get: >-
+      A free Mockoon Cloud account for the project: Mockoon's paid tier for
+      syncing mock API definitions across a team and deploying them to the
+      cloud.
+    eligibility:
+      osi_license_required: true
+      active_development_required: true
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        Project must be under an OSI-approved license, have a public
+        repository, be active (not a portfolio, tutorial or demo), and not be
+        backed by a company or an educational institution. Mockoon may
+        refuse requests at its discretion.
+    how_to_apply: >-
+      Fill in the form on the offer page (name, email, project link and a
+      message); Mockoon reviews the request and replies by email.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: mockoon.com/mockoon-cloud-open-source/ live 2026-09-07; eligibility text and request form read from the page"
