@@ -1,0 +1,24 @@
+company: Hygraph
+website: https://hygraph.com
+categories: [other]
+offers:
+  - product: Hygraph for Open Source Projects (custom limits beyond the free plan)
+    offer_url: https://hygraph.com/hygraph-for-open-source
+    verify_anchor:
+      - "Hygraph for Open Source Projects"
+      - "custom options on a case by case basis"
+    what_you_get: >-
+      Custom options for the Hygraph headless CMS when an open source project
+      outgrows the free plan's limits, agreed case by case. No fixed benefit
+      is published.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Open source projects built with Hygraph, or contributors to them,
+        whose needs exceed the free plan. Terms are set per project.
+    how_to_apply: >-
+      Use the "Get in touch" or "Talk to an expert" links on the offer page
+      and describe the project and the limits it needs.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: hygraph.com/hygraph-for-open-source live 2026-09-07; page promises case-by-case custom options for open source projects beyond the free plan. Found via the README sponsor-mining pilot."

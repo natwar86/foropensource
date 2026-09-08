@@ -1,0 +1,32 @@
+company: Blackfire
+website: https://www.blackfire.io
+categories: [monitoring]
+offers:
+  - product: Blackfire Profiler free subscriptions for open source maintainers
+    offer_url: https://www.blackfire.io/open-source/free-subscriptions/
+    verify_anchor:
+      - "We offer free Blackfire Profiler subscriptions"
+      - "Free subscriptions are valid for one year"
+    what_you_get: >-
+      A free Blackfire Profiler subscription for each project lead and core
+      committer, valid for one year and renewable while the project still
+      qualifies. For developing non-commercial open source projects only;
+      subscriptions cannot be shared.
+    eligibility:
+      osi_license_required: true
+      active_development_required: true
+      non_commercial_only: true
+      applies_to: maintainer
+      notes: >-
+        The project must meet the Open Source definition and show regular
+        commits in the past 3 months. Maintainers must not sell paid versions
+        or commercial services around the project, must not be funded by
+        commercial companies or by NGO, educational, research or governmental
+        organizations, and must not pay their core developers.
+    how_to_apply: >-
+      Use the "Apply for sponsorship" button on the offer page, which leads
+      to the application form at blackfire.io/open-source-apply.
+    renewal: "Annual renewal while the project still meets the requirements"
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: blackfire.io/open-source/free-subscriptions/ live 2026-09-07; requirements and support terms read from the page. Found via the README sponsor-mining pilot (7 sample repos)."

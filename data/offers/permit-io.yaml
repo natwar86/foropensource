@@ -1,0 +1,24 @@
+company: Permit.io
+website: https://www.permit.io
+categories: [auth]
+offers:
+  - product: Permit.io Startup tier free for open source projects
+    offer_url: https://www.permit.io/pricing
+    verify_anchor:
+      - "Need access-control for your open-source project"
+      - "Startup tier for yourself and your OSS users, for free"
+    what_you_get: >-
+      The full Startup tier of Permit.io's authorization service (RBAC, ABAC,
+      ReBAC, embeddable user management) free for the open source project and
+      its users, above the free-forever Community tier.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Open source projects; Permit.io confirms qualification on contact and
+        publishes no written criteria.
+    how_to_apply: >-
+      Use the "Contact Us" link in the "Free for OSS Projects" box on the
+      pricing page and describe the project.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: permit.io/pricing 'Free for OSS Projects' box read 2026-09-07. Found via the README sponsor-mining pilot."

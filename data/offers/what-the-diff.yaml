@@ -1,0 +1,27 @@
+company: What the Diff
+website: https://whatthediff.ai
+categories: [ci-cd, ai-ml]
+offers:
+  - product: What the Diff for Open Source (free AI pull request summaries)
+    offer_url: https://whatthediff.ai/open-source
+    verify_anchor:
+      - "sponsoring What the Diff to support open source projects"
+      - "Have a track record (10+ contributors OR 100+ GitHub stars)"
+    what_you_get: >-
+      A free What the Diff account for the requested open source repository:
+      AI-written pull request summaries and changelogs. Made by Beyond Code.
+    eligibility:
+      osi_license_required: true
+      active_development_required: true
+      non_commercial_only: true
+      applies_to: project
+      notes: >-
+        Regular commits in the past 3 months; no commercial versions or
+        services around the project; not founded by a company; no paid core
+        developers; at least 10 contributors or 100 GitHub stars. The free
+        account is valid for the requested repository only.
+    how_to_apply: >-
+      Fill in the application form linked from the offer page.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: whatthediff.ai/open-source live 2026-09-07; criteria and support terms read from the page. Found via the README sponsor-mining pilot."

@@ -1,0 +1,24 @@
+company: Kinsta
+website: https://kinsta.com
+categories: [hosting]
+offers:
+  - product: Kinsta Managed WordPress Hosting (15% open source discount)
+    offer_url: https://kinsta.com/docs/billing/wordpress-hosting-plans/discounts/
+    verify_anchor:
+      - "15% discount for your open-source project"
+    what_you_get: >-
+      15% off all future payments on a Managed WordPress Hosting plan for an
+      open source project's site, plus two months free on annual plans. The
+      discount covers the hosting plan only, not add-ons.
+    eligibility:
+      applies_to: project
+      notes: >-
+        The open source site needs its own separate Managed WordPress Hosting
+        account. Kinsta confirms the project's status before applying the
+        discount. A separate 15% discount exists for non-profits.
+    how_to_apply: >-
+      Send the project's website and details to Kinsta's Sales team; they
+      confirm the status and apply the discount to future payments.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: kinsta.com billing docs 'Discounts' page (updated 2025-09-19) read 2026-09-07. Found via the README sponsor-mining pilot (8 sample repos)."

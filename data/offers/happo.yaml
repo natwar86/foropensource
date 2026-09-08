@@ -1,0 +1,22 @@
+company: Happo
+website: https://happo.io
+categories: [testing]
+offers:
+  - product: Happo visual regression testing (free plan for open source projects)
+    offer_url: https://happo.io/pricing
+    verify_anchor:
+      - "Free plans are available for open source projects"
+    what_you_get: >-
+      A free Happo plan for the open source project's visual regression
+      tests, with screenshots in Chrome, Firefox, Safari, iOS Safari and
+      Edge. Quotas for the open source plan are agreed on contact.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Open source projects; no further criteria are published.
+    how_to_apply: >-
+      Use the "Talk to us" contact link on the pricing page and ask for the
+      open source plan.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: happo.io/pricing FAQ 'Can I use Happo in my open source project?' read 2026-09-07. Found via the README sponsor-mining pilot."

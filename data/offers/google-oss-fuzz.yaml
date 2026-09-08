@@ -1,0 +1,28 @@
+company: Google OSS-Fuzz
+website: https://google.github.io/oss-fuzz/
+categories: [security, testing]
+offers:
+  - product: OSS-Fuzz continuous fuzzing (free for critical open source projects)
+    offer_url: https://google.github.io/oss-fuzz/getting-started/accepting-new-projects/
+    verify_anchor:
+      - "To be accepted to OSS-Fuzz, an open-source project must have a significant user base"
+    what_you_get: >-
+      Google runs the project's fuzz targets continuously on its own
+      infrastructure, files the bugs it finds in the OSS-Fuzz issue tracker,
+      and gives maintainers access to the ClusterFuzz dashboard. A separate
+      reward program pays for integration work through Google Bug Hunters.
+    eligibility:
+      public_repo_required: true
+      applies_to: project
+      notes: >-
+        The project must have a significant user base or be critical to
+        global IT infrastructure; each request is judged case by case. The
+        engineering contact must be an established committer and use an email
+        tied to a Google account.
+    how_to_apply: >-
+      Open a pull request to the google/oss-fuzz repository adding a
+      project.yaml with the homepage, main repository, primary language and
+      contact email, then follow the New Project Guide once accepted.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: google.github.io/oss-fuzz acceptance page read 2026-09-07. Found via the README sponsor-mining pilot (7 sample repos carry OSS-Fuzz badges)."
