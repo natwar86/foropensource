@@ -1,0 +1,24 @@
+company: Depot
+website: https://depot.dev
+categories: [ci-cd]
+offers:
+  - product: Depot discount for open source projects (container builds and GitHub Actions runners)
+    offer_url: https://depot.dev/pricing
+    verify_anchor:
+      - "Are there discounts for non-profits or open-source?"
+    what_you_get: >-
+      A discount on Depot's remote container builds, GitHub Actions runners
+      and build cache for open source projects and non-profits. The pricing
+      FAQ answers "Yes! Please contact us with more information about your
+      project"; the size of the discount is agreed per project.
+    eligibility:
+      applies_to: project
+      notes: >-
+        Open source projects and non-profits. No published criteria; Depot
+        decides per project.
+    how_to_apply: >-
+      Contact Depot (support or sales, linked from the pricing page) with a
+      description of the project and ask for the open source discount.
+    status: active
+    last_verified: "2026-09-07"
+    verification_source: "manual: depot.dev/pricing FAQ 'Are there discounts for non-profits or open-source?' answers 'Yes! Please contact us with more information about your project and for more details' (answer is rendered only on click; read in a browser 2026-09-07). Found via the pnpm and Biome READMEs."
