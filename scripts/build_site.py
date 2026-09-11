@@ -1282,12 +1282,21 @@ def page(*, title: str, description: str, canonical_path: str, body: str,
 <meta property="og:image:alt" content="{esc(og_alt)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{SITE_URL}{og_image}">
-<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){{dataLayer.push(arguments);}}
-gtag('js', new Date());
-gtag('config', '{GA_MEASUREMENT_ID}');
+(function(){{
+  // Do not load analytics in automated browsers. A headless-Chrome crawler
+  // from Singapore was 200+ direct "sessions" a month with 0 s on page.
+  var n = navigator, ua = n.userAgent || '';
+  if (n.webdriver === true || /HeadlessChrome|Lighthouse|PhantomJS|Puppeteer|Playwright/i.test(ua)) return;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){{dataLayer.push(arguments);}};
+  gtag('js', new Date());
+  gtag('config', '{GA_MEASUREMENT_ID}');
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}';
+  document.head.appendChild(s);
+}})();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
