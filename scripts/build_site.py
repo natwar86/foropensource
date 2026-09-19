@@ -1284,18 +1284,41 @@ def page(*, title: str, description: str, canonical_path: str, body: str,
 <meta name="twitter:image" content="{SITE_URL}{og_image}">
 <script>
 (function(){{
-  // Do not load analytics in automated browsers. A headless-Chrome crawler
-  // from Singapore was 200+ direct "sessions" a month with 0 s on page.
-  var n = navigator, ua = n.userAgent || '';
+  // Analytics loads only for a visitor who is demonstrably present.
+  // 1. Skip automated browsers: navigator.webdriver, headless user agents,
+  //    and a stealth crawler (Singapore/China, 200+ direct "sessions" a
+  //    month, 0 s on page) that reports a 1280x1200 screen no monitor has.
+  // 2. Fetch gtag.js only after 2.5 s with the page visible, or the first
+  //    scroll, pointer, key or touch event, whichever comes first. The
+  //    crawler leaves in ~0.1 s and never sends a hit. Events fired before
+  //    then queue in dataLayer and flush when the script arrives.
+  var n = navigator, ua = n.userAgent || '', sc = window.screen || {{}};
   if (n.webdriver === true || /HeadlessChrome|Lighthouse|PhantomJS|Puppeteer|Playwright/i.test(ua)) return;
+  if (sc.width === 1280 && sc.height === 1200) return;
   window.dataLayer = window.dataLayer || [];
   window.gtag = function(){{dataLayer.push(arguments);}};
   gtag('js', new Date());
   gtag('config', '{GA_MEASUREMENT_ID}');
-  var s = document.createElement('script');
-  s.async = true;
-  s.src = 'https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}';
-  document.head.appendChild(s);
+  var done = false, timer = 0, i;
+  var evs = ['scroll', 'wheel', 'pointerdown', 'keydown', 'touchstart'];
+  function load(){{
+    if (done) return;
+    done = true;
+    clearTimeout(timer);
+    for (i = 0; i < evs.length; i++) removeEventListener(evs[i], load, true);
+    document.removeEventListener('visibilitychange', arm);
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}';
+    document.head.appendChild(s);
+  }}
+  function arm(){{
+    clearTimeout(timer);
+    if ((document.visibilityState || 'visible') === 'visible') timer = setTimeout(load, 2500);
+  }}
+  for (i = 0; i < evs.length; i++) addEventListener(evs[i], load, {{capture: true, passive: true}});
+  document.addEventListener('visibilitychange', arm);
+  arm();
 }})();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1964,7 +1987,7 @@ def build_404() -> str:
 </div>
 </div>
 <script>
-gtag('event', 'page_not_found', {{
+if (typeof gtag === 'function') gtag('event', 'page_not_found', {{
   missing_path: location.pathname + location.search,
   referrer: document.referrer || '(none)'
 }});
