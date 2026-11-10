@@ -19,5 +19,5 @@ offers:
       Sign up, then contact Buttondown support with proof of the project's
       non-profit status; the offer page publishes no form.
     status: active
-    last_verified: "2026-11-09"
+    last_verified: "2026-11-10"
     verification_source: "manual: buttondown.com/use-cases/open-source states the 50% discount for registered non-profit open source projects (checked 2026-09-07); found via the Homebrew and Astro sponsor pages"

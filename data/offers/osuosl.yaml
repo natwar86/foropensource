@@ -37,5 +37,5 @@ offers:
       notes: Systems intended for functional development and testing only.
     how_to_apply: Request via the hosting request process on osuosl.org.
     status: active
-    last_verified: "2026-11-09"
+    last_verified: "2026-11-10"
     verification_source: "manual: osuosl.org/services/ live; lists AARCH64 and PowerLinux/OpenPOWER development hosting for open source communities"

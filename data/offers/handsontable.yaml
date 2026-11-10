@@ -24,5 +24,5 @@ offers:
       "non-commercial-and-evaluation" in the grid configuration, as the
       License key docs page describes.
     status: active
-    last_verified: "2026-11-09"
+    last_verified: "2026-11-10"
     verification_source: "manual: docs software-license page says 'To use Handsontable in a non-commercial or open-source project, see the License key page'; the license-key page gives the non-commercial-and-evaluation key (checked 2026-09-07)"

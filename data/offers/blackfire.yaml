@@ -28,5 +28,5 @@ offers:
       to the application form at blackfire.io/open-source-apply.
     renewal: "Annual renewal while the project still meets the requirements"
     status: active
-    last_verified: "2026-11-09"
+    last_verified: "2026-11-10"
     verification_source: "manual: blackfire.io/open-source/free-subscriptions/ live 2026-09-07; requirements and support terms read from the page. Found via the README sponsor-mining pilot (7 sample repos)."

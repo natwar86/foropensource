@@ -24,5 +24,5 @@ offers:
       project.yaml with the homepage, main repository, primary language and
       contact email, then follow the New Project Guide once accepted.
     status: active
-    last_verified: "2026-11-09"
+    last_verified: "2026-11-10"
     verification_source: "manual: google.github.io/oss-fuzz acceptance page read 2026-09-07. Found via the README sponsor-mining pilot (7 sample repos carry OSS-Fuzz badges)."

@@ -23,5 +23,5 @@ offers:
       Discussions board and name the organization that needs the increased
       resources.
     status: active
-    last_verified: "2026-11-09"
+    last_verified: "2026-11-10"
     verification_source: "manual: docs.mend.io resource-tiers page fetched 2026-09-07; tier table and request route read from the page. Also listed in the GitHub Maintainer Month 2026 partner pack."
