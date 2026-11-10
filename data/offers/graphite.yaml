@@ -23,6 +23,6 @@ offers:
       Small projects: sign up for a Graphite Standard annual plan and
       eligibility is auto-detected. Larger projects: contact Graphite with
       your GitHub org, website, and project description.
-    status: active
-    last_verified: "2026-09-07"
+    status: stale
+    last_verified: "2026-10-26"
     verification_source: "manual: graphite.com/blog/startup-program-announcement live, 'Graphite is now free for startups and open source projects' with Standard-plan OSS terms"

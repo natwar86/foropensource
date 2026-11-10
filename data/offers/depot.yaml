@@ -20,5 +20,5 @@ offers:
       Contact Depot (support or sales, linked from the pricing page) with a
       description of the project and ask for the open source discount.
     status: active
-    last_verified: "2026-09-07"
+    last_verified: "2026-11-09"
     verification_source: "manual: depot.dev/pricing FAQ 'Are there discounts for non-profits or open-source?' answers 'Yes! Please contact us with more information about your project and for more details' (answer is rendered only on click; read in a browser 2026-09-07). Found via the pnpm and Biome READMEs."

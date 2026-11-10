@@ -21,5 +21,5 @@ offers:
       Sign in with GitHub on pre-commit.ci and enable the app on the public
       repository; there is no application form.
     status: active
-    last_verified: "2026-09-07"
+    last_verified: "2026-11-09"
     verification_source: "manual: pre-commit.ci pricing section states 'pre-commit.ci will always be free for open source repositories' (checked 2026-09-07); found via the pytest and Woodpecker READMEs"

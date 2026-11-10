@@ -21,5 +21,5 @@ offers:
       Fill in the Sourcegraph Workspace Application form embedded on the
       offer page: email, name, and a link to the project's CNCF page.
     status: active
-    last_verified: "2026-09-07"
+    last_verified: "2026-11-09"
     verification_source: "manual: sourcegraph.com/supporting-open-source (redirects to /supporting-the-cncf) read 2026-09-07; the embedded Google Form states Sourcegraph 'offers complimentary AI & code search workspace licenses to eligible OSS developers who actively maintain a CNCF project'. sourcegraph.com returns 403 to some automated fetchers."

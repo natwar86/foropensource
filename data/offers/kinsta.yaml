@@ -20,5 +20,5 @@ offers:
       Send the project's website and details to Kinsta's Sales team; they
       confirm the status and apply the discount to future payments.
     status: active
-    last_verified: "2026-09-07"
+    last_verified: "2026-11-09"
     verification_source: "manual: kinsta.com billing docs 'Discounts' page (updated 2025-09-19) read 2026-09-07. Found via the README sponsor-mining pilot (8 sample repos)."

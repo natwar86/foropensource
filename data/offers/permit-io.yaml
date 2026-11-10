@@ -20,5 +20,5 @@ offers:
       Use the "Contact Us" link in the "Free for OSS Projects" box on the
       pricing page and describe the project.
     status: active
-    last_verified: "2026-09-07"
+    last_verified: "2026-11-09"
     verification_source: "manual: permit.io/pricing 'Free for OSS Projects' box read 2026-09-07. Found via the README sponsor-mining pilot."

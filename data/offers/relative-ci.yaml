@@ -23,5 +23,5 @@ offers:
       Sign up on relative-ci.com and pick the Open source option on the
       pricing page; no application form.
     status: active
-    last_verified: "2026-09-07"
+    last_verified: "2026-11-09"
     verification_source: "manual: relative-ci.com/pricing lists the Open source plan and its fair-use limits (checked 2026-09-07); found via the webpack and Preact READMEs"

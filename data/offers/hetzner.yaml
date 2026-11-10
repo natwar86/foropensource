@@ -24,5 +24,5 @@ offers:
       integration, with the GitHub repository link and links to previous
       open source work.
     status: active
-    last_verified: "2026-09-07"
+    last_verified: "2026-10-12"
     verification_source: "manual: docs.hetzner.com/cloud/api/faq/ entry 'Do you sponsor efforts to integrate Hetzner Cloud into Open Source libs?' read 2026-09-07; found via the Gentoo and Debian sponsor pages"
